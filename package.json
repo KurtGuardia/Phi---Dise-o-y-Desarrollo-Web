@@ -1,0 +1,14 @@
+{
+  "name": "phi",
+  "version": "1.0.0",
+  "description": "Kurt's entrepreneurship",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass scss/main.scss css/style.css -w"
+  },
+  "author": "Kurt Guardia",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^4.14.1"
+  }
+}
