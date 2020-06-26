@@ -1,0 +1,4 @@
+//images folder
+@function img($image){
+    @return url('../../img/' + $image);
+}

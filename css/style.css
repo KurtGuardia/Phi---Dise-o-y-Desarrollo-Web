@@ -36,7 +36,8 @@ html {
       font-size: 75%; } }
 
 body {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  text-rendering: optimizeLegibility; }
 
 ::selection {
   background-color: #D4AF37;
@@ -45,4 +46,81 @@ body {
 body {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
-  color: #352B11; }
+  color: #352B11;
+  font-size: 3rem; }
+
+header {
+  position: relative; }
+
+.spiral {
+  width: 100%;
+  max-width: 100vw;
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  backface-visibility: hidden;
+  background-image: url("../../img/espiral-sombra.png");
+  z-index: -2; }
+
+.matrix {
+  width: 100%;
+  max-width: 100vw;
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  backface-visibility: hidden;
+  background-image: url("../../img/matrix.png");
+  background-attachment: fixed;
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 0; }
+
+.row {
+  position: absolute;
+  width: 100vw;
+  top: 3%;
+  left: 2%;
+  margin: 0 auto;
+  display: flex;
+  align-items: start;
+  padding: 1rem; }
+  .row .logo {
+    min-width: 36vw; }
+  .row .main-nav {
+    display: flex;
+    list-style: none;
+    justify-content: space-between; }
+    .row .main-nav li {
+      background-color: #d4af3777;
+      padding: 0.5rem 1rem;
+      margin: 0 1rem;
+      transition: all 0.5s; }
+    .row .main-nav li a:link,
+    .row .main-nav li a:visited {
+      color: #352B11;
+      text-decoration: none;
+      font-size: inherit;
+      border-bottom: 2px solid transparent;
+      -webkit-transition: border-bottom 0.4s;
+      transition: border-bottom 0.4s; }
+    .row .main-nav li:hover,
+    .row .main-nav li:active {
+      background-color: #9d780077;
+      border-bottom: 2px solid #A0362B; }
+
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .hero-text h1,
+  .hero-text h2 {
+    background: #d4af3777;
+    padding: 0.5rem 3rem; }
