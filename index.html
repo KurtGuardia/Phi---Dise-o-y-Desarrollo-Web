@@ -47,7 +47,7 @@
       <section class="section_start">
         <div class="cloud">
           <div class="circle">
-            <img src="img/phi_white.svg" alt="Greek letter phi" /> <h3>= 1.6180339887498948482</h3>
+            <img src="img/phi_white.svg" alt="Greek letter phi" /> <h3>= <span id="phi_number"></span></h3>
             <!-- = 1.6180339887498948482 ... -->
           </div>
         </div>
@@ -365,19 +365,19 @@
     </footer>
 
     <script>
-      var i=0, text;
+      var i=0, phi_number;
 
-      // text = "1.6180339887498948482";
+      phi_number = "1.6180339887498948482...";
 
-      // var typing = () => {
-      //    if(i<text.length) {
-      //         document.getElementById("text").innerHTML += text.charAt(i);
-      //         i++;
-      //         setTimeout(typing,100)
-      //     } 
-      // };
+      var typing = () => {
+         if(i<phi_number.length) {
+              document.getElementById("phi_number").innerHTML += phi_number.charAt(i);
+              i++;
+              setTimeout(typing,250)
+          } 
+      };
 
-      // typing();
+      typing();
     </script>
   </body>
 </html>
