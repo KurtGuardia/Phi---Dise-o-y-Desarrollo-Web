@@ -49,8 +49,24 @@ body {
   color: #352B11;
   font-size: 3rem; }
 
+h1 {
+  font-size: 7.9rem; }
+
+h2 {
+  font-size: 4.9rem; }
+
+h3 {
+  font-size: 3.8rem; }
+
+.small-text {
+  font-size: 2.4rem !important; }
+
+.tiny-text {
+  font-size: 1.8rem; }
+
 header {
-  position: relative; }
+  position: relative;
+  width: 100%; }
 
 .spiral {
   width: 100%;
@@ -80,7 +96,6 @@ header {
 
 .row {
   position: absolute;
-  width: 100vw;
   top: 3%;
   left: 2%;
   margin: 0 auto;
@@ -124,3 +139,29 @@ header {
   .hero-text h2 {
     background: #d4af3777;
     padding: 0.5rem 3rem; }
+
+.cloud {
+  width: 100%;
+  max-width: 100vw;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  backface-visibility: hidden;
+  background-image: url("../../img/cloud.png");
+  height: 50rem;
+  display: flex;
+  justify-content: center; }
+  .cloud .circle {
+    background-color: #402A44;
+    width: 100%;
+    max-width: 70rem;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    align-self: center; }
+    .cloud .circle img {
+      margin: 2rem; }
+    .cloud .circle h3 {
+      color: #fff; }

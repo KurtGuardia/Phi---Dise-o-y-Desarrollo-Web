@@ -1,7 +1,11 @@
 @import "../abstracts/functions";
 
+// _____________________________ HEADER _____________________________ 
+
 header {
   position: relative;
+  width: 100%;
+  
 }
 
 .spiral {
@@ -34,7 +38,7 @@ header {
 
 .row {
   position: absolute;
-  width: 100vw;
+  // width: 100vw;
   top: 3%;
   left: 2%;
   margin: 0 auto;
@@ -89,5 +93,64 @@ header {
       background: $color-primary-transparent;
       padding: 0.5rem 3rem;
   }
-  
 }
+
+// _____________________________ Welcome _____________________________ 
+
+.cloud{
+  width: 100%;
+  max-width: 100vw;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  backface-visibility: hidden;
+  background-image: img('cloud.png');
+  height: 50rem;
+  display: flex;
+  justify-content: center;
+
+  .circle{
+    background-color: $color-purple;
+    width: 100%;
+    max-width: 70rem;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    align-self: center;
+
+    img{
+      margin: 2rem;
+    }
+    h3{
+      color: #fff;
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

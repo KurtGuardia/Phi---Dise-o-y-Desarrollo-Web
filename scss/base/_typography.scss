@@ -4,3 +4,22 @@ body{
     color: $color-black;
     font-size: 3rem;
 }
+
+h1{
+    font-size: $huge;
+}
+
+h2{
+    font-size: $big;
+}
+
+h3{
+    font-size: $medium;
+}
+.small-text{
+   font-size: $small !important;
+}
+
+.tiny-text{
+    font-size: $tiny;
+}
