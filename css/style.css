@@ -56,7 +56,8 @@ h2 {
   font-size: 4.9rem; }
 
 h3 {
-  font-size: 3.8rem; }
+  font-size: 3.8rem;
+  font-weight: 100; }
 
 .small-text {
   font-size: 2.4rem !important; }
@@ -166,3 +167,33 @@ header {
     .cloud .circle h3 {
       color: #fff;
       font-weight: 100; }
+
+.welcome {
+  display: flex; }
+  .welcome img {
+    margin: 3rem;
+    width: auto;
+    height: 20rem; }
+  .welcome img:last-child {
+    align-self: flex-end;
+    margin-bottom: -3rem; }
+  .welcome .welcome-text {
+    margin: 5rem;
+    display: flex;
+    flex-direction: column;
+    height: 40rem;
+    justify-content: space-between; }
+    .welcome .welcome-text .text-right {
+      margin: 5rem -15rem 5rem 10rem; }
+    .welcome .welcome-text .text-left {
+      margin-left: -5rem;
+      margin-bottom: 5rem; }
+    .welcome .welcome-text a {
+      align-self: center;
+      margin: 5rem;
+      padding: 1rem 2rem;
+      border: 1px solid #402A44;
+      color: #fff;
+      background-color: #402A44;
+      text-decoration: none;
+      border-radius: 50px; }

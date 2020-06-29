@@ -1,11 +1,10 @@
 @import "../abstracts/functions";
 
-// _____________________________ HEADER _____________________________ 
+// _____________________________ HEADER _____________________________
 
 header {
   position: relative;
   width: 100%;
-  
 }
 
 .spiral {
@@ -86,30 +85,30 @@ header {
   transform: translate(-50%, -50%);
   display: flex;
   flex-direction: column;
-  align-items:center;
+  align-items: center;
 
   h1,
-  h2{
-      background: $color-primary-transparent;
-      padding: 0.5rem 3rem;
+  h2 {
+    background: $color-primary-transparent;
+    padding: 0.5rem 3rem;
   }
 }
 
-// _____________________________ Welcome _____________________________ 
+// _____________________________ Welcome _____________________________
 
-.cloud{
+.cloud {
   width: 100%;
   max-width: 100vw;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   backface-visibility: hidden;
-  background-image: img('cloud.png');
+  background-image: img("cloud.png");
   height: 50rem;
   display: flex;
   justify-content: center;
 
-  .circle{
+  .circle {
     background-color: $color-purple;
     width: 100%;
     max-width: 70rem;
@@ -120,38 +119,57 @@ header {
     border-radius: 50%;
     align-self: center;
 
-    img{
+    img {
       margin: 2rem;
     }
-    h3{
+
+    h3 {
       color: #fff;
       font-weight: 100;
     }
   }
 }
 
+.welcome {
+  display: flex;
 
+  img{    
+    margin: 3rem;
+    width: auto;
+    height: 20rem;    
+  }
 
+  img:last-child{
+    align-self: flex-end;
+    margin-bottom: -3rem;
+  }
 
+  .welcome-text{
+    margin: 5rem;
+    display: flex;
+    flex-direction: column;
+    height: 40rem;
+    justify-content: space-between;
+  
+    .text-right{
+      margin: 5rem -15rem 5rem 10rem;
+    }
 
+    .text-left{
+      margin-left: -5rem;
+      margin-bottom: 5rem;
+    }
 
+    a{
+      align-self: center;
+      margin: 5rem;
+      padding: 1rem 2rem;
+      border: 1px solid $color-purple;
+      color: #fff;
+      background-color: $color-purple;
+      text-decoration: none;
+      border-radius: 50px;
+    }
+  }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+}
