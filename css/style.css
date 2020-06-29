@@ -169,31 +169,40 @@ header {
       font-weight: 100; }
 
 .welcome {
-  display: flex; }
+  display: flex;
+  position: relative; }
+  .welcome :last-child {
+    align-self: center; }
+  .welcome .photo-hover {
+    width: 25%; }
   .welcome img {
     margin: 3rem;
     width: auto;
-    height: 20rem; }
-  .welcome img:last-child {
-    align-self: flex-end;
-    margin-bottom: -3rem; }
-  .welcome .welcome-text {
+    height: 20rem;
+    position: absolute; }
+  .welcome .secondary {
+    opacity: 0;
+    z-index: 1;
+    transition: all 1s ease-in; }
+  .welcome .secondary:hover {
+    opacity: 1; }
+
+.welcome-text {
+  margin: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; }
+  .welcome-text .text-right {
+    margin: 5rem -15rem 5rem 10rem; }
+  .welcome-text .text-left {
+    margin-left: -5rem;
+    margin-bottom: 5rem; }
+  .welcome-text a {
+    align-self: center;
     margin: 5rem;
-    display: flex;
-    flex-direction: column;
-    height: 40rem;
-    justify-content: space-between; }
-    .welcome .welcome-text .text-right {
-      margin: 5rem -15rem 5rem 10rem; }
-    .welcome .welcome-text .text-left {
-      margin-left: -5rem;
-      margin-bottom: 5rem; }
-    .welcome .welcome-text a {
-      align-self: center;
-      margin: 5rem;
-      padding: 1rem 2rem;
-      border: 1px solid #402A44;
-      color: #fff;
-      background-color: #402A44;
-      text-decoration: none;
-      border-radius: 50px; }
+    padding: 1rem 2rem;
+    border: 1px solid #402A44;
+    color: #fff;
+    background-color: #402A44;
+    text-decoration: none;
+    border-radius: 50px; }

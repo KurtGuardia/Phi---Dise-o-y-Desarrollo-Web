@@ -132,35 +132,49 @@ header {
 
 .welcome {
   display: flex;
+  position: relative;
 
-  img{    
+  :last-child{
+    align-self: center;
+  }
+
+  .photo-hover{
+    width: 25%;
+  }
+
+  img {
     margin: 3rem;
     width: auto;
-    height: 20rem;    
+    height: 20rem;
+    position: absolute;
   }
 
-  img:last-child{
-    align-self: flex-end;
-    margin-bottom: -3rem;
+  .secondary{
+    @include hover
   }
 
-  .welcome-text{
+  .secondary:hover{
+    opacity: 1;
+  }
+
+  }
+
+  .welcome-text {
     margin: 5rem;
     display: flex;
     flex-direction: column;
-    height: 40rem;
     justify-content: space-between;
-  
-    .text-right{
+
+    .text-right {
       margin: 5rem -15rem 5rem 10rem;
     }
 
-    .text-left{
+    .text-left {
       margin-left: -5rem;
       margin-bottom: 5rem;
     }
 
-    a{
+    a {
       align-self: center;
       margin: 5rem;
       padding: 1rem 2rem;
@@ -172,4 +186,3 @@ header {
     }
   }
 
-}
