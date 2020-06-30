@@ -174,10 +174,10 @@ header {
       margin-left: -14rem;
     }
   }
-  
-  .photo-left::before{
-   margin-left: -12rem;
-}
+
+  .photo-left::before {
+    margin-left: -12rem;
+  }
 }
 
 .welcome-text {
@@ -211,15 +211,54 @@ header {
   }
 }
 
-// .services-buttons{
-//   display: grid;
-//   grid-template-rows: 150px 150px;
-//   grid-template-columns: repeat(150px 4);
-// }
+.services-buttons {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(6, minmax(max-content, min-content));
+  grid-row-gap: 10rem;
+  margin: 15rem 5rem;
+  justify-content: center;
 
-.service {
-  border: 1px solid $color-purple;
-  border-radius: 50%;
-  background-color: $color-purple;
-  color: #fff;
+  .service {
+    border: 1px solid $color-purple;
+    border-radius: 50%;
+    padding: 3rem;
+    background-color: $color-purple;
+    color: #fff;
+    margin: 0 -2rem;
+
+    &--1 {
+      grid-row: 1 / 1;
+      grid-column: 1 / span 1;
+    }
+
+    &--2 {
+      grid-row: 1 / 1;
+      grid-column: 3 / 4;
+    }
+
+    &--3{
+      grid-row: 1 / 1;
+      grid-column: 5 / span 1;
+      
+      h3{
+        font-size: 3rem;
+      }
+    }
+
+    &--4 {
+      grid-row: 2 / 2;
+      grid-column: 2 / span 1;
+    }
+
+    &--5 {
+      grid-row: 2 / 2;
+      grid-column: 4 / span 1;
+    }
+
+    &--6 {
+      grid-row: 2 / 2;
+      grid-column: 6 / span 1;
+    }
+  }
 }
