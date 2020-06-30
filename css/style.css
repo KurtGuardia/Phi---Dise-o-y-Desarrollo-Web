@@ -61,7 +61,8 @@ body {
   font-size: 3rem; }
 
 h1 {
-  font-size: 7.9rem; }
+  font-size: 7.9rem;
+  letter-spacing: 1rem; }
 
 h2 {
   font-size: 4.9rem; }
@@ -187,7 +188,8 @@ header {
     margin-right: 2rem; }
   .welcome .photo-hover {
     width: 25%;
-    margin: 3rem; }
+    margin: 3rem;
+    position: relative; }
     .welcome .photo-hover img {
       width: auto;
       height: 20rem;
@@ -209,7 +211,7 @@ header {
     animation-fill-mode: backwards; }
   .welcome .photo-hover:last-of-type img {
     margin-left: -14rem; }
-  .welcome .photo-left::before {
+  .welcome .photo-right::before {
     margin-left: -12rem; }
 
 .welcome-text {
@@ -243,12 +245,18 @@ header {
   margin: 15rem 5rem;
   justify-content: center; }
   .services-buttons .service {
-    border: 1px solid #402A44;
+    border: 5px solid #402A44;
     border-radius: 50%;
-    padding: 3rem;
+    padding: 4rem 2rem;
     background-color: #402A44;
     color: #fff;
-    margin: 0 -2rem; }
+    margin: 0 -2rem;
+    cursor: pointer;
+    transition: all 0.5s ease; }
+    .services-buttons .service:hover {
+      border: 5px solid #D4AF37;
+      background-color: #16001A;
+      transform: scale(1.1); }
     .services-buttons .service--1 {
       grid-row: 1 / 1;
       grid-column: 1 / span 1; }
@@ -269,3 +277,34 @@ header {
     .services-buttons .service--6 {
       grid-row: 2 / 2;
       grid-column: 6 / span 1; }
+
+.services__title {
+  display: flex;
+  margin-bottom: 50rem;
+  justify-content: space-around;
+  align-items: center; }
+  .services__title .photo-hover {
+    width: 25%;
+    margin: 3rem;
+    position: relative;
+    height: 40rem;
+    display: flex;
+    align-items: center; }
+    .services__title .photo-hover img {
+      width: auto;
+      height: 20rem;
+      position: absolute; }
+      .services__title .photo-hover img.secondary {
+        opacity: 0;
+        z-index: 1;
+        transition: all 0.8s ease-in; }
+        .services__title .photo-hover img.secondary:hover {
+          opacity: 1; }
+    .services__title .photo-hover img {
+      width: 30rem;
+      height: auto; }
+    .services__title .photo-hover.photo-right img {
+      height: 35rem;
+      width: auto;
+      right: 0;
+      margin-top: -10rem; }
