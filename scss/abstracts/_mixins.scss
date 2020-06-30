@@ -44,5 +44,5 @@ ORDER: Base + typography > general layout + grid > page layout > components
 @mixin hover{
     opacity: 0;
     z-index: 1;
-    transition: all 1s ease-in;   
+    transition: all 0.8s ease-in;   
 }

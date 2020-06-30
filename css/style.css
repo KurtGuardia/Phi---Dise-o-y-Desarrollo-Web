@@ -15,6 +15,17 @@ ORDER: Base + typography > general layout + grid > page layout > components
 
 1em = 16px
 */
+@keyframes blink {
+  0% {
+    opacity: 0.5;
+    transform: scale(1); }
+  50% {
+    opacity: 1;
+    transform: scale(1.01); }
+  100% {
+    opacity: 0.5;
+    transform: scale(1); } }
+
 *,
 *::after,
 *::before {
@@ -175,18 +186,31 @@ header {
     align-self: center;
     margin-right: 2rem; }
   .welcome .photo-hover {
-    width: 25%; }
-  .welcome img {
-    margin: 3rem;
-    width: auto;
-    height: 20rem;
-    position: absolute; }
-  .welcome .secondary {
-    opacity: 0;
-    z-index: 1;
-    transition: all 1s ease-in; }
-  .welcome .secondary:hover {
-    opacity: 1; }
+    width: 25%;
+    margin: 3rem; }
+    .welcome .photo-hover img {
+      width: auto;
+      height: 20rem;
+      position: absolute; }
+      .welcome .photo-hover img.secondary {
+        opacity: 0;
+        z-index: 1;
+        transition: all 0.8s ease-in; }
+        .welcome .photo-hover img.secondary:hover {
+          opacity: 1; }
+  .welcome .photo-hover::before {
+    content: "Pasa el mouse por encima";
+    display: block;
+    width: max-content;
+    height: auto;
+    color: #9d780077;
+    font-size: 1.6rem;
+    animation: blink 1s infinite;
+    animation-fill-mode: backwards; }
+  .welcome .photo-hover:last-of-type img {
+    margin-left: -14rem; }
+  .welcome .photo-left::before {
+    margin-left: -12rem; }
 
 .welcome-text {
   margin: 5rem;

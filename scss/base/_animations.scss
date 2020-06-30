@@ -1,0 +1,15 @@
+//for the ::after in the hover imgs
+@keyframes blink {
+    0%{
+        opacity: 0.5;
+        transform: scale(1);
+    }
+    50%{
+        opacity: 1;
+        transform: scale(1.01);
+    }
+    100%{
+        opacity: 0.5;
+        transform: scale(1);
+    }
+}

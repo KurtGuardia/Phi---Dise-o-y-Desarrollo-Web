@@ -134,81 +134,92 @@ header {
   display: flex;
   position: relative;
 
-  :last-child{
-    align-self: center;   
+  :last-child {
+    align-self: center;
     margin-right: 2rem;
     // margin-left: -3rem;
-    
   }
 
-  .photo-hover{
+  .photo-hover {
     width: 25%;
-  }
-
-  img {
     margin: 3rem;
-    width: auto;
-    height: 20rem;
-    position: absolute;
+    img {
+      width: auto;
+      height: 20rem;
+      position: absolute;
+
+      &.secondary {
+        @include hover;
+
+        &:hover {
+          opacity: 1;
+        }
+      }
+    }
   }
 
-  // img::after{
-  //   content: "pasar el mouse";
-  //   width: auto;
-  //   color: $color-black;
-  // }
-
-  .secondary{
-    @include hover
+  .photo-hover::before {
+    content: "Pasa el mouse por encima";
+    display: block;
+    width: max-content;
+    height: auto;
+    color: $color-primary-dark-transparent;
+    font-size: 1.6rem;
+    animation: blink 1s infinite;
+    animation-fill-mode: backwards;
   }
 
-  .secondary:hover{
-    opacity: 1;
+  .photo-hover:last-of-type {
+    img {
+      margin-left: -14rem;
+    }
+  }
+  
+  .photo-left::before{
+   margin-left: -12rem;
+}
+}
+
+.welcome-text {
+  margin: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  h1 {
+    margin-left: 8rem;
+  }
+  .text-right {
+    margin: 5rem -25rem 5rem 15rem;
+  }
+
+  .text-left {
+    margin-left: -5rem;
+    margin-right: 5rem;
+    margin-bottom: 5rem;
+  }
+
+  a {
+    align-self: center;
+    margin: 5rem;
+    padding: 1rem 2rem;
+    border: 1px solid $color-purple;
+    color: #fff;
+    background-color: $color-purple;
+    text-decoration: none;
+    border-radius: 50px;
   }
 }
 
-  .welcome-text {
-    margin: 5rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    
-    h1{
-      margin-left: 8rem;
-    }
-    .text-right {
-      margin: 5rem -25rem 5rem 15rem;
-    }
+// .services-buttons{
+//   display: grid;
+//   grid-template-rows: 150px 150px;
+//   grid-template-columns: repeat(150px 4);
+// }
 
-    .text-left {
-      margin-left: -5rem;
-      margin-right: 5rem;
-      margin-bottom: 5rem;
-    }
-
-    a {
-      align-self: center;
-      margin: 5rem;
-      padding: 1rem 2rem;
-      border: 1px solid $color-purple;
-      color: #fff;
-      background-color: $color-purple;
-      text-decoration: none;
-      border-radius: 50px;
-    }    
-  }
-
-  // .services-buttons{
-  //   display: grid;
-  //   grid-template-rows: 150px 150px;
-  //   grid-template-columns: repeat(150px 4);
-  // }
-
-.service{
+.service {
   border: 1px solid $color-purple;
   border-radius: 50%;
   background-color: $color-purple;
   color: #fff;
 }
-
-
