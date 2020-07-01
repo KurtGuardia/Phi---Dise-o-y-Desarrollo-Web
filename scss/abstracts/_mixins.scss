@@ -92,3 +92,9 @@ ORDER: Base + typography > general layout + grid > page layout > components
   background-color: $color-purple-dark;
   transform: scale(1.1);
 }
+
+@mixin hoverGoldBtn {
+  border: 5px solid $color-primary-light;
+  background-color: $color-primary-dark;
+  transform: scale(1.1);
+}

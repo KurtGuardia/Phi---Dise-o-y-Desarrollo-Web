@@ -77,6 +77,71 @@ h3 {
 .tiny-text {
   font-size: 1.8rem; }
 
+.btn {
+  margin: 5rem;
+  padding: 1rem 2rem;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 50px;
+  transition: all 0.5s ease;
+  background-color: green;
+  cursor: pointer; }
+  .btn__purple {
+    background-color: #402A44;
+    border: 1px solid #402A44; }
+    .btn__purple:hover {
+      border: 5px solid #D4AF37;
+      background-color: #16001A;
+      transform: scale(1.1); }
+  .btn__gold {
+    background-color: #D4AF37; }
+    .btn__gold:hover {
+      border: 5px solid #E7C24A;
+      background-color: #9D7800;
+      transform: scale(1.1); }
+
+.card {
+  cursor: pointer;
+  perspective: 100rem;
+  -moz-perspective: 100rem;
+  position: relative;
+  width: 25rem;
+  height: 35rem; }
+  .card__side {
+    color: #fff;
+    height: 35rem;
+    transition: all 0.8s ease;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    backface-visibility: hidden;
+    border-radius: 20px;
+    box-shadow: 15px 20px 4px rgba(0, 0, 0, 0.3);
+    overflow: hidden; }
+    .card__side--front {
+      background: linear-gradient(149.39deg, #d4af37 13.59%, #f8e6af 98.68%, #ffc820 98.69%);
+      font-size: 3rem;
+      font-weight: bold; }
+      .card__side--front h3 {
+        width: min-content; }
+    .card__side--back {
+      text-align: left;
+      justify-content: center;
+      background-color: #1098a8;
+      font-size: 0.9rem;
+      transform: rotateY(180deg); }
+      .card__side--back > * {
+        margin: 0 3rem; }
+  .card:hover .card__side--front {
+    transform: rotateY(-180deg); }
+  .card:hover .card__side--back {
+    transform: rotateY(0deg); }
+
 header {
   position: relative;
   width: 100%; }
@@ -228,20 +293,6 @@ header {
     margin-left: -5rem;
     margin-right: 5rem;
     margin-bottom: 5rem; }
-  .welcome-text a {
-    align-self: center;
-    margin: 5rem;
-    padding: 1rem 2rem;
-    border: 1px solid #402A44;
-    color: #fff;
-    background-color: #402A44;
-    text-decoration: none;
-    border-radius: 50px;
-    transition: all 0.5s ease; }
-    .welcome-text a:hover {
-      border: 5px solid #D4AF37;
-      background-color: #16001A;
-      transform: scale(1.1); }
 
 .services-buttons {
   display: grid;
@@ -329,3 +380,16 @@ header {
     .services__title .photo-hover.photo-right::before {
       margin-top: -45rem;
       margin-left: 20rem; }
+
+.services-cards {
+  width: 1300px;
+  margin: 10vh auto 15vh auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-content: center; }
+
+.card {
+  margin: 3rem 5rem; }

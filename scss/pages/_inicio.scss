@@ -173,22 +173,6 @@ header {
     margin-right: 5rem;
     margin-bottom: 5rem;
   }
-
-  a {
-    align-self: center;
-    margin: 5rem;
-    padding: 1rem 2rem;
-    border: 1px solid $color-purple;
-    color: #fff;
-    background-color: $color-purple;
-    text-decoration: none;
-    border-radius: 50px;
-    transition: all 0.5s ease;
-
-    &:hover{
-      @include hoverPurpleBtn;
-    }
-  }
 }
 
 //Third part, services buttons
@@ -281,10 +265,26 @@ header {
       margin-top: -10rem;
     }
     &.photo-right::before {
-    margin-top: -45rem;
-    margin-left: 20rem;
+      margin-top: -45rem;
+      margin-left: 20rem;
+    }
   }
-  }
+}
 
-  
+// _____________________________ SERVICES _____________________________
+// The cards
+
+.services-cards{
+  width: 1300px;
+  margin: 10vh auto 15vh auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-content: center;
+}
+
+.card{
+  margin: 3rem 5rem;
 }

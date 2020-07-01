@@ -1,0 +1,59 @@
+.card {
+  cursor: pointer;
+  perspective: 100rem;
+  -moz-perspective: 100rem;
+  position: relative;
+  width: 25rem;
+  height: 35rem; //OJO
+
+  &__side {
+    color: #fff;
+    height: 35rem;
+    transition: all 0.8s ease;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    backface-visibility: hidden;
+    border-radius: 20px;
+    box-shadow: 15px 20px 4px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+
+    &--front {
+      background: linear-gradient(
+        149.39deg,
+        #d4af37 13.59%,
+        #f8e6af 98.68%,
+        #ffc820 98.69%
+      );
+      font-size: 3rem;
+      font-weight: bold;
+      h3 {
+        width: min-content;
+      }
+    }
+
+    &--back {
+      text-align: left;
+      justify-content: center;
+      background-color: #1098a8;
+      font-size: 0.9rem;
+      transform: rotateY(180deg);
+      & > * {
+        margin: 0 3rem;
+      }
+    }
+  }
+
+  &:hover .card__side--front {
+    transform: rotateY(-180deg);
+  }
+
+  &:hover .card__side--back {
+    transform: rotateY(0deg);
+  }
+}
