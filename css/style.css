@@ -184,8 +184,7 @@ header {
   display: flex;
   position: relative; }
   .welcome :last-child {
-    align-self: center;
-    margin-right: 2rem; }
+    align-self: center; }
   .welcome .photo-hover {
     width: 25%;
     margin: 3rem;
@@ -200,19 +199,21 @@ header {
         transition: all 0.8s ease-in; }
         .welcome .photo-hover img.secondary:hover {
           opacity: 1; }
-  .welcome .photo-hover::before {
-    content: "Pasa el mouse por encima";
-    display: block;
-    width: max-content;
-    height: auto;
-    color: #9d780077;
-    font-size: 1.6rem;
-    animation: blink 1s infinite;
-    animation-fill-mode: backwards; }
-  .welcome .photo-hover:last-of-type img {
-    margin-left: -14rem; }
-  .welcome .photo-right::before {
-    margin-left: -12rem; }
+    .welcome .photo-hover:hover::before {
+      visibility: hidden; }
+    .welcome .photo-hover::before {
+      content: "Pasa el mouse por encima";
+      display: block;
+      width: max-content;
+      height: auto;
+      color: #d4af3777;
+      font-size: 1.6rem;
+      animation: blink 1s infinite;
+      animation-fill-mode: backwards; }
+    .welcome .photo-hover:last-of-type img {
+      margin-left: -14rem; }
+    .welcome .photo-hover.photo-right::before {
+      margin-left: -12rem; }
 
 .welcome-text {
   margin: 5rem;
@@ -235,7 +236,12 @@ header {
     color: #fff;
     background-color: #402A44;
     text-decoration: none;
-    border-radius: 50px; }
+    border-radius: 50px;
+    transition: all 0.5s ease; }
+    .welcome-text a:hover {
+      border: 5px solid #D4AF37;
+      background-color: #16001A;
+      transform: scale(1.1); }
 
 .services-buttons {
   display: grid;
@@ -280,7 +286,6 @@ header {
 
 .services__title {
   display: flex;
-  margin-bottom: 50rem;
   justify-content: space-around;
   align-items: center; }
   .services__title .photo-hover {
@@ -300,11 +305,27 @@ header {
         transition: all 0.8s ease-in; }
         .services__title .photo-hover img.secondary:hover {
           opacity: 1; }
+    .services__title .photo-hover:hover::before {
+      visibility: hidden; }
+    .services__title .photo-hover::before {
+      content: "Pasa el mouse por encima";
+      display: block;
+      width: max-content;
+      height: auto;
+      color: #d4af3777;
+      font-size: 1.6rem;
+      animation: blink 1s infinite;
+      animation-fill-mode: backwards; }
     .services__title .photo-hover img {
       width: 30rem;
       height: auto; }
+    .services__title .photo-hover::before {
+      margin-top: -25rem; }
     .services__title .photo-hover.photo-right img {
       height: 35rem;
       width: auto;
       right: 0;
       margin-top: -10rem; }
+    .services__title .photo-hover.photo-right::before {
+      margin-top: -45rem;
+      margin-left: 20rem; }

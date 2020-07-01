@@ -53,7 +53,7 @@ ORDER: Base + typography > general layout + grid > page layout > components
   width: 25%;
   margin: 3rem;
   position: relative;
-  
+
   img {
     width: auto;
     height: 20rem;
@@ -68,4 +68,27 @@ ORDER: Base + typography > general layout + grid > page layout > components
       }
     }
   }
+
+  &:hover::before {
+    visibility: hidden;
+  }
+}
+
+@mixin hoverMessage {
+  &::before {
+    content: "Pasa el mouse por encima";
+    display: block;
+    width: max-content;
+    height: auto;
+    color: $color-primary-transparent;
+    font-size: 1.6rem;
+    animation: blink 1s infinite;
+    animation-fill-mode: backwards;
+  }
+}
+
+@mixin hoverPurpleBtn {
+  border: 5px solid $color-primary;
+  background-color: $color-purple-dark;
+  transform: scale(1.1);
 }

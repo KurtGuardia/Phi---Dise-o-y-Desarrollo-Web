@@ -138,33 +138,20 @@ header {
 
   :last-child {
     align-self: center;
-    margin-right: 2rem;
-    // margin-left: -3rem;
   }
 
   .photo-hover {
     @include hover;
-  }
+    @include hoverMessage;
 
-  .photo-hover::before {
-    content: "Pasa el mouse por encima";
-    display: block;
-    width: max-content;
-    height: auto;
-    color: $color-primary-dark-transparent;
-    font-size: 1.6rem;
-    animation: blink 1s infinite;
-    animation-fill-mode: backwards;
-  }
-
-  .photo-hover:last-of-type {
-    img {
-      margin-left: -14rem;
+    &:last-of-type {
+      img {
+        margin-left: -14rem;
+      }
     }
-  }
-
-  .photo-right::before {
-    margin-left: -12rem;
+    &.photo-right::before {
+      margin-left: -12rem;
+    }
   }
 }
 
@@ -196,6 +183,11 @@ header {
     background-color: $color-purple;
     text-decoration: none;
     border-radius: 50px;
+    transition: all 0.5s ease;
+
+    &:hover{
+      @include hoverPurpleBtn;
+    }
   }
 }
 
@@ -220,9 +212,7 @@ header {
     transition: all 0.5s ease;
 
     &:hover {
-      border: 5px solid $color-primary;
-      background-color: $color-purple-dark;
-      transform: scale(1.1);
+      @include hoverPurpleBtn;
     }
 
     &--1 {
@@ -266,12 +256,12 @@ header {
 //Fist part, the heading and images
 .services__title {
   display: flex;
-  margin-bottom: 50rem;
   justify-content: space-around;
   align-items: center;
 
   .photo-hover {
     @include hover;
+    @include hoverMessage;
     height: 40rem;
     display: flex;
     align-items: center;
@@ -281,11 +271,20 @@ header {
       height: auto;
     }
 
+    &::before {
+      margin-top: -25rem;
+    }
     &.photo-right img {
       height: 35rem;
       width: auto;
       right: 0;
       margin-top: -10rem;
     }
+    &.photo-right::before {
+    margin-top: -45rem;
+    margin-left: 20rem;
   }
+  }
+
+  
 }
