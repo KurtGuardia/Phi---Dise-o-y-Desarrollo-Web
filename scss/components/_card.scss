@@ -1,5 +1,4 @@
 .card {
-  cursor: pointer;
   perspective: 100rem;
   -moz-perspective: 100rem;
   position: relative;
@@ -7,7 +6,6 @@
   height: 35rem; //OJO
 
   &__side {
-    color: #fff;
     height: 35rem;
     transition: all 0.8s ease;
     position: absolute;
@@ -30,6 +28,7 @@
         #f8e6af 98.68%,
         #ffc820 98.69%
       );
+      color: #fff;
       font-size: 3rem;
       font-weight: bold;
       h3 {
@@ -39,12 +38,27 @@
 
     &--back {
       text-align: left;
-      justify-content: center;
-      background-color: #1098a8;
+      justify-content: flex-start;
+      background-image: url(../img/card-back.png);
+      transform: translateX(-10px);
       font-size: 0.9rem;
       transform: rotateY(180deg);
       & > * {
         margin: 0 3rem;
+      }
+      &-title {
+        margin: 5rem 0;        
+      }
+      &-title h3:last-of-type {
+        margin: 0;        
+      }
+
+      em.tiny-text span{
+        font-size: 1.3rem;
+      }
+
+      h3 {
+        width: min-content;
       }
     }
   }

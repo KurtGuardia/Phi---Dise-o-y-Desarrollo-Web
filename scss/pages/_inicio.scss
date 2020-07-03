@@ -275,7 +275,7 @@ header {
 // The cards
 
 .services-cards{
-  width: 1300px;
+  width: 1100px;
   margin: 10vh auto 15vh auto;
   display: flex;
   flex-wrap: wrap;
@@ -287,4 +287,8 @@ header {
 
 .card{
   margin: 3rem 5rem;
+}
+
+.card:last-of-type h3{
+  margin: 2.5rem;
 }

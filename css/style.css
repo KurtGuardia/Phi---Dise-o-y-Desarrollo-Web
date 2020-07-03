@@ -101,14 +101,12 @@ h3 {
       transform: scale(1.1); }
 
 .card {
-  cursor: pointer;
   perspective: 100rem;
   -moz-perspective: 100rem;
   position: relative;
   width: 25rem;
   height: 35rem; }
   .card__side {
-    color: #fff;
     height: 35rem;
     transition: all 0.8s ease;
     position: absolute;
@@ -125,18 +123,28 @@ h3 {
     overflow: hidden; }
     .card__side--front {
       background: linear-gradient(149.39deg, #d4af37 13.59%, #f8e6af 98.68%, #ffc820 98.69%);
+      color: #fff;
       font-size: 3rem;
       font-weight: bold; }
       .card__side--front h3 {
         width: min-content; }
     .card__side--back {
       text-align: left;
-      justify-content: center;
-      background-color: #1098a8;
+      justify-content: flex-start;
+      background-image: url(../img/card-back.png);
+      transform: translateX(-10px);
       font-size: 0.9rem;
       transform: rotateY(180deg); }
       .card__side--back > * {
         margin: 0 3rem; }
+      .card__side--back-title {
+        margin: 5rem 0; }
+      .card__side--back-title h3:last-of-type {
+        margin: 0; }
+      .card__side--back em.tiny-text span {
+        font-size: 1.3rem; }
+      .card__side--back h3 {
+        width: min-content; }
   .card:hover .card__side--front {
     transform: rotateY(-180deg); }
   .card:hover .card__side--back {
@@ -382,7 +390,7 @@ header {
       margin-left: 20rem; }
 
 .services-cards {
-  width: 1300px;
+  width: 1100px;
   margin: 10vh auto 15vh auto;
   display: flex;
   flex-wrap: wrap;
@@ -393,3 +401,6 @@ header {
 
 .card {
   margin: 3rem 5rem; }
+
+.card:last-of-type h3 {
+  margin: 2.5rem; }
