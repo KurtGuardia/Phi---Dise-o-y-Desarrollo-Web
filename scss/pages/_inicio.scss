@@ -271,10 +271,9 @@ header {
   }
 }
 
-// _____________________________ SERVICES _____________________________
 // The cards
 
-.services-cards{
+.services-cards {
   width: 1100px;
   margin: 10vh auto 15vh auto;
   display: flex;
@@ -285,10 +284,53 @@ header {
   align-content: center;
 }
 
-.card{
+.card {
   margin: 3rem 5rem;
 }
 
-.card:last-of-type h3{
+.card:last-of-type h3 {
   margin: 2.5rem;
+}
+
+// _____________________________ Portfolio _____________________________
+
+//Fist part, the heading and images
+.portfolio__title {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  .photo-hover {
+    @include hover;
+    @include hoverMessage;
+    height: 40rem;
+    display: flex;
+    align-items: center;
+
+    img {
+      width: 30rem;
+      height: auto;
+    }
+
+    &::before {
+      margin-top: -25rem;      
+    }
+    &.photo-right img {
+      width: 20rem;
+      right: 0;
+      margin-top: -10rem;
+    }
+
+    &:last-of-type::before{
+      position: absolute;
+      right: 0;
+      margin-top: -12rem;
+    }
+    
+  }
+
+  .photo-hover:last-of-type img{
+    width: 20rem;
+    right: 0;
+  }
 }
