@@ -1,0 +1,34 @@
+footer {
+  background-color: $color-primary;
+  color: $color-white;
+  padding: 2rem;
+
+  .footer {
+    &__content {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+
+      &--quote {
+
+        width: 30%;
+        p.tiny-text {
+          margin: 2rem 0 0 3rem;
+        }
+      }
+
+      &--logo {
+        width: 30%;
+      }
+
+      &--social > div {
+        margin-top: 2.5rem;
+      }
+    }
+
+    &__copyright {
+      font-size: $tiny;
+      text-align: center;
+    }
+  }
+}

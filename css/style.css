@@ -179,6 +179,26 @@ h3 {
     transform: scale(1.05) translateY(-3rem);
     box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.5); }
 
+footer {
+  background-color: #D4AF37;
+  color: #f4f4f4;
+  padding: 2rem; }
+  footer .footer__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-around; }
+    footer .footer__content--quote {
+      width: 30%; }
+      footer .footer__content--quote p.tiny-text {
+        margin: 2rem 0 0 3rem; }
+    footer .footer__content--logo {
+      width: 30%; }
+    footer .footer__content--social > div {
+      margin-top: 2.5rem; }
+  footer .footer__copyright {
+    font-size: 1.8rem;
+    text-align: center; }
+
 header {
   position: relative;
   width: 100%; }
@@ -570,7 +590,7 @@ header {
     .contact__box--form ::placeholder {
       color: #f4f4f4; }
     .contact__box--form h3 {
-      margin: 8rem; }
+      margin: 5rem; }
     .contact__box--form form {
       display: flex;
       flex-direction: column; }
@@ -582,7 +602,7 @@ header {
       .contact__box--form .btn:hover {
         background-color: #16001A; }
   .contact__box--picture {
-    background-image: url(../img/handshake.png);
+    background-image: url("../../img/handshake.png");
     height: auto;
     width: 38.2%; }
   .contact__box .spiral-ghost {
