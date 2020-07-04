@@ -547,3 +547,46 @@ header {
   flex-direction: column; }
   .prices a {
     margin: 0 auto 25rem; }
+
+.contact__box {
+  color: #f4f4f4;
+  display: flex;
+  position: relative; }
+  .contact__box--form {
+    background-color: #402A44;
+    width: 61.8%; }
+    .contact__box--form input, .contact__box--form textarea {
+      background-color: #402A44;
+      color: #f4f4f4;
+      font-size: 2.4rem;
+      padding: 0.7rem 0;
+      margin: 2.5rem 10rem 0 10rem;
+      border: none;
+      outline: none;
+      border-bottom: 1px solid #f4f4f4;
+      z-index: 10; }
+    .contact__box--form textarea {
+      margin-top: 2rem; }
+    .contact__box--form ::placeholder {
+      color: #f4f4f4; }
+    .contact__box--form h3 {
+      margin: 8rem; }
+    .contact__box--form form {
+      display: flex;
+      flex-direction: column; }
+    .contact__box--form .btn {
+      background-color: #725C76;
+      width: fit-content;
+      align-self: center;
+      z-index: 10; }
+      .contact__box--form .btn:hover {
+        background-color: #16001A; }
+  .contact__box--picture {
+    background-image: url(../img/handshake.png);
+    height: auto;
+    width: 38.2%; }
+  .contact__box .spiral-ghost {
+    position: absolute;
+    bottom: 0;
+    height: 100%;
+    width: 100%; }
