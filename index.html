@@ -191,22 +191,22 @@
         </div>
       </section>
 
-      <!-- _____________________________ PORTFOLIO 3RD SECTION _____________________________ -->
+      <!-- _____________________________ PROJECTS 3RD SECTION _____________________________ -->
 
-      <section class="portfolio">
-        <div class="portfolio__title">
+      <section class="projects">
+        <div class="projects__title">
           <div class="photo-hover">
             <img src="img/tajmahal.png" alt="" />
             <img src="img/tajmahalau.png" class="secondary" alt="" /></img>
           </div>  
-          <h1>Portfolio</h1>
+          <h1>Proyectos</h1>
           <div class="photo-hover">
             <img src="img/monalisa.png" alt="" />
             <img src="img/monalisaau.png" class="secondary" alt="" /></img>
           </div>  
         </div>
 
-        <div class="portfolio__cards">
+        <div class="projects__cards">
           <div class="card">
             <img src="img/ciner.png" alt="Ciner's web page" />
             <p><em>Ciner</em></p>
@@ -377,19 +377,33 @@
     </footer>
 
     <script>
-      var i=0, phi_number;
-
-      phi_number = "1.6180339887498948482...";
-
-      var typing = () => {
+      //Variables
+      let i=0; 
+      let fire = 0;
+      const phi_number = "1.6180339887498948482...";
+      let offsetContent = document.getElementById('phi_number').offsetTop;
+      //Functions
+      const typing = () => {
          if(i<phi_number.length) {
               document.getElementById("phi_number").innerHTML += phi_number.charAt(i);
               i++;
-              setTimeout(typing,250)
+              setTimeout(typing, 250)
           } 
-      };
+        };
 
-      typing();
+      // Event Listeners
+      window.addEventListener('scroll', function () {
+        let y = document.documentElement.scrollTop;
+        if (y + 600 > offsetContent) {
+          fire++;
+        }
+        if(fire === 1){
+            typing();
+        }
+      });
+
+
+      
     </script>
   </body>
 </html>

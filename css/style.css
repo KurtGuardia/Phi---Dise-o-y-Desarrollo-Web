@@ -405,30 +405,30 @@ header {
 .card:last-of-type h3 {
   margin: 2.5rem; }
 
-.portfolio__title {
+.projects__title {
   display: flex;
   justify-content: space-around;
   align-items: center; }
-  .portfolio__title .photo-hover {
+  .projects__title .photo-hover {
     width: 25%;
     margin: 3rem;
     position: relative;
     height: 40rem;
     display: flex;
     align-items: center; }
-    .portfolio__title .photo-hover img {
+    .projects__title .photo-hover img {
       width: auto;
       height: 20rem;
       position: absolute; }
-      .portfolio__title .photo-hover img.secondary {
+      .projects__title .photo-hover img.secondary {
         opacity: 0;
         z-index: 1;
         transition: all 0.8s ease-in; }
-        .portfolio__title .photo-hover img.secondary:hover {
+        .projects__title .photo-hover img.secondary:hover {
           opacity: 1; }
-    .portfolio__title .photo-hover:hover::before {
+    .projects__title .photo-hover:hover::before {
       visibility: hidden; }
-    .portfolio__title .photo-hover::before {
+    .projects__title .photo-hover::before {
       content: "Pasa el mouse por encima";
       display: block;
       width: max-content;
@@ -437,19 +437,19 @@ header {
       font-size: 1.6rem;
       animation: blink 1s infinite;
       animation-fill-mode: backwards; }
-    .portfolio__title .photo-hover img {
+    .projects__title .photo-hover img {
       width: 30rem;
       height: auto; }
-    .portfolio__title .photo-hover::before {
+    .projects__title .photo-hover::before {
       margin-top: -25rem; }
-    .portfolio__title .photo-hover.photo-right img {
+    .projects__title .photo-hover.photo-right img {
       width: 20rem;
       right: 0;
       margin-top: -10rem; }
-    .portfolio__title .photo-hover:last-of-type::before {
+    .projects__title .photo-hover:last-of-type::before {
       position: absolute;
       right: 0;
       margin-top: -12rem; }
-  .portfolio__title .photo-hover:last-of-type img {
+  .projects__title .photo-hover:last-of-type img {
     width: 20rem;
     right: 0; }
