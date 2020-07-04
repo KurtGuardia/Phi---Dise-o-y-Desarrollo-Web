@@ -150,6 +150,26 @@ h3 {
   .card:hover .card__side--back {
     transform: rotateY(0deg); }
 
+.project {
+  width: 25rem;
+  height: 35rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 20px;
+  box-shadow: 10px 15px 4px rgba(0, 0, 0, 0.3); }
+  .project img {
+    width: 100%;
+    filter: blur(2px); }
+  .project p {
+    margin: auto 1rem; }
+  .project a {
+    font-size: 1.8rem;
+    align-self: flex-end;
+    margin: 0 1.5rem 1rem;
+    text-decoration: none; }
+
 header {
   position: relative;
   width: 100%; }
