@@ -1,27 +1,25 @@
-.btn{
-    margin: 5rem;
-    padding: 1rem 2rem;    
-    color: #fff;
-    text-decoration: none;
-    border-radius: 50px;
-    transition: all 0.5s ease;
-    background-color: green;
-    cursor: pointer;
+.btn {
+  margin: 5rem;
+  padding: 1rem 2rem;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 50px;
+  transition: all 0.5s ease;
+  background-color: green;
+  cursor: pointer;
 
-    &__purple{
-        background-color: $color-purple;
-        border: 1px solid $color-purple;
-        &:hover{
-        @include hoverPurpleBtn;
-      }
+  &__purple {
+    background-color: $color-purple;
+    border: 1px solid $color-purple;
+    &:hover {
+      @include hoverPurpleBtn;
     }
+  }
 
-    &__gold{
-        background-color: $color-primary;
-        &:hover{
-            @include hoverGoldBtn;
-          }
+  &__gold {
+    background-color: $color-primary;
+    &:hover {
+      @include hoverGoldBtn;
     }
-
-    
+  }
 }
