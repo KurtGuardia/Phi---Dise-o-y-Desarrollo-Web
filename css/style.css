@@ -541,3 +541,9 @@ header {
   .price__title .photo-hover:last-of-type img {
     width: 20rem;
     right: 0; }
+
+.prices {
+  display: flex;
+  flex-direction: column; }
+  .prices a {
+    margin: 0 auto 25rem; }
