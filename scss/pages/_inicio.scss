@@ -313,7 +313,8 @@ header {
     }
 
     &::before {
-      margin-top: -25rem;
+      margin-top: -18rem;
+      margin-left: 4rem;
     }
     &.photo-right img {
       width: 20rem;
@@ -376,4 +377,50 @@ header {
   // &--8 {
   //   grid-row: 2 / 2;
   // }
+}
+
+
+// _____________________________ Estimate price invitation_____________________________
+
+.price__title {
+  margin-top: 15rem;
+  display: flex;
+  align-items: center;
+
+  h1 {
+    text-align: center;
+  }
+  .photo-hover {
+    @include hover;
+    @include hoverMessage;
+    height: 40rem;
+    display: flex;
+    align-items: center;
+
+    img {
+      width: 20rem;
+      height: auto;
+    }
+
+    &::before {
+      margin-top: -15rem;
+      margin-left: 0rem;
+    }
+
+    &.photo-right img {
+      right: 0;
+      margin-top: -10rem;
+    }
+
+    &:last-of-type::before {
+      position: absolute;
+      right: 0;
+      margin-top: -8rem;
+    }
+  }
+
+  .photo-hover:last-of-type img {
+    width: 20rem;
+    right: 0;
+  }
 }

@@ -470,7 +470,8 @@ header {
       width: 30rem;
       height: auto; }
     .projects__title .photo-hover::before {
-      margin-top: -25rem; }
+      margin-top: -18rem;
+      margin-left: 4rem; }
     .projects__title .photo-hover.photo-right img {
       width: 20rem;
       right: 0;
@@ -489,3 +490,54 @@ header {
   grid-template-columns: repeat(4, min-content);
   grid-template-rows: repeat(2, 1fr);
   grid-gap: 5rem 10rem; }
+
+.price__title {
+  margin-top: 15rem;
+  display: flex;
+  align-items: center; }
+  .price__title h1 {
+    text-align: center; }
+  .price__title .photo-hover {
+    width: 25%;
+    margin: 3rem;
+    position: relative;
+    height: 40rem;
+    display: flex;
+    align-items: center; }
+    .price__title .photo-hover img {
+      width: auto;
+      height: 20rem;
+      position: absolute; }
+      .price__title .photo-hover img.secondary {
+        opacity: 0;
+        z-index: 1;
+        transition: all 0.8s ease-in; }
+        .price__title .photo-hover img.secondary:hover {
+          opacity: 1; }
+    .price__title .photo-hover:hover::before {
+      visibility: hidden; }
+    .price__title .photo-hover::before {
+      content: "Pasa el mouse por encima";
+      display: block;
+      width: max-content;
+      height: auto;
+      color: #d4af3777;
+      font-size: 1.6rem;
+      animation: blink 1s infinite;
+      animation-fill-mode: backwards; }
+    .price__title .photo-hover img {
+      width: 20rem;
+      height: auto; }
+    .price__title .photo-hover::before {
+      margin-top: -15rem;
+      margin-left: 0rem; }
+    .price__title .photo-hover.photo-right img {
+      right: 0;
+      margin-top: -10rem; }
+    .price__title .photo-hover:last-of-type::before {
+      position: absolute;
+      right: 0;
+      margin-top: -8rem; }
+  .price__title .photo-hover:last-of-type img {
+    width: 20rem;
+    right: 0; }
