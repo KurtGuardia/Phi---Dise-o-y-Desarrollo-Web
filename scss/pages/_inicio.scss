@@ -26,8 +26,11 @@
     border-radius: 50%;
     align-self: center;
 
-    img {
-      margin: 2rem;
+    .phi_white {
+      margin: .5rem;
+      padding: 1rem;
+      height: 8rem;
+      width: 6rem;
     }
 
     h3 {
@@ -188,14 +191,19 @@
   justify-content: space-around;
   flex-wrap: wrap;
   align-content: center;
-}
 
-.card {
-  margin: 3rem 5rem;
-}
+  .card {
+    margin: 3rem 5rem;
 
-.card:last-of-type h3 {
-  margin: 2.5rem;
+    .design,
+    .camera {
+      fill: $color-primary;
+    }
+
+    &:last-of-type h3 {
+      margin: 2.5rem;
+    }
+  }
 }
 
 // _____________________________ Projects _____________________________
@@ -350,7 +358,8 @@
     background-color: $color-purple;
     width: 61.8%;
 
-    input, textarea {
+    input,
+    textarea {
       background-color: $color-purple;
       color: $color-white;
       font-size: $small;
@@ -362,7 +371,7 @@
       z-index: 10;
     }
 
-    textarea{
+    textarea {
       margin-top: 2rem;
     }
 
@@ -373,19 +382,19 @@
     h3 {
       margin: 5rem;
     }
-    
+
     form {
       display: flex;
       flex-direction: column;
     }
 
-    .btn{
+    .btn {
       background-color: $color-purple-light;
       width: fit-content;
       align-self: center;
       z-index: 10;
 
-      &:hover{
+      &:hover {
         background-color: $color-purple-dark;
       }
     }
@@ -397,7 +406,7 @@
     width: 38.2%;
   }
 
-  .spiral-ghost{
+  .spiral-ghost {
     position: absolute;
     bottom: 0;
     height: 100%;

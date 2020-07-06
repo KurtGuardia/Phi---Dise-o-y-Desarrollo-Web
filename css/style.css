@@ -192,12 +192,45 @@ footer {
       footer .footer__content--quote p.tiny-text {
         margin: 2rem 0 0 3rem; }
     footer .footer__content--logo {
-      width: 30%; }
+      width: 30%;
+      fill: #f4f4f4; }
+    footer .footer__content--social .media {
+      justify-content: center; }
+      footer .footer__content--social .media .facebook,
+      footer .footer__content--social .media .linkedin {
+        transition: all 1s; }
+      footer .footer__content--social .media .facebook:hover {
+        fill: #3b5998; }
+      footer .footer__content--social .media .linkedin:hover {
+        fill: #007bb6; }
     footer .footer__content--social > div {
-      margin-top: 2.5rem; }
+      margin-top: 2.5rem;
+      display: flex;
+      align-items: center; }
+      footer .footer__content--social > div > svg {
+        width: 10rem;
+        fill: #9D7800;
+        height: 4rem; }
+    footer .footer__content--social .mobile svg,
+    footer .footer__content--social .mail svg,
+    footer .footer__content--social .github svg {
+      transition: all 1s; }
+    footer .footer__content--social .mobile:hover svg {
+      fill: #08112f; }
+    footer .footer__content--social .mail:hover svg {
+      fill: #f4f4f4; }
+    footer .footer__content--social .github:hover svg {
+      fill: #000; }
   footer .footer__copyright {
     font-size: 1.8rem;
     text-align: center; }
+    footer .footer__copyright span {
+      transition: all 1s ease;
+      display: inline-block; }
+    footer .footer__copyright span:hover {
+      box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.4);
+      transform: rotate(-5deg) scale(1.3);
+      background-color: #9D7800; }
 
 header {
   position: relative;
@@ -238,7 +271,8 @@ header {
   align-items: start;
   padding: 1rem; }
   .row .logo {
-    min-width: 36vw; }
+    min-width: 36vw;
+    fill: #352B11; }
   .row .main-nav {
     display: flex;
     list-style: none;
@@ -296,8 +330,11 @@ header {
     align-items: center;
     border-radius: 50%;
     align-self: center; }
-    .cloud .circle img {
-      margin: 2rem; }
+    .cloud .circle .phi_white {
+      margin: .5rem;
+      padding: 1rem;
+      height: 8rem;
+      width: 6rem; }
     .cloud .circle h3 {
       color: #fff;
       font-weight: 100; }
@@ -447,12 +484,13 @@ header {
   justify-content: space-around;
   flex-wrap: wrap;
   align-content: center; }
-
-.card {
-  margin: 3rem 5rem; }
-
-.card:last-of-type h3 {
-  margin: 2.5rem; }
+  .services-cards .card {
+    margin: 3rem 5rem; }
+    .services-cards .card .design,
+    .services-cards .card .camera {
+      fill: #D4AF37; }
+    .services-cards .card:last-of-type h3 {
+      margin: 2.5rem; }
 
 .projects__title {
   display: flex;
@@ -575,7 +613,8 @@ header {
   .contact__box--form {
     background-color: #402A44;
     width: 61.8%; }
-    .contact__box--form input, .contact__box--form textarea {
+    .contact__box--form input,
+    .contact__box--form textarea {
       background-color: #402A44;
       color: #f4f4f4;
       font-size: 2.4rem;

@@ -19,7 +19,10 @@
       <nav>
         <div class="row">
           <a href="#header" class="logo">
-            <img src="./img/phi_logo_black.svg" alt="logo <Phi/>" />
+            <svg>
+              <use xlink:href='img/sprite.svg#icon-phi_logo_black'></use>
+            </svg>
+            <!-- <img src="./img/phi_logo_black.svg" alt="logo <Phi/>" /> -->
           </a>
           <ul class="main-nav">
             <li><a class="small-text" href="#services">Servicios</a></li>
@@ -47,7 +50,9 @@
       <section class="section_start">
         <div class="cloud">
           <div class="circle">
-            <img src="img/phi_white.svg" alt="Greek letter phi" /> <h3>= <span id="phi_number"></span></h3>
+            <svg class="phi_white">
+              <use xlink:href='img/sprite.svg#icon-phi_white'></use>
+            </svg> <h3>= <span id="phi_number"></span></h3>
             <!-- = 1.6180339887498948482 ... -->
           </div>
         </div>
@@ -103,8 +108,10 @@
         <div class="services-cards">
           <div class="card">
             <div class="card__side card__side--front">
-              <h3 class="card__side--front-title">Diseño</h3>
-              <img src="img/diseño.svg" alt="Painting brush icon" />
+              <h3 class=card__side--front-title">Diseño</h3>
+              <svg class="design">
+                <use xlink:href='img/sprite.svg#icon-brush'></use>
+              </svg>
             </div>
 
             <div class="card__side card__side--back">
@@ -123,7 +130,9 @@
           <div class="card">
             <div class="card__side card__side--front">
               <h3 class="card__side--front-title">Desarrollo</h3>
-              <img src="img/desarrollo.svg" alt="Web development icon" />
+              <svg class="development">
+                <use xlink:href='img/sprite.svg#icon-desarrollo'></use>
+              </svg>
             </div>
 
             <div class="card__side card__side--back">
@@ -140,8 +149,9 @@
           <div class="card">
             <div class="card__side card__side--front">
               <h3 class="card__side--front-title">Marketing</h3>
-              <img src="img/marketing.svg" alt="Marketing icon" />
-            </div>
+              <svg class="marketing">
+                <use xlink:href='img/sprite.svg#icon-marketing'></use>
+              </svg>            </div>
 
             <div class="card__side card__side--back">
               <h3 class="card__side--back-title">Marketing</h3>
@@ -157,8 +167,9 @@
           <div class="card">
             <div class="card__side card__side--front">
               <h3 class="card__side--front-title">Fotografía</h3>
-              <img src="img/camara.svg" alt="Camera icon" />
-            </div>
+              <svg class="camera">
+                <use xlink:href='img/sprite.svg#icon-camera'></use>
+              </svg>            </div>
 
             <div class="card__side card__side--back">
               <h3 class="card__side--back-title">Fotografía</h3>
@@ -174,8 +185,9 @@
           <div class="card">
             <div class="card__side card__side--front">
               <h3 class="card__side--front-title">Redes Sociales</h3>
-              <img src="img/socailmedia.svg" alt="Networking icon" />
-            </div>
+              <svg class="social">
+                <use xlink:href='img/sprite.svg#icon-socailmedia'></use>
+              </svg>            </div>
 
             <div class="card__side card__side--back">
               <h3 class="card__side--back-title">Redes Sociales</h3>
@@ -352,34 +364,44 @@
         </div>
 
         <div class="footer__content--logo">
-          <img src="img/phi_logo_black.svg" alt="Phi logo in white" />
+          <svg>
+            <use xlink:href='img/sprite.svg#icon-phi_logo_black'></use>
+          </svg>
         </div>
 
         <div class="footer__content--social">
           <div class="mobile">
-            <!-- mobile icon -->
+            <svg>
+              <use xlink:href='img/sprite.svg#icon-phone'></use>
+            </svg>
             <p class="small-text">+34 685360189</p>
           </div>
 
           <div class="mail">
-            <!-- mail icon -->
-            <p class="small-text">desarrolloweb@phi.com</p>
+            <svg>
+              <use xlink:href='img/sprite.svg#icon-mail'></use>
+            </svg>            <p class="small-text">desarrolloweb@phi.com</p>
           </div>
 
           <div class="github">
-            <!-- github icon -->
-            <p class="small-text">github.com/KurtGuardia</p>
+            <svg>
+              <use xlink:href='img/sprite.svg#icon-github'></use>
+            </svg>            <p class="small-text">github.com/KurtGuardia</p>
           </div>
 
           <div class="media">
-            <!-- Facebook icon -->
-            <!-- LinkedIn icon -->
+            <svg class="facebook">
+              <use xlink:href='img/sprite.svg#icon-facebook'></use>
+            </svg>
+            <svg class="linkedin">
+              <use xlink:href='img/sprite.svg#icon-linkedin'></use>
+            </svg>            
           </div>
         </div>
       </div>
 
       <div class="footer__copyright">
-        Copyright &copy; Kurt Guardia. Todos los derechos reservados.
+        Copyright &copy; <span>Kurt Guardia</span>. Todos los derechos reservados.
       </div>
     </footer>
 
@@ -394,7 +416,7 @@
          if(i<phi_number.length) {
               document.getElementById("phi_number").innerHTML += phi_number.charAt(i);
               i++;
-              setTimeout(typing, 250)
+              setTimeout(typing, 150)
           } 
         };
 

@@ -10,7 +10,6 @@ footer {
       justify-content: space-around;
 
       &--quote {
-
         width: 30%;
         p.tiny-text {
           margin: 2rem 0 0 3rem;
@@ -19,16 +18,75 @@ footer {
 
       &--logo {
         width: 30%;
+        fill: $color-white;
       }
 
-      &--social > div {
-        margin-top: 2.5rem;
+      &--social {
+        & .media {
+          justify-content: center;
+          .facebook,
+          .linkedin {
+            transition: all 1s;
+          }
+          .facebook:hover {
+            fill: #3b5998;
+          }
+          .linkedin:hover {
+            fill: #007bb6;
+          }
+        }
+
+        & > div {
+          margin-top: 2.5rem;
+          display: flex;
+          align-items: center;
+
+          & > svg {
+            width: 10rem;
+            fill: $color-primary-dark;
+            height: 4rem;
+          }
+        }
+
+        .mobile,
+        .mail,
+        .github {
+          & svg {
+            transition: all 1s;
+          }
+        }
+        .mobile:hover {
+          & svg {
+            fill: #08112f;
+          }
+        }
+        .mail:hover {
+          & svg {
+            fill: #f4f4f4;
+          }
+        }
+        .github:hover {
+          & svg {
+            fill: #000;
+          }
+        }
       }
     }
 
     &__copyright {
       font-size: $tiny;
       text-align: center;
+
+      span {
+        transition: all 1s ease;
+        display: inline-block;
+      }
+
+      span:hover {
+        box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.4);
+        transform: rotate(-5deg) scale(1.3);
+        background-color: $color-primary-dark;
+      }
     }
   }
 }
