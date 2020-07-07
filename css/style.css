@@ -35,7 +35,8 @@ ORDER: Base + typography > general layout + grid > page layout > components
 
 html {
   font-size: 62.5%;
-  background-color: #f4f4f4; }
+  background-color: #f4f4f4;
+  scroll-behavior: smooth; }
   @media only screen and (max-width: 75em) {
     html {
       font-size: 56.25%; } }
@@ -309,6 +310,41 @@ header {
   .hero-text h2 {
     background: #d4af3777;
     padding: 0.5rem 3rem; }
+
+.sec-nav {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: .5% 1%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #d4af37b4;
+  z-index: 10;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3); }
+  .sec-nav__logo {
+    width: 13rem;
+    height: 4rem;
+    fill: #f4f4f4; }
+  .sec-nav__mini {
+    width: 55%;
+    max-width: 780px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none; }
+    .sec-nav__mini li a {
+      text-decoration: none;
+      padding-right: 5rem;
+      color: #f4f4f4;
+      transition: all 0.3s; }
+
+#sec-nav {
+  display: none; }
+
+#sec-nav.active {
+  display: flex; }
 
 .cloud {
   width: 100%;

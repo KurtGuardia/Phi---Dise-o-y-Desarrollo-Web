@@ -48,6 +48,29 @@
     <main>
       <!-- _____________________________ WELCOME 1ST SECTION _____________________________ -->
       <section class="section_start">
+        <!-- fixed nav bar -->
+        <a href="#header">
+          <div id="sec-nav" class="sec-nav">
+            <svg class="sec-nav__logo">
+              <use xlink:href='img/sprite.svg#icon-phi_logo_black'></use>
+            </svg> 
+        </a>
+
+          <ul class="sec-nav__mini">
+            <li><a class="small-text" href="#header">Inicio</a></li>
+            <li><a class="small-text" href="#services">Servicios</a></li>
+            <li><a class="small-text" href="#projects">Proyectos</a></li>
+            <li><a class="small-text" href="/pages/emprendedores.html">Emprendiendo?</a></li>
+            <li><a class="small-text" href="/pages/precio.html">Precios</a></li>
+            <li><a class="small-text" href="#contact">Contacto</a></li>
+          </ul>
+          <div class="burger2">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+          </div>
+        </div>
+        
         <div class="cloud">
           <div class="circle">
             <svg class="phi_white">
@@ -92,7 +115,7 @@
 
       <!-- _____________________________ SERVICES 2ND SECTION _____________________________ -->
 
-      <section class="services">
+      <section class="services" id="services">
         <div class="services__title">
           <div class="photo-hover">
             <img src="img/davinci-cena.png" alt="" />
@@ -205,7 +228,7 @@
 
       <!-- _____________________________ PROJECTS 3RD SECTION _____________________________ -->
 
-      <section class="projects">
+      <section class="projects" id="projects">
         <div class="projects__title">
           <div class="photo-hover">
             <img src="img/venus.png" alt="" />
@@ -323,7 +346,7 @@
 
       <!-- _____________________________ CONTACT 5TH SECTION _____________________________ -->
 
-      <section class="contact">
+      <section class="contact" id="contact">
         <div class="contact__box">
           <img src="img/espiral-sombra2.png" class="spiral-ghost" alt="">
           <div class="contact__box--form">
@@ -439,9 +462,14 @@
         if(fire === 1){
             typing();
         }
+        if (y + 250 > offsetContent) {
+          document.getElementById('sec-nav').classList.add('active');
+        } else {
+          document.getElementById('sec-nav').classList.remove('active');
+        }
       });
-
-
+      // Sticky secundary navbar
+      
       
     </script>
   </body>

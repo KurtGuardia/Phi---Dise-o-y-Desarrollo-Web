@@ -10,7 +10,8 @@ html {
   //Setting the default font-size to 10px
   font-size: 62.5%;
   background-color: $color-white;
-
+  scroll-behavior: smooth;
+  
   @include respond(tab-land) {
     //1200px
     font-size: 56.25%; //1rem=9px
