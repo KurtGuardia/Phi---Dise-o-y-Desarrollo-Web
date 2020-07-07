@@ -1,0 +1,25 @@
+table {
+  margin: 5rem;
+  border-collapse: collapse;
+
+  .in {
+    border: 3px solid $color-primary;
+  }
+
+  .up {
+    border-right: 3px solid $color-primary;
+    border-left: 3px solid $color-primary;
+    &-corner {
+      border-bottom: 3px solid $color-primary;
+    }
+  }
+  
+  .side {
+    border-bottom: 3px solid $color-primary;
+  }
+  
+  .down{
+    border-right: 3px solid $color-primary;
+    border-left: 3px solid $color-primary;    
+  }
+}

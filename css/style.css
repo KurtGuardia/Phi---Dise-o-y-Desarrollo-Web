@@ -180,6 +180,22 @@ h3 {
     transform: scale(1.05) translateY(-3rem);
     box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.5); }
 
+table {
+  margin: 5rem;
+  border-collapse: collapse; }
+  table .in {
+    border: 3px solid #D4AF37; }
+  table .up {
+    border-right: 3px solid #D4AF37;
+    border-left: 3px solid #D4AF37; }
+    table .up-corner {
+      border-bottom: 3px solid #D4AF37; }
+  table .side {
+    border-bottom: 3px solid #D4AF37; }
+  table .down {
+    border-right: 3px solid #D4AF37;
+    border-left: 3px solid #D4AF37; }
+
 footer {
   background-color: #D4AF37;
   color: #f4f4f4;
@@ -708,3 +724,6 @@ header {
   opacity: 1;
   visibility: visible;
   transform: translateY(-3rem); }
+
+.precios h3 {
+  color: red; }
