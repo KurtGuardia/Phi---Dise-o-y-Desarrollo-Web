@@ -334,12 +334,22 @@
               data-netlify="true"
               action="/pages/success.html"
             >
-              <input type="text" name="nombre" placeholder="*Nombre" required />
-              <input type="email" name="email" placeholder="*Email" required />
-              <div class="mobile">
-                <input type="number" name="número" placeholder="Teléfono" />
+            <div class="form__group">
+              <input class="form__input" type="text" name="nombre" placeholder="*Nombre" required />
+              <label for="name" class="form__label">Nombre</label>
+            </div>
+            <div class="form__group">
+              <input class="form__input" type="email" name="email" placeholder="*Email" required />
+              <label for="name" class="form__label">Email</label>
+            </div>
+              <div class="mobile form__group">
+                <input class="form__input" type="number" name="número" placeholder="Teléfono" />
+                <label for="name" class="form__label">Telefono</label>
               </div>
-              <textarea name="mensaje" rows="10" placeholder="Mensaje" required></textarea>
+              <div class="form__group">
+                <textarea class="form__input" name="mensaje" rows="5" placeholder="Mensaje" required></textarea>
+                <label for="name" class="form__label">Mensaje</label>
+              </div>
               <button class="btn btn__purple" type="submit">Enviar</button>
             </form>
           </div>
