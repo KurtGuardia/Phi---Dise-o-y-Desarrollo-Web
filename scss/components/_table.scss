@@ -1,7 +1,11 @@
 table {
   margin: 5rem;
   border-collapse: collapse;
-
+  text-align: center
+  ;
+  tr > * {
+    padding: 2rem;
+  }
   .in {
     border: 3px solid $color-primary;
   }
@@ -9,17 +13,18 @@ table {
   .up {
     border-right: 3px solid $color-primary;
     border-left: 3px solid $color-primary;
+    border-bottom: 5px solid $color-primary;
     &-corner {
-      border-bottom: 3px solid $color-primary;
+      border-bottom: 5px solid $color-primary;
     }
   }
-  
+
   .side {
     border-bottom: 3px solid $color-primary;
   }
-  
-  .down{
+
+  .down {
     border-right: 3px solid $color-primary;
-    border-left: 3px solid $color-primary;    
+    border-left: 3px solid $color-primary;
   }
 }

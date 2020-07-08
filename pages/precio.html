@@ -11,8 +11,33 @@
     <title>Phi Desarrollo Web / Precios</title>
   </head>
   <body>
-    <div class="precios">
+    <div id="sec-nav active" class="sec-nav">
+      <a href="#header">
+        <svg class="sec-nav__logo">
+          <use xlink:href="../img/sprite.svg#icon-phi_logo_black"></use>
+        </svg>
+      </a>
 
+      <ul class="sec-nav__mini">
+        <li><a class="small-text" href="#header">Inicio</a></li>
+        <li><a class="small-text" href="#services">Servicios</a></li>
+        <li><a class="small-text" href="#projects">Proyectos</a></li>
+        <li>
+          <a class="small-text" href="/pages/emprendedores.html"
+            >Emprendiendo?</a
+          >
+        </li>
+        <li><a class="small-text" href="/pages/precio.html">Precios</a></li>
+        <li><a class="small-text" href="#contact">Contacto</a></li>
+      </ul>
+      <div class="burger2">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
+    </div>
+
+    <div class="precios">
       <h1>Estimando Precio</h1>
 
       <p>
@@ -26,24 +51,29 @@
       <br />
       <br />
 
-      <p>
-        La siguiente tabla es orientativa, sirve para entender los económicos
-        rangos de precio a determinados trabajos. Sin embargo, al tratarse de un
-        trabajo personalizado y de una diversidad de necesidades por parte de
-        los clientes, los precios pueden variar dependiendo de la complejidad de
-        los requerimientos.
-      </p>
+      <div class="with-image">
+        <p>
+          La siguiente tabla es orientativa, sirve para entender los económicos
+          rangos de precio a determinados trabajos. Sin embargo, al tratarse de
+          un trabajo personalizado y de una diversidad de necesidades por parte
+          de los clientes, los precios pueden variar dependiendo de la
+          complejidad de los requerimientos.
+        </p>
 
-      <div class="photo-hover">
-        <!-- <img src="../img/davinci-cena.png" alt="" />
-        <img src="../img/davinci-cenaau.png" class="secondary" alt="" /></img> -->
+        <div class="photo-hover">
+          <img src="../img/davinci-cena.png" alt="" />
+        <img src="../img/davinci-cenaau.png" class="secondary" alt="" /></img>
+        </div>
       </div>
 
       <table>
-        <tr> <!--NoUp - NoLeft - NoRight - NoDown-->
+        <tr>
+          <!--NoUp - NoLeft - NoRight - NoDown-->
           <th class="up-corner">Paquetes</th>
           <td class="up"># de páginas</td>
-          <td class="esp up">Secciones en el Landing Page</td>
+          <td class="esp up">
+            <a href="#sections">Secciones en el Landing Page</a>
+          </td>
           <td class="up-corner">Precio</td>
         </tr>
         <tr>
@@ -78,7 +108,41 @@
         </tr>
       </table>
 
-    </div>
+      <p>*Estos precios son para un ‘sitio web’, no para aplicaciones. Las aplicaciones (no son
+        exclusivamente de móviles) se refiere a páginas interactivas, de contenido dinámico, donde un
+        usuario podría realizar publicaciones, crear una cuenta, interactuar con la página, etc. Un
+        sitio web, independientemente de los estilos, efectos y decoración es informativa, sirve
+        para mostrar contenido. Para consultar el precio de una aplicación contáctenos.
+      </p>
+        <br><br>
 
+        <p>
+          *REDUCCIÓN de precio. Si el cliente opta por una plantilla para la creación de su sitio web,
+          el precio tiene un descuento del 30%.
+          
+          Si eres un nuevo emprendedor puedes optar por un descuento extra, infórmate <a href="emprendedores.html">aquí.</a> 
+        </p>
+
+        <section id="sections">
+
+          <h2>Qué son las secciones de un Landing Page?</h2>
+
+          <p>Entiendase por Landing Page, a la página de Inicio o ‘bienvenida’ dónde llegan los usuarios</p>
+
+          <div class="desgloce">
+            <p>Desglosemos las secciones de
+              nuestra Landing Page :
+            </p>
+
+            <img src="../img/sections.png" alt="desglose de loque son secciones en una web">          
+          
+            <p class="tiny-text">*Luego de contratado determinado paquete, por un pequeño costo
+              se puede solicitar agregar secciones si es necesario</p>
+          </div>
+
+          <a href="../index.html#contact" class="btn btn__gold">Contáctanos</a>
+
+        </section>
+    </div>
   </body>
 </html>

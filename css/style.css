@@ -182,14 +182,18 @@ h3 {
 
 table {
   margin: 5rem;
-  border-collapse: collapse; }
+  border-collapse: collapse;
+  text-align: center; }
+  table tr > * {
+    padding: 2rem; }
   table .in {
     border: 3px solid #D4AF37; }
   table .up {
     border-right: 3px solid #D4AF37;
-    border-left: 3px solid #D4AF37; }
+    border-left: 3px solid #D4AF37;
+    border-bottom: 5px solid #D4AF37; }
     table .up-corner {
-      border-bottom: 3px solid #D4AF37; }
+      border-bottom: 5px solid #D4AF37; }
   table .side {
     border-bottom: 3px solid #D4AF37; }
   table .down {
@@ -725,5 +729,88 @@ header {
   visibility: visible;
   transform: translateY(-3rem); }
 
-.precios h3 {
-  color: red; }
+.precios h1 {
+  text-align: center;
+  padding: 13rem 0; }
+
+.precios > p {
+  margin: 0 8rem;
+  text-align: justify; }
+
+.precios .with-image {
+  text-align: justify;
+  margin: 0 8rem;
+  display: flex;
+  justify-content: space-between; }
+  .precios .with-image p {
+    width: 84rem; }
+  .precios .with-image .photo-hover {
+    width: 25%;
+    margin: 3rem;
+    position: relative;
+    height: 20rem;
+    display: flex;
+    align-items: flex-end; }
+    .precios .with-image .photo-hover img {
+      width: auto;
+      height: 20rem;
+      position: absolute; }
+      .precios .with-image .photo-hover img.secondary {
+        opacity: 0;
+        z-index: 1;
+        transition: all 0.8s ease-in; }
+        .precios .with-image .photo-hover img.secondary:hover {
+          opacity: 1; }
+    .precios .with-image .photo-hover:hover::before {
+      visibility: hidden; }
+    .precios .with-image .photo-hover::before {
+      content: "Pasa el mouse por encima";
+      display: block;
+      width: max-content;
+      height: auto;
+      color: #d4af3777;
+      font-size: 1.6rem;
+      animation: blink 1s infinite;
+      animation-fill-mode: backwards; }
+    .precios .with-image .photo-hover img {
+      width: 30rem;
+      height: auto; }
+    .precios .with-image .photo-hover:last-of-type::before {
+      position: absolute;
+      margin-top: -13rem; }
+
+.precios .esp {
+  width: 25rem; }
+  .precios .esp a {
+    color: #402A44;
+    font-size: 2.4rem; }
+
+.precios table {
+  margin: 5rem auto 10rem; }
+
+.precios p a {
+  color: #D4AF37; }
+
+.precios #sections h2 {
+  margin: 10rem 5rem; }
+
+.precios #sections p {
+  margin: 0 8rem;
+  text-align: justify; }
+
+.precios #sections .desgloce {
+  display: grid;
+  grid-template-columns: 2;
+  grid-template-rows: 2;
+  margin: 5rem auto;
+  width: 100rem; }
+  .precios #sections .desgloce p {
+    grid-row: 1 / 1;
+    grid-column: 1 / 1; }
+  .precios #sections .desgloce img {
+    grid-row: 1 / span 2;
+    grid-column: 2 / 2; }
+  .precios #sections .desgloce .tiny-text {
+    grid-row: 2 / 2;
+    grid-column: 1 / 1;
+    align-self: flex-end; }
