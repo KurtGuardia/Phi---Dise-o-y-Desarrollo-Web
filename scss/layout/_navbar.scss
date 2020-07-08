@@ -25,9 +25,16 @@
 
     li a {
       text-decoration: none;
-      padding-right: 5rem;
+      margin-right: 5rem;
+      padding: 1rem;
       color: $color-white;
-      transition: all 0.3s;    
+      transition: all 0.3s;   
+      
+      &:hover{
+        background-color: $color-primary-transparent-less;
+        border-radius: 50%;
+        border-bottom: 5px solid $color-primary;
+      }
     }
   }
 }
