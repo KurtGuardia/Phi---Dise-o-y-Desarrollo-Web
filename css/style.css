@@ -201,6 +201,26 @@ table {
     border-right: 3px solid #D4AF37;
     border-left: 3px solid #D4AF37; }
 
+.more-on-phi {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .more-on-phi h1 {
+    margin: 10rem auto; }
+  .more-on-phi p {
+    margin: 0 5rem; }
+  .more-on-phi ul {
+    list-style: none; }
+  .more-on-phi .title {
+    background: #402A44;
+    color: #f4f4f4;
+    margin: 5rem;
+    padding: 2rem;
+    border-radius: 55px 0 55px 0; }
+    .more-on-phi .title h3 {
+      margin-left: 8rem;
+      margin-right: 5rem; }
+
 footer {
   background-color: #D4AF37;
   color: #f4f4f4;
@@ -349,8 +369,6 @@ header {
     height: 4rem;
     fill: #f4f4f4; }
   .sec-nav__mini {
-    width: 55%;
-    max-width: 780px;
     display: flex;
     align-items: center;
     justify-content: space-between;
