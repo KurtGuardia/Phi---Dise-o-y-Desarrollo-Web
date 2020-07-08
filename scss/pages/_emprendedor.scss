@@ -1,0 +1,50 @@
+.entrepreneurship {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10rem 5rem;
+
+  .with-image {
+    display: flex;
+    margin: 3rem 0 0;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1420px;
+
+    p {
+      max-width: 130rem;
+
+      span {
+        color: $color-primary;
+        font-weight: 700;
+      }
+    }
+
+    .photo-hover {
+      @include hover;
+      @include hoverMessage;
+      height: 20rem;
+      display: flex;
+      align-items: center;
+
+      img {
+        width: 20rem;
+        height: auto;
+      }
+
+      &::before {
+        position: absolute;
+        margin-top: -8rem;
+      }
+    }
+  }
+
+  .with-image:first-of-type .photo-hover::before {
+    margin-top: -11.5rem;
+  }
+
+  small {
+    align-self: flex-start;
+    margin-left: 10rem;
+  }
+}

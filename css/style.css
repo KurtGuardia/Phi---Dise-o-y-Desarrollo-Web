@@ -367,6 +367,62 @@ header {
 #sec-nav.active {
   display: flex; }
 
+.entrepreneurship {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10rem 5rem; }
+  .entrepreneurship .with-image {
+    display: flex;
+    margin: 3rem 0 0;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1420px; }
+    .entrepreneurship .with-image p {
+      max-width: 130rem; }
+      .entrepreneurship .with-image p span {
+        color: #D4AF37;
+        font-weight: 700; }
+    .entrepreneurship .with-image .photo-hover {
+      width: 25%;
+      margin: 3rem;
+      position: relative;
+      height: 20rem;
+      display: flex;
+      align-items: center; }
+      .entrepreneurship .with-image .photo-hover img {
+        width: auto;
+        height: 20rem;
+        position: absolute; }
+        .entrepreneurship .with-image .photo-hover img.secondary {
+          opacity: 0;
+          z-index: 1;
+          transition: all 0.8s ease-in; }
+          .entrepreneurship .with-image .photo-hover img.secondary:hover {
+            opacity: 1; }
+      .entrepreneurship .with-image .photo-hover:hover::before {
+        visibility: hidden; }
+      .entrepreneurship .with-image .photo-hover::before {
+        content: "Pasa el mouse por encima";
+        display: block;
+        width: max-content;
+        height: auto;
+        color: #d4af3777;
+        font-size: 1.6rem;
+        animation: blink 1s infinite;
+        animation-fill-mode: backwards; }
+      .entrepreneurship .with-image .photo-hover img {
+        width: 20rem;
+        height: auto; }
+      .entrepreneurship .with-image .photo-hover::before {
+        position: absolute;
+        margin-top: -8rem; }
+  .entrepreneurship .with-image:first-of-type .photo-hover::before {
+    margin-top: -11.5rem; }
+  .entrepreneurship small {
+    align-self: flex-start;
+    margin-left: 10rem; }
+
 .cloud {
   width: 100%;
   max-width: 100vw;
@@ -810,7 +866,7 @@ header {
       grid-row: 1 / 1;
       grid-column: 1 / 1;
       padding-top: 15rem;
-      width: 45rem; }
+      max-width: 45rem; }
     .precios #sections .desgloce img {
       grid-row: 1 / span 2;
       grid-column: 2 / 2; }
