@@ -20,47 +20,59 @@
     > * {
       margin: auto 3rem;
     }
+
     .with-image {
       display: flex;
-      margin: auto 5rem;
+      margin: 5rem;
       justify-content: space-evenly;
       align-items: center;
-      p {
-        width: 80rem;
-      }
     }
 
-    .quote {
-      color: $color-primary;
-      font-style: italic;
-      font-weight: 700;
-      text-align: justify;
-      display: flex;
-      flex-direction: column;
-      max-width: 100rem;
-      align-items: center;
-      margin: 5rem auto;
-      span {
-        margin-top: 2rem;
-      }
-    }
-
-    ol li {
-      list-style-type: none;
-      counter-increment: lista;
-      position: relative;
-      padding: 3rem 5rem 0 5rem;
-      &:first-of-type {
-        padding-top: 10rem;
+    &.historia {
+      .with-image {
+        p {
+          width: 80rem;
+        }
       }
 
-      &::before {
-        position: absolute;
-        content: counter(lista, upper-roman) ".- ";
+      .quote {
         color: $color-primary;
-        left: -3rem;
-        font-size: $medium;
+        font-style: italic;
         font-weight: 700;
+        text-align: justify;
+        display: flex;
+        flex-direction: column;
+        max-width: 100rem;
+        align-items: center;
+        margin: 5rem auto;
+        span {
+          margin-top: 2rem;
+        }
+      }
+
+      ol li {
+        list-style-type: none;
+        counter-increment: lista;
+        position: relative;
+        padding: 3rem 5rem 0 5rem;
+        &:first-of-type {
+          padding-top: 10rem;
+        }
+
+        &::before {
+          position: absolute;
+          content: counter(lista, upper-roman) ".- ";
+          color: $color-primary;
+          left: -3rem;
+          font-size: $medium;
+          font-weight: 700;
+        }
+      }
+    }
+
+    &.matematicas {
+      .golden {
+        color: $color-primary;
       }
     }
   }
