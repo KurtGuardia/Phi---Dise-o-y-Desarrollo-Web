@@ -59,7 +59,8 @@ body {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   color: #352B11;
-  font-size: 3rem; }
+  font-size: 3rem;
+  text-align: justify; }
 
 h1 {
   font-size: 7.9rem;
@@ -201,27 +202,14 @@ table {
     border-right: 3px solid #D4AF37;
     border-left: 3px solid #D4AF37; }
 
-.more-on-phi {
-  display: flex;
-  flex-direction: column;
-  align-items: center; }
-  .more-on-phi h1 {
-    margin: 15rem auto 5rem; }
-  .more-on-phi p {
-    margin: 0 5rem 5rem; }
-  .more-on-phi ul {
-    list-style: none; }
-  .more-on-phi .title {
-    background: #402A44;
-    color: #f4f4f4;
-    margin: 5rem;
-    padding: 2rem;
-    border-radius: 55px 0 55px 0; }
-    .more-on-phi .title h3 {
-      margin-left: 8rem;
-      margin-right: 5rem; }
-  .more-on-phi .btn {
-    margin-bottom: 20rem; }
+.title {
+  background: #402A44;
+  color: #f4f4f4;
+  width: 80rem;
+  margin: 5rem auto;
+  padding: 2rem 8rem;
+  border-radius: 55px 0 55px 0;
+  text-align: justify; }
 
 footer {
   background-color: #D4AF37;
@@ -903,3 +891,50 @@ header {
 
 .precios footer {
   margin-top: 10rem; }
+
+.more-on-phi {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 5rem 5rem; }
+  .more-on-phi h1 {
+    margin: 15rem auto 5rem; }
+  .more-on-phi ul {
+    list-style: none; }
+  .more-on-phi .btn {
+    margin-bottom: 20rem; }
+  .more-on-phi .container > * {
+    margin: auto 3rem; }
+  .more-on-phi .container .with-image {
+    display: flex;
+    margin: auto 5rem;
+    justify-content: space-evenly;
+    align-items: center; }
+    .more-on-phi .container .with-image p {
+      width: 80rem; }
+  .more-on-phi .container .quote {
+    color: #D4AF37;
+    font-style: italic;
+    font-weight: 700;
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    max-width: 100rem;
+    align-items: center;
+    margin: 5rem auto; }
+    .more-on-phi .container .quote span {
+      margin-top: 2rem; }
+  .more-on-phi .container ol li {
+    list-style-type: none;
+    counter-increment: lista;
+    position: relative;
+    padding: 3rem 5rem 0 5rem; }
+    .more-on-phi .container ol li:first-of-type {
+      padding-top: 10rem; }
+    .more-on-phi .container ol li::before {
+      position: absolute;
+      content: counter(lista, upper-roman) ".- ";
+      color: #D4AF37;
+      left: -3rem;
+      font-size: 3.8rem;
+      font-weight: 700; }

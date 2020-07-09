@@ -1,30 +1,9 @@
-.more-on-phi {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  h1 {
-    margin: 15rem auto 5rem;
-  }
-  p {
-    margin: 0 5rem 5rem;
-  }
-  ul {
-    list-style: none;
-  }
-  .title {
-    background: $color-purple;
-    color: $color-white;
-    margin: 5rem;
-    padding: 2rem;
-    border-radius: 55px 0 55px 0;
-
-    h3 {
-      margin-left: 8rem;
-      margin-right: 5rem;
-    }
-  }
-
-  .btn{
-      margin-bottom: 20rem;
-  }
+.title {
+  background: $color-purple;
+  color: $color-white;
+  width: 80rem;
+  margin: 5rem auto;
+  padding: 2rem 8rem;
+  border-radius: 55px 0 55px 0;
+  text-align: justify;
 }
