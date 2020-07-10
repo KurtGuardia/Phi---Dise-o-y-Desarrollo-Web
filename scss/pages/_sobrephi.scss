@@ -28,6 +28,14 @@
       align-items: center;
     }
 
+    .golden {
+      color: $color-primary;
+    }
+
+    img{
+
+    }
+
     &.historia {
       .with-image {
         p {
@@ -71,27 +79,23 @@
     }
 
     &.matematicas {
-      .golden {
-        color: $color-primary;
-      }
-
+      
       .with-image p:first-of-type {
         width: 80rem;
         margin-left: 10rem;
         align-self: flex-start;
 
-          .a{
-            color: $color-primary-dark;
-          }
+        .a {
+          color: $color-primary-dark;
+        }
 
-          .b{
-            color: $color-primary;
-          }
+        .b {
+          color: $color-primary;
+        }
 
-          .c{
-            color: $color-primary-light;
-          }
-                  
+        .c {
+          color: $color-primary-light;
+        }
       }
 
       .with-image p:nth-child(2) {
@@ -104,6 +108,16 @@
           color: $color-purple;
           font-weight: 500;
         }
+      }
+    }
+
+    &.geometria {
+      .with-image img:nth-child(2){
+        margin-bottom: -5rem;
+        margin-left: 20rem;
+      }
+      .with-image p:nth-child(2){
+        margin-left: 20rem;
       }
     }
   }
