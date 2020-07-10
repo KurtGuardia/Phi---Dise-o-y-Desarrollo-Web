@@ -15,7 +15,11 @@
   }
 
   .container {
-    // display: none;
+    display: none;
+
+    &.active {
+      display: block;
+    }
 
     > * {
       margin: auto 3rem;
@@ -32,8 +36,7 @@
       color: $color-primary;
     }
 
-    img{
-
+    img {
     }
 
     &.historia {
@@ -79,7 +82,6 @@
     }
 
     &.matematicas {
-      
       .with-image p:first-of-type {
         width: 80rem;
         margin-left: 10rem;
@@ -112,12 +114,61 @@
     }
 
     &.geometria {
-      .with-image img:nth-child(2){
+      .with-image img:nth-child(2) {
         margin-bottom: -5rem;
         margin-left: 20rem;
       }
-      .with-image p:nth-child(2){
+
+      .with-image p:nth-child(2) {
         margin-left: 20rem;
+      }
+    }
+
+    &.naturaleza {
+      .with-image {
+        align-items: flex-start;
+
+        ul li {
+          position: relative;
+          padding: 1.5rem;
+          max-width: 80rem;
+
+          &::before {
+            content: "\BB";
+            color: $color-primary;
+            position: absolute;
+            left: -2rem;
+          }
+        }
+
+        .image-container {
+          width: 50rem;
+          position: relative;
+
+          img {
+            position: absolute;
+
+            &.flor {
+              top: 10rem;
+              left: 25rem;
+              z-index: -1;
+            }
+
+            &.abeja {
+              top: 40rem;
+            }
+
+            &.nautilus {
+              top: 75rem;
+              left: 40rem;
+            }
+
+            &.huracan {
+              top: 90rem;
+              transition: all 100s;
+            }
+          }
+        }
       }
     }
   }
