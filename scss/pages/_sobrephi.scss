@@ -74,6 +74,37 @@
       .golden {
         color: $color-primary;
       }
+
+      .with-image p:first-of-type {
+        width: 80rem;
+        margin-left: 10rem;
+        align-self: flex-start;
+
+          .a{
+            color: $color-primary-dark;
+          }
+
+          .b{
+            color: $color-primary;
+          }
+
+          .c{
+            color: $color-primary-light;
+          }
+                  
+      }
+
+      .with-image p:nth-child(2) {
+        margin-top: 5rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .ecuation {
+          color: $color-purple;
+          font-weight: 500;
+        }
+      }
     }
   }
 }

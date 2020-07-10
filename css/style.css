@@ -940,3 +940,21 @@ header {
       font-weight: 700; }
   .more-on-phi .container.matematicas .golden {
     color: #D4AF37; }
+  .more-on-phi .container.matematicas .with-image p:first-of-type {
+    width: 80rem;
+    margin-left: 10rem;
+    align-self: flex-start; }
+    .more-on-phi .container.matematicas .with-image p:first-of-type .a {
+      color: #9D7800; }
+    .more-on-phi .container.matematicas .with-image p:first-of-type .b {
+      color: #D4AF37; }
+    .more-on-phi .container.matematicas .with-image p:first-of-type .c {
+      color: #E7C24A; }
+  .more-on-phi .container.matematicas .with-image p:nth-child(2) {
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .more-on-phi .container.matematicas .with-image p:nth-child(2) .ecuation {
+      color: #402A44;
+      font-weight: 500; }
