@@ -447,6 +447,7 @@
       let fire = 0;
       const phi_number = "1.6180339887498948482...";
       let offsetContent = document.getElementById('phi_number').offsetTop;
+      
       //Functions
       const typing = () => {
          if(i<phi_number.length) {
@@ -459,6 +460,8 @@
       // Event Listeners
       window.addEventListener('scroll', function () {
         let y = document.documentElement.scrollTop;
+        let matrix = document.querySelector('.matrix');
+        matrix.style.top = -y +'px';
         if (y + 600 > offsetContent) {
           fire++;
         }
@@ -471,8 +474,6 @@
           document.getElementById('sec-nav').classList.remove('active');
         }
       });
-      // Sticky secundary navbar
-      
       
     </script>
   </body>
