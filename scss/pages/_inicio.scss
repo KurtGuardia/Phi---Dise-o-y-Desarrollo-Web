@@ -93,8 +93,8 @@
   grid-row-gap: 10rem;
   margin: 15rem 5rem;
   justify-content: center;
-  
-  a{
+
+  a {
     text-decoration: none;
   }
 
@@ -179,7 +179,7 @@
     }
     &.photo-right::before {
       margin-top: -45rem;
-      margin-left: 20rem;
+      margin-left: 15rem;
     }
   }
 }
@@ -388,7 +388,7 @@
 
         &:focus:invalid {
           border-bottom: 2px solid $color-red;
-      }
+        }
       }
 
       &__label {
