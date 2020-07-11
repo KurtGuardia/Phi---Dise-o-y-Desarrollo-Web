@@ -36,7 +36,16 @@
       color: $color-primary;
     }
 
-    img {
+    ul li {
+      position: relative;
+      padding: 1.5rem;
+      
+      &::before {
+        content: "\BB";
+        color: $color-primary;
+        position: absolute;
+        left: -2rem;
+      }
     }
 
     &.historia {
@@ -128,17 +137,8 @@
       .with-image {
         align-items: flex-start;
 
-        ul li {
-          position: relative;
-          padding: 1.5rem;
+        ul li{
           max-width: 80rem;
-
-          &::before {
-            content: "\BB";
-            color: $color-primary;
-            position: absolute;
-            left: -2rem;
-          }
         }
 
         .image-container {
@@ -155,7 +155,7 @@
             }
 
             &.abeja {
-              top: 40rem;
+              top: 30rem;
             }
 
             &.nautilus {
@@ -168,6 +168,22 @@
               transition: all 100s;
             }
           }
+        }
+      }
+    }
+
+    &.belleza {
+      
+      ul{
+        position: relative;
+        &:before{
+          content: '1, 1, 2, 3, 5, 8, 13';
+          position: absolute;
+          font-size: $huge;
+          letter-spacing: 20px;
+          color: $color-primary-transparent;
+          left: 20rem;
+          top: -2rem;        
         }
       }
     }

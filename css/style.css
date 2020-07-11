@@ -916,6 +916,14 @@ header {
       align-items: center; }
     .more-on-phi .container .golden {
       color: #D4AF37; }
+    .more-on-phi .container ul li {
+      position: relative;
+      padding: 1.5rem; }
+      .more-on-phi .container ul li::before {
+        content: "\BB";
+        color: #D4AF37;
+        position: absolute;
+        left: -2rem; }
     .more-on-phi .container.historia .with-image p {
       width: 80rem; }
     .more-on-phi .container.historia .quote {
@@ -970,14 +978,7 @@ header {
     .more-on-phi .container.naturaleza .with-image {
       align-items: flex-start; }
       .more-on-phi .container.naturaleza .with-image ul li {
-        position: relative;
-        padding: 1.5rem;
         max-width: 80rem; }
-        .more-on-phi .container.naturaleza .with-image ul li::before {
-          content: "\BB";
-          color: #D4AF37;
-          position: absolute;
-          left: -2rem; }
       .more-on-phi .container.naturaleza .with-image .image-container {
         width: 50rem;
         position: relative; }
@@ -988,10 +989,20 @@ header {
             left: 25rem;
             z-index: -1; }
           .more-on-phi .container.naturaleza .with-image .image-container img.abeja {
-            top: 40rem; }
+            top: 30rem; }
           .more-on-phi .container.naturaleza .with-image .image-container img.nautilus {
             top: 75rem;
             left: 40rem; }
           .more-on-phi .container.naturaleza .with-image .image-container img.huracan {
             top: 90rem;
             transition: all 100s; }
+    .more-on-phi .container.belleza ul {
+      position: relative; }
+      .more-on-phi .container.belleza ul:before {
+        content: '1, 1, 2, 3, 5, 8, 13';
+        position: absolute;
+        font-size: 7.9rem;
+        letter-spacing: 20px;
+        color: #d4af3777;
+        left: 20rem;
+        top: -2rem; }
