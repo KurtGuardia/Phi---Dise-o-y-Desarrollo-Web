@@ -8,6 +8,17 @@
     margin: 15rem auto 5rem;
   }
 
+  .title{
+    cursor: pointer;
+    border: 2px solid $color-purple;
+    transition: all .5s ease;
+    
+    &:hover{
+      background-color: $color-purple-dark;
+      border: 2px solid $color-primary;
+    }
+  }
+
   ul {
     list-style: none;
   }
@@ -18,7 +29,7 @@
     height: 0.5rem;
   }
 
-  .container {
+  .container {    
     display: none;
 
     .btn {
@@ -196,11 +207,14 @@
     }
 
     &.conclusion {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
       .with-image img {
         padding: 0 8rem;
+      }
+
+      .end {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
       }
     }
   }

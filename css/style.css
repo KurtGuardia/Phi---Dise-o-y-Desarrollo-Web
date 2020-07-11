@@ -205,7 +205,7 @@ table {
 .title {
   background: #402A44;
   color: #f4f4f4;
-  width: 80rem;
+  width: 85rem;
   margin: 5rem auto;
   padding: 2rem 8rem;
   border-radius: 55px 0 55px 0;
@@ -899,6 +899,13 @@ header {
   margin: 0 5rem 5rem; }
   .more-on-phi h1 {
     margin: 15rem auto 5rem; }
+  .more-on-phi .title {
+    cursor: pointer;
+    border: 2px solid #402A44;
+    transition: all .5s ease; }
+    .more-on-phi .title:hover {
+      background-color: #16001A;
+      border: 2px solid #D4AF37; }
   .more-on-phi ul {
     list-style: none; }
   .more-on-phi hr {
@@ -1010,9 +1017,9 @@ header {
         color: #d4af3777;
         left: 20rem;
         top: -2rem; }
-    .more-on-phi .container.conclusion {
+    .more-on-phi .container.conclusion .with-image img {
+      padding: 0 8rem; }
+    .more-on-phi .container.conclusion .end {
       display: flex;
       flex-direction: column;
       align-items: center; }
-      .more-on-phi .container.conclusion .with-image img {
-        padding: 0 8rem; }
