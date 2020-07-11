@@ -901,10 +901,14 @@ header {
     margin: 15rem auto 5rem; }
   .more-on-phi ul {
     list-style: none; }
-  .more-on-phi .btn {
-    margin-bottom: 20rem; }
+  .more-on-phi hr {
+    color: #D4AF37;
+    width: 130rem;
+    height: 0.5rem; }
   .more-on-phi .container {
     display: none; }
+    .more-on-phi .container .btn {
+      margin-bottom: 20rem; }
     .more-on-phi .container.active {
       display: block; }
     .more-on-phi .container > * {
@@ -999,10 +1003,16 @@ header {
     .more-on-phi .container.belleza ul {
       position: relative; }
       .more-on-phi .container.belleza ul:before {
-        content: '1, 1, 2, 3, 5, 8, 13';
+        content: "1, 1, 2, 3, 5, 8, 13";
         position: absolute;
         font-size: 7.9rem;
         letter-spacing: 20px;
         color: #d4af3777;
         left: 20rem;
         top: -2rem; }
+    .more-on-phi .container.conclusion {
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      .more-on-phi .container.conclusion .with-image img {
+        padding: 0 8rem; }
