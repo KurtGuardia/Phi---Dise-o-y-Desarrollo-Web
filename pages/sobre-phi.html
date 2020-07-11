@@ -501,8 +501,9 @@
                 </li>
                 <li>
                   Si se divide la población de abejas hembra entre machos en una
-                  colmena tiene la proporción de &phi;. Y vale destacar que el árbol
-                  genealógico de la abeja macho sigue la secuencia de Fibonacci.
+                  colmena tiene la proporción de &phi;. Y vale destacar que el
+                  árbol genealógico de la abeja macho sigue la secuencia de
+                  Fibonacci.
                 </li>
                 <li>
                   Un agujero negro pasa de calentarse a enfriarse cuando la
@@ -618,8 +619,8 @@
               partitura de secciones.
               <br />
               <br />
-              Por ser visualmente más fácil de reconocer, la aparición de &phi; en
-              diversas maneras ha estado presente en la pintura desde tiempos
+              Por ser visualmente más fácil de reconocer, la aparición de &phi;
+              en diversas maneras ha estado presente en la pintura desde tiempos
               antiguos. Vale mencionar que la utilización de la sección dorada
               no es una regla estricta y sirve primordialmente como guía de
               proporciones, es decir, determinada parte de una pintura no tiene
@@ -661,9 +662,9 @@
               oro en su altura, base y caras.
               <br />
               <br />
-              De igual forma se atribuye el uso de &phi; a Fidias, en la creación
-              del Partenón en Atenas. Tenemos a la proporción áurea en Notre
-              Dame, la torre Eiffel, el Taj Mahal, entre las estructuras
+              De igual forma se atribuye el uso de &phi; a Fidias, en la
+              creación del Partenón en Atenas. Tenemos a la proporción áurea en
+              Notre Dame, la torre Eiffel, el Taj Mahal, entre las estructuras
               antiguas más famosas, ya en la actualidad existe una gran cantidad
               de edificios construidos con ésta proporción, como “The CN Tower”
               en Canadá.
@@ -865,8 +866,8 @@
             </div>
             <p>
               Pero final uno no desarrolla su logo porque la pirámide de Keops
-              haya o no sido diseñada con &phi;, uno no distribuye el contenido de
-              su sitio web porque DaVinci haya usado &phi; para hacer la
+              haya o no sido diseñada con &phi;, uno no distribuye el contenido
+              de su sitio web porque DaVinci haya usado &phi; para hacer la
               Monalisa....
             </p>
             <div class="with-image">
@@ -961,29 +962,32 @@
       const abeja = document.querySelector(".abeja");
       const nautilus = document.querySelector(".nautilus");
       const allTitles = document.querySelectorAll(".title");
-      
+
       //screen scroll event
       window.addEventListener("scroll", function () {
-        let y = window.scrollY;
+        const y = window.scrollY;
         const offset = document.querySelector(".offset").offsetTop;
-        let value = y - offset;
+        let value;
+        if (offset > 1) {
+            value = y - offset;
+        }
         if (value > -130) {
-          huracan.style.transform = `rotate(-1500deg)`
+          huracanRotate();
           abeja.style.top = 30 - value / 10 + "rem";
           abeja.style.left = value / 10 + "rem";
           nautilus.style.top = 75 - value / 20 + "rem";
           nautilus.style.left = 40 - value / 10 + "rem";
         }
       });
-        //functions
-      // function huracanRotate() {
-      //   ;
-      // }
+      //functions
+      function huracanRotate() {
+        huracan.style.transform = `rotate(-1500deg)`;
+      }
       //Clicking and displaying each content
       allTitles.forEach((el) =>
         el.addEventListener("click", function () {
           const sibling = this.nextElementSibling;
-          sibling.classList.toggle('active');
+          sibling.classList.toggle("active");
         })
       );
     </script>
