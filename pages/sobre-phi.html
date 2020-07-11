@@ -961,23 +961,24 @@
       const abeja = document.querySelector(".abeja");
       const nautilus = document.querySelector(".nautilus");
       const allTitles = document.querySelectorAll(".title");
-      //functions
-      function huracanRotate() {
-        huracan.style.transform = `rotate(-1500deg)`;
-      }
+      
       //screen scroll event
       window.addEventListener("scroll", function () {
         let y = window.scrollY;
         const offset = document.querySelector(".offset").offsetTop;
         let value = y - offset;
         if (value > -130) {
-          huracanRotate();
+          huracan.style.transform = `rotate(-1500deg)`
           abeja.style.top = 30 - value / 10 + "rem";
           abeja.style.left = value / 10 + "rem";
           nautilus.style.top = 75 - value / 20 + "rem";
           nautilus.style.left = 40 - value / 10 + "rem";
         }
       });
+        //functions
+      // function huracanRotate() {
+      //   ;
+      // }
       //Clicking and displaying each content
       allTitles.forEach((el) =>
         el.addEventListener("click", function () {
