@@ -34,13 +34,19 @@
 
       &::before {
         position: absolute;
-        margin-top: -8rem;
+        margin-top: -3rem;
+      }
+
+      &.photo-right img{
+        width: 15rem;
+        margin-left: 8rem;
       }
     }
   }
 
   .with-image:first-of-type .photo-hover::before {
     margin-top: -11.5rem;
+    margin-left: 6rem;
   }
 
   small {

@@ -13,7 +13,7 @@
     text-align: justify;
     margin: 0 8rem;
     display: flex;
-    justify-content: space-between;
+    justify-content: start;
 
     p {
       width: 84rem;
@@ -22,18 +22,20 @@
     .photo-hover {
       @include hover;
       @include hoverMessage;
-      height: 20rem;
+      height: 15rem;
       display: flex;
       align-items: flex-end;
 
       img {
-        width: 30rem;
+        width: 40rem;
         height: auto;
+        margin-left: 5rem;
       }
 
       &:last-of-type::before {
         position: absolute;
-        margin-top: -13rem;
+        margin-top: -18rem;
+        margin-left: 5rem;
       }
     }
   }
