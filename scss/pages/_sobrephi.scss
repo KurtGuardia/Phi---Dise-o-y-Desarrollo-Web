@@ -3,6 +3,7 @@
   flex-direction: column;
   align-items: center;
   margin: 0 5rem 5rem;
+  
 
   h1 {
     margin: 15rem auto 5rem;
@@ -207,6 +208,7 @@
     }
 
     &.conclusion {
+      max-height: 365rem;
       .with-image img {
         padding: 0 8rem;
       }
@@ -216,6 +218,21 @@
         flex-direction: column;
         align-items: center;
       }
+    }
+  }
+
+  .bye{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-height: 15rem;
+
+    p{
+      height: auto;
+    }
+
+    a{
+      margin: 3rem;
     }
   }
 }

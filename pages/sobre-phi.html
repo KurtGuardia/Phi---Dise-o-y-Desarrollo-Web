@@ -892,10 +892,11 @@
           </div>
         </li>
       </ul>
-      <hr />
-      <p>Tienes alguna sugerencia?</p>
-
-      <a href="../index.html#contact" class="btn btn__purple">Escríbenos</a>
+      <div class="bye">
+        <hr />
+        <p>Tienes alguna sugerencia?</p>
+        <a href="../index.html#contact" class="btn btn__purple">Escríbenos</a>
+      </div>
     </div>
 
     <!-- _____________________________ FOOTER _____________________________ -->
@@ -969,7 +970,7 @@
         const offset = document.querySelector(".offset").offsetTop;
         let value;
         if (offset > 1) {
-            value = y - offset;
+          value = y - offset;
         }
         if (value > -130) {
           huracanRotate();

@@ -40,26 +40,28 @@
     }
   }
 
-  .esp {
-    width: 25rem;
+  table {
+    margin: 5rem auto 10rem;
 
-    a {
-      color: $color-purple;
-      font-size: $small;
+    .esp {
+      width: 25rem;
+
+      a {
+        color: $color-purple;
+        font-size: $small;
+      }
     }
   }
 
-  table {
-    margin: 5rem auto 10rem;
-  }
   p a {
     color: $color-primary;
   }
 
-  #sections {
+  .sections {
     display: flex;
     flex-direction: column;
     align-items: center;
+    max-height: 138rem;
 
     h2 {
       padding: 10rem;

@@ -344,7 +344,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #d4af37b4;
+  background-color: #d4af37ea;
   z-index: 10;
   box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3); }
   .sec-nav__logo {
@@ -363,9 +363,9 @@ header {
       color: #f4f4f4;
       transition: all 0.3s; }
       .sec-nav__mini li a:hover {
-        background-color: #d4af37b4;
+        background-color: #9D7800;
         border-radius: 50%;
-        border-bottom: 5px solid #D4AF37; }
+        border-bottom: 5px solid #402A44; }
 
 #sec-nav {
   display: none; }
@@ -377,7 +377,8 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 10rem 5rem; }
+  margin: 10rem 5rem;
+  max-height: 84.8rem; }
   .entrepreneurship .with-image {
     display: flex;
     margin: 3rem 0 0;
@@ -403,7 +404,7 @@ header {
         .entrepreneurship .with-image .photo-hover img.secondary {
           opacity: 0;
           z-index: 1;
-          transition: all 0.8s ease-in; }
+          transition: all 0.5s ease-in; }
           .entrepreneurship .with-image .photo-hover img.secondary:hover {
             opacity: 1; }
       .entrepreneurship .with-image .photo-hover:hover::before {
@@ -479,7 +480,7 @@ header {
       .welcome .photo-hover img.secondary {
         opacity: 0;
         z-index: 1;
-        transition: all 0.8s ease-in; }
+        transition: all 0.5s ease-in; }
         .welcome .photo-hover img.secondary:hover {
           opacity: 1; }
     .welcome .photo-hover:hover::before {
@@ -502,7 +503,8 @@ header {
   margin: 5rem;
   display: flex;
   flex-direction: column;
-  justify-content: space-between; }
+  justify-content: space-between;
+  max-height: 58.8rem; }
   .welcome-text h1 {
     margin-left: 8rem; }
   .welcome-text .text-right {
@@ -573,7 +575,7 @@ header {
       .services__title .photo-hover img.secondary {
         opacity: 0;
         z-index: 1;
-        transition: all 0.8s ease-in; }
+        transition: all 0.5s ease-in; }
         .services__title .photo-hover img.secondary:hover {
           opacity: 1; }
     .services__title .photo-hover:hover::before {
@@ -636,7 +638,7 @@ header {
       .projects__title .photo-hover img.secondary {
         opacity: 0;
         z-index: 1;
-        transition: all 0.8s ease-in; }
+        transition: all 0.5s ease-in; }
         .projects__title .photo-hover img.secondary:hover {
           opacity: 1; }
     .projects__title .photo-hover:hover::before {
@@ -675,61 +677,61 @@ header {
   grid-template-rows: repeat(2, 1fr);
   grid-gap: 5rem 10rem; }
 
-.price__title {
-  margin-top: 15rem;
+.price {
   display: flex;
-  align-items: center; }
-  .price__title h1 {
-    text-align: center; }
-  .price__title .photo-hover {
-    width: 25%;
-    margin: 3rem;
-    position: relative;
-    height: 40rem;
+  flex-direction: column;
+  max-height: 91.5rem; }
+  .price__title {
+    margin-top: 15rem;
     display: flex;
     align-items: center; }
-    .price__title .photo-hover img {
-      width: auto;
-      height: 20rem;
-      position: absolute; }
-      .price__title .photo-hover img.secondary {
-        opacity: 0;
-        z-index: 1;
-        transition: all 0.8s ease-in; }
-        .price__title .photo-hover img.secondary:hover {
-          opacity: 1; }
-    .price__title .photo-hover:hover::before {
-      visibility: hidden; }
-    .price__title .photo-hover::before {
-      content: "Pasa el mouse por encima";
-      display: block;
-      width: max-content;
-      height: auto;
-      color: #d4af3777;
-      font-size: 1.6rem;
-      animation: blink 1s infinite;
-      animation-fill-mode: backwards; }
-    .price__title .photo-hover img {
+    .price__title h1 {
+      text-align: center; }
+    .price__title .photo-hover {
+      width: 25%;
+      margin: 3rem;
+      position: relative;
+      height: 40rem;
+      display: flex;
+      align-items: center; }
+      .price__title .photo-hover img {
+        width: auto;
+        height: 20rem;
+        position: absolute; }
+        .price__title .photo-hover img.secondary {
+          opacity: 0;
+          z-index: 1;
+          transition: all 0.5s ease-in; }
+          .price__title .photo-hover img.secondary:hover {
+            opacity: 1; }
+      .price__title .photo-hover:hover::before {
+        visibility: hidden; }
+      .price__title .photo-hover::before {
+        content: "Pasa el mouse por encima";
+        display: block;
+        width: max-content;
+        height: auto;
+        color: #d4af3777;
+        font-size: 1.6rem;
+        animation: blink 1s infinite;
+        animation-fill-mode: backwards; }
+      .price__title .photo-hover img {
+        width: 20rem;
+        height: auto; }
+      .price__title .photo-hover::before {
+        margin-top: -15rem;
+        margin-left: 0rem; }
+      .price__title .photo-hover.photo-right img {
+        right: 0;
+        margin-top: -10rem; }
+      .price__title .photo-hover:last-of-type::before {
+        position: absolute;
+        right: 0;
+        margin-top: -8rem; }
+    .price__title .photo-hover:last-of-type img {
       width: 20rem;
-      height: auto; }
-    .price__title .photo-hover::before {
-      margin-top: -15rem;
-      margin-left: 0rem; }
-    .price__title .photo-hover.photo-right img {
-      right: 0;
-      margin-top: -10rem; }
-    .price__title .photo-hover:last-of-type::before {
-      position: absolute;
-      right: 0;
-      margin-top: -8rem; }
-  .price__title .photo-hover:last-of-type img {
-    width: 20rem;
-    right: 0; }
-
-.prices {
-  display: flex;
-  flex-direction: column; }
-  .prices a {
+      right: 0; }
+  .price a {
     margin: 0 auto 25rem; }
 
 .contact__box {
@@ -827,7 +829,7 @@ header {
       .precios .with-image .photo-hover img.secondary {
         opacity: 0;
         z-index: 1;
-        transition: all 0.8s ease-in; }
+        transition: all 0.5s ease-in; }
         .precios .with-image .photo-hover img.secondary:hover {
           opacity: 1; }
     .precios .with-image .photo-hover:hover::before {
@@ -850,41 +852,41 @@ header {
       margin-top: -18rem;
       margin-left: 5rem; }
 
-.precios .esp {
-  width: 25rem; }
-  .precios .esp a {
-    color: #402A44;
-    font-size: 2.4rem; }
-
 .precios table {
   margin: 5rem auto 10rem; }
+  .precios table .esp {
+    width: 25rem; }
+    .precios table .esp a {
+      color: #402A44;
+      font-size: 2.4rem; }
 
 .precios p a {
   color: #D4AF37; }
 
-.precios #sections {
+.precios .sections {
   display: flex;
   flex-direction: column;
-  align-items: center; }
-  .precios #sections h2 {
+  align-items: center;
+  max-height: 138rem; }
+  .precios .sections h2 {
     padding: 10rem; }
-  .precios #sections p {
+  .precios .sections p {
     text-align: justify; }
-  .precios #sections .desgloce {
+  .precios .sections .desgloce {
     display: grid;
     grid-template-columns: 2;
     grid-template-rows: 2;
     margin: 10rem auto 10rem;
     width: 100rem; }
-    .precios #sections .desgloce p {
+    .precios .sections .desgloce p {
       grid-row: 1 / 1;
       grid-column: 1 / 1;
       padding-top: 15rem;
       max-width: 45rem; }
-    .precios #sections .desgloce img {
+    .precios .sections .desgloce img {
       grid-row: 1 / span 2;
       grid-column: 2 / 2; }
-    .precios #sections .desgloce .tiny-text {
+    .precios .sections .desgloce .tiny-text {
       grid-row: 2 / 2;
       grid-column: 1 / 1;
       align-self: flex-end;
@@ -1018,9 +1020,20 @@ header {
         color: #d4af3777;
         left: 20rem;
         top: -2rem; }
-    .more-on-phi .container.conclusion .with-image img {
-      padding: 0 8rem; }
-    .more-on-phi .container.conclusion .end {
-      display: flex;
-      flex-direction: column;
-      align-items: center; }
+    .more-on-phi .container.conclusion {
+      max-height: 365rem; }
+      .more-on-phi .container.conclusion .with-image img {
+        padding: 0 8rem; }
+      .more-on-phi .container.conclusion .end {
+        display: flex;
+        flex-direction: column;
+        align-items: center; }
+  .more-on-phi .bye {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-height: 15rem; }
+    .more-on-phi .bye p {
+      height: auto; }
+    .more-on-phi .bye a {
+      margin: 3rem; }

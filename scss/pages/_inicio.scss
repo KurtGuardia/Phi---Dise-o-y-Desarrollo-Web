@@ -69,6 +69,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  max-height: 58.8rem;
 
   h1 {
     margin-left: 8rem;
@@ -299,52 +300,54 @@
 
 // _____________________________ Estimate price invitation_____________________________
 
-.price__title {
-  margin-top: 15rem;
+.price {
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  max-height: 91.5rem;
 
-  h1 {
-    text-align: center;
-  }
-  .photo-hover {
-    @include hover;
-    @include hoverMessage;
-    height: 40rem;
+  &__title {
+    margin-top: 15rem;
     display: flex;
     align-items: center;
 
-    img {
+    h1 {
+      text-align: center;
+    }
+
+    & .photo-hover {
+      @include hover;
+      @include hoverMessage;
+      height: 40rem;
+      display: flex;
+      align-items: center;
+
+      img {
+        width: 20rem;
+        height: auto;
+      }
+
+      &::before {
+        margin-top: -15rem;
+        margin-left: 0rem;
+      }
+
+      &.photo-right img {
+        right: 0;
+        margin-top: -10rem;
+      }
+
+      &:last-of-type::before {
+        position: absolute;
+        right: 0;
+        margin-top: -8rem;
+      }
+    }
+
+    .photo-hover:last-of-type img {
       width: 20rem;
-      height: auto;
-    }
-
-    &::before {
-      margin-top: -15rem;
-      margin-left: 0rem;
-    }
-
-    &.photo-right img {
       right: 0;
-      margin-top: -10rem;
-    }
-
-    &:last-of-type::before {
-      position: absolute;
-      right: 0;
-      margin-top: -8rem;
     }
   }
-
-  .photo-hover:last-of-type img {
-    width: 20rem;
-    right: 0;
-  }
-}
-
-.prices {
-  display: flex;
-  flex-direction: column;
   a {
     margin: 0 auto 25rem;
   }

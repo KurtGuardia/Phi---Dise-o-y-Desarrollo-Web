@@ -31,9 +31,9 @@
       transition: all 0.3s;   
       
       &:hover{
-        background-color: $color-primary-transparent-less;
+        background-color: $color-primary-dark;
         border-radius: 50%;
-        border-bottom: 5px solid $color-primary;
+        border-bottom: 5px solid $color-purple;
       }
     }
   }
