@@ -366,6 +366,9 @@ header {
         background-color: #9D7800;
         border-radius: 50%;
         border-bottom: 5px solid #402A44; }
+    @media (min-width: 1600px) {
+      .sec-nav__mini {
+        width: 80%; } }
 
 #sec-nav {
   display: none; }
