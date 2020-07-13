@@ -15,6 +15,10 @@
   display: flex;
   justify-content: center;
 
+  @include respond(phone){
+    background-color: red;
+  }
+
   .circle {
     background-color: $color-purple;
     width: 100%;
@@ -55,11 +59,11 @@
 
     &:last-of-type {
       img {
-        margin-left: -14rem;
+        margin-left: -10rem;
       }
     }
     &.photo-right::before {
-      margin-left: -12rem;
+      margin-left: -4rem;
     }
   }
 }
@@ -147,6 +151,10 @@
       grid-column: 6 / span 1;
     }
   }
+
+  @media screen and (max-width: 1800px){
+    justify-content: space-evenly;
+  }
 }
 
 // _____________________________ SERVICES _____________________________
@@ -187,8 +195,7 @@
 
 // The cards
 
-.services-cards {
-  width: 1100px;
+.services-cards {  
   margin: 10vh auto 15vh auto;
   display: flex;
   flex-wrap: wrap;
@@ -209,6 +216,15 @@
       margin: 2.5rem;
     }
   }
+
+  @media screen and (min-width: 1399px) {
+    width: 1100px;
+  }
+
+  @media screen and (min-width: 1799px) {
+    width: 1500px;
+  }
+  
 }
 
 // _____________________________ Projects _____________________________
@@ -356,7 +372,7 @@
 // _____________________________ Contact _____________________________
 
 .contact__box {
-  // height: 100vh;
+  max-height: 76.5rem;
   color: $color-white;
   display: flex;
   position: relative;
