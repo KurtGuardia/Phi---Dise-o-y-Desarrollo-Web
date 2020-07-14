@@ -152,7 +152,7 @@
     }
   }
 
-  @media screen and (max-width: 1800px){
+  @include respond(xl){    
     justify-content: space-evenly;
   }
 }
@@ -217,12 +217,12 @@
     }
   }
 
-  @media screen and (min-width: 1399px) {
+  @include respond(m) {    
     width: 1100px;
   }
 
-  @media screen and (min-width: 1799px) {
-    width: 1500px;
+  @include respond(xl) {
+    width: 1300px;
   }
   
 }
@@ -277,6 +277,10 @@
   grid-template-columns: repeat(4, min-content);
   grid-template-rows: repeat(2, 1fr);
   grid-gap: 5rem 10rem;
+
+  @include respond(xl){
+    justify-content: space-around;
+  }
 
   // &--1 {
   //   grid-row: 1 / 1;
@@ -370,100 +374,3 @@
 }
 
 // _____________________________ Contact _____________________________
-
-.contact__box {
-  max-height: 76.5rem;
-  color: $color-white;
-  display: flex;
-  position: relative;
-
-  &--form {
-    background-color: $color-purple;
-    width: 61.8%;
-    display: flex;
-    flex-direction: column;
-
-    .form {
-      &__group {
-        position: relative;
-        margin: 5rem 0 0 8rem;
-      }
-
-      &__input {
-        background-color: transparent;
-        color: $color-white;
-        font-size: $small;
-        width: 70%;
-        padding: 0.7rem 0;
-        border: none;
-        outline: none;
-        border-bottom: 1px solid $color-white;
-        z-index: 10;
-        font-family: inherit;
-
-        &:focus {
-          border-bottom: 2px solid $color-primary;
-        }
-
-        &:focus:invalid {
-          border-bottom: 2px solid $color-red;
-        }
-      }
-
-      &__label {
-        opacity: 0;
-        color: $color-white;
-        font-size: $tiny;
-        position: absolute;
-        top: 1rem;
-        left: 0;
-        transition: all 0.3s;
-        visibility: hidden;
-      }
-    }
-
-    ::placeholder {
-      color: $color-white;
-    }
-
-    h3 {
-      margin: 7rem auto 1rem auto;
-    }
-
-    form {
-      display: flex;
-      flex-direction: column;
-    }
-
-    .btn {
-      background-color: $color-purple-light;
-      width: fit-content;
-      align-self: center;
-      z-index: 10;
-      font-size: $small;
-
-      &:hover {
-        background-color: $color-purple-dark;
-      }
-    }
-  }
-
-  &--picture {
-    background-image: img("handshake.png");
-    height: auto;
-    width: 38.2%;
-  }
-
-  .spiral-ghost {
-    position: absolute;
-    bottom: 0;
-    height: 100%;
-    width: 100%;
-  }
-}
-//For some reason this wouldn't work when nested in its proper place.
-.form__input:not(:placeholder-shown) + .form__label {
-  opacity: 1;
-  visibility: visible;
-  transform: translateY(-3rem);
-}
