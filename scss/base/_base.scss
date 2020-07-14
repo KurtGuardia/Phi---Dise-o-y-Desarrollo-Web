@@ -11,19 +11,20 @@ html {
   font-size: 62.5%;
   background-color: $color-white;
   scroll-behavior: smooth;
-  
-  @include respond(tab-land) {
-    //1200px
-    font-size: 56.25%; //1rem=9px
+ 
+  @include respond(m) {
+    //1300px
+    font-size: 50%; //1rem=9px
   }
 
-  @include respond(tab-port) {
-    //900px
-    font-size: 50%; //1rem=8px
+  @include respond(s) {
+    //1000px
+    font-size: 45%; //1rem=8px
   }
+ 
 
-  @include respond(big-desktop) {
-    //+1400px
+  @include respond(xl) {
+    //1800px
     font-size: 75%; //1rem=12px
   }
 }

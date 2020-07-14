@@ -32,19 +32,19 @@ xl 1800px
   }
 
   @if $breakpoint == s {
-    @media only screen and (min-width: 62.5em) {
+    @media only screen and (max-width: 62.5em) {
       @content;
     } //1000px
   }
 
   @if $breakpoint == m {
-    @media only screen and (min-width: 81.25em) {
+    @media only screen and (max-width: 81.25em) {
       @content;
     } //1300px
   }
 
   @if $breakpoint == l {
-    @media only screen and (min-width: 90em) {
+    @media only screen and (max-width: 90em) {
       @content;
     } //1440px
   }

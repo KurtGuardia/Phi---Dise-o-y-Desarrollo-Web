@@ -33,6 +33,15 @@ html {
   font-size: 62.5%;
   background-color: #f4f4f4;
   scroll-behavior: smooth; }
+  @media only screen and (max-width: 81.25em) {
+    html {
+      font-size: 50%; } }
+  @media only screen and (max-width: 62.5em) {
+    html {
+      font-size: 45%; } }
+  @media only screen and (min-width: 112.5em) {
+    html {
+      font-size: 75%; } }
 
 body {
   box-sizing: border-box;
@@ -352,10 +361,20 @@ header {
     margin: 0 auto;
     display: flex;
     align-items: start;
+    justify-content: space-between;
+    width: 100%;
     padding: 1rem; }
     header .row .logo {
       min-width: 36vw;
       fill: #352B11; }
+      @media only screen and (max-width: 81.25em) {
+        header .row .logo svg {
+          width: 250px; } }
+      @media only screen and (max-width: 62.5em) {
+        header .row .logo {
+          min-width: auto; }
+          header .row .logo svg {
+            width: 200px; } }
     header .row .main-nav {
       display: flex;
       list-style: none;
@@ -395,7 +414,7 @@ header {
       padding: 0.5rem 3rem; }
 
 .sec-nav {
-  width: 100vw;
+  width: 100%;
   position: fixed;
   top: 0;
   left: 0;
@@ -558,8 +577,15 @@ header {
       animation-fill-mode: backwards; }
     .welcome .photo-hover:last-of-type img {
       margin-left: -10rem; }
+      @media only screen and (max-width: 62.5em) {
+        .welcome .photo-hover:last-of-type img {
+          height: auto;
+          width: 200px; } }
     .welcome .photo-hover.photo-right::before {
       margin-left: -4rem; }
+      @media only screen and (max-width: 62.5em) {
+        .welcome .photo-hover.photo-right::before {
+          margin-left: -6rem; } }
 
 .welcome-text {
   margin: 5rem;
@@ -669,6 +695,7 @@ header {
       margin-left: 15rem; }
 
 .services-cards {
+  width: 1100px;
   margin: 10vh auto 15vh auto;
   display: flex;
   flex-wrap: wrap;
@@ -683,12 +710,15 @@ header {
       fill: #D4AF37; }
     .services-cards .card:last-of-type h3 {
       margin: 2.5rem; }
-  @media only screen and (min-width: 81.25em) {
-    .services-cards {
-      width: 1100px; } }
   @media only screen and (min-width: 112.5em) {
     .services-cards {
       width: 1300px; } }
+  @media only screen and (max-width: 81.25em) {
+    .services-cards {
+      width: 1100px; } }
+  @media only screen and (max-width: 62.5em) {
+    .services-cards {
+      width: auto; } }
 
 .projects__title {
   display: flex;
@@ -800,7 +830,8 @@ header {
       .price__title .photo-hover:last-of-type::before {
         position: absolute;
         right: 0;
-        margin-top: -8rem; }
+        margin-top: -8rem;
+        margin-right: 2rem; }
     .price__title .photo-hover:last-of-type img {
       width: 20rem;
       right: 0; }

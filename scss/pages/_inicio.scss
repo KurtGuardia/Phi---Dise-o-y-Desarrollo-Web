@@ -15,7 +15,7 @@
   display: flex;
   justify-content: center;
 
-  @include respond(phone){
+  @include respond(phone) {
     background-color: red;
   }
 
@@ -60,10 +60,20 @@
     &:last-of-type {
       img {
         margin-left: -10rem;
+
+        @include respond(s){
+          height: auto;
+          width: 200px;
+        }
       }
     }
+
     &.photo-right::before {
       margin-left: -4rem;
+
+      @include respond(s){
+        margin-left: -6rem;
+      }
     }
   }
 }
@@ -152,7 +162,7 @@
     }
   }
 
-  @include respond(xl){    
+  @include respond(xl) {
     justify-content: space-evenly;
   }
 }
@@ -195,7 +205,8 @@
 
 // The cards
 
-.services-cards {  
+.services-cards {
+  width: 1100px;
   margin: 10vh auto 15vh auto;
   display: flex;
   flex-wrap: wrap;
@@ -217,14 +228,17 @@
     }
   }
 
-  @include respond(m) {    
-    width: 1100px;
-  }
-
   @include respond(xl) {
     width: 1300px;
   }
-  
+
+  @include respond(m) {
+    width: 1100px;
+  }
+
+  @include respond(s) {
+    width: auto;
+  }
 }
 
 // _____________________________ Projects _____________________________
@@ -278,7 +292,7 @@
   grid-template-rows: repeat(2, 1fr);
   grid-gap: 5rem 10rem;
 
-  @include respond(xl){
+  @include respond(xl) {
     justify-content: space-around;
   }
 
@@ -360,6 +374,7 @@
         position: absolute;
         right: 0;
         margin-top: -8rem;
+        margin-right: 2rem;
       }
     }
 
