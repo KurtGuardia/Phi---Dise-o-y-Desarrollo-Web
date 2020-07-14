@@ -969,9 +969,10 @@
         const y = window.scrollY;
         const offset = document.querySelector(".offset").offsetTop;
         let value;
+
         if (offset > 1) {
           value = y - offset;
-        }
+        } 
         if (value > -130) {
           huracanRotate();
           abeja.style.top = 30 - value / 10 + "rem";
@@ -979,11 +980,18 @@
           nautilus.style.top = 75 - value / 20 + "rem";
           nautilus.style.left = 40 - value / 10 + "rem";
         }
+        if (value > 350) {
+          abeja.style.display = "none";
+        }else{
+          abeja.style.display = "block";
+        }
       });
+
       //functions
       function huracanRotate() {
         huracan.style.transform = `rotate(-1500deg)`;
       }
+
       //Clicking and displaying each content
       allTitles.forEach((el) =>
         el.addEventListener("click", function () {

@@ -3,18 +3,17 @@
   flex-direction: column;
   align-items: center;
   margin: 0 5rem 5rem;
-  
 
   h1 {
     margin: 15rem auto 5rem;
   }
 
-  .title{
+  .title {
     cursor: pointer;
     border: 2px solid $color-purple;
-    transition: all .5s ease;
-    
-    &:hover{
+    transition: all 0.5s ease;
+
+    &:hover {
       background-color: $color-purple-dark;
       border: 2px solid $color-primary;
     }
@@ -30,7 +29,7 @@
     height: 0.5rem;
   }
 
-  .container {    
+  .container {
     display: none;
 
     .btn {
@@ -70,8 +69,24 @@
 
     &.historia {
       .with-image {
+        img:first-of-type {
+          width: 300px;
+          @include respond(s) {
+            width: 200px;
+          }
+        }
+
         p {
           width: 80rem;
+        }
+
+        &:last-of-type {
+          @include respond(s) {
+            img {
+              width: 200px;
+              margin-right: 3rem;
+            }
+          }
         }
       }
 
@@ -111,51 +126,77 @@
     }
 
     &.matematicas {
-      .with-image p:first-of-type {
-        width: 80rem;
-        margin-left: 10rem;
-        align-self: flex-start;
-
-        .a {
-          color: $color-primary-dark;
-        }
-
-        .b {
-          color: $color-primary;
-        }
-
-        .c {
-          color: $color-primary-light;
-        }
+      img {
+        width: 680px;
       }
+      .with-image {
+        img:first-of-type {
+          width: 500px;
+        }
+        img:last-of-type {
+          width: 300px;
+        }
+        p:nth-child(2) {
+          margin-top: 5rem;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
 
-      .with-image p:nth-child(2) {
-        margin-top: 5rem;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+          .ecuation {
+            color: $color-purple;
+            font-weight: 500;
+          }
+        }
 
-        .ecuation {
-          color: $color-purple;
-          font-weight: 500;
+        p:first-of-type {
+          width: 80rem;
+          margin-left: 10rem;
+          align-self: flex-start;
+
+          .a {
+            color: $color-primary-dark;
+          }
+
+          .b {
+            color: $color-primary;
+          }
+
+          .c {
+            color: $color-primary-light;
+          }
         }
       }
     }
 
     &.geometria {
-      .with-image img:nth-child(2) {
-        margin-bottom: -5rem;
-        margin-left: 20rem;
-      }
-
-      .with-image p:nth-child(2) {
-        margin-left: 20rem;
+      .with-image {
+        &:first-of-type img {
+          @include respond(s) {
+            width: 380px;
+          }
+        }
+        img:nth-child(2) {
+          margin-bottom: -5rem;
+          margin-left: 20rem;
+          @include respond(s) {
+            width: 330px;
+          }
+        }
+        p:nth-child(2) {
+          margin-left: 20rem;
+        }
       }
     }
 
     &.naturaleza {
       .with-image {
         align-items: flex-start;
+
+        &:first-of-type img {
+          @include respond(s) {
+            width: 350px;
+          }
+        }
 
         ul li {
           max-width: 80rem;
@@ -180,12 +221,15 @@
 
             &.nautilus {
               top: 60rem;
-              left: 40rem;
+              left: 30rem;
             }
 
             &.huracan {
               top: 90rem;
               transition: all 100s;
+              @include respond(s) {
+                width: 300px;
+              }
             }
           }
         }
@@ -203,14 +247,41 @@
           color: $color-primary-transparent;
           left: 20rem;
           top: -2rem;
+
+          @include respond(s) {
+            letter-spacing: 15px;
+          }
+        }
+      }
+      .with-image:first-of-type img {
+        @include respond(s) {
+          width: 400px;
+        }
+      }
+    }
+
+    &.diseno {
+      .with-image:nth-of-type(2) {
+        @include respond(s) {
+          img:first-child {
+            width: 400px;
+          }
+          img:last-child {
+            width: 300px;
+          }
         }
       }
     }
 
     &.conclusion {
       max-height: 365rem;
+
       .with-image img {
         padding: 0 8rem;
+
+        @include respond(s){
+          width: 400px;
+        }
       }
 
       .end {
@@ -218,20 +289,28 @@
         flex-direction: column;
         align-items: center;
       }
+
+      @include respond(m) {
+        max-height: 430rem;
+      }
+    }
+
+    @include respond(s) {
+      width: 133rem;
     }
   }
 
-  .bye{
+  .bye {
     display: flex;
     flex-direction: column;
     align-items: center;
     max-height: 15rem;
 
-    p{
+    p {
       height: auto;
     }
 
-    a{
+    a {
       margin: 3rem;
     }
   }
