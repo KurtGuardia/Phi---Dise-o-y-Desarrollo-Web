@@ -11,6 +11,56 @@
     <title>Phi Desarrollo Web</title>
   </head>
   <body>
+    <!-- Nav btn -->
+    <div class="navigation">
+      <input type="checkbox" class="navigation__checkbox" id="navi-toggle" />
+      <label for="navi-toggle" class="navigation__button">
+        <span class="navigation__icon">&nbsp;</span>
+      </label>
+      <div class="navigation__background">&nbsp;</div>
+      <nav class="navigation__nav">
+        <ul class="navigation__list">
+          <li class="navigation__item">
+            <a href="#header" class="navigation__link">Inicio</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#services" class="navigation__link">Servicios</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#projects" class="navigation__link">Proyectos</a>
+          </li>
+          <li class="navigation__item">
+            <a href="/pages/emprendedores.html" class="navigation__link">Emprendiendo?</a>
+          </li>
+          <li class="navigation__item">
+            <a href="/pages/precio.html" class="navigation__link">Precios</a>
+          </li>
+          <li class="navigation__item">
+            <a href="/pages/sobre-phi.html" class="navigation__link">Más sobre &phi;</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#contact" class="navigation__link">Contacto</a>
+          </li>
+          <li class="navigation__item">
+            <a
+              rel="noreferrer"
+              href="https://github.com/KurtGuardia"
+              target="_blank"
+              class="navigation__link"
+              >Github</a
+            >
+          </li>
+          <li class="navigation__item">
+            <a
+              href="./img/CV Oliver Castro Teran.pdf"
+              download="CV Oliver Castro Teran"
+              class="navigation__link"
+              >Resume</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </div>
     <!-- _____________________________ HEADER _____________________________ -->
     <header class="header" id="header">
       <div class="spiral"></div>
@@ -21,8 +71,7 @@
           <div   href="#header" class="logo">
             <svg>
               <use xlink:href='img/sprite.svg#icon-phi_logo_black'></use>
-            </svg>
-            <!-- <img src="./img/phi_logo_black.svg" alt="logo <Phi/>" /> -->
+            </svg>            
           </div>
           <ul class="main-nav">
             <li><a class="small-text" href="#services">Servicios</a></li>
