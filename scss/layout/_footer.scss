@@ -14,12 +14,24 @@ footer {
         p.tiny-text {
           margin: 2rem 0 0 3rem;
         }
+        @include respond(xs){
+          width: 28%;
+          text-align: left;
+        }
       }
 
       &--logo {
         width: 30%;
         fill: $color-white;
         text-align: center;
+
+        @include respond(xs){
+          width: 25%;
+
+          svg{
+            width: 100%;
+          }
+        }
       }
 
       &--social {

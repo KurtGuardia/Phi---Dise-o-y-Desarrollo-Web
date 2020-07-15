@@ -61,41 +61,71 @@
       img {
         margin-left: -10rem;
 
-        @include respond(s){
+        @include respond(s) {
           height: auto;
-          width: 200px;
+          width: 180px;
         }
+      }
+      @include respond(xs) {
+        align-self: flex-start;
+        margin-left: -5rem;
       }
     }
 
+    &:first-child {
+      @include respond(xs) {
+        align-self: flex-start;
+        margin-right: -5rem;
+        // margin-left: 5rem;
+      }
+    }
     &.photo-right::before {
       margin-left: -4rem;
 
-      @include respond(s){
-        margin-left: -6rem;
+      @include respond(s) {
+        margin-left: -2rem;
       }
     }
   }
-}
 
-.welcome-text {
-  margin: 5rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  max-height: 58.8rem;
+  &-text {
+    margin: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-height: 58.8rem;
+    @include respond(xs) {
+      align-items: center;
+    }
 
-  h1 {
-    margin-left: 8rem;
-  }
-  .text-right {
-    margin: 5rem -25rem 5rem 15rem;
-  }
+    h1 {
+      margin-left: 8rem;
+      @include respond(xs) {
+        margin: 5rem;
+      }
+    }
+    .text-right {
+      margin: 5rem -25rem 5rem 15rem;
 
-  .text-left {
-    margin-left: -5rem;
-    margin-right: 5rem;
-    margin-bottom: 5rem;
+      @include respond(xs) {
+        margin: 8rem 5rem 5rem;
+      }
+    }
+
+    .text-left {
+      margin-left: -5rem;
+      margin-right: 5rem;
+      margin-bottom: 5rem;
+      @include respond(xs) {
+        margin: 0 5rem 5rem;
+      }
+    }
+
+    @include respond(xs) {
+      h3 {
+        font-size: 20px;
+      }
+    }
   }
 }
 
@@ -105,12 +135,15 @@
   display: grid;
   grid-template-rows: repeat(2, 1fr);
   grid-template-columns: repeat(6, minmax(max-content, min-content));
-  grid-row-gap: 10rem;
   margin: 15rem 5rem;
   justify-content: center;
 
   a {
     text-decoration: none;
+  }
+
+  @include respond(xs) {
+    display: none;
   }
 
   .service {
@@ -175,6 +208,10 @@
   justify-content: space-around;
   align-items: center;
 
+  @include respond(xs) {
+    margin-top: 15rem;
+  }
+
   .photo-hover {
     @include hover;
     @include hoverMessage;
@@ -190,15 +227,25 @@
     &::before {
       margin-top: -25rem;
     }
-    &.photo-right img {
-      height: 35rem;
-      width: auto;
-      right: 0;
-      margin-top: -10rem;
+    &.photo-right {
+      img {
+        height: 35rem;
+        width: auto;
+        right: 0;
+        margin-top: -10rem;
+      }
+
+      @include respond(xs) {
+        margin-left: -5rem;
+      }
     }
+
     &.photo-right::before {
       margin-top: -45rem;
       margin-left: 15rem;
+      @include respond(xs){
+        margin-left: 11rem;
+      }
     }
   }
 }
@@ -223,8 +270,8 @@
       fill: $color-primary;
     }
 
-    .social{
-      margin-bottom: 2rem;      
+    .social {
+      margin-bottom: 2rem;
     }
 
     &:last-of-type h3 {
@@ -240,6 +287,10 @@
     width: 900px;
   }
 
+  @include respond(xs) {
+    width: 700px;
+    margin-top: 0;
+  }
 }
 
 // _____________________________ Projects _____________________________
@@ -259,7 +310,7 @@
 
     img {
       width: 30rem;
-      height: auto;
+      // height: auto; //Al menos en xs se ve bien
     }
 
     &::before {
@@ -269,33 +320,42 @@
     &.photo-right img {
       width: 20rem;
       right: 0;
-      margin-top: -10rem;
+
+      @include respond(xs) {
+        left: 0px;
+      }
+    }
+
+    &:first-of-type img {
+      margin-left: -2rem;
     }
 
     &:last-of-type::before {
       position: absolute;
       right: 0;
       margin-top: -12rem;
-    }
-  }
 
-  .photo-hover:last-of-type img {
-    width: 20rem;
-    right: 0;
+      @include respond(xs){
+        left: 0;
+      }
+    }
   }
 }
 
 //second part, the cards
 .project__cards {
-  display: grid;
-  justify-content: center;
-  grid-template-columns: repeat(4, min-content);
-  grid-template-rows: repeat(2, 1fr);
+  display: grid;  
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
   grid-gap: 5rem 10rem;
+  margin: 0 8rem;
 
   @include respond(xl) {
     justify-content: space-around;
   }
+
+  // @include respond(xs) {
+   
+  // }
 
   // &--1 {
   //   grid-row: 1 / 1;
@@ -363,7 +423,8 @@
 
       &::before {
         margin-top: -15rem;
-        margin-left: 0rem;
+        // margin-left: 0rem; //Al emnos esta bien asi en xs
+        margin-left: 40px;
       }
 
       &.photo-right img {
@@ -376,6 +437,10 @@
         right: 0;
         margin-top: -8rem;
         margin-right: 2rem;
+
+        @include respond(xs){
+          left: -16px;
+        }
       }
     }
 
@@ -388,5 +453,8 @@
     margin: 0 auto 25rem;
   }
 }
-
-// _____________________________ Contact _____________________________
+@include respond(xs) {
+  h1 {
+    font-size: $big;
+  }
+}

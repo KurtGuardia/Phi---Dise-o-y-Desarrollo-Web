@@ -98,6 +98,10 @@ xl 1800px
     font-size: 1.6rem;
     animation: blink 1s infinite;
     animation-fill-mode: backwards;
+
+    @include respond(xs){
+      content: 'Hazme Click';
+    }
   }
 }
 

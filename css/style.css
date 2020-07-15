@@ -148,6 +148,31 @@ h3 {
     transform: rotateY(-180deg); }
   .card:hover .card__side--back {
     transform: rotateY(0deg); }
+  @media only screen and (max-width: 50em), only screen and (hover: none) {
+    .card {
+      height: auto;
+      width: 400px; }
+      .card__side {
+        position: relative; }
+        .card__side--front h3 {
+          display: none; }
+        .card__side--back {
+          transform: rotateY(0);
+          background: transparent;
+          color: #f4f4f4;
+          position: absolute; }
+          .card__side--back h3 {
+            margin: 3rem; }
+          .card__side--back em {
+            margin-bottom: 2rem; }
+            .card__side--back em.tiny-text span {
+              font-size: 15px; }
+          .card__side--back p, .card__side--back em {
+            font-size: 18px !important;
+            font-weight: 600;
+            letter-spacing: 2px; }
+      .card:hover .card__side--front {
+        transform: rotateY(0); } }
 
 .contact__box {
   max-height: 76.5rem;
@@ -218,6 +243,7 @@ h3 {
   transform: translateY(-3rem); }
 
 .project {
+  margin: 0 auto;
   width: 25rem;
   height: 35rem;
   display: flex;
@@ -232,6 +258,9 @@ h3 {
     width: 100%;
     filter: blur(3px);
     transition: filter .5s; }
+    @media only screen and (max-width: 50em) {
+      .project img {
+        filter: blur(0); } }
   .project p {
     margin: 0 1rem; }
   .project a {
@@ -298,7 +327,8 @@ table {
   top: 0;
   right: 0;
   background-image: radial-gradient(#E7C24A, #9D7800);
-  z-index: 1000; }
+  z-index: 1000;
+  transition: all .3s; }
 
 .navigation__nav {
   height: 100vh;
@@ -306,6 +336,7 @@ table {
   top: 0;
   right: 0;
   z-index: 1500;
+  transition: all .3s;
   opacity: 0;
   width: 0; }
 
@@ -350,7 +381,8 @@ table {
     content: '';
     position: absolute;
     left: 0;
-    transition: all 0.2s; }
+    transition: all 0.2s;
+    transition: all .5s; }
   .navigation__icon::before {
     top: -1.5rem; }
   .navigation__icon::after {
@@ -379,10 +411,19 @@ footer {
       width: 30%; }
       footer .footer__content--quote p.tiny-text {
         margin: 2rem 0 0 3rem; }
+      @media only screen and (max-width: 50em) {
+        footer .footer__content--quote {
+          width: 28%;
+          text-align: left; } }
     footer .footer__content--logo {
       width: 30%;
       fill: #f4f4f4;
       text-align: center; }
+      @media only screen and (max-width: 50em) {
+        footer .footer__content--logo {
+          width: 25%; }
+          footer .footer__content--logo svg {
+            width: 100%; } }
     footer .footer__content--social .media {
       justify-content: center; }
       footer .footer__content--social .media .facebook,
@@ -548,6 +589,9 @@ header {
 
 #sec-nav.active {
   display: flex; }
+  @media only screen and (max-width: 50em) {
+    #sec-nav.active {
+      display: none; } }
 
 .entrepreneurship {
   display: flex;
@@ -594,6 +638,9 @@ header {
         font-size: 1.6rem;
         animation: blink 1s infinite;
         animation-fill-mode: backwards; }
+        @media only screen and (max-width: 50em) {
+          .entrepreneurship .with-image .photo-hover::before {
+            content: 'Hazme Click'; } }
       .entrepreneurship .with-image .photo-hover img {
         width: 20rem;
         height: auto; }
@@ -670,42 +717,69 @@ header {
       font-size: 1.6rem;
       animation: blink 1s infinite;
       animation-fill-mode: backwards; }
+      @media only screen and (max-width: 50em) {
+        .welcome .photo-hover::before {
+          content: 'Hazme Click'; } }
     .welcome .photo-hover:last-of-type img {
       margin-left: -10rem; }
       @media only screen and (max-width: 75em) {
         .welcome .photo-hover:last-of-type img {
           height: auto;
-          width: 200px; } }
+          width: 180px; } }
+    @media only screen and (max-width: 50em) {
+      .welcome .photo-hover:last-of-type {
+        align-self: flex-start;
+        margin-left: -5rem; } }
+    @media only screen and (max-width: 50em) {
+      .welcome .photo-hover:first-child {
+        align-self: flex-start;
+        margin-right: -5rem; } }
     .welcome .photo-hover.photo-right::before {
       margin-left: -4rem; }
       @media only screen and (max-width: 75em) {
         .welcome .photo-hover.photo-right::before {
-          margin-left: -6rem; } }
-
-.welcome-text {
-  margin: 5rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  max-height: 58.8rem; }
-  .welcome-text h1 {
-    margin-left: 8rem; }
-  .welcome-text .text-right {
-    margin: 5rem -25rem 5rem 15rem; }
-  .welcome-text .text-left {
-    margin-left: -5rem;
-    margin-right: 5rem;
-    margin-bottom: 5rem; }
+          margin-left: -2rem; } }
+  .welcome-text {
+    margin: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-height: 58.8rem; }
+    @media only screen and (max-width: 50em) {
+      .welcome-text {
+        align-items: center; } }
+    .welcome-text h1 {
+      margin-left: 8rem; }
+      @media only screen and (max-width: 50em) {
+        .welcome-text h1 {
+          margin: 5rem; } }
+    .welcome-text .text-right {
+      margin: 5rem -25rem 5rem 15rem; }
+      @media only screen and (max-width: 50em) {
+        .welcome-text .text-right {
+          margin: 8rem 5rem 5rem; } }
+    .welcome-text .text-left {
+      margin-left: -5rem;
+      margin-right: 5rem;
+      margin-bottom: 5rem; }
+      @media only screen and (max-width: 50em) {
+        .welcome-text .text-left {
+          margin: 0 5rem 5rem; } }
+    @media only screen and (max-width: 50em) {
+      .welcome-text h3 {
+        font-size: 20px; } }
 
 .services-buttons {
   display: grid;
   grid-template-rows: repeat(2, 1fr);
   grid-template-columns: repeat(6, minmax(max-content, min-content));
-  grid-row-gap: 10rem;
   margin: 15rem 5rem;
   justify-content: center; }
   .services-buttons a {
     text-decoration: none; }
+  @media only screen and (max-width: 50em) {
+    .services-buttons {
+      display: none; } }
   .services-buttons .service {
     border: 5px solid #402A44;
     border-radius: 50%;
@@ -747,6 +821,9 @@ header {
   display: flex;
   justify-content: space-around;
   align-items: center; }
+  @media only screen and (max-width: 50em) {
+    .services__title {
+      margin-top: 15rem; } }
   .services__title .photo-hover {
     width: 25%;
     margin: 3rem;
@@ -775,6 +852,9 @@ header {
       font-size: 1.6rem;
       animation: blink 1s infinite;
       animation-fill-mode: backwards; }
+      @media only screen and (max-width: 50em) {
+        .services__title .photo-hover::before {
+          content: 'Hazme Click'; } }
     .services__title .photo-hover img {
       width: 30rem;
       height: auto; }
@@ -785,9 +865,15 @@ header {
       width: auto;
       right: 0;
       margin-top: -10rem; }
+    @media only screen and (max-width: 50em) {
+      .services__title .photo-hover.photo-right {
+        margin-left: -5rem; } }
     .services__title .photo-hover.photo-right::before {
       margin-top: -45rem;
       margin-left: 15rem; }
+      @media only screen and (max-width: 50em) {
+        .services__title .photo-hover.photo-right::before {
+          margin-left: 11rem; } }
 
 .services-cards {
   width: 1100px;
@@ -813,6 +899,10 @@ header {
   @media only screen and (max-width: 81.25em) {
     .services-cards {
       width: 900px; } }
+  @media only screen and (max-width: 50em) {
+    .services-cards {
+      width: 700px;
+      margin-top: 0; } }
 
 .projects__title {
   display: flex;
@@ -846,30 +936,35 @@ header {
       font-size: 1.6rem;
       animation: blink 1s infinite;
       animation-fill-mode: backwards; }
+      @media only screen and (max-width: 50em) {
+        .projects__title .photo-hover::before {
+          content: 'Hazme Click'; } }
     .projects__title .photo-hover img {
-      width: 30rem;
-      height: auto; }
+      width: 30rem; }
     .projects__title .photo-hover::before {
       margin-top: -18rem;
       margin-left: 4rem; }
     .projects__title .photo-hover.photo-right img {
       width: 20rem;
-      right: 0;
-      margin-top: -10rem; }
+      right: 0; }
+      @media only screen and (max-width: 50em) {
+        .projects__title .photo-hover.photo-right img {
+          left: 0px; } }
+    .projects__title .photo-hover:first-of-type img {
+      margin-left: -2rem; }
     .projects__title .photo-hover:last-of-type::before {
       position: absolute;
       right: 0;
       margin-top: -12rem; }
-  .projects__title .photo-hover:last-of-type img {
-    width: 20rem;
-    right: 0; }
+      @media only screen and (max-width: 50em) {
+        .projects__title .photo-hover:last-of-type::before {
+          left: 0; } }
 
 .project__cards {
   display: grid;
-  justify-content: center;
-  grid-template-columns: repeat(4, min-content);
-  grid-template-rows: repeat(2, 1fr);
-  grid-gap: 5rem 10rem; }
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  grid-gap: 5rem 10rem;
+  margin: 0 8rem; }
   @media only screen and (min-width: 112.5em) {
     .project__cards {
       justify-content: space-around; } }
@@ -912,12 +1007,15 @@ header {
         font-size: 1.6rem;
         animation: blink 1s infinite;
         animation-fill-mode: backwards; }
+        @media only screen and (max-width: 50em) {
+          .price__title .photo-hover::before {
+            content: 'Hazme Click'; } }
       .price__title .photo-hover img {
         width: 20rem;
         height: auto; }
       .price__title .photo-hover::before {
         margin-top: -15rem;
-        margin-left: 0rem; }
+        margin-left: 40px; }
       .price__title .photo-hover.photo-right img {
         right: 0;
         margin-top: -10rem; }
@@ -926,11 +1024,18 @@ header {
         right: 0;
         margin-top: -8rem;
         margin-right: 2rem; }
+        @media only screen and (max-width: 50em) {
+          .price__title .photo-hover:last-of-type::before {
+            left: -16px; } }
     .price__title .photo-hover:last-of-type img {
       width: 20rem;
       right: 0; }
   .price a {
     margin: 0 auto 25rem; }
+
+@media only screen and (max-width: 50em) {
+  h1 {
+    font-size: 4.9rem; } }
 
 .precios {
   display: flex;
@@ -976,6 +1081,9 @@ header {
         font-size: 1.6rem;
         animation: blink 1s infinite;
         animation-fill-mode: backwards; }
+        @media only screen and (max-width: 50em) {
+          .precios .with-image .photo-hover::before {
+            content: 'Hazme Click'; } }
       .precios .with-image .photo-hover img {
         width: 38rem;
         height: auto;

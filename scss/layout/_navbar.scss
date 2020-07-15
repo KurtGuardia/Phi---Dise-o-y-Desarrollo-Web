@@ -41,6 +41,7 @@
       width: 80%;
     }
   }
+
 }
 
 
@@ -50,4 +51,7 @@
 
 #sec-nav.active {
   display: flex;
+  @include respond(xs){
+    display: none;
+  }
 }
