@@ -1157,6 +1157,9 @@ header {
   margin: 0 5rem 5rem; }
   .more-on-phi h1 {
     margin: 15rem auto 5rem; }
+    @media only screen and (max-width: 50em) {
+      .more-on-phi h1 {
+        margin: 5rem auto 5rem; } }
   .more-on-phi .title {
     cursor: pointer;
     border: 2px solid #402A44;
@@ -1178,11 +1181,17 @@ header {
       display: block; }
     .more-on-phi .container > * {
       margin: auto 3rem; }
+      @media only screen and (max-width: 50em) {
+        .more-on-phi .container > * {
+          margin: auto 10rem; } }
     .more-on-phi .container .with-image {
       display: flex;
-      margin: 5rem;
+      margin: 5rem auto;
       justify-content: space-evenly;
       align-items: center; }
+      @media only screen and (max-width: 50em) {
+        .more-on-phi .container .with-image {
+          width: 100rem; } }
     .more-on-phi .container .golden {
       color: #D4AF37; }
     .more-on-phi .container ul li {
@@ -1200,9 +1209,16 @@ header {
           width: 200px; } }
     .more-on-phi .container.historia .with-image p {
       width: 80rem; }
+      @media only screen and (max-width: 50em) {
+        .more-on-phi .container.historia .with-image p {
+          width: 60rem; } }
     @media only screen and (max-width: 75em) {
       .more-on-phi .container.historia .with-image:last-of-type img {
         width: 200px;
+        margin-right: 3rem; } }
+    @media only screen and (max-width: 75em) {
+      .more-on-phi .container.historia .with-image:last-of-type img {
+        width: 150px;
         margin-right: 3rem; } }
     .more-on-phi .container.historia .quote {
       color: #D4AF37;
@@ -1230,17 +1246,33 @@ header {
         left: -3rem;
         font-size: 3.8rem;
         font-weight: 700; }
+        @media only screen and (max-width: 50em) {
+          .more-on-phi .container.historia ol li::before {
+            left: 0;
+            font-size: 2.4rem; } }
     .more-on-phi .container.matematicas img {
-      width: 680px; }
+      width: 500px; }
+    @media only screen and (max-width: 50em) {
+      .more-on-phi .container.matematicas .with-image {
+        justify-content: flex-start; } }
     .more-on-phi .container.matematicas .with-image img:first-of-type {
       width: 500px; }
+      @media only screen and (max-width: 50em) {
+        .more-on-phi .container.matematicas .with-image img:first-of-type {
+          width: 250px; } }
     .more-on-phi .container.matematicas .with-image img:last-of-type {
       width: 300px; }
+      @media only screen and (max-width: 50em) {
+        .more-on-phi .container.matematicas .with-image img:last-of-type {
+          width: 200px; } }
     .more-on-phi .container.matematicas .with-image p:nth-child(2) {
       margin-top: 5rem;
       display: flex;
       flex-direction: column;
       align-items: center; }
+      @media only screen and (max-width: 50em) {
+        .more-on-phi .container.matematicas .with-image p:nth-child(2) {
+          max-width: 55rem; } }
       .more-on-phi .container.matematicas .with-image p:nth-child(2) .ecuation {
         color: #402A44;
         font-weight: 500; }
@@ -1248,6 +1280,11 @@ header {
       width: 80rem;
       margin-left: 10rem;
       align-self: flex-start; }
+      @media only screen and (max-width: 50em) {
+        .more-on-phi .container.matematicas .with-image p:first-of-type {
+          width: 35rem;
+          margin-left: 3rem;
+          text-align: left; } }
       .more-on-phi .container.matematicas .with-image p:first-of-type .a {
         color: #9D7800; }
       .more-on-phi .container.matematicas .with-image p:first-of-type .b {
@@ -1257,12 +1294,18 @@ header {
     @media only screen and (max-width: 75em) {
       .more-on-phi .container.geometria .with-image:first-of-type img {
         width: 380px; } }
+    @media only screen and (max-width: 75em) {
+      .more-on-phi .container.geometria .with-image:first-of-type img {
+        width: 250px; } }
     .more-on-phi .container.geometria .with-image img:nth-child(2) {
       margin-bottom: -5rem;
       margin-left: 20rem; }
       @media only screen and (max-width: 75em) {
         .more-on-phi .container.geometria .with-image img:nth-child(2) {
           width: 330px; } }
+      @media only screen and (max-width: 75em) {
+        .more-on-phi .container.geometria .with-image img:nth-child(2) {
+          width: 230px; } }
     .more-on-phi .container.geometria .with-image p:nth-child(2) {
       margin-left: 20rem; }
     .more-on-phi .container.naturaleza .with-image {
@@ -1277,21 +1320,33 @@ header {
         position: relative; }
         .more-on-phi .container.naturaleza .with-image .image-container img {
           position: absolute; }
+          @media only screen and (max-width: 50em) {
+            .more-on-phi .container.naturaleza .with-image .image-container img {
+              width: 15rem; } }
           .more-on-phi .container.naturaleza .with-image .image-container img.flor {
             top: 10rem;
             left: 25rem;
             z-index: -1; }
+            @media only screen and (max-width: 50em) {
+              .more-on-phi .container.naturaleza .with-image .image-container img.flor {
+                left: 15rem; } }
           .more-on-phi .container.naturaleza .with-image .image-container img.abeja {
             top: 60rem; }
           .more-on-phi .container.naturaleza .with-image .image-container img.nautilus {
             top: 60rem;
             left: 30rem; }
+            @media only screen and (max-width: 50em) {
+              .more-on-phi .container.naturaleza .with-image .image-container img.nautilus {
+                left: 14rem; } }
           .more-on-phi .container.naturaleza .with-image .image-container img.huracan {
             top: 90rem;
             transition: all 100s; }
             @media only screen and (max-width: 75em) {
               .more-on-phi .container.naturaleza .with-image .image-container img.huracan {
                 width: 300px; } }
+            @media only screen and (max-width: 75em) {
+              .more-on-phi .container.naturaleza .with-image .image-container img.huracan {
+                width: 250px; } }
     .more-on-phi .container.belleza ul {
       position: relative; }
       .more-on-phi .container.belleza ul:before {
@@ -1307,7 +1362,7 @@ header {
             letter-spacing: 15px; } }
     @media only screen and (max-width: 75em) {
       .more-on-phi .container.belleza .with-image:first-of-type img {
-        width: 400px; } }
+        width: 280px; } }
     @media only screen and (max-width: 75em) {
       .more-on-phi .container.diseno .with-image:nth-of-type(2) img:first-child {
         width: 400px; }
@@ -1330,6 +1385,9 @@ header {
     @media only screen and (max-width: 75em) {
       .more-on-phi .container {
         width: 133rem; } }
+    @media only screen and (max-width: 50em) {
+      .more-on-phi .container {
+        width: 115rem; } }
   .more-on-phi .bye {
     display: flex;
     flex-direction: column;

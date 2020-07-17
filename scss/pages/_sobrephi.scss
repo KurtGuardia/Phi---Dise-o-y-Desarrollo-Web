@@ -6,6 +6,10 @@
 
   h1 {
     margin: 15rem auto 5rem;
+
+    @include respond(xs) {
+      margin: 5rem auto 5rem;
+    }
   }
 
   .title {
@@ -42,13 +46,21 @@
 
     > * {
       margin: auto 3rem;
+
+      @include respond(xs) {
+        margin: auto 10rem;
+      }
     }
 
     .with-image {
       display: flex;
-      margin: 5rem;
+      margin: 5rem auto;
       justify-content: space-evenly;
       align-items: center;
+
+      @include respond(xs) {
+        width: 100rem;
+      }
     }
 
     .golden {
@@ -71,6 +83,7 @@
       .with-image {
         img:first-of-type {
           width: 300px;
+
           @include respond(s) {
             width: 200px;
           }
@@ -78,12 +91,23 @@
 
         p {
           width: 80rem;
+
+          @include respond(xs) {
+            width: 60rem;
+          }
         }
 
         &:last-of-type {
           @include respond(s) {
             img {
               width: 200px;
+              margin-right: 3rem;
+            }
+          }
+
+          @include respond(s) {
+            img {
+              width: 150px;
               margin-right: 3rem;
             }
           }
@@ -121,27 +145,48 @@
           left: -3rem;
           font-size: $medium;
           font-weight: 700;
+
+          @include respond(xs) {
+            left: 0;
+            font-size: $small;
+          }
         }
       }
     }
 
     &.matematicas {
       img {
-        width: 680px;
+        width: 500px;
       }
+
       .with-image {
+        @include respond(xs) {
+          justify-content: flex-start;
+        }
         img:first-of-type {
           width: 500px;
+
+          @include respond(xs) {
+            width: 250px;
+          }
         }
         img:last-of-type {
           width: 300px;
+
+          @include respond(xs) {
+            width: 200px;
+          }
         }
+
         p:nth-child(2) {
           margin-top: 5rem;
           display: flex;
           flex-direction: column;
           align-items: center;
 
+          @include respond(xs) {
+            max-width: 55rem;
+          }
           .ecuation {
             color: $color-purple;
             font-weight: 500;
@@ -152,6 +197,12 @@
           width: 80rem;
           margin-left: 10rem;
           align-self: flex-start;
+
+          @include respond(xs) {
+            width: 35rem;
+            margin-left: 3rem;
+            text-align: left;
+          }
 
           .a {
             color: $color-primary-dark;
@@ -171,15 +222,25 @@
     &.geometria {
       .with-image {
         &:first-of-type img {
+          
           @include respond(s) {
             width: 380px;
+          }
+          
+          @include respond(s) {
+            width: 250px;
           }
         }
         img:nth-child(2) {
           margin-bottom: -5rem;
           margin-left: 20rem;
+
           @include respond(s) {
             width: 330px;
+          }
+
+          @include respond(s) {
+            width: 230px;
           }
         }
         p:nth-child(2) {
@@ -209,10 +270,18 @@
           img {
             position: absolute;
 
+            @include respond(xs) {
+              width: 15rem;
+            }
+
             &.flor {
               top: 10rem;
               left: 25rem;
               z-index: -1;
+
+              @include respond(xs) {
+                left: 15rem;
+              }
             }
 
             &.abeja {
@@ -222,13 +291,22 @@
             &.nautilus {
               top: 60rem;
               left: 30rem;
+
+              @include respond(xs) {
+                left: 14rem;
+              }
             }
 
             &.huracan {
               top: 90rem;
               transition: all 100s;
+
               @include respond(s) {
                 width: 300px;
+              }
+
+              @include respond(s) {
+                width: 250px;
               }
             }
           }
@@ -255,7 +333,7 @@
       }
       .with-image:first-of-type img {
         @include respond(s) {
-          width: 400px;
+          width: 280px;
         }
       }
     }
@@ -279,7 +357,7 @@
       .with-image img {
         padding: 0 8rem;
 
-        @include respond(s){
+        @include respond(s) {
           width: 400px;
         }
       }
@@ -297,6 +375,10 @@
 
     @include respond(s) {
       width: 133rem;
+    }
+
+    @include respond(xs) {
+      width: 115rem;
     }
   }
 
