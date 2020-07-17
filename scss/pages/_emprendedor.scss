@@ -19,6 +19,10 @@
         color: $color-primary;
         font-weight: 700;
       }
+
+      @include respond(xs) {
+        max-width: 80rem;
+      }
     }
 
     .photo-hover {
@@ -38,16 +42,29 @@
         margin-top: -3rem;
       }
 
-      &.photo-right img{
+      &.photo-right img {
         width: 15rem;
         margin-left: 8rem;
       }
-    }
-  }
 
-  .with-image:first-of-type .photo-hover::before {
-    margin-top: -11.5rem;
-    margin-left: 6rem;
+      @include respond(xs) {
+        &:first-of-type {
+          margin-right: 10rem;
+        }
+      }
+    }
+
+    @include respond(xs) {
+      &:first-of-type .photo-hover::before {
+        margin-top: -10.5rem;
+        margin-left: 10rem;      
+      }
+      
+      &:last-of-type .photo-hover::before {
+        margin-top: -5rem;
+        margin-left: 5rem;      
+      }
+    }
   }
 
   small {

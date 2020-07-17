@@ -304,100 +304,93 @@ table {
   border-radius: 55px 0 55px 0;
   text-align: justify; }
 
-.navigation__checkbox {
+.navigation {
   display: none; }
-
-.navigation__button {
-  cursor: pointer;
-  background-color: #D4AF37;
-  height: 10rem;
-  width: 10rem;
-  border-radius: 50%;
-  position: fixed;
-  top: 6rem;
-  right: 6rem;
-  z-index: 2000;
-  box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.4);
-  text-align: center; }
-
-.navigation__background {
-  width: 0;
-  height: 0;
-  position: fixed;
-  top: 0;
-  right: 0;
-  background-image: radial-gradient(#E7C24A, #9D7800);
-  z-index: 1000;
-  transition: all .3s; }
-
-.navigation__nav {
-  height: 100vh;
-  position: fixed;
-  top: 0;
-  right: 0;
-  z-index: 1500;
-  transition: all .3s;
-  opacity: 0;
-  width: 0; }
-
-.navigation__list {
-  position: absolute;
-  top: 50%;
-  margin: 0 auto;
-  transform: translate(0%, -50%);
-  list-style: none;
-  text-align: center;
-  width: 100%; }
-
-.navigation__item {
-  margin: 2rem; }
-
-.navigation__link:link, .navigation__link:visited {
-  display: inline-block;
-  font-size: 3rem;
-  font-weight: 300;
-  padding: 1rem 2rem;
-  color: #fff;
-  text-decoration: none;
-  transition: all 0.3s; }
-
-.navigation__checkbox:checked ~ .navigation__background {
-  width: 35vw;
-  height: 100vh; }
-
-.navigation__checkbox:checked ~ .navigation__nav {
-  opacity: 1;
-  width: 35vw; }
-
-.navigation__icon {
-  position: relative;
-  margin-top: 4.5rem; }
-  .navigation__icon, .navigation__icon::before, .navigation__icon::after {
-    width: 5rem;
-    height: 3px;
-    background-color: #A0362B;
-    display: inline-block; }
-  .navigation__icon::before, .navigation__icon::after {
-    content: '';
+  .navigation__checkbox {
+    display: none; }
+  .navigation__button {
+    cursor: pointer;
+    background-color: #D4AF37;
+    height: 10rem;
+    width: 10rem;
+    border-radius: 50%;
+    position: fixed;
+    top: 6rem;
+    right: 6rem;
+    z-index: 2000;
+    box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.4);
+    text-align: center; }
+  .navigation__background {
+    width: 0;
+    height: 0;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-image: radial-gradient(#E7C24A, #9D7800);
+    z-index: 1000;
+    transition: all 0.3s; }
+  .navigation__nav {
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1500;
+    transition: all 0.3s;
+    opacity: 0;
+    width: 0; }
+  .navigation__list {
     position: absolute;
-    left: 0;
-    transition: all 0.2s;
-    transition: all .5s; }
-  .navigation__icon::before {
-    top: -1.5rem; }
-  .navigation__icon::after {
-    top: 1.5rem; }
-
-.navigation__checkbox:checked + .navigation__button .navigation__icon {
-  background-color: transparent; }
-
-.navigation__checkbox:checked + .navigation__button .navigation__icon::before {
-  top: 0;
-  transform: rotate(135deg); }
-
-.navigation__checkbox:checked + .navigation__button .navigation__icon::after {
-  top: 0;
-  transform: rotate(-135deg); }
+    top: 50%;
+    margin: 0 auto;
+    transform: translate(0%, -50%);
+    list-style: none;
+    text-align: center;
+    width: 100%; }
+  .navigation__item {
+    margin: 2rem; }
+  .navigation__link:link, .navigation__link:visited {
+    display: inline-block;
+    font-size: 3rem;
+    font-weight: 300;
+    padding: 1rem 2rem;
+    color: #fff;
+    text-decoration: none;
+    transition: all 0.3s; }
+  .navigation__checkbox:checked ~ .navigation__background {
+    width: 35vw;
+    height: 100vh; }
+  .navigation__checkbox:checked ~ .navigation__nav {
+    opacity: 1;
+    width: 35vw; }
+  .navigation__icon {
+    position: relative;
+    margin-top: 4.5rem; }
+    .navigation__icon, .navigation__icon::before, .navigation__icon::after {
+      width: 5rem;
+      height: 3px;
+      background-color: #A0362B;
+      display: inline-block; }
+    .navigation__icon::before, .navigation__icon::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      transition: all 0.2s;
+      transition: all 0.5s; }
+    .navigation__icon::before {
+      top: -1.5rem; }
+    .navigation__icon::after {
+      top: 1.5rem; }
+  .navigation__checkbox:checked + .navigation__button .navigation__icon {
+    background-color: transparent; }
+  .navigation__checkbox:checked + .navigation__button .navigation__icon::before {
+    top: 0;
+    transform: rotate(135deg); }
+  .navigation__checkbox:checked + .navigation__button .navigation__icon::after {
+    top: 0;
+    transform: rotate(-135deg); }
+  @media only screen and (max-width: 50em) {
+    .navigation {
+      display: inline-block; } }
 
 footer {
   background-color: #D4AF37;
@@ -554,7 +547,7 @@ header {
   position: fixed;
   top: 0;
   left: 0;
-  padding: .5% 1%;
+  padding: 0.5% 1%;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -583,6 +576,9 @@ header {
     @media (min-width: 1600px) {
       .sec-nav__mini {
         width: 80%; } }
+  @media only screen and (max-width: 50em) {
+    .sec-nav {
+      display: none; } }
 
 #sec-nav {
   display: none; }
@@ -610,6 +606,9 @@ header {
       .entrepreneurship .with-image p span {
         color: #D4AF37;
         font-weight: 700; }
+      @media only screen and (max-width: 50em) {
+        .entrepreneurship .with-image p {
+          max-width: 80rem; } }
     .entrepreneurship .with-image .photo-hover {
       width: 25%;
       margin: 3rem;
@@ -650,9 +649,16 @@ header {
       .entrepreneurship .with-image .photo-hover.photo-right img {
         width: 15rem;
         margin-left: 8rem; }
-  .entrepreneurship .with-image:first-of-type .photo-hover::before {
-    margin-top: -11.5rem;
-    margin-left: 6rem; }
+      @media only screen and (max-width: 50em) {
+        .entrepreneurship .with-image .photo-hover:first-of-type {
+          margin-right: 10rem; } }
+    @media only screen and (max-width: 50em) {
+      .entrepreneurship .with-image:first-of-type .photo-hover::before {
+        margin-top: -10.5rem;
+        margin-left: 10rem; }
+      .entrepreneurship .with-image:last-of-type .photo-hover::before {
+        margin-top: -5rem;
+        margin-left: 5rem; } }
   .entrepreneurship small {
     align-self: flex-start;
     margin-left: 10rem; }
@@ -1088,6 +1094,10 @@ header {
         width: 38rem;
         height: auto;
         margin-left: 5rem; }
+        @media only screen and (max-width: 50em) {
+          .precios .with-image .photo-hover img {
+            width: 28rem;
+            margin-left: 0; } }
       .precios .with-image .photo-hover:last-of-type::before {
         position: absolute;
         margin-top: -18rem;
@@ -1123,9 +1133,15 @@ header {
         padding-top: 15rem;
         max-width: 45rem;
         margin: 0; }
+        @media only screen and (max-width: 50em) {
+          .precios .sections .desgloce p {
+            margin-left: 5rem; } }
       .precios .sections .desgloce img {
         grid-row: 1 / span 2;
         grid-column: 2 / 2; }
+        @media only screen and (max-width: 50em) {
+          .precios .sections .desgloce img {
+            width: 40rem; } }
       .precios .sections .desgloce .tiny-text {
         grid-row: 2 / 2;
         grid-column: 1 / 1;

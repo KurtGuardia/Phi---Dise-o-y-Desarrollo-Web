@@ -3,7 +3,7 @@
   position: fixed;
   top: 0;
   left: 0;
-  padding: .5% 1%;
+  padding: 0.5% 1%;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -28,9 +28,9 @@
       margin-right: 5rem;
       padding: 1rem;
       color: $color-white;
-      transition: all 0.3s;   
-      
-      &:hover{
+      transition: all 0.3s;
+
+      &:hover {
         background-color: $color-primary-dark;
         border-radius: 50%;
         border-bottom: 5px solid $color-purple;
@@ -41,9 +41,10 @@
       width: 80%;
     }
   }
-
+  @include respond(xs) {
+    display: none;
+  }
 }
-
 
 #sec-nav {
   display: none;
@@ -51,7 +52,7 @@
 
 #sec-nav.active {
   display: flex;
-  @include respond(xs){
+  @include respond(xs) {
     display: none;
   }
 }
