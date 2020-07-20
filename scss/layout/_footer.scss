@@ -11,12 +11,24 @@ footer {
 
       &--quote {
         width: 30%;
+
         p.tiny-text {
           margin: 2rem 0 0 3rem;
         }
-        @include respond(xs){
+
+        @include respond(xs) {
           width: 28%;
           text-align: left;
+        }
+
+        @include respond(xxs) {
+          p{
+            font-size: $tiny !important;
+
+            &.tiny-text{
+              font-size: 1.5rem !important;
+            }
+          }
         }
       }
 
@@ -25,18 +37,27 @@ footer {
         fill: $color-white;
         text-align: center;
 
-        @include respond(xs){
+        @include respond(xs) {
           width: 25%;
 
-          svg{
+          svg {
+            width: 100%;
+          }
+        }
+
+        @include respond(xxs) {
+          width: 20%;
+
+          svg {
             width: 100%;
           }
         }
       }
 
       &--social {
-        & .media {
+        .media {
           justify-content: center;
+          margin-bottom: 2rem;
           .facebook,
           .linkedin {
             transition: all 1s;
@@ -49,6 +70,10 @@ footer {
           }
         }
 
+        p{
+          font-size: $tiny !important;
+        }
+
         & > div {
           margin-top: 2.5rem;
           display: flex;
@@ -58,6 +83,10 @@ footer {
             width: 10rem;
             fill: $color-primary-dark;
             height: 4rem;
+
+            @include respond(xxs) {
+              width: 6rem;
+            }
           }
         }
 
@@ -65,7 +94,7 @@ footer {
         .mail,
         .github {
           & svg {
-            transition: all 1s;
+            transition: all 0.5s;
           }
         }
         .mobile:hover {
