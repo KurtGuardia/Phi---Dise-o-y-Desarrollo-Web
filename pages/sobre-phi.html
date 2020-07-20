@@ -119,7 +119,7 @@
               arquitectura y escultura Babilónica, Asiria y Egipcia sin embargo,
               no existe prueba fehaciente de ninguna de estas alegaciones. La
               primera vez que se tiene registro de esta misteriosa proporción es
-              con el matemático griego Eucl des (325 a. C. - 2 5 a. C.).
+              con el matemático griego Euclídes (325 a. C. - 2 5 a. C.).
             </p>
             <div class="with-image">
               <img src="../img/euclides.png" alt="Imagen de Euclides" />
@@ -861,7 +861,7 @@
             <div class="with-image">
               <img
                 src="../img/lanzador.png"
-                alt="Escultura de un lanzador con una proporcion aurea noa"
+                alt="Escultura de un lanzador con una proporcion aurea forzada"
               />
               <p>
                 Ésto se demuestra como fue mencionado previamente, ya que
@@ -1023,15 +1023,17 @@
         if (offset > 1) {
           value = y - offset;
         }
-        console.log(40 - value / 10);
-        console.log(value);
+console.log(value)
         if (value > -130) {
           huracanRotate();
           abeja.style.top = 30 - value / 10 + "rem";
           abeja.style.left = value / 10 + "rem";
           nautilus.style.top = 75 - value / 20 + "rem";
           nautilus.style.left = 40 - value / 10 + "rem";
-          if (window.matchMedia("(max-width: 800px)").matches) {
+          if (window.matchMedia("(max-width: 600px)").matches) {
+            abeja.style.left = ((value / 10) + 9) + "rem";
+            nautilus.style.left = 16.34 - value / 20 + "rem";
+          } else if (window.matchMedia("(max-width: 800px)").matches) {
             nautilus.style.left = 24 - value / 20 + "rem";
           }
         }
