@@ -726,25 +726,44 @@ header {
       @media only screen and (max-width: 50em) {
         .welcome .photo-hover::before {
           content: 'Hazme Click'; } }
+    @media only screen and (max-width: 50em) {
+      .welcome .photo-hover:first-child {
+        align-self: flex-start;
+        margin-right: -5rem; } }
+    @media only screen and (max-width: 37.5em) {
+      .welcome .photo-hover:first-child {
+        align-self: flex-start;
+        margin-right: -5rem;
+        top: -14rem;
+        right: -15rem; }
+        .welcome .photo-hover:first-child img {
+          width: 120px;
+          height: auto; } }
     .welcome .photo-hover:last-of-type img {
       margin-left: -10rem; }
       @media only screen and (max-width: 75em) {
         .welcome .photo-hover:last-of-type img {
           height: auto;
           width: 180px; } }
+      @media only screen and (max-width: 37.5em) {
+        .welcome .photo-hover:last-of-type img {
+          width: 150px; } }
     @media only screen and (max-width: 50em) {
       .welcome .photo-hover:last-of-type {
         align-self: flex-start;
         margin-left: -5rem; } }
-    @media only screen and (max-width: 50em) {
-      .welcome .photo-hover:first-child {
-        align-self: flex-start;
-        margin-right: -5rem; } }
+    @media only screen and (max-width: 37.5em) {
+      .welcome .photo-hover:last-of-type {
+        top: -12rem;
+        left: -15rem; } }
     .welcome .photo-hover.photo-right::before {
       margin-left: -4rem; }
       @media only screen and (max-width: 75em) {
         .welcome .photo-hover.photo-right::before {
           margin-left: -2rem; } }
+      @media only screen and (max-width: 50em) {
+        .welcome .photo-hover.photo-right::before {
+          margin-left: -4rem; } }
   .welcome-text {
     margin: 5rem;
     display: flex;
@@ -764,6 +783,9 @@ header {
       @media only screen and (max-width: 50em) {
         .welcome-text .text-right {
           margin: 8rem 5rem 5rem; } }
+      @media only screen and (max-width: 37.5em) {
+        .welcome-text .text-right {
+          margin: 0rem 5rem 5rem; } }
     .welcome-text .text-left {
       margin-left: -5rem;
       margin-right: 5rem;
@@ -830,6 +852,9 @@ header {
   @media only screen and (max-width: 50em) {
     .services__title {
       margin-top: 15rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .services__title {
+      margin-top: 22rem; } }
   .services__title .photo-hover {
     width: 25%;
     margin: 3rem;
@@ -861,25 +886,45 @@ header {
       @media only screen and (max-width: 50em) {
         .services__title .photo-hover::before {
           content: 'Hazme Click'; } }
+    @media only screen and (max-width: 37.5em) {
+      .services__title .photo-hover {
+        height: 5rem; } }
     .services__title .photo-hover img {
       width: 30rem;
       height: auto; }
-    .services__title .photo-hover::before {
-      margin-top: -25rem; }
+      @media only screen and (max-width: 37.5em) {
+        .services__title .photo-hover img {
+          width: 20rem;
+          top: -18rem;
+          right: -10rem; } }
     .services__title .photo-hover.photo-right img {
       height: 35rem;
       width: auto;
       right: 0;
       margin-top: -10rem; }
+      @media only screen and (max-width: 37.5em) {
+        .services__title .photo-hover.photo-right img {
+          height: 25rem;
+          left: -5rem; } }
     @media only screen and (max-width: 50em) {
       .services__title .photo-hover.photo-right {
         margin-left: -5rem; } }
+    .services__title .photo-hover::before {
+      margin-top: -25rem; }
+      @media only screen and (max-width: 37.5em) {
+        .services__title .photo-hover::before {
+          margin-top: -45rem;
+          margin-left: 11rem; } }
     .services__title .photo-hover.photo-right::before {
       margin-top: -45rem;
       margin-left: 15rem; }
       @media only screen and (max-width: 50em) {
         .services__title .photo-hover.photo-right::before {
           margin-left: 11rem; } }
+      @media only screen and (max-width: 37.5em) {
+        .services__title .photo-hover.photo-right::before {
+          margin-top: -54rem;
+          margin-left: -2rem; } }
 
 .services-cards {
   width: 1100px;
@@ -909,6 +954,11 @@ header {
     .services-cards {
       width: 700px;
       margin-top: 0; } }
+  @media only screen and (max-width: 37.5em) {
+    .services-cards {
+      width: 600px;
+      margin-top: 0;
+      margin-bottom: 35rem; } }
 
 .projects__title {
   display: flex;
@@ -945,19 +995,36 @@ header {
       @media only screen and (max-width: 50em) {
         .projects__title .photo-hover::before {
           content: 'Hazme Click'; } }
+    @media only screen and (max-width: 37.5em) {
+      .projects__title .photo-hover {
+        height: 10rem; } }
     .projects__title .photo-hover img {
       width: 30rem; }
-    .projects__title .photo-hover::before {
-      margin-top: -18rem;
-      margin-left: 4rem; }
+      @media only screen and (max-width: 37.5em) {
+        .projects__title .photo-hover img {
+          width: 25rem;
+          height: auto;
+          top: -18rem;
+          right: -11rem; } }
+    .projects__title .photo-hover:first-of-type img {
+      margin-left: -2rem; }
     .projects__title .photo-hover.photo-right img {
       width: 20rem;
       right: 0; }
       @media only screen and (max-width: 50em) {
         .projects__title .photo-hover.photo-right img {
           left: 0px; } }
-    .projects__title .photo-hover:first-of-type img {
-      margin-left: -2rem; }
+      @media only screen and (max-width: 37.5em) {
+        .projects__title .photo-hover.photo-right img {
+          left: -10rem;
+          width: 15rem; } }
+    .projects__title .photo-hover::before {
+      margin-top: -18rem;
+      margin-left: 4rem; }
+      @media only screen and (max-width: 37.5em) {
+        .projects__title .photo-hover::before {
+          margin-top: -45rem;
+          margin-left: 11rem; } }
     .projects__title .photo-hover:last-of-type::before {
       position: absolute;
       right: 0;
@@ -965,6 +1032,10 @@ header {
       @media only screen and (max-width: 50em) {
         .projects__title .photo-hover:last-of-type::before {
           left: 0; } }
+      @media only screen and (max-width: 37.5em) {
+        .projects__title .photo-hover:last-of-type::before {
+          left: -17rem;
+          margin-top: -25rem; } }
 
 .project__cards {
   display: grid;
@@ -1016,15 +1087,33 @@ header {
         @media only screen and (max-width: 50em) {
           .price__title .photo-hover::before {
             content: 'Hazme Click'; } }
+      @media only screen and (max-width: 37.5em) {
+        .price__title .photo-hover {
+          width: 10%;
+          height: 25rem; } }
       .price__title .photo-hover img {
         width: 20rem;
         height: auto; }
-      .price__title .photo-hover::before {
-        margin-top: -15rem;
-        margin-left: 40px; }
+        @media only screen and (max-width: 37.5em) {
+          .price__title .photo-hover img {
+            top: -7rem;
+            right: -24rem; } }
       .price__title .photo-hover.photo-right img {
         right: 0;
         margin-top: -10rem; }
+      .price__title .photo-hover:last-of-type img {
+        width: 20rem;
+        right: 0; }
+        @media only screen and (max-width: 50em) {
+          .price__title .photo-hover:last-of-type img {
+            right: 7rem; } }
+      .price__title .photo-hover::before {
+        margin-top: -15rem;
+        margin-left: 40px; }
+      .price__title .photo-hover:first-of-type::before {
+        margin-top: -40rem;
+        margin-left: 20rem;
+        max-width: 70px; }
       .price__title .photo-hover:last-of-type::before {
         position: absolute;
         right: 0;
@@ -1033,11 +1122,15 @@ header {
         @media only screen and (max-width: 50em) {
           .price__title .photo-hover:last-of-type::before {
             left: -16px; } }
-    .price__title .photo-hover:last-of-type img {
-      width: 20rem;
-      right: 0; }
+        @media only screen and (max-width: 37.5em) {
+          .price__title .photo-hover:last-of-type::before {
+            left: -162px;
+            top: -1rem; } }
   .price a {
     margin: 0 auto 25rem; }
+    @media only screen and (max-width: 37.5em) {
+      .price a {
+        margin: 0 auto 10rem; } }
 
 @media only screen and (max-width: 50em) {
   h1 {

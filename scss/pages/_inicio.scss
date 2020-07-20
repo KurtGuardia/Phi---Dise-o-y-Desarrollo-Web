@@ -57,6 +57,25 @@
     @include hover;
     @include hoverMessage;
 
+    &:first-child {
+      @include respond(xs) {
+        align-self: flex-start;
+        margin-right: -5rem;
+      }
+
+      @include respond(xxs) {
+        align-self: flex-start;
+        margin-right: -5rem;
+        top: -14rem;
+        right: -15rem;
+
+        img {
+          width: 120px;
+          height: auto;
+        }
+      }
+    }
+
     &:last-of-type {
       img {
         margin-left: -10rem;
@@ -65,25 +84,29 @@
           height: auto;
           width: 180px;
         }
+        @include respond(xxs) {
+          width: 150px;
+        }
       }
       @include respond(xs) {
         align-self: flex-start;
         margin-left: -5rem;
       }
-    }
-
-    &:first-child {
-      @include respond(xs) {
-        align-self: flex-start;
-        margin-right: -5rem;
-        // margin-left: 5rem;
+      @include respond(xxs) {
+        top: -12rem;
+        left: -15rem;
       }
     }
+
     &.photo-right::before {
       margin-left: -4rem;
 
       @include respond(s) {
         margin-left: -2rem;
+      }
+
+      @include respond(xs) {
+        margin-left: -4rem;
       }
     }
   }
@@ -109,6 +132,9 @@
 
       @include respond(xs) {
         margin: 8rem 5rem 5rem;
+      }
+      @include respond(xxs) {
+        margin: 0rem 5rem 5rem;
       }
     }
 
@@ -212,6 +238,10 @@
     margin-top: 15rem;
   }
 
+  @include respond(xxs) {
+    margin-top: 22rem;
+  }
+
   .photo-hover {
     @include hover;
     @include hoverMessage;
@@ -219,20 +249,31 @@
     display: flex;
     align-items: center;
 
+    @include respond(xxs) {
+      height: 5rem;
+    }
+
     img {
       width: 30rem;
       height: auto;
+
+      @include respond(xxs) {
+        width: 20rem;
+        top: -18rem;
+        right: -10rem;
+      }
     }
 
-    &::before {
-      margin-top: -25rem;
-    }
     &.photo-right {
       img {
         height: 35rem;
         width: auto;
         right: 0;
         margin-top: -10rem;
+        @include respond(xxs) {
+          height: 25rem;
+          left: -5rem;
+        }
       }
 
       @include respond(xs) {
@@ -240,11 +281,22 @@
       }
     }
 
+    &::before {
+      margin-top: -25rem;
+      @include respond(xxs) {
+        margin-top: -45rem;
+        margin-left: 11rem;
+      }
+    }
     &.photo-right::before {
       margin-top: -45rem;
       margin-left: 15rem;
-      @include respond(xs){
+      @include respond(xs) {
         margin-left: 11rem;
+      }
+      @include respond(xxs) {
+        margin-top: -54rem;
+        margin-left: -2rem;
       }
     }
   }
@@ -291,6 +343,12 @@
     width: 700px;
     margin-top: 0;
   }
+
+  @include respond(xxs) {
+    width: 600px;
+    margin-top: 0;
+    margin-bottom: 35rem;
+  }
 }
 
 // _____________________________ Projects _____________________________
@@ -308,21 +366,18 @@
     display: flex;
     align-items: center;
 
+    @include respond(xxs) {
+      height: 10rem;
+    }
+
     img {
       width: 30rem;
-      // height: auto; //Al menos en xs se ve bien
-    }
 
-    &::before {
-      margin-top: -18rem;
-      margin-left: 4rem;
-    }
-    &.photo-right img {
-      width: 20rem;
-      right: 0;
-
-      @include respond(xs) {
-        left: 0px;
+      @include respond(xxs) {
+        width: 25rem;
+        height: auto;
+        top: -18rem;
+        right: -11rem;
       }
     }
 
@@ -330,13 +385,40 @@
       margin-left: -2rem;
     }
 
+    &.photo-right img {
+      width: 20rem;
+      right: 0;
+
+      @include respond(xs) {
+        left: 0px;
+      }
+
+      @include respond(xxs) {
+        left: -10rem;
+        width: 15rem;
+      }
+    }
+
+    &::before {
+      margin-top: -18rem;
+      margin-left: 4rem;
+      @include respond(xxs) {
+        margin-top: -45rem;
+        margin-left: 11rem;
+      }
+    }
+
     &:last-of-type::before {
       position: absolute;
       right: 0;
       margin-top: -12rem;
 
-      @include respond(xs){
+      @include respond(xs) {
         left: 0;
+      }
+      @include respond(xxs) {
+        left: -17rem;
+        margin-top: -25rem;
       }
     }
   }
@@ -344,7 +426,7 @@
 
 //second part, the cards
 .project__cards {
-  display: grid;  
+  display: grid;
   grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
   grid-gap: 5rem 10rem;
   margin: 0 8rem;
@@ -354,7 +436,7 @@
   }
 
   // @include respond(xs) {
-   
+
   // }
 
   // &--1 {
@@ -415,16 +497,19 @@
       height: 40rem;
       display: flex;
       align-items: center;
+      @include respond(xxs) {
+        width: 10%;
+        height: 25rem;
+      }
 
       img {
         width: 20rem;
         height: auto;
-      }
 
-      &::before {
-        margin-top: -15rem;
-        // margin-left: 0rem; //Al emnos esta bien asi en xs
-        margin-left: 40px;
+        @include respond(xxs) {
+          top: -7rem;
+          right: -24rem;
+        }
       }
 
       &.photo-right img {
@@ -432,25 +517,48 @@
         margin-top: -10rem;
       }
 
+      &:last-of-type img {
+        width: 20rem;
+        right: 0;
+        @include respond(xs) {
+          right: 7rem;
+        }
+      }
+
+      &::before {
+        margin-top: -15rem;
+        margin-left: 40px;
+      }
+
+       &:first-of-type::before{
+        margin-top: -40rem;
+        margin-left: 20rem;
+        max-width: 70px;
+       }
+
       &:last-of-type::before {
         position: absolute;
         right: 0;
         margin-top: -8rem;
         margin-right: 2rem;
 
-        @include respond(xs){
+        @include respond(xs) {
           left: -16px;
         }
-      }
-    }
 
-    .photo-hover:last-of-type img {
-      width: 20rem;
-      right: 0;
+        @include respond(xxs) {
+          left: -162px;
+          top: -1rem;
+        }
+      }
     }
   }
   a {
     margin: 0 auto 25rem;
+
+    @include respond(xxs){
+      margin: 0 auto 10rem;
+    }
   }
 }
 @include respond(xs) {
