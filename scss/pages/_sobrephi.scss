@@ -160,9 +160,7 @@
       }
 
       .with-image {
-        @include respond(xs) {
-          justify-content: flex-start;
-        }
+        
         img:first-of-type {
           width: 500px;
 
@@ -221,30 +219,69 @@
 
     &.geometria {
       .with-image {
-        &:first-of-type img {
-          
-          @include respond(s) {
-            width: 380px;
-          }
-          
-          @include respond(s) {
-            width: 250px;
-          }
-        }
-        img:nth-child(2) {
-          margin-bottom: -5rem;
-          margin-left: 20rem;
+        &:first-of-type {
+          img {
+            @include respond(s) {
+              width: 52.7rem;
+            }
 
-          @include respond(s) {
-            width: 330px;
+            @include respond(xs) {
+              width: 34.72rem;
+            }
           }
 
-          @include respond(s) {
-            width: 230px;
+          img:nth-child(2) {
+            margin-bottom: -5rem;
+            margin-left: 20rem;
+
+            @include respond(s) {
+              width: 45.83rem;
+            }
+
+            @include respond(xs) {
+              width: 31.94rem;
+            }
           }
         }
+
+        &:nth-of-type(2) img {
+          @include respond(xs) {
+            width: 45.83rem;
+          }
+        }
+
+        &:nth-of-type(4) img {
+          @include respond(s) {
+            width: 45.83rem;
+          }
+        }
+
+        &:nth-of-type(5) img {
+          @include respond(s) {
+            width: 30.83rem;
+            margin-left: 10rem;
+          }
+          @include respond(xs) {
+            width: 23.83rem;
+            margin-left: 5rem;
+          }
+        }
+
+        &:nth-of-type(6) img,
+        &:nth-of-type(7) img {
+          @include respond(xs) {
+            width: 30.83rem;
+          }
+        }
+
         p:nth-child(2) {
           margin-left: 20rem;
+          @include respond(s) {
+            margin-left: 10rem;
+          }
+          @include respond(xs) {
+            margin-left: 5rem;
+          }
         }
       }
     }
@@ -255,7 +292,10 @@
 
         &:first-of-type img {
           @include respond(s) {
-            width: 350px;
+            width: 41.66rem;
+          }
+          @include respond(xs) {
+            width: 35.66rem;
           }
         }
 
@@ -312,6 +352,12 @@
           }
         }
       }
+      iframe {
+        @include respond(xs) {
+          width: 50rem;
+          height: 29rem;
+        }
+      }
     }
 
     &.belleza {
@@ -329,24 +375,62 @@
           @include respond(s) {
             letter-spacing: 15px;
           }
+
+          @include respond(xs) {
+            letter-spacing: 10px;
+            left: 5rem;
+          }
         }
       }
-      .with-image:first-of-type img {
+      .with-image {
         @include respond(s) {
-          width: 280px;
+          &:first-of-type img {
+            width: 52.7rem;
+            height: auto;
+          }
+          img {
+            height: 52.7rem;
+            width: auto;
+          }
+        }
+
+        @include respond(xs) {
+          &:first-of-type img {
+            width: 42.7rem;
+            height: auto;
+          }
+          img {
+            height: 42.7rem;
+            width: auto;
+          }
         }
       }
     }
 
     &.diseno {
-      .with-image:nth-of-type(2) {
-        @include respond(s) {
-          img:first-child {
-            width: 400px;
+      .with-image {
+        &:nth-of-type(2) {
+          @include respond(s) {
+            img:first-child {
+              width: 55.55rem;
+            }
+            img:last-child {
+              width: 41.66rem;
+            }
           }
-          img:last-child {
-            width: 300px;
+          @include respond(xs) {
+            img:first-child {
+              width: 45.55rem;
+            }
+            img:last-child {
+              width: 31.66rem;
+            }
           }
+        }
+
+        &:nth-of-type(3) img:nth-of-type(1),
+        img:nth-of-type(2) {
+          width: 30rem;
         }
       }
     }
@@ -354,11 +438,30 @@
     &.conclusion {
       max-height: 365rem;
 
-      .with-image img {
-        padding: 0 8rem;
+      .with-image {
+        img {
+          padding: 0 8rem;
 
-        @include respond(s) {
-          width: 400px;
+          @include respond(s) {
+            width: 55.55rem;
+          }
+
+          @include respond(xs) {
+            width: 35.55rem;
+            padding: 0;
+          }
+        }
+
+        p {
+          margin: auto 3rem;
+        }
+
+        &:nth-of-type(6) img{
+          width: 23.83rem;
+        }
+
+        &:nth-of-type(7) img{
+          width: 30.83rem;
         }
       }
 

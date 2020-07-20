@@ -34,7 +34,7 @@ xl 1800px
   @if $breakpoint == s {
     @media only screen and (max-width: 75em) {
       @content;
-    } //1000px
+    } //1200px
   }
 
   @if $breakpoint == m {

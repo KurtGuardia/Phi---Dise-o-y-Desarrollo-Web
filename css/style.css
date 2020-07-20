@@ -1252,9 +1252,6 @@ header {
             font-size: 2.4rem; } }
     .more-on-phi .container.matematicas img {
       width: 500px; }
-    @media only screen and (max-width: 50em) {
-      .more-on-phi .container.matematicas .with-image {
-        justify-content: flex-start; } }
     .more-on-phi .container.matematicas .with-image img:first-of-type {
       width: 500px; }
       @media only screen and (max-width: 50em) {
@@ -1293,26 +1290,53 @@ header {
         color: #E7C24A; }
     @media only screen and (max-width: 75em) {
       .more-on-phi .container.geometria .with-image:first-of-type img {
-        width: 380px; } }
-    @media only screen and (max-width: 75em) {
+        width: 52.7rem; } }
+    @media only screen and (max-width: 50em) {
       .more-on-phi .container.geometria .with-image:first-of-type img {
-        width: 250px; } }
-    .more-on-phi .container.geometria .with-image img:nth-child(2) {
+        width: 34.72rem; } }
+    .more-on-phi .container.geometria .with-image:first-of-type img:nth-child(2) {
       margin-bottom: -5rem;
       margin-left: 20rem; }
       @media only screen and (max-width: 75em) {
-        .more-on-phi .container.geometria .with-image img:nth-child(2) {
-          width: 330px; } }
-      @media only screen and (max-width: 75em) {
-        .more-on-phi .container.geometria .with-image img:nth-child(2) {
-          width: 230px; } }
+        .more-on-phi .container.geometria .with-image:first-of-type img:nth-child(2) {
+          width: 45.83rem; } }
+      @media only screen and (max-width: 50em) {
+        .more-on-phi .container.geometria .with-image:first-of-type img:nth-child(2) {
+          width: 31.94rem; } }
+    @media only screen and (max-width: 50em) {
+      .more-on-phi .container.geometria .with-image:nth-of-type(2) img {
+        width: 45.83rem; } }
+    @media only screen and (max-width: 75em) {
+      .more-on-phi .container.geometria .with-image:nth-of-type(4) img {
+        width: 45.83rem; } }
+    @media only screen and (max-width: 75em) {
+      .more-on-phi .container.geometria .with-image:nth-of-type(5) img {
+        width: 30.83rem;
+        margin-left: 10rem; } }
+    @media only screen and (max-width: 50em) {
+      .more-on-phi .container.geometria .with-image:nth-of-type(5) img {
+        width: 23.83rem;
+        margin-left: 5rem; } }
+    @media only screen and (max-width: 50em) {
+      .more-on-phi .container.geometria .with-image:nth-of-type(6) img,
+      .more-on-phi .container.geometria .with-image:nth-of-type(7) img {
+        width: 30.83rem; } }
     .more-on-phi .container.geometria .with-image p:nth-child(2) {
       margin-left: 20rem; }
+      @media only screen and (max-width: 75em) {
+        .more-on-phi .container.geometria .with-image p:nth-child(2) {
+          margin-left: 10rem; } }
+      @media only screen and (max-width: 50em) {
+        .more-on-phi .container.geometria .with-image p:nth-child(2) {
+          margin-left: 5rem; } }
     .more-on-phi .container.naturaleza .with-image {
       align-items: flex-start; }
       @media only screen and (max-width: 75em) {
         .more-on-phi .container.naturaleza .with-image:first-of-type img {
-          width: 350px; } }
+          width: 41.66rem; } }
+      @media only screen and (max-width: 50em) {
+        .more-on-phi .container.naturaleza .with-image:first-of-type img {
+          width: 35.66rem; } }
       .more-on-phi .container.naturaleza .with-image ul li {
         max-width: 80rem; }
       .more-on-phi .container.naturaleza .with-image .image-container {
@@ -1347,6 +1371,10 @@ header {
             @media only screen and (max-width: 75em) {
               .more-on-phi .container.naturaleza .with-image .image-container img.huracan {
                 width: 250px; } }
+    @media only screen and (max-width: 50em) {
+      .more-on-phi .container.naturaleza iframe {
+        width: 50rem;
+        height: 29rem; } }
     .more-on-phi .container.belleza ul {
       position: relative; }
       .more-on-phi .container.belleza ul:before {
@@ -1360,21 +1388,54 @@ header {
         @media only screen and (max-width: 75em) {
           .more-on-phi .container.belleza ul:before {
             letter-spacing: 15px; } }
+        @media only screen and (max-width: 50em) {
+          .more-on-phi .container.belleza ul:before {
+            letter-spacing: 10px;
+            left: 5rem; } }
     @media only screen and (max-width: 75em) {
       .more-on-phi .container.belleza .with-image:first-of-type img {
-        width: 280px; } }
+        width: 52.7rem;
+        height: auto; }
+      .more-on-phi .container.belleza .with-image img {
+        height: 52.7rem;
+        width: auto; } }
+    @media only screen and (max-width: 50em) {
+      .more-on-phi .container.belleza .with-image:first-of-type img {
+        width: 42.7rem;
+        height: auto; }
+      .more-on-phi .container.belleza .with-image img {
+        height: 42.7rem;
+        width: auto; } }
     @media only screen and (max-width: 75em) {
       .more-on-phi .container.diseno .with-image:nth-of-type(2) img:first-child {
-        width: 400px; }
+        width: 55.55rem; }
       .more-on-phi .container.diseno .with-image:nth-of-type(2) img:last-child {
-        width: 300px; } }
+        width: 41.66rem; } }
+    @media only screen and (max-width: 50em) {
+      .more-on-phi .container.diseno .with-image:nth-of-type(2) img:first-child {
+        width: 45.55rem; }
+      .more-on-phi .container.diseno .with-image:nth-of-type(2) img:last-child {
+        width: 31.66rem; } }
+    .more-on-phi .container.diseno .with-image:nth-of-type(3) img:nth-of-type(1),
+    .more-on-phi .container.diseno .with-image img:nth-of-type(2) {
+      width: 30rem; }
     .more-on-phi .container.conclusion {
       max-height: 365rem; }
       .more-on-phi .container.conclusion .with-image img {
         padding: 0 8rem; }
         @media only screen and (max-width: 75em) {
           .more-on-phi .container.conclusion .with-image img {
-            width: 400px; } }
+            width: 55.55rem; } }
+        @media only screen and (max-width: 50em) {
+          .more-on-phi .container.conclusion .with-image img {
+            width: 35.55rem;
+            padding: 0; } }
+      .more-on-phi .container.conclusion .with-image p {
+        margin: auto 3rem; }
+      .more-on-phi .container.conclusion .with-image:nth-of-type(6) img {
+        width: 23.83rem; }
+      .more-on-phi .container.conclusion .with-image:nth-of-type(7) img {
+        width: 30.83rem; }
       .more-on-phi .container.conclusion .end {
         display: flex;
         flex-direction: column;
