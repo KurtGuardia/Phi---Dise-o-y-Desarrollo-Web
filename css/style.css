@@ -1356,12 +1356,17 @@ header {
                 left: 15rem; } }
           .more-on-phi .container.naturaleza .with-image .image-container img.abeja {
             top: 60rem; }
+            @media only screen and (max-width: 50em) {
+              .more-on-phi .container.naturaleza .with-image .image-container img.abeja {
+                top: 42.84rem;
+                left: -12.84rem; } }
           .more-on-phi .container.naturaleza .with-image .image-container img.nautilus {
             top: 60rem;
             left: 30rem; }
             @media only screen and (max-width: 50em) {
               .more-on-phi .container.naturaleza .with-image .image-container img.nautilus {
-                left: 14rem; } }
+                left: 30.84rem;
+                top: 81.46rem; } }
           .more-on-phi .container.naturaleza .with-image .image-container img.huracan {
             top: 90rem;
             transition: all 100s; }

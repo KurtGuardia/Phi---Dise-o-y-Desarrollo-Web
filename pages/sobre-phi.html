@@ -21,7 +21,7 @@
       <nav class="navigation__nav">
         <ul class="navigation__list">
           <li class="navigation__item">
-            <a href="#header" class="navigation__link">Inicio</a>
+            <a href="/index.html" class="navigation__link">Inicio</a>
           </li>
           <li class="navigation__item">
             <a href="#services" class="navigation__link">Servicios</a>
@@ -1023,13 +1023,19 @@
         if (offset > 1) {
           value = y - offset;
         }
+        console.log(40 - value / 10);
+        console.log(value);
         if (value > -130) {
           huracanRotate();
           abeja.style.top = 30 - value / 10 + "rem";
           abeja.style.left = value / 10 + "rem";
           nautilus.style.top = 75 - value / 20 + "rem";
           nautilus.style.left = 40 - value / 10 + "rem";
+          if (window.matchMedia("(max-width: 800px)").matches) {
+            nautilus.style.left = 24 - value / 20 + "rem";
+          }
         }
+
         if (value > 350) {
           abeja.style.display = "none";
         } else {

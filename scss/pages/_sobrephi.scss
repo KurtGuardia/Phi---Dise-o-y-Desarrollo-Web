@@ -160,7 +160,6 @@
       }
 
       .with-image {
-        
         img:first-of-type {
           width: 500px;
 
@@ -326,6 +325,11 @@
 
             &.abeja {
               top: 60rem;
+
+              @include respond(xs){
+                top: 42.84rem;
+                left: -12.84rem;
+              }
             }
 
             &.nautilus {
@@ -333,7 +337,8 @@
               left: 30rem;
 
               @include respond(xs) {
-                left: 14rem;
+                left: 30.84rem;
+                top: 81.46rem;
               }
             }
 
@@ -456,11 +461,11 @@
           margin: auto 3rem;
         }
 
-        &:nth-of-type(6) img{
+        &:nth-of-type(6) img {
           width: 23.83rem;
         }
 
-        &:nth-of-type(7) img{
+        &:nth-of-type(7) img {
           width: 30.83rem;
         }
       }
