@@ -80,7 +80,7 @@
           }
         }
 
-        @include respond(xxxs){
+        @include respond(xxxs) {
           right: -8rem;
         }
       }
@@ -134,6 +134,7 @@
     flex-direction: column;
     justify-content: space-between;
     max-height: 58.8rem;
+    
     @include respond(xs) {
       align-items: center;
     }
@@ -265,7 +266,7 @@
   }
 
   @include respond(xxxs) {
-    margin-top: 54rem;
+    margin-top: 65rem;
   }
 
   .photo-hover {
@@ -304,12 +305,12 @@
         width: auto;
         right: 0;
         margin-top: -10rem;
-        
+
         @include respond(xxs) {
           height: 25rem;
           left: -5rem;
         }
-        
+
         @include respond(xxxs) {
           width: 22rem;
           height: auto;
@@ -322,7 +323,8 @@
       }
     }
 
-    &::before {   //for last supper
+    &::before {
+      //for last supper
       margin-top: -25rem;
       @include respond(xxs) {
         margin-top: -45rem;
@@ -333,7 +335,8 @@
         margin-left: 9rem;
       }
     }
-    &.photo-right::before {   //for notredamm
+    &.photo-right::before {
+      //for notredamm
       margin-top: -45rem;
       margin-left: 15rem;
       @include respond(xs) {
@@ -424,7 +427,9 @@
     }
 
     img {
+      //Mostly Venus
       width: 30rem;
+      margin-left: -2rem;
 
       @include respond(xxs) {
         width: 25rem;
@@ -432,13 +437,15 @@
         top: -18rem;
         right: -11rem;
       }
-    }
 
-    &:first-of-type img {
-      margin-left: -2rem;
+      @include respond(xxxs) {
+        width: 31rem;
+        top: -23rem;
+      }
     }
 
     &.photo-right img {
+      //Monalisa
       width: 20rem;
       right: 0;
 
@@ -450,18 +457,27 @@
         left: -10rem;
         width: 15rem;
       }
+
+      @include respond(xxxs) {
+        width: 20rem;
+      }
     }
 
     &::before {
+      //mostly for Venus
       margin-top: -18rem;
       margin-left: 4rem;
       @include respond(xxs) {
         margin-top: -45rem;
         margin-left: 11rem;
       }
+      @include respond(xxs) {
+        margin-top: -54rem;
+      }
     }
 
     &:last-of-type::before {
+      //For monalisa
       position: absolute;
       right: 0;
       margin-top: -12rem;
@@ -472,6 +488,9 @@
       @include respond(xxs) {
         left: -17rem;
         margin-top: -25rem;
+      }
+      @include respond(xxxs) {
+        margin-top: -30rem;
       }
     }
   }
@@ -544,7 +563,7 @@
       text-align: center;
     }
 
-    & .photo-hover {
+    .photo-hover {
       @include hover;
       @include hoverMessage;
       height: 40rem;
@@ -555,7 +574,12 @@
         height: 25rem;
       }
 
+      @include respond(xxxs) {
+        height: 30rem;
+      }
+
       img {
+        //Mostly Taj Mahal
         width: 20rem;
         height: auto;
 
@@ -563,18 +587,25 @@
           top: -7rem;
           right: -24rem;
         }
-      }
 
-      &.photo-right img {
-        right: 0;
-        margin-top: -10rem;
+        @include respond(xxxs) {
+          width: 25rem;
+          top: -8rem;
+        }
       }
 
       &:last-of-type img {
+        //Toyota
         width: 20rem;
         right: 0;
         @include respond(xs) {
           right: 7rem;
+        }
+
+        @include respond(xxxs) {
+          width: 25rem;
+          top: -6rem;
+          right: 0;
         }
       }
 
@@ -583,7 +614,7 @@
         margin-left: 40px;
       }
 
-      &:first-of-type::before {
+      &:first-of-type::before {   //For Taj Mahal
         margin-top: -20rem;
         margin-left: 1rem;
         max-width: 250px;
@@ -593,9 +624,15 @@
           margin-left: 20rem;
           width: 70px;
         }
+
+        @include respond(xxxs) {
+          margin-top: -42rem;
+          margin-left: 10rem;
+        }
       }
 
       &:last-of-type::before {
+        //For Toyota
         position: absolute;
         right: 0;
         margin-top: -8rem;
@@ -608,6 +645,11 @@
         @include respond(xxs) {
           left: -162px;
           top: -1rem;
+        }
+
+        @include respond(xxxs) {
+          left: -105px;
+          top: -0.5rem;
         }
       }
     }
@@ -623,5 +665,10 @@
 @include respond(xs) {
   h1 {
     font-size: $big;
+  }
+}
+@include respond(xxxs) {
+  h1 {
+    // font-size: 24px;
   }
 }
