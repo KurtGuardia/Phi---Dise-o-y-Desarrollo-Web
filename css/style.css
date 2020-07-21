@@ -33,15 +33,18 @@ html {
   font-size: 62.5%;
   background-color: #f4f4f4;
   scroll-behavior: smooth; }
+  @media only screen and (min-width: 112.5em) {
+    html {
+      font-size: 75%; } }
   @media only screen and (max-width: 81.25em) {
     html {
       font-size: 50%; } }
   @media only screen and (max-width: 75em) {
     html {
       font-size: 45%; } }
-  @media only screen and (min-width: 112.5em) {
+  @media only screen and (max-width: 26.8em) {
     html {
-      font-size: 75%; } }
+      font-size: 30%; } }
 
 body {
   box-sizing: border-box;
@@ -144,6 +147,16 @@ h3 {
         font-size: 1.3rem; }
       .card__side--back h3 {
         width: min-content; }
+        @media only screen and (max-width: 26.8em) {
+          .card__side--back h3 {
+            font-size: 4.9rem;
+            font-weight: 600; } }
+    @media only screen and (max-width: 37.5em) {
+      .card__side {
+        height: 45rem; } }
+    @media only screen and (max-width: 26.8em) {
+      .card__side {
+        height: 60rem; } }
   .card:hover .card__side--front {
     transform: rotateY(-180deg); }
   .card:hover .card__side--back {
@@ -477,6 +490,9 @@ header {
     backface-visibility: hidden;
     background-image: url("../../img/espiral-sombra.png");
     z-index: -2; }
+    @media only screen and (max-width: 26.8em) {
+      header .spiral {
+        background-position: unset; } }
   header .matrix {
     width: 100%;
     height: 200vh;
@@ -508,6 +524,11 @@ header {
           min-width: auto; }
           header .row .logo svg {
             width: 200px; } }
+      @media only screen and (max-width: 26.8em) {
+        header .row .logo {
+          min-width: auto; }
+          header .row .logo svg {
+            width: 150px; } }
     header .row .main-nav {
       display: flex;
       list-style: none;
@@ -684,6 +705,9 @@ header {
   height: 50rem;
   display: flex;
   justify-content: center; }
+  @media only screen and (max-width: 26.8em) {
+    .cloud {
+      margin-bottom: 10rem; } }
   .cloud .circle {
     background-color: #402A44;
     width: 100%;
@@ -747,17 +771,29 @@ header {
         top: -14rem;
         right: -15rem; }
         .welcome .photo-hover:first-child img {
-          width: 120px;
+          width: 12rem;
           height: auto; } }
+    @media only screen and (max-width: 37.5em) and (max-width: 26.8em) {
+      .welcome .photo-hover:first-child img {
+        width: 18rem;
+        height: auto; } }
+  @media only screen and (max-width: 37.5em) and (max-width: 26.8em) {
+    .welcome .photo-hover:first-child {
+      right: -8rem; } }
     .welcome .photo-hover:last-of-type img {
-      margin-left: -10rem; }
+      margin-left: -13rem; }
       @media only screen and (max-width: 75em) {
         .welcome .photo-hover:last-of-type img {
-          height: auto;
-          width: 180px; } }
+          height: 18rem;
+          width: auto; } }
       @media only screen and (max-width: 37.5em) {
         .welcome .photo-hover:last-of-type img {
-          width: 150px; } }
+          width: 15rem;
+          height: auto; } }
+      @media only screen and (max-width: 26.8em) {
+        .welcome .photo-hover:last-of-type img {
+          width: 26rem;
+          height: auto; } }
     @media only screen and (max-width: 50em) {
       .welcome .photo-hover:last-of-type {
         align-self: flex-start;
@@ -765,12 +801,12 @@ header {
     @media only screen and (max-width: 37.5em) {
       .welcome .photo-hover:last-of-type {
         top: -12rem;
-        left: -15rem; } }
+        left: -9rem; } }
     .welcome .photo-hover.photo-right::before {
       margin-left: -4rem; }
       @media only screen and (max-width: 75em) {
         .welcome .photo-hover.photo-right::before {
-          margin-left: -2rem; } }
+          margin-left: -7rem; } }
       @media only screen and (max-width: 50em) {
         .welcome .photo-hover.photo-right::before {
           margin-left: -4rem; } }
@@ -788,6 +824,9 @@ header {
       @media only screen and (max-width: 50em) {
         .welcome-text h1 {
           margin: 5rem; } }
+      @media only screen and (max-width: 26.8em) {
+        .welcome-text h1 {
+          margin-top: 10rem; } }
     .welcome-text .text-right {
       margin: 5rem -25rem 5rem 15rem; }
       @media only screen and (max-width: 50em) {
@@ -865,6 +904,9 @@ header {
   @media only screen and (max-width: 37.5em) {
     .services__title {
       margin-top: 22rem; } }
+  @media only screen and (max-width: 26.8em) {
+    .services__title {
+      margin-top: 54rem; } }
   .services__title .photo-hover {
     width: 25%;
     margin: 3rem;
@@ -907,6 +949,11 @@ header {
           width: 20rem;
           top: -18rem;
           right: -10rem; } }
+      @media only screen and (max-width: 26.8em) {
+        .services__title .photo-hover img {
+          width: 30rem;
+          top: -20rem;
+          right: -15rem; } }
     .services__title .photo-hover.photo-right img {
       height: 35rem;
       width: auto;
@@ -916,6 +963,11 @@ header {
         .services__title .photo-hover.photo-right img {
           height: 25rem;
           left: -5rem; } }
+      @media only screen and (max-width: 26.8em) {
+        .services__title .photo-hover.photo-right img {
+          width: 22rem;
+          height: auto;
+          top: -28rem; } }
     @media only screen and (max-width: 50em) {
       .services__title .photo-hover.photo-right {
         margin-left: -5rem; } }
@@ -925,6 +977,10 @@ header {
         .services__title .photo-hover::before {
           margin-top: -45rem;
           margin-left: 11rem; } }
+      @media only screen and (max-width: 26.8em) {
+        .services__title .photo-hover::before {
+          margin-top: -48rem;
+          margin-left: 9rem; } }
     .services__title .photo-hover.photo-right::before {
       margin-top: -45rem;
       margin-left: 15rem; }
@@ -935,6 +991,10 @@ header {
         .services__title .photo-hover.photo-right::before {
           margin-top: -54rem;
           margin-left: -2rem; } }
+      @media only screen and (max-width: 26.8em) {
+        .services__title .photo-hover.photo-right::before {
+          margin-top: -68rem;
+          margin-left: 1rem; } }
 
 .services-cards {
   width: 1100px;
@@ -969,6 +1029,9 @@ header {
       width: 600px;
       margin-top: 0;
       margin-bottom: 35rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .services-cards {
+      width: 360px; } }
 
 .projects__title {
   display: flex;
@@ -1121,9 +1184,14 @@ header {
         margin-top: -15rem;
         margin-left: 40px; }
       .price__title .photo-hover:first-of-type::before {
-        margin-top: -40rem;
-        margin-left: 20rem;
-        max-width: 70px; }
+        margin-top: -20rem;
+        margin-left: 1rem;
+        max-width: 250px; }
+        @media only screen and (max-width: 37.5em) {
+          .price__title .photo-hover:first-of-type::before {
+            margin-top: -40rem;
+            margin-left: 20rem;
+            width: 70px; } }
       .price__title .photo-hover:last-of-type::before {
         position: absolute;
         right: 0;
@@ -1284,7 +1352,8 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 0 5rem 5rem; }
+  margin: 0 5rem 5rem;
+  overflow: hidden; }
   .more-on-phi h1 {
     margin: 15rem auto 5rem; }
     @media only screen and (max-width: 50em) {
@@ -1318,8 +1387,7 @@ header {
       .more-on-phi hr {
         width: 80rem; } }
   .more-on-phi .container {
-    display: none;
-    overflow: hidden; }
+    display: none; }
     .more-on-phi .container .btn {
       margin-bottom: 20rem; }
     .more-on-phi .container.active {
@@ -1563,6 +1631,9 @@ header {
             @media only screen and (max-width: 50em) {
               .more-on-phi .container.naturaleza .with-image .image-container img.flor {
                 left: 15rem; } }
+            @media only screen and (max-width: 37.5em) {
+              .more-on-phi .container.naturaleza .with-image .image-container img.flor {
+                left: 12rem; } }
           .more-on-phi .container.naturaleza .with-image .image-container img.abeja {
             top: 60rem; }
             @media only screen and (max-width: 50em) {
@@ -1593,7 +1664,8 @@ header {
                 width: 250px; } }
             @media only screen and (max-width: 37.5em) {
               .more-on-phi .container.naturaleza .with-image .image-container img.huracan {
-                top: 120rem; } }
+                top: 120rem;
+                width: 220px; } }
     @media only screen and (max-width: 50em) {
       .more-on-phi .container.naturaleza iframe {
         width: 50rem;
@@ -1635,7 +1707,7 @@ header {
         width: auto; } }
     @media only screen and (max-width: 37.5em) {
       .more-on-phi .container.belleza .with-image:first-of-type img {
-        width: 35.7rem;
+        width: 30.7rem;
         height: auto; }
       .more-on-phi .container.belleza .with-image img {
         height: 35.7rem;

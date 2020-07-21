@@ -17,6 +17,10 @@ header {
     backface-visibility: hidden;
     background-image: img("espiral-sombra.png");
     z-index: -2;
+
+    @include respond(xxxs){
+      background-position: unset;
+    }
   }
 
   .matrix {
@@ -57,6 +61,13 @@ header {
         min-width: auto;
         & svg {
           width: 200px;
+        }
+      }
+
+      @include respond(xxxs) {
+        min-width: auto;
+        & svg {
+          width: 150px;
         }
       }
     }

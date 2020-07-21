@@ -61,7 +61,21 @@
 
       h3 {
         width: min-content;
+
+        @include respond(xxxs){
+          font-size: $big;
+          font-weight: 600;
+        }
       }
+    }
+
+
+    @include respond(xxs){
+      height: 45rem;
+    }
+
+    @include respond(xxxs){
+      height: 60rem;
     }
   }
 
@@ -73,7 +87,7 @@
     transform: rotateY(0deg);
   }
 
-  @media only screen and (max-width: 50em), only screen and (hover: none) {
+  @media only screen and (max-width: 50em), only screen and (hover: none) { //Because of hover:none this is not a @include respond()
     height: auto;
     width: 400px;
     &__side {

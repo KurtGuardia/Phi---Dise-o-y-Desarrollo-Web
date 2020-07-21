@@ -15,8 +15,8 @@
   display: flex;
   justify-content: center;
 
-  @include respond(phone) {
-    background-color: red;
+  @include respond(xxxs) {
+    margin-bottom: 10rem;
   }
 
   .circle {
@@ -58,6 +58,7 @@
     @include hoverMessage;
 
     &:first-child {
+      //Vetrubio
       @include respond(xs) {
         align-self: flex-start;
         margin-right: -5rem;
@@ -70,22 +71,38 @@
         right: -15rem;
 
         img {
-          width: 120px;
+          width: 12rem;
           height: auto;
+
+          @include respond(xxxs) {
+            width: 18rem;
+            height: auto;
+          }
+        }
+
+        @include respond(xxxs){
+          right: -8rem;
         }
       }
     }
 
     &:last-of-type {
+      //Partenon
       img {
-        margin-left: -10rem;
+        margin-left: -13rem;
 
         @include respond(s) {
-          height: auto;
-          width: 180px;
+          height: 18rem;
+          width: auto;
         }
         @include respond(xxs) {
-          width: 150px;
+          width: 15rem;
+          height: auto;
+        }
+
+        @include respond(xxxs) {
+          width: 26rem;
+          height: auto;
         }
       }
       @include respond(xs) {
@@ -94,7 +111,7 @@
       }
       @include respond(xxs) {
         top: -12rem;
-        left: -15rem;
+        left: -9rem;
       }
     }
 
@@ -102,7 +119,7 @@
       margin-left: -4rem;
 
       @include respond(s) {
-        margin-left: -2rem;
+        margin-left: -7rem;
       }
 
       @include respond(xs) {
@@ -123,8 +140,13 @@
 
     h1 {
       margin-left: 8rem;
+
       @include respond(xs) {
         margin: 5rem;
+      }
+
+      @include respond(xxxs) {
+        margin-top: 10rem;
       }
     }
     .text-right {
@@ -242,6 +264,10 @@
     margin-top: 22rem;
   }
 
+  @include respond(xxxs) {
+    margin-top: 54rem;
+  }
+
   .photo-hover {
     @include hover;
     @include hoverMessage;
@@ -254,6 +280,7 @@
     }
 
     img {
+      //Mostly on Last Supper
       width: 30rem;
       height: auto;
 
@@ -262,17 +289,31 @@
         top: -18rem;
         right: -10rem;
       }
+
+      @include respond(xxxs) {
+        width: 30rem;
+        top: -20rem;
+        right: -15rem;
+      }
     }
 
     &.photo-right {
+      //Notre Damm
       img {
         height: 35rem;
         width: auto;
         right: 0;
         margin-top: -10rem;
+        
         @include respond(xxs) {
           height: 25rem;
           left: -5rem;
+        }
+        
+        @include respond(xxxs) {
+          width: 22rem;
+          height: auto;
+          top: -28rem;
         }
       }
 
@@ -281,14 +322,18 @@
       }
     }
 
-    &::before {
+    &::before {   //for last supper
       margin-top: -25rem;
       @include respond(xxs) {
         margin-top: -45rem;
         margin-left: 11rem;
       }
+      @include respond(xxxs) {
+        margin-top: -48rem;
+        margin-left: 9rem;
+      }
     }
-    &.photo-right::before {
+    &.photo-right::before {   //for notredamm
       margin-top: -45rem;
       margin-left: 15rem;
       @include respond(xs) {
@@ -297,6 +342,10 @@
       @include respond(xxs) {
         margin-top: -54rem;
         margin-left: -2rem;
+      }
+      @include respond(xxxs) {
+        margin-top: -68rem;
+        margin-left: 1rem;
       }
     }
   }
@@ -348,6 +397,10 @@
     width: 600px;
     margin-top: 0;
     margin-bottom: 35rem;
+  }
+
+  @include respond(xxs) {
+    width: 360px;
   }
 }
 
@@ -475,7 +528,7 @@
   // }
 }
 
-// _____________________________ Estimate price invitation_____________________________
+// _____________________________ Estimate price_____________________________
 
 .price {
   display: flex;
@@ -530,11 +583,17 @@
         margin-left: 40px;
       }
 
-       &:first-of-type::before{
-        margin-top: -40rem;
-        margin-left: 20rem;
-        max-width: 70px;
-       }
+      &:first-of-type::before {
+        margin-top: -20rem;
+        margin-left: 1rem;
+        max-width: 250px;
+
+        @include respond(xxs) {
+          margin-top: -40rem;
+          margin-left: 20rem;
+          width: 70px;
+        }
+      }
 
       &:last-of-type::before {
         position: absolute;
@@ -556,7 +615,7 @@
   a {
     margin: 0 auto 25rem;
 
-    @include respond(xxs){
+    @include respond(xxs) {
       margin: 0 auto 10rem;
     }
   }

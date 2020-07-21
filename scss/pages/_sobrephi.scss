@@ -3,6 +3,7 @@
   flex-direction: column;
   align-items: center;
   margin: 0 5rem 5rem;
+  overflow: hidden;
 
   h1 {
     margin: 15rem auto 5rem;
@@ -51,8 +52,7 @@
 
   .container {
     display: none;
-    overflow: hidden;
-    
+        
     .btn {
       margin-bottom: 20rem;
     }
@@ -432,6 +432,10 @@
               @include respond(xs) {
                 left: 15rem;
               }
+
+              @include respond(xxs) {
+                left: 12rem;
+              }
             }
 
             &.abeja {
@@ -475,6 +479,7 @@
 
               @include respond(xxs) {
                 top: 120rem;
+                width: 220px;
               }
             }
           }
@@ -515,7 +520,7 @@
           }
         }
       }
-      .with-image {
+      .with-image {     //For both Michelangelo and Dali's paintings
         @include respond(s) {
           &:first-of-type img {
             width: 52.7rem;
@@ -541,7 +546,7 @@
 
         @include respond(xxs) {
           &:first-of-type img {
-            width: 35.7rem;
+            width: 30.7rem;
             height: auto;
           }
           img {

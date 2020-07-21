@@ -13,10 +13,16 @@ xl 1800px
 1em = 16px
 */
 @mixin respond($breakpoint) {
-  @if $breakpoint == xxxs {
-    @media only screen and (max-width: 25em) {
+  @if $breakpoint == xxxxs {
+    @media only screen and (max-width: 121.87em) {
       @content;
-    } //400px
+    } //350px
+  }
+
+  @if $breakpoint == xxxs {
+    @media only screen and (max-width: 26.8em) {
+      @content;
+    } //428px
   }
 
   @if $breakpoint == xxs {
