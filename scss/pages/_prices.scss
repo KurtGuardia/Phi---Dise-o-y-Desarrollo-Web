@@ -69,6 +69,10 @@
     .esp {
       width: 25rem;
 
+      @include respond(xxxs){
+        width: 22rem;
+      }
+
       a {
         color: $color-purple;
         font-size: $small;
@@ -107,6 +111,10 @@
 
       @include respond(xxs){
         width: 70rem;
+      }
+
+      @include respond(xxxxs){
+        width: 60rem;
       }
 
       p {

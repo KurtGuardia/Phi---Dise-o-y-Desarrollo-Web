@@ -38,37 +38,49 @@
       display: flex;
       align-items: center;
 
-      img {
+      img {     //Mostly Saturn
         width: 20rem;
         height: auto;
+
+        @include respond(xxs){
+          left: -1.5rem;
+        }
+
+        @include respond(xxxxs){
+          left: -6rem;
+        }
       }
 
-      &::before {
+      &.photo-right img {   //Warner
+        width: 15rem;    
+        
+        @include respond(xxs){
+          left: 1.5rem;
+        }    
+      }
+
+      &::before {   //mostly for Saturn
         position: absolute;
-        margin-top: -3rem;
+        top: 4rem;
+        left: 1em;
       }
 
-      &.photo-right img {
-        width: 15rem;
-        margin-left: 8rem;
+      &.photo-right::before{    //For Warner
+        top: -1rem;
+        left: -0.5rem;
       }
 
       @include respond(xs) {
         &:first-of-type {
           margin-right: 10rem;
         }
-      }
-    }
+        &::before {                    
+          left: 5rem;
+        }
+        &.photo-right::before {                    
+          left: 5rem;
+        }
 
-    @include respond(xs) {
-      &:first-of-type .photo-hover::before {
-        margin-top: -10.5rem;
-        margin-left: 10rem;
-      }
-
-      &:last-of-type .photo-hover::before {
-        margin-top: -5rem;
-        margin-left: 5rem;
       }
     }
   }

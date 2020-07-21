@@ -311,6 +311,12 @@ table {
   text-align: center; }
   table tr > * {
     padding: 2rem; }
+    @media only screen and (max-width: 26.8em) {
+      table tr > * {
+        padding: 1rem; } }
+    @media only screen and (max-width: 21.87em) {
+      table tr > * {
+        padding: 0.5rem; } }
   table .in {
     border: 3px solid #D4AF37; }
   table .up {
@@ -696,22 +702,31 @@ header {
       .entrepreneurship .with-image .photo-hover img {
         width: 20rem;
         height: auto; }
+        @media only screen and (max-width: 37.5em) {
+          .entrepreneurship .with-image .photo-hover img {
+            left: -1.5rem; } }
+        @media only screen and (max-width: 21.87em) {
+          .entrepreneurship .with-image .photo-hover img {
+            left: -6rem; } }
+      .entrepreneurship .with-image .photo-hover.photo-right img {
+        width: 15rem; }
+        @media only screen and (max-width: 37.5em) {
+          .entrepreneurship .with-image .photo-hover.photo-right img {
+            left: 1.5rem; } }
       .entrepreneurship .with-image .photo-hover::before {
         position: absolute;
-        margin-top: -3rem; }
-      .entrepreneurship .with-image .photo-hover.photo-right img {
-        width: 15rem;
-        margin-left: 8rem; }
+        top: 4rem;
+        left: 1em; }
+      .entrepreneurship .with-image .photo-hover.photo-right::before {
+        top: -1rem;
+        left: -0.5rem; }
       @media only screen and (max-width: 50em) {
         .entrepreneurship .with-image .photo-hover:first-of-type {
-          margin-right: 10rem; } }
-    @media only screen and (max-width: 50em) {
-      .entrepreneurship .with-image:first-of-type .photo-hover::before {
-        margin-top: -10.5rem;
-        margin-left: 10rem; }
-      .entrepreneurship .with-image:last-of-type .photo-hover::before {
-        margin-top: -5rem;
-        margin-left: 5rem; } }
+          margin-right: 10rem; }
+        .entrepreneurship .with-image .photo-hover::before {
+          left: 5rem; }
+        .entrepreneurship .with-image .photo-hover.photo-right::before {
+          left: 5rem; } }
   .entrepreneurship small {
     align-self: flex-start;
     margin-left: 10rem; }
@@ -1342,6 +1357,9 @@ header {
         margin: 5rem 0; } }
     .precios table .esp {
       width: 25rem; }
+      @media only screen and (max-width: 26.8em) {
+        .precios table .esp {
+          width: 22rem; } }
       .precios table .esp a {
         color: #402A44;
         font-size: 2.4rem; }
@@ -1369,6 +1387,9 @@ header {
       @media only screen and (max-width: 37.5em) {
         .precios .sections .desgloce {
           width: 70rem; } }
+      @media only screen and (max-width: 21.87em) {
+        .precios .sections .desgloce {
+          width: 60rem; } }
       .precios .sections .desgloce p {
         grid-row: 1 / 1;
         grid-column: 1 / 1;

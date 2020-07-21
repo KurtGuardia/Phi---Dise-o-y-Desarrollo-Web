@@ -5,6 +5,13 @@ table {
   ;
   tr > * {
     padding: 2rem;
+
+    @include respond(xxxs){
+      padding: 1rem;
+    }
+    @include respond(xxxxs){
+      padding: 0.5rem;
+    }
   }
   .in {
     border: 3px solid $color-primary;
