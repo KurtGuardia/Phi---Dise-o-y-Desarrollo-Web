@@ -20,15 +20,14 @@
     margin: 5rem auto;
     padding: 2rem 8rem;
     border-radius: 55px 0 55px 0;
-    text-align: justify;
-
-    @include respond(xxs) {
-      width: 60rem;
-    }
-
+    text-align: left;
     cursor: pointer;
     border: 2px solid $color-purple;
     transition: all 0.5s ease;
+
+    @include respond(xxs) {
+      width: 60rem;
+    }    
 
     &:hover {
       background-color: $color-purple-dark;
@@ -45,14 +44,14 @@
     width: 130rem;
     margin-bottom: 2rem;
     height: 0.5rem;
-    @include respond(xxs){
+    @include respond(xxs) {
       width: 80rem;
     }
   }
 
   .container {
     display: none;
-        
+
     .btn {
       margin-bottom: 20rem;
     }
@@ -124,6 +123,10 @@
           @include respond(xs) {
             width: 70rem;
           }
+
+          @include respond(xxxs) {
+            width: 66rem;
+          }
         }
 
         &:nth-of-type(2) {
@@ -149,6 +152,12 @@
             }
           }
 
+          @include respond(xxxs) {
+            img {
+              width: 100px;
+            }
+          }
+
           @include respond(xs) {
             flex-wrap: wrap;
           }
@@ -165,12 +174,17 @@
         max-width: 100rem;
         align-items: center;
         margin: 5rem auto;
+
         span {
           margin-top: 2rem;
         }
 
         @include respond(xxs) {
           max-width: 70rem;
+        }
+
+        @include respond(xxxs) {
+          width: 65rem;
         }
       }
 
@@ -179,9 +193,15 @@
         counter-increment: lista;
         position: relative;
         padding: 3rem 5rem 0 5rem;
+
         @include respond(xxs) {
           color: $color-primary-dark;
         }
+
+        @include respond(xxxs) {
+          padding-left: 6rem;
+        }
+
         &:first-of-type {
           padding-top: 10rem;
 
@@ -202,13 +222,22 @@
             left: 0;
             font-size: $small;
           }
+
+          @include respond(xxxs) {
+            left: 6px;
+            font-size: $small;
+          }
         }
       }
     }
 
     &.matematicas {
       img {
-        width: 500px;
+        width: 80rem;
+
+        @include respond(xxs) {
+          width: 60rem;
+        }
       }
 
       .with-image {
@@ -218,6 +247,9 @@
           @include respond(xs) {
             width: 250px;
           }
+          @include respond(xxxs) {
+            width: 150px;
+          }
         }
         img:last-of-type {
           width: 300px;
@@ -225,20 +257,8 @@
           @include respond(xs) {
             width: 200px;
           }
-        }
-
-        p:nth-child(2) {
-          margin-top: 5rem;
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-
           @include respond(xs) {
-            max-width: 55rem;
-          }
-          .ecuation {
-            color: $color-purple;
-            font-weight: 500;
+            width: 110px;
           }
         }
 
@@ -257,6 +277,10 @@
             font-size: $small;
           }
 
+          @include respond(xxxs) {
+            margin-left: 0;
+          }
+
           .a {
             color: $color-primary-dark;
           }
@@ -268,6 +292,29 @@
           .c {
             color: $color-primary-light;
           }
+        }
+
+        p:nth-child(2) {
+          margin-top: 5rem;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+
+          @include respond(xs) {
+            max-width: 55rem;
+          }
+
+          @include respond(xxxs) {
+            max-width: 41rem;
+          }
+          .ecuation {
+            color: $color-purple;
+            font-weight: 500;
+          }
+        }
+
+        @include respond(xxxs) {
+          width: 68rem;
         }
       }
     }
@@ -299,11 +346,24 @@
 
             @include respond(xs) {
               width: 31.94rem;
+              margin-left: 10rem;
             }
 
             @include respond(xxs) {
               width: 21.94rem;
             }
+
+            @include respond(xxxs) {
+              margin-left: 0;
+            }
+          }
+
+          @include respond(xs) {
+            width: 90rem;
+          }
+
+          @include respond(xxxs) {
+            width: 80rem;
           }
         }
 
@@ -315,11 +375,19 @@
           @include respond(xxs) {
             width: 35.83rem;
           }
+
+          @include respond(xxxs) {
+            width: 30.83rem;
+          }
         }
 
         &:nth-of-type(3) img {
           @include respond(xxs) {
             width: 30.83rem;
+          }
+
+          @include respond(xxs) {
+            width: 25.83rem;
           }
         }
 
@@ -331,6 +399,10 @@
           @include respond(xxs) {
             width: 35.83rem;
           }
+
+          @include respond(xxxs) {
+            width: 30.83rem;
+          }
         }
 
         &:nth-of-type(5) {
@@ -339,9 +411,10 @@
               width: 30.83rem;
               margin-left: 10rem;
             }
+
             @include respond(xs) {
               width: 23.83rem;
-              margin-left: 5rem;
+              margin-left: 0;
             }
           }
 
@@ -367,6 +440,10 @@
           @include respond(xxs) {
             margin-top: 3rem;
           }
+
+          @include respond(xxxs) {
+            width: 23rem;
+          }
         }
 
         @include respond(xxs) {
@@ -391,15 +468,27 @@
       .with-image {
         align-items: flex-start;
 
-        &:first-of-type img {
-          @include respond(s) {
-            width: 41.66rem;
+        &:first-of-type {
+          img {
+            @include respond(s) {
+              width: 41.66rem;
+            }
+            @include respond(xs) {
+              width: 35.66rem;
+            }
+            @include respond(xxs) {
+              width: 24.66rem;
+            }
+            @include respond(xxxs) {
+              &:nth-of-type(2),
+              &:nth-of-type(3) {
+                width: 17rem;
+              }
+            }
           }
-          @include respond(xs) {
-            width: 35.66rem;
-          }
-          @include respond(xxs) {
-            width: 24.66rem;
+
+          @include respond(xxxs) {
+            width: 66rem;
           }
         }
 
@@ -435,6 +524,10 @@
 
               @include respond(xxs) {
                 left: 12rem;
+              }
+
+              @include respond(xxxs) {
+                left: 10rem;
               }
             }
 
@@ -481,6 +574,10 @@
                 top: 120rem;
                 width: 220px;
               }
+
+              @include respond(xxxs) {
+                width: 130px;
+              }
             }
           }
         }
@@ -518,9 +615,15 @@
             letter-spacing: 22px;
             left: 5rem;
           }
+
+          @include respond(xxxs) {
+            letter-spacing: 1px;
+            left: 3rem;
+          }
         }
       }
-      .with-image {     //For both Michelangelo and Dali's paintings
+      .with-image {
+        //For both Michelangelo and Dali's paintings
         @include respond(s) {
           &:first-of-type img {
             width: 52.7rem;
@@ -559,6 +662,12 @@
 
     &.diseno {
       .with-image {
+        &:first-of-type {
+          @include respond(xxxs) {
+            width: 45rem;
+          }
+        }
+
         &:nth-of-type(2) {
           //for the facebook and icon images
           @include respond(s) {
@@ -641,6 +750,10 @@
             flex-wrap: wrap-reverse;
           }
         }
+
+        @include respond(xxxs) {
+          width: 73rem;
+        }
       }
 
       .end {
@@ -668,6 +781,14 @@
 
     @include respond(xs) {
       width: 92rem;
+    }
+
+    @include respond(xxxs) {
+      width: 87rem;
+    }
+
+    @include respond(xxxxs) {
+      width: 83rem;
     }
   }
 
