@@ -828,7 +828,7 @@ header {
           height: auto; } }
     @media only screen and (max-width: 37.5em) and (max-width: 26.8em) {
       .welcome .photo-hover:first-child img {
-        width: 18rem;
+        width: 86.4px;
         height: auto; } }
   @media only screen and (max-width: 37.5em) and (max-width: 26.8em) {
     .welcome .photo-hover:first-child {
@@ -845,7 +845,8 @@ header {
           height: auto; } }
       @media only screen and (max-width: 26.8em) {
         .welcome .photo-hover:last-of-type img {
-          width: 26rem;
+          width: 124px;
+          background-color: red;
           height: auto; } }
     @media only screen and (max-width: 56.25em) {
       .welcome .photo-hover:last-of-type {
