@@ -124,7 +124,7 @@
       }
     }
 
-    &.photo-right::before {
+    &.photo-right::before { //For partenon
       margin-left: -4rem;
 
       @include respond(s) {
@@ -132,7 +132,7 @@
       }
 
       @include respond(xs) {
-        margin-left: -3rem;
+        margin-left: -10rem;
       }
     }
   }
@@ -266,7 +266,7 @@
 .services__title {
   display: flex;
   justify-content: space-around;
-  align-items: flex-end;
+  align-items: center;
 
   @include respond(xs) {
     margin-top: 15rem;
@@ -353,14 +353,25 @@
     &.photo-right::before {
       //for notre damm
       margin-top: -45rem;
-      margin-left: 15rem;
-      @include respond(xs) {
-        margin-left: 9rem;
+      margin-left: 20rem;
+      
+      @include respond(m) {
+        margin-left: 20rem;
       }
+      
+      @include respond(s) {
+        margin-left: 15rem;
+      }
+
+      @include respond(xs) {
+        margin-left: 12rem;
+      }
+      
       @include respond(xxs) {
         margin-top: -54rem;
         margin-left: -2rem;
       }
+      
       @include respond(xxxs) {
         margin-top: -68rem;
         margin-left: 1rem;
@@ -473,7 +484,7 @@
       }
 
       @include respond(xxs) {
-        left: -10rem;
+        left: -5rem;
         width: 15rem;
       }
 
@@ -486,12 +497,15 @@
       //mostly for Venus
       margin-top: -18rem;
       margin-left: 4rem;
+     
       @include respond(xxs) {
         margin-top: -45rem;
         margin-left: 11rem;
       }
-      @include respond(xxs) {
+     
+      @include respond(xxxs) {
         margin-top: -54rem;
+        margin-left: 11rem;
       }
     }
 
@@ -574,12 +588,13 @@
   max-height: 91.5rem;
 
   &__title {
-    margin-top: 15rem;
+    margin-top: 20rem;
     display: flex;
     align-items: center;
 
     h1 {
       text-align: center;
+      margin-top: 10rem;
     }
 
     .photo-hover {
@@ -600,13 +615,14 @@
       }
 
       img {
-        //Mostly Taj Mahal
-        width: 20rem;
+        //Mostly both
+        width: 24rem;
         height: auto;
 
         @include respond(xxs) {
           top: -7rem;
           right: -24rem;
+          width: 20rem;
         }
 
         @include respond(xxxs) {
@@ -617,9 +633,9 @@
 
       &:last-of-type img {
         //Toyota
-        width: 20rem;
-        right: 0;
-        @include respond(xs) {
+        right: 0;        
+
+        @include respond(xs){
           right: 7rem;
         }
 
@@ -632,46 +648,47 @@
 
       &::before {
         margin-top: -15rem;
-        margin-left: 40px;
       }
 
       &:first-of-type::before {
         //For Taj Mahal
-        margin-top: -20rem;
         margin-left: 1rem;
-        max-width: 250px;
 
+        @include respond(xs){
+          margin-left: 2rem;
+          margin-top: -13rem;
+        }
         @include respond(xxs) {
-          margin-top: -40rem;
-          margin-left: 20rem;
+          margin-top: -36rem;
+          margin-left: 15rem;
           width: 70px;
         }
 
         @include respond(xxxs) {
-          margin-top: -42rem;
-          margin-left: 10rem;
+          margin-top: -48rem;
+          margin-left: 6rem;
         }
       }
 
       &:last-of-type::before {
         //For Toyota
         position: absolute;
-        right: 0;
-        margin-top: -8rem;
-        margin-right: 2rem;
+        right: 4rem;
+        top: 9rem;
+        margin-top: 0;
 
         @include respond(xs) {
-          left: -16px;
+          left: 6rem;
         }
 
         @include respond(xxs) {
-          left: -162px;
-          top: -1rem;
+          left: -17rem;
+          top: -10rem;
         }
 
         @include respond(xxxs) {
-          left: -105px;
-          top: -0.5rem;
+          left: -16rem;
+          top: -9rem;
         }
       }
     }

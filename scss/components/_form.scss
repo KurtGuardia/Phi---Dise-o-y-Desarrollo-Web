@@ -5,6 +5,7 @@
   color: $color-white;
   display: flex;
   position: relative;
+  overflow: hidden;
 
   &--form {
     background-color: $color-purple;
@@ -90,6 +91,7 @@
 
     @include respond(xxxs) {
       position: absolute;
+
       height: 100vh;
       width: 100%;
       z-index: -1;

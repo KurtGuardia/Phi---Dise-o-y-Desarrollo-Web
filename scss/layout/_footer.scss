@@ -36,22 +36,10 @@ footer {
         width: 30%;
         fill: $color-white;
         text-align: center;
-
-        @include respond(xs) {
-          width: 25%;
-
-          svg {
+svg {
             width: 100%;
           }
-        }
-
-        @include respond(xxs) {
-          width: 20%;
-
-          svg {
-            width: 100%;
-          }
-        }
+        
       }
 
       &--social {

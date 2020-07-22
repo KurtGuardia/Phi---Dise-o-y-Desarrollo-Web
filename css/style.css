@@ -211,7 +211,8 @@ h3 {
   max-height: 76.5rem;
   color: #f4f4f4;
   display: flex;
-  position: relative; }
+  position: relative;
+  overflow: hidden; }
   .contact__box--form {
     background-color: #402A44;
     width: 61.8%;
@@ -458,16 +459,8 @@ footer {
       width: 30%;
       fill: #f4f4f4;
       text-align: center; }
-      @media only screen and (max-width: 56.25em) {
-        footer .footer__content--logo {
-          width: 25%; }
-          footer .footer__content--logo svg {
-            width: 100%; } }
-      @media only screen and (max-width: 37.5em) {
-        footer .footer__content--logo {
-          width: 20%; }
-          footer .footer__content--logo svg {
-            width: 100%; } }
+      footer .footer__content--logo svg {
+        width: 100%; }
     footer .footer__content--social .media {
       justify-content: center;
       margin-bottom: 2rem; }
@@ -869,7 +862,7 @@ header {
           margin-left: -7rem; } }
       @media only screen and (max-width: 56.25em) {
         .welcome .photo-hover.photo-right::before {
-          margin-left: -3rem; } }
+          margin-left: -10rem; } }
   .welcome-text {
     margin: 5rem;
     display: flex;
@@ -959,7 +952,7 @@ header {
 .services__title {
   display: flex;
   justify-content: space-around;
-  align-items: flex-end; }
+  align-items: center; }
   @media only screen and (max-width: 56.25em) {
     .services__title {
       margin-top: 15rem; } }
@@ -1048,10 +1041,16 @@ header {
           margin-left: 9rem; } }
     .services__title .photo-hover.photo-right::before {
       margin-top: -45rem;
-      margin-left: 15rem; }
+      margin-left: 20rem; }
+      @media only screen and (max-width: 81.25em) {
+        .services__title .photo-hover.photo-right::before {
+          margin-left: 20rem; } }
+      @media only screen and (max-width: 75em) {
+        .services__title .photo-hover.photo-right::before {
+          margin-left: 15rem; } }
       @media only screen and (max-width: 56.25em) {
         .services__title .photo-hover.photo-right::before {
-          margin-left: 9rem; } }
+          margin-left: 12rem; } }
       @media only screen and (max-width: 37.5em) {
         .services__title .photo-hover.photo-right::before {
           margin-top: -54rem;
@@ -1160,7 +1159,7 @@ header {
           left: 0px; } }
       @media only screen and (max-width: 37.5em) {
         .projects__title .photo-hover.photo-right img {
-          left: -10rem;
+          left: -5rem;
           width: 15rem; } }
       @media only screen and (max-width: 26.8em) {
         .projects__title .photo-hover.photo-right img {
@@ -1172,9 +1171,10 @@ header {
         .projects__title .photo-hover::before {
           margin-top: -45rem;
           margin-left: 11rem; } }
-      @media only screen and (max-width: 37.5em) {
+      @media only screen and (max-width: 26.8em) {
         .projects__title .photo-hover::before {
-          margin-top: -54rem; } }
+          margin-top: -54rem;
+          margin-left: 11rem; } }
     .projects__title .photo-hover:last-of-type::before {
       position: absolute;
       right: 0;
@@ -1204,11 +1204,12 @@ header {
   flex-direction: column;
   max-height: 91.5rem; }
   .price__title {
-    margin-top: 15rem;
+    margin-top: 20rem;
     display: flex;
     align-items: center; }
     .price__title h1 {
-      text-align: center; }
+      text-align: center;
+      margin-top: 10rem; }
     .price__title .photo-hover {
       width: 25%;
       margin: 3rem;
@@ -1249,18 +1250,18 @@ header {
           height: 35rem;
           width: 3%; } }
       .price__title .photo-hover img {
-        width: 20rem;
+        width: 24rem;
         height: auto; }
         @media only screen and (max-width: 37.5em) {
           .price__title .photo-hover img {
             top: -7rem;
-            right: -24rem; } }
+            right: -24rem;
+            width: 20rem; } }
         @media only screen and (max-width: 26.8em) {
           .price__title .photo-hover img {
             width: 25rem;
             top: -8rem; } }
       .price__title .photo-hover:last-of-type img {
-        width: 20rem;
         right: 0; }
         @media only screen and (max-width: 56.25em) {
           .price__title .photo-hover:last-of-type img {
@@ -1271,37 +1272,38 @@ header {
             top: -6rem;
             right: 0; } }
       .price__title .photo-hover::before {
-        margin-top: -15rem;
-        margin-left: 40px; }
+        margin-top: -15rem; }
       .price__title .photo-hover:first-of-type::before {
-        margin-top: -20rem;
-        margin-left: 1rem;
-        max-width: 250px; }
+        margin-left: 1rem; }
+        @media only screen and (max-width: 56.25em) {
+          .price__title .photo-hover:first-of-type::before {
+            margin-left: 2rem;
+            margin-top: -13rem; } }
         @media only screen and (max-width: 37.5em) {
           .price__title .photo-hover:first-of-type::before {
-            margin-top: -40rem;
-            margin-left: 20rem;
+            margin-top: -36rem;
+            margin-left: 15rem;
             width: 70px; } }
         @media only screen and (max-width: 26.8em) {
           .price__title .photo-hover:first-of-type::before {
-            margin-top: -42rem;
-            margin-left: 10rem; } }
+            margin-top: -48rem;
+            margin-left: 6rem; } }
       .price__title .photo-hover:last-of-type::before {
         position: absolute;
-        right: 0;
-        margin-top: -8rem;
-        margin-right: 2rem; }
+        right: 4rem;
+        top: 9rem;
+        margin-top: 0; }
         @media only screen and (max-width: 56.25em) {
           .price__title .photo-hover:last-of-type::before {
-            left: -16px; } }
+            left: 6rem; } }
         @media only screen and (max-width: 37.5em) {
           .price__title .photo-hover:last-of-type::before {
-            left: -162px;
-            top: -1rem; } }
+            left: -17rem;
+            top: -10rem; } }
         @media only screen and (max-width: 26.8em) {
           .price__title .photo-hover:last-of-type::before {
-            left: -105px;
-            top: -0.5rem; } }
+            left: -16rem;
+            top: -9rem; } }
   .price a {
     margin: 0 auto 25rem; }
     @media only screen and (max-width: 37.5em) {
