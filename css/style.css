@@ -161,19 +161,22 @@ h3 {
     transform: rotateY(-180deg); }
   .card:hover .card__side--back {
     transform: rotateY(0deg); }
-  @media only screen and (max-width: 50em) {
+  @media only screen and (max-width: 56.25em) {
     .card {
       height: auto;
-      width: 400px; }
+      width: 40rem; }
       .card__side {
         position: relative; } }
-    @media only screen and (max-width: 50em) and (max-width: 37.5em) {
+    @media only screen and (max-width: 56.25em) and (max-width: 56.25em) {
+      .card__side {
+        height: 41rem; } }
+    @media only screen and (max-width: 56.25em) and (max-width: 37.5em) {
       .card__side {
         height: 35rem; } }
-    @media only screen and (max-width: 50em) and (max-width: 26.8em) {
+    @media only screen and (max-width: 56.25em) and (max-width: 26.8em) {
       .card__side {
-        height: 43rem; } }
-  @media only screen and (max-width: 50em) {
+        height: 58rem; } }
+  @media only screen and (max-width: 56.25em) {
         .card__side--front h3 {
           display: none; }
         .card__side--back {
@@ -192,15 +195,15 @@ h3 {
             font-size: 2.4rem;
             font-weight: 600;
             letter-spacing: 2px; } }
-        @media only screen and (max-width: 50em) and (max-width: 37.5em) {
+        @media only screen and (max-width: 56.25em) and (max-width: 37.5em) {
           .card__side--back p,
           .card__side--back em {
             font-size: 2rem; } }
-        @media only screen and (max-width: 50em) and (max-width: 26.8em) {
+        @media only screen and (max-width: 56.25em) and (max-width: 26.8em) {
           .card__side--back p,
           .card__side--back em {
             font-size: 3rem; } }
-  @media only screen and (max-width: 50em) {
+  @media only screen and (max-width: 56.25em) {
       .card:hover .card__side--front {
         transform: rotateY(0); } }
 
@@ -214,6 +217,10 @@ h3 {
     width: 61.8%;
     display: flex;
     flex-direction: column; }
+    @media only screen and (max-width: 26.8em) {
+      .contact__box--form {
+        background-color: #402a4485;
+        width: 100%; } }
     .contact__box--form .form__group {
       position: relative;
       margin: 5rem 0 0 8rem; }
@@ -261,6 +268,13 @@ h3 {
     height: auto;
     width: 38.2%;
     background-size: cover; }
+    @media only screen and (max-width: 26.8em) {
+      .contact__box--picture {
+        position: absolute;
+        height: 100vh;
+        width: 100%;
+        z-index: -1;
+        top: -33rem; } }
   .contact__box .spiral-ghost {
     position: absolute;
     bottom: 0;
@@ -288,7 +302,7 @@ h3 {
     width: 100%;
     filter: blur(3px);
     transition: filter .5s; }
-    @media only screen and (max-width: 50em) {
+    @media only screen and (max-width: 56.25em) {
       .project img {
         filter: blur(0); } }
   .project p {
@@ -384,11 +398,11 @@ table {
     text-decoration: none;
     transition: all 0.3s; }
   .navigation__checkbox:checked ~ .navigation__background {
-    width: 35vw;
+    width: 50vw;
     height: 100vh; }
   .navigation__checkbox:checked ~ .navigation__nav {
     opacity: 1;
-    width: 35vw; }
+    width: 50vw; }
   .navigation__icon {
     position: relative;
     margin-top: 4.5rem; }
@@ -415,7 +429,7 @@ table {
   .navigation__checkbox:checked + .navigation__button .navigation__icon::after {
     top: 0;
     transform: rotate(-135deg); }
-  @media only screen and (max-width: 50em) {
+  @media only screen and (max-width: 56.25em) {
     .navigation {
       display: inline-block; } }
 
@@ -431,7 +445,7 @@ footer {
       width: 30%; }
       footer .footer__content--quote p.tiny-text {
         margin: 2rem 0 0 3rem; }
-      @media only screen and (max-width: 50em) {
+      @media only screen and (max-width: 56.25em) {
         footer .footer__content--quote {
           width: 28%;
           text-align: left; } }
@@ -444,7 +458,7 @@ footer {
       width: 30%;
       fill: #f4f4f4;
       text-align: center; }
-      @media only screen and (max-width: 50em) {
+      @media only screen and (max-width: 56.25em) {
         footer .footer__content--logo {
           width: 25%; }
           footer .footer__content--logo svg {
@@ -513,7 +527,7 @@ header {
     backface-visibility: hidden;
     background-image: url("../../img/espiral-sombra.png");
     z-index: -2; }
-    @media only screen and (max-width: 26.8em) {
+    @media only screen and (max-width: 56.25em) {
       header .spiral {
         background-position: unset; } }
   header .matrix {
@@ -555,7 +569,8 @@ header {
     header .row .main-nav {
       display: flex;
       list-style: none;
-      justify-content: space-between; }
+      justify-content: space-between;
+      margin-right: 3rem; }
       header .row .main-nav li {
         background-color: #d4af3777;
         padding: 0.5rem 1rem;
@@ -565,6 +580,7 @@ header {
       header .row .main-nav li a:visited {
         color: #352B11;
         text-decoration: none;
+        font-size: 1.8rem;
         border-bottom: 2px solid transparent;
         -webkit-transition: border-bottom 0.4s;
         transition: border-bottom 0.4s; }
@@ -572,7 +588,7 @@ header {
       header .row .main-nav li:active {
         background-color: #f5d87877;
         border-bottom: 2px solid #A0362B; }
-      @media only screen and (max-width: 50em) {
+      @media only screen and (max-width: 56.25em) {
         header .row .main-nav {
           display: none; } }
     @media only screen and (min-width: 112.5em) {
@@ -620,8 +636,9 @@ header {
     justify-content: space-between;
     list-style: none; }
     .sec-nav__mini li a {
+      width: max-content;
       text-decoration: none;
-      margin-right: 5rem;
+      margin-right: 2rem;
       padding: 1rem;
       color: #f4f4f4;
       transition: all 0.3s; }
@@ -629,10 +646,10 @@ header {
         background-color: #9D7800;
         border-radius: 50%;
         border-bottom: 5px solid #402A44; }
-    @media (min-width: 1600px) {
+    @media only screen and (min-width: 112.5em) {
       .sec-nav__mini {
         width: 80%; } }
-  @media only screen and (max-width: 50em) {
+  @media only screen and (max-width: 56.25em) {
     .sec-nav {
       display: none; } }
 
@@ -641,7 +658,7 @@ header {
 
 #sec-nav.active {
   display: flex; }
-  @media only screen and (max-width: 50em) {
+  @media only screen and (max-width: 56.25em) {
     #sec-nav.active {
       display: none; } }
 
@@ -665,7 +682,7 @@ header {
       .entrepreneurship .with-image p span {
         color: #D4AF37;
         font-weight: 700; }
-      @media only screen and (max-width: 50em) {
+      @media only screen and (max-width: 56.25em) {
         .entrepreneurship .with-image p {
           max-width: 80rem; } }
     .entrepreneurship .with-image .photo-hover {
@@ -696,7 +713,7 @@ header {
         font-size: 1.6rem;
         animation: blink 1s infinite;
         animation-fill-mode: backwards; }
-        @media only screen and (max-width: 50em) {
+        @media only screen and (max-width: 56.25em) {
           .entrepreneurship .with-image .photo-hover::before {
             content: 'Hazme Click'; } }
       .entrepreneurship .with-image .photo-hover img {
@@ -720,7 +737,7 @@ header {
       .entrepreneurship .with-image .photo-hover.photo-right::before {
         top: -1rem;
         left: -0.5rem; }
-      @media only screen and (max-width: 50em) {
+      @media only screen and (max-width: 56.25em) {
         .entrepreneurship .with-image .photo-hover:first-of-type {
           margin-right: 10rem; }
         .entrepreneurship .with-image .photo-hover::before {
@@ -755,6 +772,9 @@ header {
     align-items: center;
     border-radius: 50%;
     align-self: center; }
+    @media only screen and (max-width: 26.8em) {
+      .cloud .circle {
+        max-width: 50rem; } }
     .cloud .circle .phi_white {
       margin: 0.5rem;
       padding: 1rem;
@@ -763,6 +783,9 @@ header {
     .cloud .circle h3 {
       color: #fff;
       font-weight: 100; }
+      @media only screen and (max-width: 26.8em) {
+        .cloud .circle h3 {
+          font-size: 2.4rem; } }
 
 .welcome {
   display: flex;
@@ -794,10 +817,10 @@ header {
       font-size: 1.6rem;
       animation: blink 1s infinite;
       animation-fill-mode: backwards; }
-      @media only screen and (max-width: 50em) {
+      @media only screen and (max-width: 56.25em) {
         .welcome .photo-hover::before {
           content: 'Hazme Click'; } }
-    @media only screen and (max-width: 50em) {
+    @media only screen and (max-width: 56.25em) {
       .welcome .photo-hover:first-child {
         align-self: flex-start;
         margin-right: -5rem; } }
@@ -831,7 +854,7 @@ header {
         .welcome .photo-hover:last-of-type img {
           width: 26rem;
           height: auto; } }
-    @media only screen and (max-width: 50em) {
+    @media only screen and (max-width: 56.25em) {
       .welcome .photo-hover:last-of-type {
         align-self: flex-start;
         margin-left: -5rem; } }
@@ -844,29 +867,31 @@ header {
       @media only screen and (max-width: 75em) {
         .welcome .photo-hover.photo-right::before {
           margin-left: -7rem; } }
-      @media only screen and (max-width: 50em) {
+      @media only screen and (max-width: 56.25em) {
         .welcome .photo-hover.photo-right::before {
-          margin-left: -4rem; } }
+          margin-left: -3rem; } }
   .welcome-text {
     margin: 5rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     max-height: 58.8rem; }
-    @media only screen and (max-width: 50em) {
+    @media only screen and (max-width: 56.25em) {
       .welcome-text {
-        align-items: center; } }
+        align-items: center;
+        text-align: center; } }
     .welcome-text h1 {
       margin-left: 8rem; }
-      @media only screen and (max-width: 50em) {
+      @media only screen and (max-width: 56.25em) {
         .welcome-text h1 {
           margin: 5rem; } }
       @media only screen and (max-width: 26.8em) {
         .welcome-text h1 {
-          margin-top: 10rem; } }
+          margin-top: 10rem;
+          text-align: center; } }
     .welcome-text .text-right {
       margin: 5rem -25rem 5rem 15rem; }
-      @media only screen and (max-width: 50em) {
+      @media only screen and (max-width: 56.25em) {
         .welcome-text .text-right {
           margin: 8rem 5rem 5rem; } }
       @media only screen and (max-width: 37.5em) {
@@ -876,10 +901,10 @@ header {
       margin-left: -5rem;
       margin-right: 5rem;
       margin-bottom: 5rem; }
-      @media only screen and (max-width: 50em) {
+      @media only screen and (max-width: 56.25em) {
         .welcome-text .text-left {
           margin: 0 5rem 5rem; } }
-    @media only screen and (max-width: 50em) {
+    @media only screen and (max-width: 56.25em) {
       .welcome-text h3 {
         font-size: 20px; } }
 
@@ -891,7 +916,7 @@ header {
   justify-content: center; }
   .services-buttons a {
     text-decoration: none; }
-  @media only screen and (max-width: 50em) {
+  @media only screen and (max-width: 56.25em) {
     .services-buttons {
       display: none; } }
   .services-buttons .service {
@@ -934,8 +959,8 @@ header {
 .services__title {
   display: flex;
   justify-content: space-around;
-  align-items: center; }
-  @media only screen and (max-width: 50em) {
+  align-items: flex-end; }
+  @media only screen and (max-width: 56.25em) {
     .services__title {
       margin-top: 15rem; } }
   @media only screen and (max-width: 37.5em) {
@@ -944,6 +969,9 @@ header {
   @media only screen and (max-width: 26.8em) {
     .services__title {
       margin-top: 65rem; } }
+  @media only screen and (max-width: 21.87em) {
+    .services__title {
+      margin-top: 85rem; } }
   .services__title .photo-hover {
     width: 25%;
     margin: 3rem;
@@ -972,7 +1000,7 @@ header {
       font-size: 1.6rem;
       animation: blink 1s infinite;
       animation-fill-mode: backwards; }
-      @media only screen and (max-width: 50em) {
+      @media only screen and (max-width: 56.25em) {
         .services__title .photo-hover::before {
           content: 'Hazme Click'; } }
     @media only screen and (max-width: 37.5em) {
@@ -1005,7 +1033,7 @@ header {
           width: 22rem;
           height: auto;
           top: -28rem; } }
-    @media only screen and (max-width: 50em) {
+    @media only screen and (max-width: 56.25em) {
       .services__title .photo-hover.photo-right {
         margin-left: -5rem; } }
     .services__title .photo-hover::before {
@@ -1021,9 +1049,9 @@ header {
     .services__title .photo-hover.photo-right::before {
       margin-top: -45rem;
       margin-left: 15rem; }
-      @media only screen and (max-width: 50em) {
+      @media only screen and (max-width: 56.25em) {
         .services__title .photo-hover.photo-right::before {
-          margin-left: 11rem; } }
+          margin-left: 9rem; } }
       @media only screen and (max-width: 37.5em) {
         .services__title .photo-hover.photo-right::before {
           margin-top: -54rem;
@@ -1057,18 +1085,21 @@ header {
   @media only screen and (max-width: 81.25em) {
     .services-cards {
       width: 900px; } }
-  @media only screen and (max-width: 50em) {
+  @media only screen and (max-width: 56.25em) {
     .services-cards {
-      width: 700px;
+      width: 820px;
       margin-top: 0; } }
   @media only screen and (max-width: 37.5em) {
     .services-cards {
       width: 600px;
       margin-top: 0;
       margin-bottom: 35rem; } }
-  @media only screen and (max-width: 37.5em) {
+  @media only screen and (max-width: 26.8em) {
     .services-cards {
       width: 360px; } }
+  @media only screen and (max-width: 21.87em) {
+    .services-cards {
+      width: 325px; } }
 
 .projects__title {
   display: flex;
@@ -1102,7 +1133,7 @@ header {
       font-size: 1.6rem;
       animation: blink 1s infinite;
       animation-fill-mode: backwards; }
-      @media only screen and (max-width: 50em) {
+      @media only screen and (max-width: 56.25em) {
         .projects__title .photo-hover::before {
           content: 'Hazme Click'; } }
     @media only screen and (max-width: 37.5em) {
@@ -1124,7 +1155,7 @@ header {
     .projects__title .photo-hover.photo-right img {
       width: 20rem;
       right: 0; }
-      @media only screen and (max-width: 50em) {
+      @media only screen and (max-width: 56.25em) {
         .projects__title .photo-hover.photo-right img {
           left: 0px; } }
       @media only screen and (max-width: 37.5em) {
@@ -1148,7 +1179,7 @@ header {
       position: absolute;
       right: 0;
       margin-top: -12rem; }
-      @media only screen and (max-width: 50em) {
+      @media only screen and (max-width: 56.25em) {
         .projects__title .photo-hover:last-of-type::before {
           left: 0; } }
       @media only screen and (max-width: 37.5em) {
@@ -1206,7 +1237,7 @@ header {
         font-size: 1.6rem;
         animation: blink 1s infinite;
         animation-fill-mode: backwards; }
-        @media only screen and (max-width: 50em) {
+        @media only screen and (max-width: 56.25em) {
           .price__title .photo-hover::before {
             content: 'Hazme Click'; } }
       @media only screen and (max-width: 37.5em) {
@@ -1215,7 +1246,8 @@ header {
           height: 25rem; } }
       @media only screen and (max-width: 26.8em) {
         .price__title .photo-hover {
-          height: 30rem; } }
+          height: 35rem;
+          width: 3%; } }
       .price__title .photo-hover img {
         width: 20rem;
         height: auto; }
@@ -1230,7 +1262,7 @@ header {
       .price__title .photo-hover:last-of-type img {
         width: 20rem;
         right: 0; }
-        @media only screen and (max-width: 50em) {
+        @media only screen and (max-width: 56.25em) {
           .price__title .photo-hover:last-of-type img {
             right: 7rem; } }
         @media only screen and (max-width: 26.8em) {
@@ -1259,7 +1291,7 @@ header {
         right: 0;
         margin-top: -8rem;
         margin-right: 2rem; }
-        @media only screen and (max-width: 50em) {
+        @media only screen and (max-width: 56.25em) {
           .price__title .photo-hover:last-of-type::before {
             left: -16px; } }
         @media only screen and (max-width: 37.5em) {
@@ -1276,7 +1308,7 @@ header {
       .price a {
         margin: 0 auto 10rem; } }
 
-@media only screen and (max-width: 50em) {
+@media only screen and (max-width: 56.25em) {
   h1 {
     font-size: 4.9rem; } }
 
@@ -1327,7 +1359,7 @@ header {
         font-size: 1.6rem;
         animation: blink 1s infinite;
         animation-fill-mode: backwards; }
-        @media only screen and (max-width: 50em) {
+        @media only screen and (max-width: 56.25em) {
           .precios .with-image .photo-hover::before {
             content: 'Hazme Click'; } }
       @media only screen and (max-width: 37.5em) {
@@ -1338,7 +1370,7 @@ header {
         width: 38rem;
         height: auto;
         margin-left: 5rem; }
-        @media only screen and (max-width: 50em) {
+        @media only screen and (max-width: 56.25em) {
           .precios .with-image .photo-hover img {
             width: 28rem;
             margin-left: 0; } }
@@ -1396,7 +1428,7 @@ header {
         padding-top: 15rem;
         max-width: 45rem;
         margin: 0; }
-        @media only screen and (max-width: 50em) {
+        @media only screen and (max-width: 56.25em) {
           .precios .sections .desgloce p {
             margin-left: 5rem; } }
         @media only screen and (max-width: 37.5em) {
@@ -1406,7 +1438,7 @@ header {
       .precios .sections .desgloce img {
         grid-row: 1 / span 2;
         grid-column: 2 / 2; }
-        @media only screen and (max-width: 50em) {
+        @media only screen and (max-width: 56.25em) {
           .precios .sections .desgloce img {
             width: 40rem; } }
         @media only screen and (max-width: 37.5em) {
@@ -1428,7 +1460,7 @@ header {
   overflow: hidden; }
   .more-on-phi h1 {
     margin: 15rem auto 5rem; }
-    @media only screen and (max-width: 50em) {
+    @media only screen and (max-width: 56.25em) {
       .more-on-phi h1 {
         margin: 5rem auto 5rem; } }
   .more-on-phi .title {
@@ -1466,7 +1498,7 @@ header {
       display: block; }
     .more-on-phi .container > * {
       margin: auto 3rem; }
-      @media only screen and (max-width: 50em) {
+      @media only screen and (max-width: 56.25em) {
         .more-on-phi .container > * {
           margin: auto 10rem; } }
     .more-on-phi .container .with-image {
@@ -1474,7 +1506,7 @@ header {
       margin: 5rem auto;
       justify-content: space-evenly;
       align-items: center; }
-      @media only screen and (max-width: 50em) {
+      @media only screen and (max-width: 56.25em) {
         .more-on-phi .container .with-image {
           width: 100rem; } }
       @media only screen and (max-width: 37.5em) {
@@ -1502,7 +1534,7 @@ header {
           width: 150px; } }
     .more-on-phi .container.historia .with-image p {
       width: 80rem; }
-      @media only screen and (max-width: 50em) {
+      @media only screen and (max-width: 56.25em) {
         .more-on-phi .container.historia .with-image p {
           width: 70rem; } }
       @media only screen and (max-width: 26.8em) {
@@ -1517,7 +1549,7 @@ header {
       .more-on-phi .container.historia .with-image:last-of-type img {
         width: 200px;
         margin-right: 3rem; } }
-    @media only screen and (max-width: 50em) {
+    @media only screen and (max-width: 56.25em) {
       .more-on-phi .container.historia .with-image:last-of-type img {
         width: 150px;
         margin-right: 3rem;
@@ -1525,7 +1557,7 @@ header {
     @media only screen and (max-width: 26.8em) {
       .more-on-phi .container.historia .with-image:last-of-type img {
         width: 100px; } }
-    @media only screen and (max-width: 50em) {
+    @media only screen and (max-width: 56.25em) {
       .more-on-phi .container.historia .with-image:last-of-type {
         flex-wrap: wrap; } }
     .more-on-phi .container.historia .quote {
@@ -1569,7 +1601,7 @@ header {
         left: -3rem;
         font-size: 3.8rem;
         font-weight: 700; }
-        @media only screen and (max-width: 50em) {
+        @media only screen and (max-width: 56.25em) {
           .more-on-phi .container.historia ol li::before {
             left: 0;
             font-size: 2.4rem; } }
@@ -1584,7 +1616,7 @@ header {
           width: 60rem; } }
     .more-on-phi .container.matematicas .with-image img:first-of-type {
       width: 500px; }
-      @media only screen and (max-width: 50em) {
+      @media only screen and (max-width: 56.25em) {
         .more-on-phi .container.matematicas .with-image img:first-of-type {
           width: 250px; } }
       @media only screen and (max-width: 26.8em) {
@@ -1592,17 +1624,17 @@ header {
           width: 150px; } }
     .more-on-phi .container.matematicas .with-image img:last-of-type {
       width: 300px; }
-      @media only screen and (max-width: 50em) {
+      @media only screen and (max-width: 56.25em) {
         .more-on-phi .container.matematicas .with-image img:last-of-type {
           width: 200px; } }
-      @media only screen and (max-width: 50em) {
+      @media only screen and (max-width: 56.25em) {
         .more-on-phi .container.matematicas .with-image img:last-of-type {
           width: 110px; } }
     .more-on-phi .container.matematicas .with-image p:first-of-type {
       width: 80rem;
       margin-left: 10rem;
       align-self: flex-start; }
-      @media only screen and (max-width: 50em) {
+      @media only screen and (max-width: 56.25em) {
         .more-on-phi .container.matematicas .with-image p:first-of-type {
           width: 35rem;
           margin-left: 3rem;
@@ -1624,7 +1656,7 @@ header {
       display: flex;
       flex-direction: column;
       align-items: center; }
-      @media only screen and (max-width: 50em) {
+      @media only screen and (max-width: 56.25em) {
         .more-on-phi .container.matematicas .with-image p:nth-child(2) {
           max-width: 55rem; } }
       @media only screen and (max-width: 26.8em) {
@@ -1639,7 +1671,7 @@ header {
     @media only screen and (max-width: 75em) {
       .more-on-phi .container.geometria .with-image:first-of-type img {
         width: 52.7rem; } }
-    @media only screen and (max-width: 50em) {
+    @media only screen and (max-width: 56.25em) {
       .more-on-phi .container.geometria .with-image:first-of-type img {
         width: 34.72rem; } }
     @media only screen and (max-width: 37.5em) {
@@ -1651,7 +1683,7 @@ header {
       @media only screen and (max-width: 75em) {
         .more-on-phi .container.geometria .with-image:first-of-type img:nth-child(2) {
           width: 45.83rem; } }
-      @media only screen and (max-width: 50em) {
+      @media only screen and (max-width: 56.25em) {
         .more-on-phi .container.geometria .with-image:first-of-type img:nth-child(2) {
           width: 31.94rem;
           margin-left: 10rem; } }
@@ -1661,13 +1693,13 @@ header {
       @media only screen and (max-width: 26.8em) {
         .more-on-phi .container.geometria .with-image:first-of-type img:nth-child(2) {
           margin-left: 0; } }
-    @media only screen and (max-width: 50em) {
+    @media only screen and (max-width: 56.25em) {
       .more-on-phi .container.geometria .with-image:first-of-type {
         width: 90rem; } }
     @media only screen and (max-width: 26.8em) {
       .more-on-phi .container.geometria .with-image:first-of-type {
         width: 80rem; } }
-    @media only screen and (max-width: 50em) {
+    @media only screen and (max-width: 56.25em) {
       .more-on-phi .container.geometria .with-image:nth-of-type(2) img {
         width: 45.83rem; } }
     @media only screen and (max-width: 37.5em) {
@@ -1695,7 +1727,7 @@ header {
       .more-on-phi .container.geometria .with-image:nth-of-type(5) img {
         width: 30.83rem;
         margin-left: 10rem; } }
-    @media only screen and (max-width: 50em) {
+    @media only screen and (max-width: 56.25em) {
       .more-on-phi .container.geometria .with-image:nth-of-type(5) img {
         width: 23.83rem;
         margin-left: 0; } }
@@ -1707,7 +1739,7 @@ header {
           margin: 4rem; } }
     .more-on-phi .container.geometria .with-image:nth-of-type(6) {
       flex-wrap: wrap-reverse; }
-    @media only screen and (max-width: 50em) {
+    @media only screen and (max-width: 56.25em) {
       .more-on-phi .container.geometria .with-image:nth-of-type(6) img,
       .more-on-phi .container.geometria .with-image:nth-of-type(7) img {
         width: 27.83rem; } }
@@ -1727,7 +1759,7 @@ header {
       @media only screen and (max-width: 75em) {
         .more-on-phi .container.geometria .with-image p:nth-child(2) {
           margin-left: 10rem; } }
-      @media only screen and (max-width: 50em) {
+      @media only screen and (max-width: 56.25em) {
         .more-on-phi .container.geometria .with-image p:nth-child(2) {
           margin-left: 5rem; } }
     .more-on-phi .container.naturaleza .with-image {
@@ -1735,7 +1767,7 @@ header {
       @media only screen and (max-width: 75em) {
         .more-on-phi .container.naturaleza .with-image:first-of-type img {
           width: 41.66rem; } }
-      @media only screen and (max-width: 50em) {
+      @media only screen and (max-width: 56.25em) {
         .more-on-phi .container.naturaleza .with-image:first-of-type img {
           width: 35.66rem; } }
       @media only screen and (max-width: 37.5em) {
@@ -1756,14 +1788,14 @@ header {
         position: relative; }
         .more-on-phi .container.naturaleza .with-image .image-container img {
           position: absolute; }
-          @media only screen and (max-width: 50em) {
+          @media only screen and (max-width: 56.25em) {
             .more-on-phi .container.naturaleza .with-image .image-container img {
               width: 15rem; } }
           .more-on-phi .container.naturaleza .with-image .image-container img.flor {
             top: 10rem;
             left: 25rem;
             z-index: -1; }
-            @media only screen and (max-width: 50em) {
+            @media only screen and (max-width: 56.25em) {
               .more-on-phi .container.naturaleza .with-image .image-container img.flor {
                 left: 15rem; } }
             @media only screen and (max-width: 37.5em) {
@@ -1774,7 +1806,7 @@ header {
                 left: 10rem; } }
           .more-on-phi .container.naturaleza .with-image .image-container img.abeja {
             top: 60rem; }
-            @media only screen and (max-width: 50em) {
+            @media only screen and (max-width: 56.25em) {
               .more-on-phi .container.naturaleza .with-image .image-container img.abeja {
                 top: 42.84rem;
                 left: -12.84rem; } }
@@ -1784,7 +1816,7 @@ header {
           .more-on-phi .container.naturaleza .with-image .image-container img.nautilus {
             top: 60rem;
             left: 30rem; }
-            @media only screen and (max-width: 50em) {
+            @media only screen and (max-width: 56.25em) {
               .more-on-phi .container.naturaleza .with-image .image-container img.nautilus {
                 left: 30.84rem;
                 top: 81.46rem; } }
@@ -1797,7 +1829,7 @@ header {
             @media only screen and (max-width: 75em) {
               .more-on-phi .container.naturaleza .with-image .image-container img.huracan {
                 width: 300px; } }
-            @media only screen and (max-width: 50em) {
+            @media only screen and (max-width: 56.25em) {
               .more-on-phi .container.naturaleza .with-image .image-container img.huracan {
                 width: 250px; } }
             @media only screen and (max-width: 37.5em) {
@@ -1807,7 +1839,7 @@ header {
             @media only screen and (max-width: 26.8em) {
               .more-on-phi .container.naturaleza .with-image .image-container img.huracan {
                 width: 130px; } }
-    @media only screen and (max-width: 50em) {
+    @media only screen and (max-width: 56.25em) {
       .more-on-phi .container.naturaleza iframe {
         width: 50rem;
         height: 29rem; } }
@@ -1824,7 +1856,7 @@ header {
         @media only screen and (max-width: 75em) {
           .more-on-phi .container.belleza ul:before {
             letter-spacing: 15px; } }
-        @media only screen and (max-width: 50em) {
+        @media only screen and (max-width: 56.25em) {
           .more-on-phi .container.belleza ul:before {
             letter-spacing: 10px;
             left: 5rem; } }
@@ -1843,7 +1875,7 @@ header {
       .more-on-phi .container.belleza .with-image img {
         height: 52.7rem;
         width: auto; } }
-    @media only screen and (max-width: 50em) {
+    @media only screen and (max-width: 56.25em) {
       .more-on-phi .container.belleza .with-image:first-of-type img {
         width: 42.7rem;
         height: auto; }
@@ -1865,7 +1897,7 @@ header {
         width: 55.55rem; }
       .more-on-phi .container.diseno .with-image:nth-of-type(2) img:last-child {
         width: 41.66rem; } }
-    @media only screen and (max-width: 50em) {
+    @media only screen and (max-width: 56.25em) {
       .more-on-phi .container.diseno .with-image:nth-of-type(2) img:first-child {
         width: 45.55rem; }
       .more-on-phi .container.diseno .with-image:nth-of-type(2) img:last-child {
@@ -1891,7 +1923,7 @@ header {
         @media only screen and (max-width: 75em) {
           .more-on-phi .container.conclusion .with-image img {
             width: 55.55rem; } }
-        @media only screen and (max-width: 50em) {
+        @media only screen and (max-width: 56.25em) {
           .more-on-phi .container.conclusion .with-image img {
             width: 35.55rem;
             padding: 0; } }
@@ -1925,10 +1957,10 @@ header {
     @media only screen and (max-width: 75em) {
       .more-on-phi .container {
         width: 133rem; } }
-    @media only screen and (max-width: 50em) {
+    @media only screen and (max-width: 56.25em) {
       .more-on-phi .container {
         width: 115rem; } }
-    @media only screen and (max-width: 50em) {
+    @media only screen and (max-width: 56.25em) {
       .more-on-phi .container {
         width: 92rem; } }
     @media only screen and (max-width: 26.8em) {

@@ -30,6 +30,10 @@
     border-radius: 50%;
     align-self: center;
 
+    @include respond(xxxs){
+      max-width: 50rem;
+    }
+
     .phi_white {
       margin: 0.5rem;
       padding: 1rem;
@@ -40,6 +44,11 @@
     h3 {
       color: #fff;
       font-weight: 100;
+
+
+    @include respond(xxxs){
+      font-size: $small;
+    }
     }
   }
 }
@@ -123,7 +132,7 @@
       }
 
       @include respond(xs) {
-        margin-left: -4rem;
+        margin-left: -3rem;
       }
     }
   }
@@ -134,9 +143,10 @@
     flex-direction: column;
     justify-content: space-between;
     max-height: 58.8rem;
-    
+
     @include respond(xs) {
       align-items: center;
+      text-align: center;
     }
 
     h1 {
@@ -148,6 +158,7 @@
 
       @include respond(xxxs) {
         margin-top: 10rem;
+        text-align: center;
       }
     }
     .text-right {
@@ -255,7 +266,7 @@
 .services__title {
   display: flex;
   justify-content: space-around;
-  align-items: center;
+  align-items: flex-end;
 
   @include respond(xs) {
     margin-top: 15rem;
@@ -267,6 +278,10 @@
 
   @include respond(xxxs) {
     margin-top: 65rem;
+  }
+
+  @include respond(xxxxs) {
+    margin-top: 85rem;
   }
 
   .photo-hover {
@@ -336,11 +351,11 @@
       }
     }
     &.photo-right::before {
-      //for notredamm
+      //for notre damm
       margin-top: -45rem;
       margin-left: 15rem;
       @include respond(xs) {
-        margin-left: 11rem;
+        margin-left: 9rem;
       }
       @include respond(xxs) {
         margin-top: -54rem;
@@ -392,7 +407,7 @@
   }
 
   @include respond(xs) {
-    width: 700px;
+    width: 820px;
     margin-top: 0;
   }
 
@@ -402,8 +417,12 @@
     margin-bottom: 35rem;
   }
 
-  @include respond(xxs) {
+  @include respond(xxxs) {
     width: 360px;
+  }
+
+  @include respond(xxxxs) {
+    width: 325px;
   }
 }
 
@@ -569,13 +588,15 @@
       height: 40rem;
       display: flex;
       align-items: center;
+
       @include respond(xxs) {
         width: 10%;
         height: 25rem;
       }
 
       @include respond(xxxs) {
-        height: 30rem;
+        height: 35rem;
+        width: 3%;
       }
 
       img {
@@ -614,7 +635,8 @@
         margin-left: 40px;
       }
 
-      &:first-of-type::before {   //For Taj Mahal
+      &:first-of-type::before {
+        //For Taj Mahal
         margin-top: -20rem;
         margin-left: 1rem;
         max-width: 250px;

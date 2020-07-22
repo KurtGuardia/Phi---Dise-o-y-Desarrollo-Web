@@ -86,18 +86,27 @@
     transform: rotateY(0deg);
   }
 
-  @media only screen and (max-width: 50em){
+  @media only screen and (max-width: 56.25em){
     // , only screen and (hover: none) 
     //Because of hover:none this is not a @include respond()
     height: auto;
-    width: 400px;
+    width: 40rem;
+
+    @include respond(xxxxs){
+      // width: ;
+    }
     &__side {
       position: relative;
+      
+      @include respond(xs){
+        height: 41rem;
+      }
+      
       @include respond(xxs){
         height: 35rem;
       }
       @include respond(xxxs){
-        height: 43rem;
+        height: 58rem;
       }
 
       &--front {

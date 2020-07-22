@@ -18,7 +18,7 @@ header {
     background-image: img("espiral-sombra.png");
     z-index: -2;
 
-    @include respond(xxxs){
+    @include respond(xs){
       background-position: unset;
     }
   }
@@ -76,6 +76,7 @@ header {
       display: flex;
       list-style: none;
       justify-content: space-between;
+      margin-right: 3rem;
 
       li {
         background-color: $color-primary-transparent;
@@ -87,7 +88,7 @@ header {
       li a:visited {
         color: $color-black;
         text-decoration: none;
-        //   text-transform: uppercase;
+        font-size: $tiny;
         border-bottom: 2px solid transparent;
         -webkit-transition: border-bottom 0.4s;
         transition: border-bottom 0.4s;

@@ -73,13 +73,13 @@
 
   // Functionality
   &__checkbox:checked ~ &__background {
-    width: 35vw;
+    width: 50vw;
     height: 100vh;
   }
 
   &__checkbox:checked ~ &__nav {
     opacity: 1;
-    width: 35vw;
+    width: 50vw;
   }
 
   // Icon
