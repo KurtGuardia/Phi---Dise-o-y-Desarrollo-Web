@@ -1479,6 +1479,10 @@ header {
     @media only screen and (max-width: 37.5em) {
       .more-on-phi .title {
         width: 60rem; } }
+    @media only screen and (max-width: 26.8em) {
+      .more-on-phi .title {
+        width: 50rem;
+        font-size: 2.8rem; } }
     .more-on-phi .title:hover {
       background-color: #16001A;
       border: 2px solid #D4AF37; }
@@ -1514,6 +1518,12 @@ header {
       @media only screen and (max-width: 37.5em) {
         .more-on-phi .container .with-image {
           width: 80rem; } }
+      @media only screen and (max-width: 37.5em) {
+        .more-on-phi .container .with-image {
+          width: 63rem; } }
+      @media only screen and (max-width: 26.8em) {
+        .more-on-phi .container .with-image {
+          width: 55rem; } }
     .more-on-phi .container .golden {
       color: #D4AF37; }
     .more-on-phi .container ul li {
@@ -1531,7 +1541,7 @@ header {
       @media only screen and (max-width: 75em) {
         .more-on-phi .container.historia .with-image img:first-of-type {
           width: 200px; } }
-      @media only screen and (max-width: 75em) {
+      @media only screen and (max-width: 56.25em) {
         .more-on-phi .container.historia .with-image img:first-of-type {
           width: 150px; } }
     .more-on-phi .container.historia .with-image p {
@@ -1579,7 +1589,7 @@ header {
           max-width: 70rem; } }
       @media only screen and (max-width: 26.8em) {
         .more-on-phi .container.historia .quote {
-          width: 65rem; } }
+          width: 63rem; } }
     .more-on-phi .container.historia ol li {
       list-style-type: none;
       counter-increment: lista;
@@ -1624,14 +1634,20 @@ header {
       @media only screen and (max-width: 26.8em) {
         .more-on-phi .container.matematicas .with-image img:first-of-type {
           width: 150px; } }
+      @media only screen and (max-width: 21.87em) {
+        .more-on-phi .container.matematicas .with-image img:first-of-type {
+          width: 130px; } }
     .more-on-phi .container.matematicas .with-image img:last-of-type {
       width: 300px; }
       @media only screen and (max-width: 56.25em) {
         .more-on-phi .container.matematicas .with-image img:last-of-type {
           width: 200px; } }
-      @media only screen and (max-width: 56.25em) {
+      @media only screen and (max-width: 37.5em) {
         .more-on-phi .container.matematicas .with-image img:last-of-type {
           width: 110px; } }
+      @media only screen and (max-width: 21.87em) {
+        .more-on-phi .container.matematicas .with-image img:last-of-type {
+          width: 90px; } }
     .more-on-phi .container.matematicas .with-image p:first-of-type {
       width: 80rem;
       margin-left: 10rem;
@@ -1667,9 +1683,6 @@ header {
       .more-on-phi .container.matematicas .with-image p:nth-child(2) .ecuation {
         color: #402A44;
         font-weight: 500; }
-    @media only screen and (max-width: 26.8em) {
-      .more-on-phi .container.matematicas .with-image {
-        width: 68rem; } }
     @media only screen and (max-width: 75em) {
       .more-on-phi .container.geometria .with-image:first-of-type img {
         width: 52.7rem; } }
@@ -1688,7 +1701,8 @@ header {
       @media only screen and (max-width: 56.25em) {
         .more-on-phi .container.geometria .with-image:first-of-type img:nth-child(2) {
           width: 31.94rem;
-          margin-left: 10rem; } }
+          margin-left: 10rem;
+          margin-bottom: -3rem; } }
       @media only screen and (max-width: 37.5em) {
         .more-on-phi .container.geometria .with-image:first-of-type img:nth-child(2) {
           width: 21.94rem; } }
@@ -1700,7 +1714,7 @@ header {
         width: 90rem; } }
     @media only screen and (max-width: 26.8em) {
       .more-on-phi .container.geometria .with-image:first-of-type {
-        width: 80rem; } }
+        width: 63rem; } }
     @media only screen and (max-width: 56.25em) {
       .more-on-phi .container.geometria .with-image:nth-of-type(2) img {
         width: 45.83rem; } }
@@ -1736,9 +1750,7 @@ header {
     @media only screen and (max-width: 37.5em) {
       .more-on-phi .container.geometria .with-image:nth-of-type(5) {
         flex-wrap: wrap;
-        margin: auto; }
-        .more-on-phi .container.geometria .with-image:nth-of-type(5) p {
-          margin: 4rem; } }
+        margin: auto; } }
     .more-on-phi .container.geometria .with-image:nth-of-type(6) {
       flex-wrap: wrap-reverse; }
     @media only screen and (max-width: 56.25em) {
@@ -1756,6 +1768,9 @@ header {
     @media only screen and (max-width: 37.5em) {
       .more-on-phi .container.geometria .with-image:nth-of-type(8) img {
         width: 60rem; } }
+    @media only screen and (max-width: 21.87em) {
+      .more-on-phi .container.geometria .with-image:nth-of-type(8) img {
+        width: 50rem; } }
     .more-on-phi .container.geometria .with-image p:nth-child(2) {
       margin-left: 20rem; }
       @media only screen and (max-width: 75em) {
@@ -1764,6 +1779,9 @@ header {
       @media only screen and (max-width: 56.25em) {
         .more-on-phi .container.geometria .with-image p:nth-child(2) {
           margin-left: 5rem; } }
+      @media only screen and (max-width: 26.8em) {
+        .more-on-phi .container.geometria .with-image p:nth-child(2) {
+          margin-left: 0; } }
     .more-on-phi .container.naturaleza .with-image {
       align-items: flex-start; }
       @media only screen and (max-width: 75em) {
@@ -1778,9 +1796,6 @@ header {
       @media only screen and (max-width: 26.8em) {
         .more-on-phi .container.naturaleza .with-image:first-of-type img:nth-of-type(2), .more-on-phi .container.naturaleza .with-image:first-of-type img:nth-of-type(3) {
           width: 17rem; } }
-      @media only screen and (max-width: 26.8em) {
-        .more-on-phi .container.naturaleza .with-image:first-of-type {
-          width: 66rem; } }
       .more-on-phi .container.naturaleza .with-image:nth-of-type(2) {
         max-width: 70rem; }
       .more-on-phi .container.naturaleza .with-image ul li {
@@ -1869,7 +1884,10 @@ header {
         @media only screen and (max-width: 26.8em) {
           .more-on-phi .container.belleza ul:before {
             letter-spacing: 1px;
-            left: 3rem; } }
+            left: 0; } }
+        @media only screen and (max-width: 21.87em) {
+          .more-on-phi .container.belleza ul:before {
+            letter-spacing: -1px; } }
     @media only screen and (max-width: 75em) {
       .more-on-phi .container.belleza .with-image:first-of-type img {
         width: 52.7rem;
@@ -1888,12 +1906,26 @@ header {
       .more-on-phi .container.belleza .with-image:first-of-type img {
         width: 30.7rem;
         height: auto; }
+        .more-on-phi .container.belleza .with-image:first-of-type img:first-of-type {
+          margin-right: 8rem; }
       .more-on-phi .container.belleza .with-image img {
         height: 35.7rem;
         width: auto; } }
     @media only screen and (max-width: 26.8em) {
+      .more-on-phi .container.belleza .with-image:first-of-type img {
+        width: 28.7rem; }
+        .more-on-phi .container.belleza .with-image:first-of-type img:first-of-type {
+          margin-right: 5rem; } }
+    @media only screen and (max-width: 21.87em) {
+      .more-on-phi .container.belleza .with-image:first-of-type img {
+        width: 23.7rem; }
+        .more-on-phi .container.belleza .with-image:first-of-type img:first-of-type {
+          margin-right: 2rem; } }
+    @media only screen and (max-width: 26.8em) {
       .more-on-phi .container.diseno .with-image:first-of-type {
-        width: 45rem; } }
+        width: 45rem; }
+        .more-on-phi .container.diseno .with-image:first-of-type img {
+          width: 100%; } }
     @media only screen and (max-width: 75em) {
       .more-on-phi .container.diseno .with-image:nth-of-type(2) img:first-child {
         width: 55.55rem; }
@@ -1909,6 +1941,11 @@ header {
         width: 35.55rem; }
       .more-on-phi .container.diseno .with-image:nth-of-type(2) img:last-child {
         width: 21.66rem; } }
+    @media only screen and (max-width: 21.87em) {
+      .more-on-phi .container.diseno .with-image:nth-of-type(2) img:first-child {
+        width: 28.55rem; }
+      .more-on-phi .container.diseno .with-image:nth-of-type(2) img:last-child {
+        width: 18.66rem; } }
     .more-on-phi .container.diseno .with-image:nth-of-type(3) img:nth-of-type(1),
     .more-on-phi .container.diseno .with-image img:nth-of-type(2) {
       width: 30rem; }
@@ -1916,8 +1953,15 @@ header {
         .more-on-phi .container.diseno .with-image:nth-of-type(3) img:nth-of-type(1),
         .more-on-phi .container.diseno .with-image img:nth-of-type(2) {
           width: 20rem; } }
+      @media only screen and (max-width: 21.87em) {
+        .more-on-phi .container.diseno .with-image:nth-of-type(3) img:nth-of-type(1),
+        .more-on-phi .container.diseno .with-image img:nth-of-type(2) {
+          width: 15rem; } }
     .more-on-phi .container.diseno .with-image:nth-of-type(3) img:nth-of-type(3) {
       width: 15rem; }
+      @media only screen and (max-width: 21.87em) {
+        .more-on-phi .container.diseno .with-image:nth-of-type(3) img:nth-of-type(3) {
+          width: 10rem; } }
     .more-on-phi .container.conclusion {
       max-height: 365rem; }
       .more-on-phi .container.conclusion .with-image img {
@@ -1932,8 +1976,6 @@ header {
         @media only screen and (max-width: 37.5em) {
           .more-on-phi .container.conclusion .with-image img {
             margin: 3rem auto; } }
-      .more-on-phi .container.conclusion .with-image p {
-        margin: auto 3rem; }
       .more-on-phi .container.conclusion .with-image:nth-of-type(6) img {
         width: 23.83rem; }
       .more-on-phi .container.conclusion .with-image:nth-of-type(7) img {
@@ -1943,9 +1985,6 @@ header {
           flex-wrap: wrap; }
           .more-on-phi .container.conclusion .with-image:nth-of-type(4) {
             flex-wrap: wrap-reverse; } }
-      @media only screen and (max-width: 26.8em) {
-        .more-on-phi .container.conclusion .with-image {
-          width: 73rem; } }
       .more-on-phi .container.conclusion .end {
         display: flex;
         flex-direction: column;
@@ -1955,7 +1994,7 @@ header {
           max-height: 430rem; } }
       @media only screen and (max-width: 37.5em) {
         .more-on-phi .container.conclusion {
-          max-height: 630rem; } }
+          max-height: 660rem; } }
     @media only screen and (max-width: 75em) {
       .more-on-phi .container {
         width: 133rem; } }
@@ -1968,6 +2007,9 @@ header {
     @media only screen and (max-width: 26.8em) {
       .more-on-phi .container {
         width: 83rem; } }
+    @media only screen and (max-width: 21.87em) {
+      .more-on-phi .container {
+        width: 76rem; } }
   .more-on-phi .bye {
     display: flex;
     flex-direction: column;

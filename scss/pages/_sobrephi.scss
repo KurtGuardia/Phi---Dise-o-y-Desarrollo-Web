@@ -27,7 +27,14 @@
 
     @include respond(xxs) {
       width: 60rem;
-    }    
+    }
+
+    @include respond(xxxs) {
+      width: 50rem;
+      
+      font-size: 2.8rem;
+      
+    }
 
     &:hover {
       background-color: $color-purple-dark;
@@ -81,6 +88,14 @@
       @include respond(xxs) {
         width: 80rem;
       }
+
+      @include respond(xxs) {
+        width: 63rem;
+      }
+
+      @include respond(xxxs) {
+        width: 55rem;
+      }
     }
 
     .golden {
@@ -112,7 +127,7 @@
             width: 200px;
           }
 
-          @include respond(s) {
+          @include respond(xs) {
             width: 150px;
           }
         }
@@ -184,7 +199,7 @@
         }
 
         @include respond(xxxs) {
-          width: 65rem;
+          width: 63rem;
         }
       }
 
@@ -250,6 +265,9 @@
           @include respond(xxxs) {
             width: 150px;
           }
+          @include respond(xxxxs) {
+            width: 130px;
+          }
         }
         img:last-of-type {
           width: 300px;
@@ -257,8 +275,11 @@
           @include respond(xs) {
             width: 200px;
           }
-          @include respond(xs) {
+          @include respond(xxs) {
             width: 110px;
+          }
+          @include respond(xxxxs) {
+            width: 90px;
           }
         }
 
@@ -312,10 +333,6 @@
             font-weight: 500;
           }
         }
-
-        @include respond(xxxs) {
-          width: 68rem;
-        }
       }
     }
 
@@ -347,6 +364,7 @@
             @include respond(xs) {
               width: 31.94rem;
               margin-left: 10rem;
+              margin-bottom: -3rem;
             }
 
             @include respond(xxs) {
@@ -363,7 +381,7 @@
           }
 
           @include respond(xxxs) {
-            width: 80rem;
+            width: 63rem;
           }
         }
 
@@ -421,9 +439,6 @@
           @include respond(xxs) {
             flex-wrap: wrap;
             margin: auto;
-            p {
-              margin: 4rem;
-            }
           }
         }
 
@@ -452,6 +467,12 @@
           }
         }
 
+        @include respond(xxxxs) {
+          &:nth-of-type(8) img {
+            width: 50rem;
+          }
+        }
+
         p:nth-child(2) {
           margin-left: 20rem;
           @include respond(s) {
@@ -459,6 +480,9 @@
           }
           @include respond(xs) {
             margin-left: 5rem;
+          }
+          @include respond(xxxs) {
+            margin-left: 0;
           }
         }
       }
@@ -485,10 +509,6 @@
                 width: 17rem;
               }
             }
-          }
-
-          @include respond(xxxs) {
-            width: 66rem;
           }
         }
 
@@ -618,7 +638,11 @@
 
           @include respond(xxxs) {
             letter-spacing: 1px;
-            left: 3rem;
+            left: 0;
+          }
+
+          @include respond(xxxxs) {
+            letter-spacing: -1px;
           }
         }
       }
@@ -648,13 +672,46 @@
         }
 
         @include respond(xxs) {
-          &:first-of-type img {
-            width: 30.7rem;
-            height: auto;
+          &:first-of-type {
+            img {
+              //Creation of Adam and Dali's Supper
+              width: 30.7rem;
+              height: auto;
+              //Only creation of Adam
+              &:first-of-type {
+                margin-right: 8rem;
+              }
+            }
           }
           img {
-            height: 35.7rem;
+            height: 35.7rem; //Nefertiti, Eiffel and CN Tower
             width: auto;
+          }
+        }
+
+        @include respond(xxxs){
+          &:first-of-type {
+            img {
+              //Creation of Adam and Dali's Supper
+              width: 28.7rem;
+              //Only creation of Adam
+              &:first-of-type {
+                margin-right: 5rem;
+              }
+            }
+          }
+        }
+
+        @include respond(xxxxs){
+          &:first-of-type {
+            img {
+              //Creation of Adam and Dali's Supper
+              width: 23.7rem;
+              //Only creation of Adam
+              &:first-of-type {
+                margin-right: 2rem;
+              }
+            }
           }
         }
       }
@@ -665,6 +722,10 @@
         &:first-of-type {
           @include respond(xxxs) {
             width: 45rem;
+
+            img{
+              width: 100%;
+            }
           }
         }
 
@@ -694,19 +755,35 @@
               width: 21.66rem;
             }
           }
+          @include respond(xxxxs) {
+            img:first-child {
+              width: 28.55rem;
+            }
+            img:last-child {
+              width: 18.66rem;
+            }
+          }
         }
 
-        &:nth-of-type(3) img:nth-of-type(1),
+        &:nth-of-type(3) img:nth-of-type(1),    //Apple and Google logos
         img:nth-of-type(2) {
           width: 30rem;
 
           @include respond(xxs) {
             width: 20rem;
           }
+
+          @include respond(xxxxs) {
+            width: 15rem;
+          }
         }
 
-        &:nth-of-type(3) img:nth-of-type(3) {
+        &:nth-of-type(3) img:nth-of-type(3) {   //NatGeo logo
           width: 15rem;
+          
+          @include respond(xxxxs) {
+            width: 10rem;
+          }
         }
       }
     }
@@ -732,10 +809,6 @@
           }
         }
 
-        p {
-          margin: auto 3rem;
-        }
-
         &:nth-of-type(6) img {
           width: 23.83rem;
         }
@@ -750,10 +823,6 @@
             flex-wrap: wrap-reverse;
           }
         }
-
-        @include respond(xxxs) {
-          width: 73rem;
-        }
       }
 
       .end {
@@ -767,7 +836,7 @@
       }
 
       @include respond(xxs) {
-        max-height: 630rem;
+        max-height: 660rem;
       }
     }
 
@@ -787,6 +856,9 @@
       width: 83rem;
     }
 
+    @include respond(xxxxs) {
+      width: 76rem;
+    }
   }
 
   .bye {
