@@ -828,7 +828,7 @@ header {
           height: auto; } }
     @media only screen and (max-width: 37.5em) and (max-width: 26.8em) {
       .welcome .photo-hover:first-child img {
-        width: 86.4px;
+        width: 18rem;
         height: auto; } }
   @media only screen and (max-width: 37.5em) and (max-width: 26.8em) {
     .welcome .photo-hover:first-child {
@@ -845,8 +845,7 @@ header {
           height: auto; } }
       @media only screen and (max-width: 26.8em) {
         .welcome .photo-hover:last-of-type img {
-          width: 124px;
-          background-color: red;
+          width: 26rem;
           height: auto; } }
     @media only screen and (max-width: 56.25em) {
       .welcome .photo-hover:last-of-type {
@@ -1967,9 +1966,6 @@ header {
       .more-on-phi .container {
         width: 92rem; } }
     @media only screen and (max-width: 26.8em) {
-      .more-on-phi .container {
-        width: 87rem; } }
-    @media only screen and (max-width: 21.87em) {
       .more-on-phi .container {
         width: 83rem; } }
   .more-on-phi .bye {

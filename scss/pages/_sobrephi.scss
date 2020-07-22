@@ -784,12 +784,9 @@
     }
 
     @include respond(xxxs) {
-      width: 87rem;
-    }
-
-    @include respond(xxxxs) {
       width: 83rem;
     }
+
   }
 
   .bye {

@@ -84,7 +84,7 @@
           height: auto;
 
           @include respond(xxxs) {
-            width: 86.4px;
+            width: 18rem;
             height: auto;
           }
         }
@@ -110,8 +110,7 @@
         }
 
         @include respond(xxxs) {
-          width: 124px;
-          background-color: red;
+          width: 26rem;
           height: auto;
         }
       }
