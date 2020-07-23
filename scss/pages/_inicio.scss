@@ -125,7 +125,7 @@
     }
 
     &.photo-right::before { //For partenon
-      margin-left: -4rem;
+      margin-left: -5rem;
 
       @include respond(s) {
         margin-left: -7rem;

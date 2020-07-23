@@ -692,13 +692,17 @@ header {
       .entrepreneurship .with-image .photo-hover img {
         width: auto;
         height: 20rem;
-        position: absolute; }
+        position: absolute;
+        opacity: 0.4;
+        transition: all 0.5s ease-in; }
         .entrepreneurship .with-image .photo-hover img.secondary {
           opacity: 0;
           z-index: 1;
           transition: all 0.5s ease-in; }
-          .entrepreneurship .with-image .photo-hover img.secondary:hover {
+          .entrepreneurship .with-image .photo-hover img.secondary:hover ~ img {
             opacity: 1; }
+        .entrepreneurship .with-image .photo-hover img:hover {
+          opacity: 1; }
       .entrepreneurship .with-image .photo-hover:hover::before {
         visibility: hidden; }
       .entrepreneurship .with-image .photo-hover::before {
@@ -706,13 +710,16 @@ header {
         display: block;
         width: max-content;
         height: auto;
-        color: #d4af3777;
+        color: #9d780077;
         font-size: 1.6rem;
         animation: blink 1s infinite;
         animation-fill-mode: backwards; }
         @media only screen and (max-width: 56.25em) {
           .entrepreneurship .with-image .photo-hover::before {
-            content: 'Hazme Click'; } }
+            content: "Hazme Click"; } }
+        @media only screen and (max-width: 26.8em) {
+          .entrepreneurship .with-image .photo-hover::before {
+            font-size: 2.4rem; } }
       .entrepreneurship .with-image .photo-hover img {
         width: 20rem;
         height: auto; }
@@ -796,13 +803,17 @@ header {
     .welcome .photo-hover img {
       width: auto;
       height: 20rem;
-      position: absolute; }
+      position: absolute;
+      opacity: 0.4;
+      transition: all 0.5s ease-in; }
       .welcome .photo-hover img.secondary {
         opacity: 0;
         z-index: 1;
         transition: all 0.5s ease-in; }
-        .welcome .photo-hover img.secondary:hover {
+        .welcome .photo-hover img.secondary:hover ~ img {
           opacity: 1; }
+      .welcome .photo-hover img:hover {
+        opacity: 1; }
     .welcome .photo-hover:hover::before {
       visibility: hidden; }
     .welcome .photo-hover::before {
@@ -810,13 +821,16 @@ header {
       display: block;
       width: max-content;
       height: auto;
-      color: #d4af3777;
+      color: #9d780077;
       font-size: 1.6rem;
       animation: blink 1s infinite;
       animation-fill-mode: backwards; }
       @media only screen and (max-width: 56.25em) {
         .welcome .photo-hover::before {
-          content: 'Hazme Click'; } }
+          content: "Hazme Click"; } }
+      @media only screen and (max-width: 26.8em) {
+        .welcome .photo-hover::before {
+          font-size: 2.4rem; } }
     @media only screen and (max-width: 56.25em) {
       .welcome .photo-hover:first-child {
         align-self: flex-start;
@@ -860,7 +874,7 @@ header {
         top: -12rem;
         left: -9rem; } }
     .welcome .photo-hover.photo-right::before {
-      margin-left: -4rem; }
+      margin-left: -5rem; }
       @media only screen and (max-width: 75em) {
         .welcome .photo-hover.photo-right::before {
           margin-left: -7rem; } }
@@ -973,13 +987,17 @@ header {
     .services__title .photo-hover img {
       width: auto;
       height: 20rem;
-      position: absolute; }
+      position: absolute;
+      opacity: 0.4;
+      transition: all 0.5s ease-in; }
       .services__title .photo-hover img.secondary {
         opacity: 0;
         z-index: 1;
         transition: all 0.5s ease-in; }
-        .services__title .photo-hover img.secondary:hover {
+        .services__title .photo-hover img.secondary:hover ~ img {
           opacity: 1; }
+      .services__title .photo-hover img:hover {
+        opacity: 1; }
     .services__title .photo-hover:hover::before {
       visibility: hidden; }
     .services__title .photo-hover::before {
@@ -987,13 +1005,16 @@ header {
       display: block;
       width: max-content;
       height: auto;
-      color: #d4af3777;
+      color: #9d780077;
       font-size: 1.6rem;
       animation: blink 1s infinite;
       animation-fill-mode: backwards; }
       @media only screen and (max-width: 56.25em) {
         .services__title .photo-hover::before {
-          content: 'Hazme Click'; } }
+          content: "Hazme Click"; } }
+      @media only screen and (max-width: 26.8em) {
+        .services__title .photo-hover::before {
+          font-size: 2.4rem; } }
     @media only screen and (max-width: 37.5em) {
       .services__title .photo-hover {
         height: 5rem; } }
@@ -1111,13 +1132,17 @@ header {
     .projects__title .photo-hover img {
       width: auto;
       height: 20rem;
-      position: absolute; }
+      position: absolute;
+      opacity: 0.4;
+      transition: all 0.5s ease-in; }
       .projects__title .photo-hover img.secondary {
         opacity: 0;
         z-index: 1;
         transition: all 0.5s ease-in; }
-        .projects__title .photo-hover img.secondary:hover {
+        .projects__title .photo-hover img.secondary:hover ~ img {
           opacity: 1; }
+      .projects__title .photo-hover img:hover {
+        opacity: 1; }
     .projects__title .photo-hover:hover::before {
       visibility: hidden; }
     .projects__title .photo-hover::before {
@@ -1125,13 +1150,16 @@ header {
       display: block;
       width: max-content;
       height: auto;
-      color: #d4af3777;
+      color: #9d780077;
       font-size: 1.6rem;
       animation: blink 1s infinite;
       animation-fill-mode: backwards; }
       @media only screen and (max-width: 56.25em) {
         .projects__title .photo-hover::before {
-          content: 'Hazme Click'; } }
+          content: "Hazme Click"; } }
+      @media only screen and (max-width: 26.8em) {
+        .projects__title .photo-hover::before {
+          font-size: 2.4rem; } }
     @media only screen and (max-width: 37.5em) {
       .projects__title .photo-hover {
         height: 10rem; } }
@@ -1217,13 +1245,17 @@ header {
       .price__title .photo-hover img {
         width: auto;
         height: 20rem;
-        position: absolute; }
+        position: absolute;
+        opacity: 0.4;
+        transition: all 0.5s ease-in; }
         .price__title .photo-hover img.secondary {
           opacity: 0;
           z-index: 1;
           transition: all 0.5s ease-in; }
-          .price__title .photo-hover img.secondary:hover {
+          .price__title .photo-hover img.secondary:hover ~ img {
             opacity: 1; }
+        .price__title .photo-hover img:hover {
+          opacity: 1; }
       .price__title .photo-hover:hover::before {
         visibility: hidden; }
       .price__title .photo-hover::before {
@@ -1231,13 +1263,16 @@ header {
         display: block;
         width: max-content;
         height: auto;
-        color: #d4af3777;
+        color: #9d780077;
         font-size: 1.6rem;
         animation: blink 1s infinite;
         animation-fill-mode: backwards; }
         @media only screen and (max-width: 56.25em) {
           .price__title .photo-hover::before {
-            content: 'Hazme Click'; } }
+            content: "Hazme Click"; } }
+        @media only screen and (max-width: 26.8em) {
+          .price__title .photo-hover::before {
+            font-size: 2.4rem; } }
       @media only screen and (max-width: 37.5em) {
         .price__title .photo-hover {
           width: 10%;
@@ -1340,13 +1375,17 @@ header {
       .precios .with-image .photo-hover img {
         width: auto;
         height: 20rem;
-        position: absolute; }
+        position: absolute;
+        opacity: 0.4;
+        transition: all 0.5s ease-in; }
         .precios .with-image .photo-hover img.secondary {
           opacity: 0;
           z-index: 1;
           transition: all 0.5s ease-in; }
-          .precios .with-image .photo-hover img.secondary:hover {
+          .precios .with-image .photo-hover img.secondary:hover ~ img {
             opacity: 1; }
+        .precios .with-image .photo-hover img:hover {
+          opacity: 1; }
       .precios .with-image .photo-hover:hover::before {
         visibility: hidden; }
       .precios .with-image .photo-hover::before {
@@ -1354,13 +1393,16 @@ header {
         display: block;
         width: max-content;
         height: auto;
-        color: #d4af3777;
+        color: #9d780077;
         font-size: 1.6rem;
         animation: blink 1s infinite;
         animation-fill-mode: backwards; }
         @media only screen and (max-width: 56.25em) {
           .precios .with-image .photo-hover::before {
-            content: 'Hazme Click'; } }
+            content: "Hazme Click"; } }
+        @media only screen and (max-width: 26.8em) {
+          .precios .with-image .photo-hover::before {
+            font-size: 2.4rem; } }
       @media only screen and (max-width: 37.5em) {
         .precios .with-image .photo-hover {
           margin: 0 auto 5rem;

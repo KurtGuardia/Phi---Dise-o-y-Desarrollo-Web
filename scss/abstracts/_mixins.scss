@@ -62,6 +62,7 @@ xl 1800px
   }
 }
 
+//Unused
 @mixin absCenter {
   position: absolute;
   top: 50%;
@@ -78,14 +79,19 @@ xl 1800px
     width: auto;
     height: 20rem;
     position: absolute;
+    opacity: 0.4;
+    transition: all 0.5s ease-in;
 
     &.secondary {
       opacity: 0;
       z-index: 1;
       transition: all 0.5s ease-in;
-      &:hover {
+      &:hover ~ img {
         opacity: 1;
       }
+    }
+    &:hover {
+      opacity: 1;
     }
   }
 
@@ -100,13 +106,17 @@ xl 1800px
     display: block;
     width: max-content;
     height: auto;
-    color: $color-primary-transparent;
+    color: $color-primary-dark-transparent;
     font-size: 1.6rem;
     animation: blink 1s infinite;
     animation-fill-mode: backwards;
 
-    @include respond(xs){
-      content: 'Hazme Click';
+    @include respond(xs) {
+      content: "Hazme Click";
+    }
+
+    @include respond((xxxs)) {
+      font-size: $small;
     }
   }
 }
