@@ -27,10 +27,14 @@
       a {
         width: max-content;
         text-decoration: none;
-        margin-right: 2rem;
+        margin-right: 5rem;
         padding: 1rem;
         color: $color-white;
         transition: all 0.3s;
+
+        @include respond(xl){
+          margin-right: 3rem;
+        }
 
         &:hover {
           background-color: $color-primary-dark;

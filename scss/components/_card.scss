@@ -3,10 +3,10 @@
   -moz-perspective: 100rem;
   position: relative;
   width: 25rem;
-  height: 35rem;
+  height: 40.25rem;
 
   &__side {
-    height: 35rem;
+    height: 40.25rem;
     transition: all 0.8s ease;
     position: absolute;
     top: 0;
@@ -40,9 +40,11 @@
       text-align: left;
       justify-content: flex-start;
       background-image: url(../img/card-back.png);
+      background-size: cover;
       transform: translateX(-10px);
       font-size: 1.9rem;
       transform: rotateY(180deg);
+
       & > * {
         margin: 0 3rem;
       }
