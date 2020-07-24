@@ -60,7 +60,11 @@
     <!-- __________________ -->
     <div id="sec-nav active" class="sec-nav">
       <a href="#header">
-        <img src="../img/SVG/phi_white.svg" class="sec-nav__logo" alt="Logo Phi">
+        <img
+          src="../img/SVG/phi_white.svg"
+          class="sec-nav__logo"
+          alt="Logo Phi"
+        />
         <!-- <svg class="sec-nav__logo">
           <use xlink:href="img/sprite.svg#icon-phi_logo_black"></use>
         </svg> -->
@@ -117,11 +121,10 @@
             <div class="with-image">
               <img src="../img/euclides.png" alt="Imagen de Euclides" />
               <div class="quote">
-                
-                  &ldquo;Se dice que una recta ha sido cortada en extrema y
-                  media razón cuando la recta entera es al segmento mayor como
-                  el segmento mayor es al segmento menor.&rdquo;
-                
+                &ldquo;Se dice que una recta ha sido cortada en extrema y media
+                razón cuando la recta entera es al segmento mayor como el
+                segmento mayor es al segmento menor.&rdquo;
+
                 <span class="tiny-text">(a + b) / a = a / b</span>
                 <span class="tiny-text"
                   >-Euclides, Los Elementos, Definición del Libro sexto.</span
@@ -957,7 +960,7 @@
         </div>
 
         <div class="footer__content--logo">
-          <img src="../img/SVG/phi_white.svg" alt="Logo Phi">
+          <img src="../img/SVG/phi_white.svg" alt="Logo Phi" />
           <!-- <svg>
             <use xlink:href="img/sprite.svg#icon-phi_logo_black"></use>
           </svg> -->
@@ -997,8 +1000,52 @@
       </div>
 
       <div class="footer__copyright">
-        Copyright &copy; <span>Kurt Guardia</span>. Todos los derechos
-        reservados.
+        Copyright &copy; <span class="modal-btn">Kurt Guardia</span>. Todos los
+        derechos reservados.
+      </div>
+
+      <div class="footer__modal-bg">
+        <div class="modal">
+          <div class="text">
+            <h3>Sobre mí</h3>
+            <p>
+              Mi nombre es Kurt Guardia, soy español-boliviano nacido en
+              Cochabamba, Bolivia y llegado a España con una Beca por la Xunta
+              de Galicia. Me formé como Licenciado en Ingeniería Comercial,
+              Máster en Dirección de Empresas y ahora autodidacta en
+              programación.<br /><br />
+              He tenido diversos y variados trabajos por cuenta ajena, un
+              emprendimiento en Bolivia y ahora uno en España. Conozco de
+              primera mano lo complicado que es hacerse de un emprendimiento
+              exitoso y sostenible. <br />
+              <br />
+              También comparto el sentimiento único que conlleva ser
+              independiente o autónomo, una mezcla de orgullo, alegría con
+              estrés y nervios. Es por eso que con Phi - Diseño y Desarrollo
+              Web, se intenta apoyar a los emprendimientos que lo soliciten,
+              tanto como clientes o como proveedores terciarios de servicios
+              complementarios. <br /><br />
+              En nombre del equipo te invito a que sigas recorriendo la web y
+              que sin ningún compromiso te contactes con nosotros para solicitar
+              un presupuesto o conversar sobre tu siguiente proyecto! <br />
+              <br />
+              Un saludo 😉.
+            </p>
+          </div>
+          <div class="photo">
+            <img
+              src="../img/Kurt-left.png"
+              class="kurt-left"
+              alt="Half photo of Kurt"
+            />
+            <img
+              src="../img/Kurt-right.png"
+              class="kurt-right"
+              alt="Half photo of Kurt"
+            />
+          </div>
+          <span class="modal-close">X</span>
+        </div>
       </div>
     </footer>
     <script>
@@ -1007,6 +1054,9 @@
       const abeja = document.querySelector(".abeja");
       const nautilus = document.querySelector(".nautilus");
       const allTitles = document.querySelectorAll(".title");
+      const modalBtn = document.querySelector(".modal-btn");
+      const modalBg = document.querySelector(".footer__modal-bg");
+      const modalClose = document.querySelector(".modal-close");
 
       //screen scroll event
       window.addEventListener("scroll", function () {
@@ -1017,7 +1067,7 @@
         if (offset > 1) {
           value = y - offset;
         }
-console.log(value)
+        console.log(value);
         if (value > -130) {
           huracanRotate();
           abeja.style.top = 30 - value / 10 + "rem";
@@ -1025,7 +1075,7 @@ console.log(value)
           nautilus.style.top = 75 - value / 20 + "rem";
           nautilus.style.left = 40 - value / 10 + "rem";
           if (window.matchMedia("(max-width: 600px)").matches) {
-            abeja.style.left = ((value / 10) + 9) + "rem";
+            abeja.style.left = value / 10 + 9 + "rem";
             nautilus.style.left = 16.34 - value / 20 + "rem";
           } else if (window.matchMedia("(max-width: 800px)").matches) {
             nautilus.style.left = 24 - value / 20 + "rem";
@@ -1037,6 +1087,15 @@ console.log(value)
         } else {
           abeja.style.display = "block";
         }
+      });
+
+      //Event listener
+      modalBtn.addEventListener("click", function () {
+        modalBg.classList.add("bg-active");
+      });
+
+      modalClose.addEventListener("click", function () {
+        modalBg.classList.remove("bg-active");
       });
 
       //functions
