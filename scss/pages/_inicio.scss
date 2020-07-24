@@ -98,7 +98,7 @@
     &:last-of-type {
       //Partenon
       img {
-        margin-left: -13rem;
+        margin-left: -7rem;
 
         @include respond(s) {
           height: 18rem;
@@ -125,14 +125,21 @@
     }
 
     &.photo-right::before { //For partenon
-      margin-left: -5rem;
 
       @include respond(s) {
         margin-left: -7rem;
       }
 
       @include respond(xs) {
-        margin-left: -10rem;
+        margin-left: 3rem;
+      }
+
+      @include respond(xs) {
+        margin-left: -4rem;
+      }
+
+      @include respond(xxxs) {
+        margin-left: -1rem;
       }
     }
   }
@@ -143,11 +150,6 @@
     flex-direction: column;
     justify-content: space-between;
     max-height: 58.8rem;
-
-    @include respond(xs) {
-      align-items: center;
-      text-align: center;
-    }
 
     h1 {
       margin-left: 8rem;
@@ -182,9 +184,15 @@
     }
 
     @include respond(xs) {
+      align-items: center;
+      text-align: center;
       h3 {
         font-size: 20px;
       }
+    }
+
+    @include respond(xxxs){
+      margin: 5rem 0 0;
     }
   }
 }
@@ -304,6 +312,11 @@
         top: -20rem;
         right: -15rem;
       }
+
+      @include respond(xxxxs) {
+        width: 25rem;
+        right: -8rem;
+      }
     }
 
     &.photo-right {
@@ -311,7 +324,7 @@
       img {
         height: 35rem;
         width: auto;
-        right: 0;
+        right: 5rem;
         margin-top: -10rem;
 
         @include respond(xxs) {
@@ -323,6 +336,12 @@
           width: 22rem;
           height: auto;
           top: -28rem;
+        }
+
+        @include respond(xxxxs) {
+          width: 18rem;
+          top: -25rem;
+          left: -7rem;
         }
       }
 
@@ -346,14 +365,14 @@
     &.photo-right::before {
       //for notre damm
       margin-top: -45rem;
-      margin-left: 20rem;
+      margin-left: 31rem;
       
       @include respond(m) {
-        margin-left: 20rem;
+        margin-left: 30rem;
       }
-      
-      @include respond(s) {
-        margin-left: 15rem;
+    
+      @include respond(m) {
+        margin-left: 18rem;
       }
 
       @include respond(xs) {
@@ -368,6 +387,11 @@
       @include respond(xxxs) {
         margin-top: -68rem;
         margin-left: 1rem;
+      }
+      
+      @include respond(xxxxs) {
+        margin-top: -68rem;
+        margin-left: -5rem;
       }
     }
   }
@@ -464,6 +488,11 @@
         width: 31rem;
         top: -23rem;
       }
+
+      @include respond(xxxxs) {
+        width: 27rem;
+        right: -10rem;
+      }
     }
 
     &.photo-right img {
@@ -481,7 +510,12 @@
       }
 
       @include respond(xxxs) {
-        width: 20rem;
+        width: 20rem;left: -9rem;
+      }
+
+      @include respond(xxxxs) {
+        width: 17rem;
+        left: -9rem;
       }
     }
 
@@ -497,7 +531,12 @@
      
       @include respond(xxxs) {
         margin-top: -54rem;
-        margin-left: 11rem;
+        margin-left: 5rem;
+      }
+     
+      @include respond(xxxxs) {
+        margin-top: -54rem;
+        margin-left: 0;
       }
     }
 
@@ -516,6 +555,9 @@
       }
       @include respond(xxxs) {
         margin-top: -30rem;
+      }
+      @include respond(xxxxs) {
+        margin-left: 7rem;
       }
     }
   }
@@ -681,6 +723,10 @@
         @include respond(xxxs) {
           left: -16rem;
           top: -9rem;
+        }
+
+        @include respond(xxxxs) {
+          left: -19rem;
         }
       }
     }

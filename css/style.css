@@ -376,7 +376,7 @@ table {
     z-index: 1000;
     transition: all 0.3s; }
   .navigation__nav {
-    height: 120vh;
+    height: 100vh;
     position: fixed;
     top: 0;
     right: 0;
@@ -471,7 +471,7 @@ table {
         width: 80%; } }
     @media only screen and (max-width: 26.8em) {
       .modal-bg .modal {
-        height: 75%; } }
+        height: 80%; } }
     @media only screen and (max-width: 21.87em) {
       .modal-bg .modal {
         height: 65%; } }
@@ -869,7 +869,7 @@ header {
         .entrepreneurship .with-image p {
           max-width: 80rem; } }
     .entrepreneurship .with-image .photo-hover {
-      width: 25%;
+      width: 50%;
       margin: 3rem;
       position: relative;
       height: 20rem;
@@ -986,7 +986,7 @@ header {
   .welcome :last-child {
     align-self: center; }
   .welcome .photo-hover {
-    width: 25%;
+    width: 50%;
     margin: 3rem;
     position: relative; }
     .welcome .photo-hover img {
@@ -1041,7 +1041,7 @@ header {
     .welcome .photo-hover:first-child {
       right: -8rem; } }
     .welcome .photo-hover:last-of-type img {
-      margin-left: -13rem; }
+      margin-left: -7rem; }
       @media only screen and (max-width: 75em) {
         .welcome .photo-hover:last-of-type img {
           height: 18rem;
@@ -1062,24 +1062,24 @@ header {
       .welcome .photo-hover:last-of-type {
         top: -12rem;
         left: -9rem; } }
-    .welcome .photo-hover.photo-right::before {
-      margin-left: -5rem; }
-      @media only screen and (max-width: 75em) {
-        .welcome .photo-hover.photo-right::before {
-          margin-left: -7rem; } }
-      @media only screen and (max-width: 56.25em) {
-        .welcome .photo-hover.photo-right::before {
-          margin-left: -10rem; } }
+    @media only screen and (max-width: 75em) {
+      .welcome .photo-hover.photo-right::before {
+        margin-left: -7rem; } }
+    @media only screen and (max-width: 56.25em) {
+      .welcome .photo-hover.photo-right::before {
+        margin-left: 3rem; } }
+    @media only screen and (max-width: 56.25em) {
+      .welcome .photo-hover.photo-right::before {
+        margin-left: -4rem; } }
+    @media only screen and (max-width: 26.8em) {
+      .welcome .photo-hover.photo-right::before {
+        margin-left: -1rem; } }
   .welcome-text {
     margin: 5rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     max-height: 58.8rem; }
-    @media only screen and (max-width: 56.25em) {
-      .welcome-text {
-        align-items: center;
-        text-align: center; } }
     .welcome-text h1 {
       margin-left: 8rem; }
       @media only screen and (max-width: 56.25em) {
@@ -1105,8 +1105,14 @@ header {
         .welcome-text .text-left {
           margin: 0 5rem 5rem; } }
     @media only screen and (max-width: 56.25em) {
-      .welcome-text h3 {
-        font-size: 20px; } }
+      .welcome-text {
+        align-items: center;
+        text-align: center; }
+        .welcome-text h3 {
+          font-size: 20px; } }
+    @media only screen and (max-width: 26.8em) {
+      .welcome-text {
+        margin: 5rem 0 0; } }
 
 .services-buttons {
   display: grid;
@@ -1168,7 +1174,7 @@ header {
     .services__title {
       margin-top: 85rem; } }
   .services__title .photo-hover {
-    width: 25%;
+    width: 50%;
     margin: 3rem;
     position: relative;
     display: flex;
@@ -1220,10 +1226,14 @@ header {
           width: 30rem;
           top: -20rem;
           right: -15rem; } }
+      @media only screen and (max-width: 21.87em) {
+        .services__title .photo-hover img {
+          width: 25rem;
+          right: -8rem; } }
     .services__title .photo-hover.photo-right img {
       height: 35rem;
       width: auto;
-      right: 0;
+      right: 5rem;
       margin-top: -10rem; }
       @media only screen and (max-width: 37.5em) {
         .services__title .photo-hover.photo-right img {
@@ -1234,6 +1244,11 @@ header {
           width: 22rem;
           height: auto;
           top: -28rem; } }
+      @media only screen and (max-width: 21.87em) {
+        .services__title .photo-hover.photo-right img {
+          width: 18rem;
+          top: -25rem;
+          left: -7rem; } }
     @media only screen and (max-width: 56.25em) {
       .services__title .photo-hover.photo-right {
         margin-left: -5rem; } }
@@ -1249,13 +1264,13 @@ header {
           margin-left: 8rem; } }
     .services__title .photo-hover.photo-right::before {
       margin-top: -45rem;
-      margin-left: 20rem; }
+      margin-left: 31rem; }
       @media only screen and (max-width: 81.25em) {
         .services__title .photo-hover.photo-right::before {
-          margin-left: 20rem; } }
-      @media only screen and (max-width: 75em) {
+          margin-left: 30rem; } }
+      @media only screen and (max-width: 81.25em) {
         .services__title .photo-hover.photo-right::before {
-          margin-left: 15rem; } }
+          margin-left: 18rem; } }
       @media only screen and (max-width: 56.25em) {
         .services__title .photo-hover.photo-right::before {
           margin-left: 12rem; } }
@@ -1267,6 +1282,10 @@ header {
         .services__title .photo-hover.photo-right::before {
           margin-top: -68rem;
           margin-left: 1rem; } }
+      @media only screen and (max-width: 21.87em) {
+        .services__title .photo-hover.photo-right::before {
+          margin-top: -68rem;
+          margin-left: -5rem; } }
 
 .services-cards {
   width: 1100px;
@@ -1312,7 +1331,7 @@ header {
   justify-content: space-around;
   align-items: center; }
   .projects__title .photo-hover {
-    width: 25%;
+    width: 50%;
     margin: 3rem;
     position: relative;
     height: 40rem;
@@ -1365,6 +1384,10 @@ header {
         .projects__title .photo-hover img {
           width: 31rem;
           top: -23rem; } }
+      @media only screen and (max-width: 21.87em) {
+        .projects__title .photo-hover img {
+          width: 27rem;
+          right: -10rem; } }
     .projects__title .photo-hover.photo-right img {
       width: 20rem;
       right: 0; }
@@ -1377,7 +1400,12 @@ header {
           width: 15rem; } }
       @media only screen and (max-width: 26.8em) {
         .projects__title .photo-hover.photo-right img {
-          width: 20rem; } }
+          width: 20rem;
+          left: -9rem; } }
+      @media only screen and (max-width: 21.87em) {
+        .projects__title .photo-hover.photo-right img {
+          width: 17rem;
+          left: -9rem; } }
     .projects__title .photo-hover::before {
       margin-top: -18rem;
       margin-left: 4rem; }
@@ -1388,7 +1416,11 @@ header {
       @media only screen and (max-width: 26.8em) {
         .projects__title .photo-hover::before {
           margin-top: -54rem;
-          margin-left: 11rem; } }
+          margin-left: 5rem; } }
+      @media only screen and (max-width: 21.87em) {
+        .projects__title .photo-hover::before {
+          margin-top: -54rem;
+          margin-left: 0; } }
     .projects__title .photo-hover:last-of-type::before {
       position: absolute;
       right: 0;
@@ -1403,6 +1435,9 @@ header {
       @media only screen and (max-width: 26.8em) {
         .projects__title .photo-hover:last-of-type::before {
           margin-top: -30rem; } }
+      @media only screen and (max-width: 21.87em) {
+        .projects__title .photo-hover:last-of-type::before {
+          margin-left: 7rem; } }
 
 .project__cards {
   display: grid;
@@ -1425,7 +1460,7 @@ header {
       text-align: center;
       margin-top: 10rem; }
     .price__title .photo-hover {
-      width: 25%;
+      width: 50%;
       margin: 3rem;
       position: relative;
       height: 40rem;
@@ -1525,6 +1560,9 @@ header {
           .price__title .photo-hover:last-of-type::before {
             left: -16rem;
             top: -9rem; } }
+        @media only screen and (max-width: 21.87em) {
+          .price__title .photo-hover:last-of-type::before {
+            left: -19rem; } }
   .price a {
     margin: 0 auto 25rem; }
     @media only screen and (max-width: 37.5em) {
@@ -1554,7 +1592,7 @@ header {
       .precios .with-image {
         flex-wrap: wrap-reverse; } }
     .precios .with-image .photo-hover {
-      width: 25%;
+      width: 50%;
       margin: 3rem;
       position: relative;
       height: 15rem;
