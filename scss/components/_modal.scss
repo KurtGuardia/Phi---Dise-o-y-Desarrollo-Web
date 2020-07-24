@@ -1,0 +1,112 @@
+.modal-bg {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.5s;
+
+  &.bg-active {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  .modal {
+    background-color: $color-white;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 60%;
+    height: 70%;
+    position: relative;
+    border-radius: 8px;
+
+    @include respond(xs) {
+      flex-direction: column;
+      height: 50%;
+    }
+
+    .text {
+      margin: 5rem;
+      width: 61.8%;
+      color: $color-black;
+
+      @include respond(s) {
+        width: 75%;
+      }
+
+      @include respond(xs) {
+        margin: 2rem;
+        width: auto;
+      }
+
+      h3 {
+        margin-bottom: 3rem;
+        color: $color-primary;
+      }
+
+      p {
+        font-size: $tiny;
+      }
+    }
+
+    .photo {
+      overflow: hidden;
+      margin-right: 5rem;
+      display: flex;
+      height: 350px;
+
+      img {
+        height: 350px;
+        transition: transform 0.3s ease-out;
+      }
+
+      @include respond(s) {
+        height: 200px;
+        img {
+          height: 200px;
+        }
+      }
+
+      @include respond(xs) {
+          margin-top: -6rem;
+        height: 110px;
+        img {
+          height: 110px;
+        }
+      }
+
+      .kurt-right {
+        transform: translate(0%, 10%);
+      }
+
+      .kurt-left {
+        transform: translate(0%, -10%);
+      }
+
+      &:hover .kurt-right {
+        transform: translate(0%, 0%);
+      }
+
+      &:hover .kurt-left {
+        transform: translate(0%, 0%);
+      }
+    }
+
+    .modal-close {
+      color: $color-red;
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+  }
+}

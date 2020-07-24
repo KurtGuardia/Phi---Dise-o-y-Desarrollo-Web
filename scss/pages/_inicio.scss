@@ -411,7 +411,7 @@
   }
 
   @include respond(xs) {
-    width: 820px;
+    width: 760px;
   }
 
   @include respond(xxs) {
@@ -628,7 +628,7 @@
         right: 0;        
 
         @include respond(xs){
-          right: 7rem;
+          right: -2rem;
         }
 
         @include respond(xxxs) {
@@ -670,7 +670,7 @@
         margin-top: 0;
 
         @include respond(xs) {
-          left: 6rem;
+          left: 3rem;
         }
 
         @include respond(xxs) {

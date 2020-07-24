@@ -404,7 +404,7 @@ table {
     transition: all 0.3s; }
   .navigation__checkbox:checked ~ .navigation__background {
     width: 70vw;
-    height: 130vh; }
+    height: 100vh; }
   .navigation__checkbox:checked ~ .navigation__nav {
     opacity: 1;
     width: 70vw; }
@@ -437,6 +437,87 @@ table {
   @media only screen and (max-width: 56.25em) {
     .navigation {
       display: inline-block; } }
+
+.modal-bg {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.5s; }
+  .modal-bg.bg-active {
+    visibility: visible;
+    opacity: 1; }
+  .modal-bg .modal {
+    background-color: #f4f4f4;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 60%;
+    height: 70%;
+    position: relative;
+    border-radius: 8px; }
+    @media only screen and (max-width: 56.25em) {
+      .modal-bg .modal {
+        flex-direction: column;
+        height: 50%; } }
+    .modal-bg .modal .text {
+      margin: 5rem;
+      width: 61.8%;
+      color: #423411; }
+      @media only screen and (max-width: 75em) {
+        .modal-bg .modal .text {
+          width: 75%; } }
+      @media only screen and (max-width: 56.25em) {
+        .modal-bg .modal .text {
+          margin: 2rem;
+          width: auto; } }
+      .modal-bg .modal .text h3 {
+        margin-bottom: 3rem;
+        color: #D4AF37; }
+      .modal-bg .modal .text p {
+        font-size: 1.8rem; }
+    .modal-bg .modal .photo {
+      overflow: hidden;
+      margin-right: 5rem;
+      display: flex;
+      height: 350px; }
+      .modal-bg .modal .photo img {
+        height: 350px;
+        transition: transform 0.3s ease-out; }
+      @media only screen and (max-width: 75em) {
+        .modal-bg .modal .photo {
+          height: 200px; }
+          .modal-bg .modal .photo img {
+            height: 200px; } }
+      @media only screen and (max-width: 56.25em) {
+        .modal-bg .modal .photo {
+          margin-top: -6rem;
+          height: 110px; }
+          .modal-bg .modal .photo img {
+            height: 110px; } }
+      .modal-bg .modal .photo .kurt-right {
+        transform: translate(0%, 10%); }
+      .modal-bg .modal .photo .kurt-left {
+        transform: translate(0%, -10%); }
+      .modal-bg .modal .photo:hover .kurt-right {
+        transform: translate(0%, 0%); }
+      .modal-bg .modal .photo:hover .kurt-left {
+        transform: translate(0%, 0%); }
+    .modal-bg .modal .modal-close {
+      color: #A0362B;
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      font-weight: bold;
+      cursor: pointer; }
 
 footer {
   background-color: #D4AF37;
@@ -841,61 +922,6 @@ header {
     cursor: pointer;
     color: #402A44;
     text-decoration: underline; }
-  .entrepreneurship .modal-bg {
-    position: fixed;
-    width: 100%;
-    height: 100vh;
-    top: 0;
-    left: 0;
-    background-color: rgba(0, 0, 0, 0.7);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 2;
-    visibility: hidden;
-    opacity: 0;
-    transition: visibility 0s, opacity .5s; }
-    .entrepreneurship .modal-bg.bg-active {
-      visibility: visible;
-      opacity: 1; }
-    .entrepreneurship .modal-bg .modal {
-      background-color: #f4f4f4;
-      display: flex;
-      align-items: center;
-      justify-content: space-around;
-      width: 60%;
-      height: 70%;
-      position: relative; }
-      .entrepreneurship .modal-bg .modal .text {
-        margin: 5rem;
-        width: 61.8%; }
-        .entrepreneurship .modal-bg .modal .text h3 {
-          margin-bottom: 3rem;
-          color: #D4AF37; }
-        .entrepreneurship .modal-bg .modal .text p {
-          font-size: 1.8rem; }
-      .entrepreneurship .modal-bg .modal .photo {
-        overflow: hidden;
-        margin-right: 5rem;
-        display: flex;
-        height: 350px; }
-        .entrepreneurship .modal-bg .modal .photo img {
-          height: 350px;
-          transition: transform 0.3s ease-out; }
-        .entrepreneurship .modal-bg .modal .photo .kurt-right {
-          transform: translate(0%, 10%); }
-        .entrepreneurship .modal-bg .modal .photo .kurt-left {
-          transform: translate(0%, -10%); }
-        .entrepreneurship .modal-bg .modal .photo:hover .kurt-right {
-          transform: translate(0%, 0%); }
-        .entrepreneurship .modal-bg .modal .photo:hover .kurt-left {
-          transform: translate(0%, 0%); }
-      .entrepreneurship .modal-bg .modal .modal-close {
-        position: absolute;
-        top: 20px;
-        right: 20px;
-        font-weight: bold;
-        cursor: pointer; }
 
 .cloud {
   width: 100%;
@@ -1250,7 +1276,7 @@ header {
       width: 900px; } }
   @media only screen and (max-width: 56.25em) {
     .services-cards {
-      width: 820px; } }
+      width: 760px; } }
   @media only screen and (max-width: 37.5em) {
     .services-cards {
       width: 600px;
@@ -1442,7 +1468,7 @@ header {
         right: 0; }
         @media only screen and (max-width: 56.25em) {
           .price__title .photo-hover:last-of-type img {
-            right: 7rem; } }
+            right: -2rem; } }
         @media only screen and (max-width: 26.8em) {
           .price__title .photo-hover:last-of-type img {
             width: 25rem;
@@ -1472,7 +1498,7 @@ header {
         margin-top: 0; }
         @media only screen and (max-width: 56.25em) {
           .price__title .photo-hover:last-of-type::before {
-            left: 6rem; } }
+            left: 3rem; } }
         @media only screen and (max-width: 37.5em) {
           .price__title .photo-hover:last-of-type::before {
             left: -17rem;
