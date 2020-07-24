@@ -467,7 +467,14 @@ table {
     @media only screen and (max-width: 56.25em) {
       .modal-bg .modal {
         flex-direction: column;
-        height: 50%; } }
+        height: 60%;
+        width: 80%; } }
+    @media only screen and (max-width: 26.8em) {
+      .modal-bg .modal {
+        height: 75%; } }
+    @media only screen and (max-width: 21.87em) {
+      .modal-bg .modal {
+        height: 65%; } }
     .modal-bg .modal .text {
       margin: 5rem;
       width: 61.8%;
@@ -484,6 +491,12 @@ table {
         color: #D4AF37; }
       .modal-bg .modal .text p {
         font-size: 1.8rem; }
+        @media only screen and (max-width: 56.25em) {
+          .modal-bg .modal .text p {
+            font-size: 2.4rem; } }
+        @media only screen and (max-width: 21.87em) {
+          .modal-bg .modal .text p {
+            font-size: 2rem; } }
     .modal-bg .modal .photo {
       overflow: hidden;
       margin-right: 5rem;
@@ -500,9 +513,14 @@ table {
       @media only screen and (max-width: 56.25em) {
         .modal-bg .modal .photo {
           margin-top: -6rem;
-          height: 110px; }
+          height: 150px; }
           .modal-bg .modal .photo img {
-            height: 110px; } }
+            height: 150px; } }
+      @media only screen and (max-width: 26.8em) {
+        .modal-bg .modal .photo {
+          height: 100px; }
+          .modal-bg .modal .photo img {
+            height: 100px; } }
       .modal-bg .modal .photo .kurt-right {
         transform: translate(0%, 10%); }
       .modal-bg .modal .photo .kurt-left {
