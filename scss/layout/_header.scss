@@ -52,21 +52,21 @@ header {
       fill: $color-black;
 
       @include respond(m) {
-        & svg {
+        & img {
           width: 250px;
         }
       }
 
       @include respond(s) {
         min-width: auto;
-        & svg {
+        & img {
           width: 200px;
         }
       }
 
       @include respond(xxxs) {
         min-width: auto;
-        & svg {
+        & img {
           width: 150px;
         }
       }

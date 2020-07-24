@@ -49,12 +49,13 @@ footer {
         width: 30%;
         fill: $color-white;
         text-align: center;
-        svg {
+        img {
           width: 100%;
         }
 
         @include respond(xxxs){
           width: 50%;
+          margin-top: 5rem;
         }
       }
 

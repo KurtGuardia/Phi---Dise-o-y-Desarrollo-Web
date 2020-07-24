@@ -34,7 +34,7 @@
   }
 
   &__nav {
-    height: 100vh;
+    height: 120vh;
     position: fixed;
     top: 0;
     right: 0;
@@ -62,7 +62,7 @@
     &:link,
     &:visited {
       display: inline-block;
-      font-size: 3rem;
+      font-size: 5rem;
       font-weight: 300;
       padding: 1rem 2rem;
       color: #fff;
@@ -73,13 +73,13 @@
 
   // Functionality
   &__checkbox:checked ~ &__background {
-    width: 50vw;
-    height: 100vh;
+    width: 70vw;
+    height: 130vh;
   }
 
   &__checkbox:checked ~ &__nav {
     opacity: 1;
-    width: 50vw;
+    width: 70vw;
   }
 
   // Icon
