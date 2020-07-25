@@ -16,7 +16,7 @@ header {
     background-size: cover;
     background-repeat: no-repeat;
     backface-visibility: hidden;
-    background-image: img("espiral-sombra.png");
+    background-image: img("espiral-sombra.webp");
     z-index: -2;
 
     @include respond(xs){

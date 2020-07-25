@@ -512,10 +512,6 @@
           }
         }
 
-        &:nth-of-type(2) {
-          max-width: 70rem;
-        }
-
         ul {
           li {
             max-width: 80rem;
@@ -529,7 +525,7 @@
           img {
             position: absolute;
 
-            @include respond(xs) {
+            @include respond(s) {
               width: 15rem;
             }
 

@@ -277,12 +277,7 @@
   align-items: center;
   margin-top: 30rem;
 
-
   @include respond(xxxs) {
-    margin-top: 65rem;
-  }
-
-  @include respond(xxxxs) {
     margin-top: 85rem;
   }
 
