@@ -39,7 +39,7 @@
     &--back {
       text-align: left;
       justify-content: flex-start;
-      background-image: url(../img/card-back.png);
+      background-image: url(../img/card-back.webp);
       background-size: cover;
       transform: translateX(-10px);
       font-size: 1.9rem;
@@ -62,21 +62,28 @@
       }
 
       h3 {
-        width: min-content;
+        width: max-content;
+        text-align: center;
+        height: 5rem;
+
+        
 
         @include respond(xxxs) {
           font-size: $big;
           font-weight: 600;
+          width: 100%;
         }
       }
-    }
+      
+    }     
 
     @include respond(xxs) {
       height: 45rem;
     }
 
     @include respond(xxxs) {
-      height: 60rem;
+      height: 51rem;
+      width: 100%;
     }
   }
 
@@ -88,26 +95,26 @@
     transform: rotateY(0deg);
   }
 
-  @media only screen and (max-width: 56.25em){
-    // , only screen and (hover: none) 
+  @media only screen and (max-width: 56.25em) {
+    // , only screen and (hover: none)
     //Because of hover:none this is not a @include respond()
     height: auto;
     width: 40rem;
 
-    @include respond(xxxxs){
+    @include respond(xxxxs) {
       // width: ;
     }
     &__side {
       position: relative;
-      
-      @include respond(xs){
+
+      @include respond(xs) {
         height: 41rem;
       }
-      
-      @include respond(xxs){
+
+      @include respond(xxs) {
         height: 35rem;
       }
-      @include respond(xxxs){
+      @include respond(xxxs) {
         height: 58rem;
       }
 
@@ -138,13 +145,13 @@
         em {
           font-size: $small;
           font-weight: 600;
-          letter-spacing: 2px;  
-          
-          @include respond(xxs){
+          letter-spacing: 2px;
+
+          @include respond(xxs) {
             font-size: 2rem;
           }
-          
-          @include respond(xxxs){
+
+          @include respond(xxxs) {
             font-size: 3rem;
           }
         }

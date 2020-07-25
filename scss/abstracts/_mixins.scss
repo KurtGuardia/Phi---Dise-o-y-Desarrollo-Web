@@ -75,7 +75,7 @@ xl 1800px
   margin: 3rem;
   position: relative;
 
-  img {
+  picture {
     width: auto;
     height: 20rem;
     position: absolute;
@@ -86,10 +86,11 @@ xl 1800px
       opacity: 0;
       z-index: 1;
       transition: all 0.5s ease-in;
-      &:hover ~ picture img {
+      &:hover + picture{
         opacity: 1;
       }
     }
+
     &:hover {
       opacity: 1;
     }

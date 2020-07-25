@@ -133,7 +133,7 @@ h3 {
     .card__side--back {
       text-align: left;
       justify-content: flex-start;
-      background-image: url(../img/card-back.png);
+      background-image: url(../img/card-back.webp);
       background-size: cover;
       transform: translateX(-10px);
       font-size: 1.9rem;
@@ -147,17 +147,21 @@ h3 {
       .card__side--back em.tiny-text span {
         font-size: 1.3rem; }
       .card__side--back h3 {
-        width: min-content; }
+        width: max-content;
+        text-align: center;
+        height: 5rem; }
         @media only screen and (max-width: 26.8em) {
           .card__side--back h3 {
             font-size: 4.9rem;
-            font-weight: 600; } }
+            font-weight: 600;
+            width: 100%; } }
     @media only screen and (max-width: 37.5em) {
       .card__side {
         height: 45rem; } }
     @media only screen and (max-width: 26.8em) {
       .card__side {
-        height: 60rem; } }
+        height: 51rem;
+        width: 100%; } }
   .card:hover .card__side--front {
     transform: rotateY(-180deg); }
   .card:hover .card__side--back {
@@ -266,7 +270,7 @@ h3 {
       .contact__box--form .btn:hover {
         background-color: #16001A; }
   .contact__box--picture {
-    background-image: url("../../img/handshake.png");
+    background-image: url("../../img/handshake.webp");
     height: auto;
     width: 38.2%;
     background-size: cover; }
@@ -301,13 +305,15 @@ h3 {
   transition: all .7s;
   outline-offset: 2rem;
   background-color: #f4f4f4; }
-  .project img {
+  .project picture {
     width: 100%;
     filter: blur(3px);
     transition: filter .5s; }
     @media only screen and (max-width: 56.25em) {
-      .project img {
+      .project picture {
         filter: blur(0); } }
+    .project picture img {
+      width: 100%; }
   .project p {
     margin: 0 1rem; }
   .project a {
@@ -317,7 +323,7 @@ h3 {
     align-self: flex-end;
     margin: 0 1.5rem 1rem;
     text-decoration: none; }
-  .project:hover img {
+  .project:hover picture {
     filter: blur(0); }
   .project:hover {
     outline: 1.5rem solid #D4AF37;
@@ -718,7 +724,7 @@ header {
     background-size: cover;
     background-repeat: no-repeat;
     backface-visibility: hidden;
-    background-image: url("../../img/matrixl.png");
+    background-image: url("../../img/matrixl.webp");
     position: absolute; }
   header .row {
     position: absolute;
@@ -875,19 +881,19 @@ header {
       height: 20rem;
       display: flex;
       align-items: center; }
-      .entrepreneurship .with-image .photo-hover img {
+      .entrepreneurship .with-image .photo-hover picture {
         width: auto;
         height: 20rem;
         position: absolute;
         opacity: 0.4;
         transition: all 0.5s ease-in; }
-        .entrepreneurship .with-image .photo-hover img.secondary {
+        .entrepreneurship .with-image .photo-hover picture.secondary {
           opacity: 0;
           z-index: 1;
           transition: all 0.5s ease-in; }
-          .entrepreneurship .with-image .photo-hover img.secondary:hover ~ picture img {
+          .entrepreneurship .with-image .photo-hover picture.secondary:hover + picture {
             opacity: 1; }
-        .entrepreneurship .with-image .photo-hover img:hover {
+        .entrepreneurship .with-image .photo-hover picture:hover {
           opacity: 1; }
       .entrepreneurship .with-image .photo-hover:hover::before {
         visibility: hidden; }
@@ -948,7 +954,7 @@ header {
   background-size: cover;
   background-repeat: no-repeat;
   backface-visibility: hidden;
-  background-image: url("../../img/cloud.png");
+  background-image: url("../../img/cloud.webp");
   height: 50rem;
   display: flex;
   justify-content: center; }
@@ -989,19 +995,19 @@ header {
     width: 50%;
     margin: 3rem;
     position: relative; }
-    .welcome .photo-hover img {
+    .welcome .photo-hover picture {
       width: auto;
       height: 20rem;
       position: absolute;
       opacity: 0.4;
       transition: all 0.5s ease-in; }
-      .welcome .photo-hover img.secondary {
+      .welcome .photo-hover picture.secondary {
         opacity: 0;
         z-index: 1;
         transition: all 0.5s ease-in; }
-        .welcome .photo-hover img.secondary:hover ~ picture img {
+        .welcome .photo-hover picture.secondary:hover + picture {
           opacity: 1; }
-      .welcome .photo-hover img:hover {
+      .welcome .photo-hover picture:hover {
         opacity: 1; }
     .welcome .photo-hover:hover::before {
       visibility: hidden; }
@@ -1020,19 +1026,24 @@ header {
       @media only screen and (max-width: 26.8em) {
         .welcome .photo-hover::before {
           font-size: 2.4rem; } }
-    @media only screen and (max-width: 56.25em) {
-      .welcome .photo-hover:first-child {
-        align-self: flex-start;
-        margin-right: -5rem; } }
-    @media only screen and (max-width: 37.5em) {
-      .welcome .photo-hover:first-child {
-        align-self: flex-start;
-        margin-right: -5rem;
-        top: -14rem;
-        right: -15rem; }
-        .welcome .photo-hover:first-child img {
-          width: 12rem;
-          height: auto; } }
+    .welcome .photo-hover:first-child {
+      right: -15rem;
+      height: 20rem; }
+      .welcome .photo-hover:first-child img {
+        height: 20rem; }
+      @media only screen and (max-width: 56.25em) {
+        .welcome .photo-hover:first-child {
+          align-self: flex-start;
+          margin-right: -5rem; } }
+      @media only screen and (max-width: 37.5em) {
+        .welcome .photo-hover:first-child {
+          align-self: flex-start;
+          margin-right: -5rem;
+          top: -14rem;
+          right: -15rem; }
+          .welcome .photo-hover:first-child img {
+            width: 12rem;
+            height: auto; } }
     @media only screen and (max-width: 37.5em) and (max-width: 26.8em) {
       .welcome .photo-hover:first-child img {
         width: 18rem;
@@ -1176,19 +1187,19 @@ header {
     position: relative;
     display: flex;
     align-items: center; }
-    .services__title .photo-hover img {
+    .services__title .photo-hover picture {
       width: auto;
       height: 20rem;
       position: absolute;
       opacity: 0.4;
       transition: all 0.5s ease-in; }
-      .services__title .photo-hover img.secondary {
+      .services__title .photo-hover picture.secondary {
         opacity: 0;
         z-index: 1;
         transition: all 0.5s ease-in; }
-        .services__title .photo-hover img.secondary:hover ~ picture img {
+        .services__title .photo-hover picture.secondary:hover + picture {
           opacity: 1; }
-      .services__title .photo-hover img:hover {
+      .services__title .photo-hover picture:hover {
         opacity: 1; }
     .services__title .photo-hover:hover::before {
       visibility: hidden; }
@@ -1210,21 +1221,23 @@ header {
     @media only screen and (max-width: 37.5em) {
       .services__title .photo-hover {
         height: 5rem; } }
-    .services__title .photo-hover img {
+    .services__title .photo-hover picture img {
       width: 30rem;
-      height: auto; }
+      height: auto;
+      top: -10rem;
+      right: 20rem; }
       @media only screen and (max-width: 37.5em) {
-        .services__title .photo-hover img {
+        .services__title .photo-hover picture img {
           width: 20rem;
           top: -18rem;
           right: -10rem; } }
       @media only screen and (max-width: 26.8em) {
-        .services__title .photo-hover img {
+        .services__title .photo-hover picture img {
           width: 30rem;
           top: -20rem;
           right: -15rem; } }
       @media only screen and (max-width: 21.87em) {
-        .services__title .photo-hover img {
+        .services__title .photo-hover picture img {
           width: 25rem;
           right: -8rem; } }
     .services__title .photo-hover.photo-right img {
@@ -1301,7 +1314,7 @@ header {
     .services-cards .card .social {
       margin-bottom: 2rem; }
     .services-cards .card:last-of-type h3 {
-      margin: 2.5rem; }
+      font-size: 3rem; }
   @media only screen and (min-width: 112.5em) {
     .services-cards {
       width: 1300px; } }
@@ -1334,19 +1347,19 @@ header {
     height: 40rem;
     display: flex;
     align-items: center; }
-    .projects__title .photo-hover img {
+    .projects__title .photo-hover picture {
       width: auto;
       height: 20rem;
       position: absolute;
       opacity: 0.4;
       transition: all 0.5s ease-in; }
-      .projects__title .photo-hover img.secondary {
+      .projects__title .photo-hover picture.secondary {
         opacity: 0;
         z-index: 1;
         transition: all 0.5s ease-in; }
-        .projects__title .photo-hover img.secondary:hover ~ picture img {
+        .projects__title .photo-hover picture.secondary:hover + picture {
           opacity: 1; }
-      .projects__title .photo-hover img:hover {
+      .projects__title .photo-hover picture:hover {
         opacity: 1; }
     .projects__title .photo-hover:hover::before {
       visibility: hidden; }
@@ -1463,19 +1476,19 @@ header {
       height: 40rem;
       display: flex;
       align-items: center; }
-      .price__title .photo-hover img {
+      .price__title .photo-hover picture {
         width: auto;
         height: 20rem;
         position: absolute;
         opacity: 0.4;
         transition: all 0.5s ease-in; }
-        .price__title .photo-hover img.secondary {
+        .price__title .photo-hover picture.secondary {
           opacity: 0;
           z-index: 1;
           transition: all 0.5s ease-in; }
-          .price__title .photo-hover img.secondary:hover ~ picture img {
+          .price__title .photo-hover picture.secondary:hover + picture {
             opacity: 1; }
-        .price__title .photo-hover img:hover {
+        .price__title .photo-hover picture:hover {
           opacity: 1; }
       .price__title .photo-hover:hover::before {
         visibility: hidden; }
@@ -1514,13 +1527,13 @@ header {
           .price__title .photo-hover img {
             width: 25rem;
             top: -8rem; } }
-      .price__title .photo-hover:last-of-type img {
+      .price__title .photo-hover:last-of-type picture {
         right: 0; }
         @media only screen and (max-width: 56.25em) {
-          .price__title .photo-hover:last-of-type img {
+          .price__title .photo-hover:last-of-type picture {
             right: -2rem; } }
         @media only screen and (max-width: 26.8em) {
-          .price__title .photo-hover:last-of-type img {
+          .price__title .photo-hover:last-of-type picture {
             width: 25rem;
             top: -6rem;
             right: 0; } }
@@ -1596,19 +1609,19 @@ header {
       display: flex;
       align-items: flex-end;
       width: 130%; }
-      .precios .with-image .photo-hover img {
+      .precios .with-image .photo-hover picture {
         width: auto;
         height: 20rem;
         position: absolute;
         opacity: 0.4;
         transition: all 0.5s ease-in; }
-        .precios .with-image .photo-hover img.secondary {
+        .precios .with-image .photo-hover picture.secondary {
           opacity: 0;
           z-index: 1;
           transition: all 0.5s ease-in; }
-          .precios .with-image .photo-hover img.secondary:hover ~ picture img {
+          .precios .with-image .photo-hover picture.secondary:hover + picture {
             opacity: 1; }
-        .precios .with-image .photo-hover img:hover {
+        .precios .with-image .photo-hover picture:hover {
           opacity: 1; }
       .precios .with-image .photo-hover:hover::before {
         visibility: hidden; }

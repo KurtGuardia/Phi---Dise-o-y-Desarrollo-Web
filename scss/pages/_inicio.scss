@@ -10,7 +10,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   backface-visibility: hidden;
-  background-image: img("cloud.png");
+  background-image: img("cloud.webp");
   height: 50rem;
   display: flex;
   justify-content: center;
@@ -68,6 +68,12 @@
 
     &:first-child {
       //Vetrubio
+      right: -15rem;
+      height: 20rem;
+      img{
+        height: 20rem;
+      }
+
       @include respond(xs) {
         align-self: flex-start;
         margin-right: -5rem;
@@ -291,10 +297,12 @@
       height: 5rem;
     }
 
-    img {
+    picture img {
       //Mostly on Last Supper
       width: 30rem;
       height: auto;
+      top: -10rem;
+      right: 20rem;
 
       @include respond(xxs) {
         width: 20rem;
@@ -417,7 +425,8 @@
     }
 
     &:last-of-type h3 {
-      margin: 2.5rem;
+      //For Redes Sociales title only      
+      font-size: 3rem;
     }
   }
 
@@ -660,7 +669,7 @@
         }
       }
 
-      &:last-of-type img {
+      &:last-of-type picture {
         //Toyota
         right: 0;        
 
