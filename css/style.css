@@ -1827,14 +1827,14 @@ header {
         left: -2rem; }
     .more-on-phi .container.historia .with-image:first-of-type {
       flex-wrap: wrap; }
-    .more-on-phi .container.historia .with-image img:first-of-type {
-      width: 300px; }
-      @media only screen and (max-width: 75em) {
-        .more-on-phi .container.historia .with-image img:first-of-type {
-          width: 200px; } }
-      @media only screen and (max-width: 56.25em) {
-        .more-on-phi .container.historia .with-image img:first-of-type {
-          width: 150px; } }
+      .more-on-phi .container.historia .with-image:first-of-type img {
+        width: 30rem; }
+        @media only screen and (max-width: 75em) {
+          .more-on-phi .container.historia .with-image:first-of-type img {
+            width: 20rem; } }
+        @media only screen and (max-width: 56.25em) {
+          .more-on-phi .container.historia .with-image:first-of-type img {
+            width: 15rem; } }
     .more-on-phi .container.historia .with-image p {
       width: 80rem; }
       @media only screen and (max-width: 56.25em) {
@@ -1843,23 +1843,23 @@ header {
       @media only screen and (max-width: 26.8em) {
         .more-on-phi .container.historia .with-image p {
           width: 66rem; } }
-    .more-on-phi .container.historia .with-image:nth-of-type(2) {
-      flex-wrap: wrap-reverse; }
-      @media only screen and (max-width: 37.5em) {
-        .more-on-phi .container.historia .with-image:nth-of-type(2) {
-          max-width: 70rem; } }
+    .more-on-phi .container.historia .with-image:nth-of-type(2) img {
+      width: 35rem; }
+    @media only screen and (max-width: 37.5em) {
+      .more-on-phi .container.historia .with-image:nth-of-type(2) {
+        max-width: 70rem; } }
     @media only screen and (max-width: 75em) {
       .more-on-phi .container.historia .with-image:last-of-type img {
         width: 200px;
         margin-right: 3rem; } }
     @media only screen and (max-width: 56.25em) {
       .more-on-phi .container.historia .with-image:last-of-type img {
-        width: 150px;
+        width: 15rem;
         margin-right: 3rem;
         margin-bottom: 3rem; } }
     @media only screen and (max-width: 26.8em) {
       .more-on-phi .container.historia .with-image:last-of-type img {
-        width: 100px; } }
+        width: 10rem; } }
     @media only screen and (max-width: 56.25em) {
       .more-on-phi .container.historia .with-image:last-of-type {
         flex-wrap: wrap; } }
@@ -1872,7 +1872,9 @@ header {
       flex-direction: column;
       max-width: 100rem;
       align-items: center;
-      margin: 5rem auto; }
+      margin: 5rem 3rem; }
+      .more-on-phi .container.historia .quote:nth-last-of-type(2) {
+        margin: 5rem auto; }
       .more-on-phi .container.historia .quote span {
         margin-top: 2rem; }
       @media only screen and (max-width: 37.5em) {
@@ -1885,7 +1887,8 @@ header {
       list-style-type: none;
       counter-increment: lista;
       position: relative;
-      padding: 3rem 5rem 0 5rem; }
+      padding: 3rem 5rem 0 5rem;
+      max-width: 100rem; }
       @media only screen and (max-width: 37.5em) {
         .more-on-phi .container.historia ol li {
           color: #9D7800; } }
@@ -1917,27 +1920,27 @@ header {
       @media only screen and (max-width: 37.5em) {
         .more-on-phi .container.matematicas img {
           width: 60rem; } }
-    .more-on-phi .container.matematicas .with-image img:first-of-type {
-      width: 500px; }
+    .more-on-phi .container.matematicas .with-image picture:first-of-type img {
+      width: 50rem; }
       @media only screen and (max-width: 56.25em) {
-        .more-on-phi .container.matematicas .with-image img:first-of-type {
+        .more-on-phi .container.matematicas .with-image picture:first-of-type img {
           width: 250px; } }
       @media only screen and (max-width: 26.8em) {
-        .more-on-phi .container.matematicas .with-image img:first-of-type {
+        .more-on-phi .container.matematicas .with-image picture:first-of-type img {
           width: 150px; } }
       @media only screen and (max-width: 21.87em) {
-        .more-on-phi .container.matematicas .with-image img:first-of-type {
+        .more-on-phi .container.matematicas .with-image picture:first-of-type img {
           width: 130px; } }
-    .more-on-phi .container.matematicas .with-image img:last-of-type {
-      width: 300px; }
+    .more-on-phi .container.matematicas .with-image picture:last-of-type img {
+      width: 40rem; }
       @media only screen and (max-width: 56.25em) {
-        .more-on-phi .container.matematicas .with-image img:last-of-type {
+        .more-on-phi .container.matematicas .with-image picture:last-of-type img {
           width: 200px; } }
       @media only screen and (max-width: 37.5em) {
-        .more-on-phi .container.matematicas .with-image img:last-of-type {
+        .more-on-phi .container.matematicas .with-image picture:last-of-type img {
           width: 110px; } }
       @media only screen and (max-width: 21.87em) {
-        .more-on-phi .container.matematicas .with-image img:last-of-type {
+        .more-on-phi .container.matematicas .with-image picture:last-of-type img {
           width: 90px; } }
     .more-on-phi .container.matematicas .with-image p:first-of-type {
       width: 80rem;
@@ -1961,7 +1964,7 @@ header {
       .more-on-phi .container.matematicas .with-image p:first-of-type .c {
         color: #E7C24A; }
     .more-on-phi .container.matematicas .with-image p:nth-child(2) {
-      margin-top: 5rem;
+      margin: 5rem;
       display: flex;
       flex-direction: column;
       align-items: center; }
@@ -1975,36 +1978,35 @@ header {
         color: #402A44;
         font-weight: 500; }
     @media only screen and (max-width: 75em) {
-      .more-on-phi .container.geometria .with-image:first-of-type img {
+      .more-on-phi .container.geometria .with-image:first-of-type picture img {
         width: 52.7rem; } }
     @media only screen and (max-width: 56.25em) {
-      .more-on-phi .container.geometria .with-image:first-of-type img {
+      .more-on-phi .container.geometria .with-image:first-of-type picture img {
         width: 34.72rem; } }
     @media only screen and (max-width: 37.5em) {
-      .more-on-phi .container.geometria .with-image:first-of-type img {
+      .more-on-phi .container.geometria .with-image:first-of-type picture img {
         width: 24.72rem; } }
-    .more-on-phi .container.geometria .with-image:first-of-type img:nth-child(2) {
-      margin-bottom: -5rem;
-      margin-left: 20rem; }
+    .more-on-phi .container.geometria .with-image:first-of-type picture:nth-of-type(2) img {
+      margin-bottom: -5rem; }
       @media only screen and (max-width: 75em) {
-        .more-on-phi .container.geometria .with-image:first-of-type img:nth-child(2) {
+        .more-on-phi .container.geometria .with-image:first-of-type picture:nth-of-type(2) img {
           width: 45.83rem; } }
       @media only screen and (max-width: 56.25em) {
-        .more-on-phi .container.geometria .with-image:first-of-type img:nth-child(2) {
+        .more-on-phi .container.geometria .with-image:first-of-type picture:nth-of-type(2) img {
           width: 31.94rem;
           margin-left: 10rem;
           margin-bottom: -3rem; } }
       @media only screen and (max-width: 37.5em) {
-        .more-on-phi .container.geometria .with-image:first-of-type img:nth-child(2) {
+        .more-on-phi .container.geometria .with-image:first-of-type picture:nth-of-type(2) img {
           width: 21.94rem; } }
       @media only screen and (max-width: 26.8em) {
-        .more-on-phi .container.geometria .with-image:first-of-type img:nth-child(2) {
+        .more-on-phi .container.geometria .with-image:first-of-type picture:nth-of-type(2) img {
           margin-left: 0; } }
     @media only screen and (max-width: 56.25em) {
-      .more-on-phi .container.geometria .with-image:first-of-type {
+      .more-on-phi .container.geometria .with-image:first-of-type picture {
         width: 90rem; } }
     @media only screen and (max-width: 26.8em) {
-      .more-on-phi .container.geometria .with-image:first-of-type {
+      .more-on-phi .container.geometria .with-image:first-of-type picture {
         width: 63rem; } }
     @media only screen and (max-width: 56.25em) {
       .more-on-phi .container.geometria .with-image:nth-of-type(2) img {
@@ -2030,20 +2032,24 @@ header {
     @media only screen and (max-width: 26.8em) {
       .more-on-phi .container.geometria .with-image:nth-of-type(4) img {
         width: 30.83rem; } }
-    @media only screen and (max-width: 75em) {
-      .more-on-phi .container.geometria .with-image:nth-of-type(5) img {
-        width: 30.83rem;
-        margin-left: 10rem; } }
-    @media only screen and (max-width: 56.25em) {
-      .more-on-phi .container.geometria .with-image:nth-of-type(5) img {
-        width: 23.83rem;
-        margin-left: 0; } }
+    .more-on-phi .container.geometria .with-image:nth-of-type(5) img {
+      margin-left: 10rem; }
+      @media only screen and (max-width: 75em) {
+        .more-on-phi .container.geometria .with-image:nth-of-type(5) img {
+          width: 30.83rem;
+          margin-left: 10rem; } }
+      @media only screen and (max-width: 56.25em) {
+        .more-on-phi .container.geometria .with-image:nth-of-type(5) img {
+          width: 23.83rem;
+          margin-left: 0; } }
     @media only screen and (max-width: 37.5em) {
       .more-on-phi .container.geometria .with-image:nth-of-type(5) {
         flex-wrap: wrap;
         margin: auto; } }
     .more-on-phi .container.geometria .with-image:nth-of-type(6) {
       flex-wrap: wrap-reverse; }
+      .more-on-phi .container.geometria .with-image:nth-of-type(6) img {
+        width: 30rem; }
     @media only screen and (max-width: 56.25em) {
       .more-on-phi .container.geometria .with-image:nth-of-type(6) img,
       .more-on-phi .container.geometria .with-image:nth-of-type(7) img {
@@ -2210,46 +2216,48 @@ header {
         width: 23.7rem; }
         .more-on-phi .container.belleza .with-image:first-of-type img:first-of-type {
           margin-right: 2rem; } }
+    .more-on-phi .container.diseno .with-image:first-of-type img {
+      height: 20rem; }
     @media only screen and (max-width: 26.8em) {
       .more-on-phi .container.diseno .with-image:first-of-type {
         width: 45rem; }
         .more-on-phi .container.diseno .with-image:first-of-type img {
           width: 100%; } }
     @media only screen and (max-width: 75em) {
-      .more-on-phi .container.diseno .with-image:nth-of-type(2) img:first-child {
+      .more-on-phi .container.diseno .with-image:nth-of-type(2) picture:first-child img {
         width: 55.55rem; }
-      .more-on-phi .container.diseno .with-image:nth-of-type(2) img:last-child {
+      .more-on-phi .container.diseno .with-image:nth-of-type(2) picture:last-child img {
         width: 41.66rem; } }
     @media only screen and (max-width: 56.25em) {
-      .more-on-phi .container.diseno .with-image:nth-of-type(2) img:first-child {
+      .more-on-phi .container.diseno .with-image:nth-of-type(2) picture:first-child img {
         width: 45.55rem; }
-      .more-on-phi .container.diseno .with-image:nth-of-type(2) img:last-child {
+      .more-on-phi .container.diseno .with-image:nth-of-type(2) picture:last-child img {
         width: 31.66rem; } }
     @media only screen and (max-width: 37.5em) {
-      .more-on-phi .container.diseno .with-image:nth-of-type(2) img:first-child {
+      .more-on-phi .container.diseno .with-image:nth-of-type(2) picture:first-child img {
         width: 35.55rem; }
-      .more-on-phi .container.diseno .with-image:nth-of-type(2) img:last-child {
+      .more-on-phi .container.diseno .with-image:nth-of-type(2) picture:last-child img {
         width: 21.66rem; } }
     @media only screen and (max-width: 21.87em) {
-      .more-on-phi .container.diseno .with-image:nth-of-type(2) img:first-child {
+      .more-on-phi .container.diseno .with-image:nth-of-type(2) picture:first-child img {
         width: 28.55rem; }
-      .more-on-phi .container.diseno .with-image:nth-of-type(2) img:last-child {
+      .more-on-phi .container.diseno .with-image:nth-of-type(2) picture:last-child img {
         width: 18.66rem; } }
-    .more-on-phi .container.diseno .with-image:nth-of-type(3) img:nth-of-type(1),
-    .more-on-phi .container.diseno .with-image img:nth-of-type(2) {
+    .more-on-phi .container.diseno .with-image:nth-of-type(3) picture:nth-of-type(1) img,
+    .more-on-phi .container.diseno .with-image:nth-of-type(3) picture:nth-of-type(2) img {
       width: 30rem; }
       @media only screen and (max-width: 37.5em) {
-        .more-on-phi .container.diseno .with-image:nth-of-type(3) img:nth-of-type(1),
-        .more-on-phi .container.diseno .with-image img:nth-of-type(2) {
+        .more-on-phi .container.diseno .with-image:nth-of-type(3) picture:nth-of-type(1) img,
+        .more-on-phi .container.diseno .with-image:nth-of-type(3) picture:nth-of-type(2) img {
           width: 20rem; } }
       @media only screen and (max-width: 21.87em) {
-        .more-on-phi .container.diseno .with-image:nth-of-type(3) img:nth-of-type(1),
-        .more-on-phi .container.diseno .with-image img:nth-of-type(2) {
+        .more-on-phi .container.diseno .with-image:nth-of-type(3) picture:nth-of-type(1) img,
+        .more-on-phi .container.diseno .with-image:nth-of-type(3) picture:nth-of-type(2) img {
           width: 15rem; } }
-    .more-on-phi .container.diseno .with-image:nth-of-type(3) img:nth-of-type(3) {
-      width: 15rem; }
+    .more-on-phi .container.diseno .with-image:nth-of-type(3) picture:nth-of-type(3) img {
+      width: 18rem; }
       @media only screen and (max-width: 21.87em) {
-        .more-on-phi .container.diseno .with-image:nth-of-type(3) img:nth-of-type(3) {
+        .more-on-phi .container.diseno .with-image:nth-of-type(3) picture:nth-of-type(3) img {
           width: 10rem; } }
     .more-on-phi .container.conclusion {
       max-height: 365rem; }
@@ -2265,10 +2273,6 @@ header {
         @media only screen and (max-width: 37.5em) {
           .more-on-phi .container.conclusion .with-image img {
             margin: 3rem auto; } }
-      .more-on-phi .container.conclusion .with-image:nth-of-type(6) img {
-        width: 23.83rem; }
-      .more-on-phi .container.conclusion .with-image:nth-of-type(7) img {
-        width: 30.83rem; }
       @media only screen and (max-width: 37.5em) {
         .more-on-phi .container.conclusion .with-image {
           flex-wrap: wrap; }
