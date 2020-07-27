@@ -23,8 +23,8 @@ html {
   }
 
   @include respond(s) {
-    //1000px
-    font-size: 45%; //1rem=8px
+    //900px
+    font-size: 45%; //1rem=7.2px
   }
 
   @include respond(xxxs) {

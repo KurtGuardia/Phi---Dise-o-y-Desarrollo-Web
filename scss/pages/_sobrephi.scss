@@ -70,6 +70,10 @@
       margin: auto 3rem;
 
       @include respond(xs) {
+        margin: auto 4rem;
+      }
+
+      @include respond(xxs) {
         margin: auto 10rem;
       }
     }
@@ -80,9 +84,6 @@
       justify-content: space-evenly;
       align-items: center;
 
-      @include respond(xs) {
-        width: 100rem;
-      }
 
       @include respond(xxs) {
         width: 80rem;
@@ -124,10 +125,6 @@
             @include respond(s) {
               width: 20rem;
             }
-
-            @include respond(xs) {
-              width: 15rem;
-            }
           }
         }
 
@@ -148,9 +145,11 @@
           img {
             width: 35rem;
           }
-          @include respond(xxs) {
-            max-width: 70rem;
-            // flex-wrap: wrap-reverse; SUPONGO QUE ERA PARA MOBILE
+          @include respond(xxs) {            
+            flex-wrap: wrap-reverse;
+            img{
+              width: 25rem;
+            }
           }
         }
 
@@ -165,6 +164,7 @@
           }
 
           @include respond(xs) {
+
             img {
               width: 15rem;
               margin-right: 3rem;
@@ -266,30 +266,32 @@
       }
 
       .with-image {
+        flex-wrap: wrap;
         picture:first-of-type img {
           width: 50rem;
 
           @include respond(xs) {
-            width: 250px;
+            width: 34.72rem;
           }
           @include respond(xxxs) {
-            width: 150px;
+            width: 30rem;
           }
           @include respond(xxxxs) {
-            width: 130px;
+            width: 24.07rem;
           }
         }
+
         picture:last-of-type img {
           width: 40rem;
 
           @include respond(xs) {
-            width: 200px;
+            width: 27.77rem;
           }
           @include respond(xxs) {
-            width: 110px;
+            width: 20.83rem;
           }
           @include respond(xxxxs) {
-            width: 90px;
+            width: 18.51rem;
           }
         }
 
@@ -333,11 +335,9 @@
 
           @include respond(xs) {
             max-width: 55rem;
+            margin: 5rem 2rem;
           }
 
-          @include respond(xxxs) {
-            max-width: 41rem;
-          }
           .ecuation {
             color: $color-purple;
             font-weight: 500;
@@ -376,7 +376,6 @@
 
               @include respond(xs) {
                 width: 31.94rem;
-                margin-left: 10rem;
                 margin-bottom: -3rem;
               }
 
@@ -387,10 +386,6 @@
               @include respond(xxxs) {
                 margin-left: 0;
               }
-            }
-
-            @include respond(xs) {
-              width: 90rem;
             }
 
             @include respond(xxxs) {
@@ -421,7 +416,7 @@
             width: 30.83rem;
           }
 
-          @include respond(xxs) {
+          @include respond(xxxs) {
             width: 25.83rem;
           }
         }
@@ -442,6 +437,14 @@
         }
 
         &:nth-of-type(5) {
+          p{
+            max-width: 90rem;
+            
+            @include respond(xs){
+              max-width: 50rem;
+            }
+          }
+
           //Triangle
           img {
             margin-left: 10rem;
@@ -453,7 +456,7 @@
 
             @include respond(xs) {
               width: 23.83rem;
-              margin-left: 0;
+              margin-left: 5rem;
             }
           }
 
@@ -464,10 +467,19 @@
         }
 
         &:nth-of-type(6) {
-          //star
-          flex-wrap: wrap-reverse;
+          //star          
           img {
             width: 30rem;
+          }
+
+          @include respond(xs){
+            p{
+              max-width: 45rem;
+            }
+          }
+
+          @include respond(xxs){
+            flex-wrap: wrap-reverse;
           }
         }
 

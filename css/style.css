@@ -1797,15 +1797,15 @@ header {
       margin: auto 3rem; }
       @media only screen and (max-width: 56.25em) {
         .more-on-phi .container > * {
+          margin: auto 4rem; } }
+      @media only screen and (max-width: 37.5em) {
+        .more-on-phi .container > * {
           margin: auto 10rem; } }
     .more-on-phi .container .with-image {
       display: flex;
       margin: 5rem auto;
       justify-content: space-evenly;
       align-items: center; }
-      @media only screen and (max-width: 56.25em) {
-        .more-on-phi .container .with-image {
-          width: 100rem; } }
       @media only screen and (max-width: 37.5em) {
         .more-on-phi .container .with-image {
           width: 80rem; } }
@@ -1832,9 +1832,6 @@ header {
         @media only screen and (max-width: 75em) {
           .more-on-phi .container.historia .with-image:first-of-type img {
             width: 20rem; } }
-        @media only screen and (max-width: 56.25em) {
-          .more-on-phi .container.historia .with-image:first-of-type img {
-            width: 15rem; } }
     .more-on-phi .container.historia .with-image p {
       width: 80rem; }
       @media only screen and (max-width: 56.25em) {
@@ -1847,7 +1844,9 @@ header {
       width: 35rem; }
     @media only screen and (max-width: 37.5em) {
       .more-on-phi .container.historia .with-image:nth-of-type(2) {
-        max-width: 70rem; } }
+        flex-wrap: wrap-reverse; }
+        .more-on-phi .container.historia .with-image:nth-of-type(2) img {
+          width: 25rem; } }
     @media only screen and (max-width: 75em) {
       .more-on-phi .container.historia .with-image:last-of-type img {
         width: 200px;
@@ -1920,63 +1919,63 @@ header {
       @media only screen and (max-width: 37.5em) {
         .more-on-phi .container.matematicas img {
           width: 60rem; } }
-    .more-on-phi .container.matematicas .with-image picture:first-of-type img {
-      width: 50rem; }
-      @media only screen and (max-width: 56.25em) {
-        .more-on-phi .container.matematicas .with-image picture:first-of-type img {
-          width: 250px; } }
-      @media only screen and (max-width: 26.8em) {
-        .more-on-phi .container.matematicas .with-image picture:first-of-type img {
-          width: 150px; } }
-      @media only screen and (max-width: 21.87em) {
-        .more-on-phi .container.matematicas .with-image picture:first-of-type img {
-          width: 130px; } }
-    .more-on-phi .container.matematicas .with-image picture:last-of-type img {
-      width: 40rem; }
-      @media only screen and (max-width: 56.25em) {
-        .more-on-phi .container.matematicas .with-image picture:last-of-type img {
-          width: 200px; } }
-      @media only screen and (max-width: 37.5em) {
-        .more-on-phi .container.matematicas .with-image picture:last-of-type img {
-          width: 110px; } }
-      @media only screen and (max-width: 21.87em) {
-        .more-on-phi .container.matematicas .with-image picture:last-of-type img {
-          width: 90px; } }
-    .more-on-phi .container.matematicas .with-image p:first-of-type {
-      width: 80rem;
-      margin-left: 10rem;
-      align-self: flex-start; }
-      @media only screen and (max-width: 56.25em) {
-        .more-on-phi .container.matematicas .with-image p:first-of-type {
-          width: 35rem;
-          margin-left: 3rem;
-          text-align: left; } }
-      @media only screen and (max-width: 37.5em) {
-        .more-on-phi .container.matematicas .with-image p:first-of-type {
-          font-size: 2.4rem; } }
-      @media only screen and (max-width: 26.8em) {
-        .more-on-phi .container.matematicas .with-image p:first-of-type {
-          margin-left: 0; } }
-      .more-on-phi .container.matematicas .with-image p:first-of-type .a {
-        color: #9D7800; }
-      .more-on-phi .container.matematicas .with-image p:first-of-type .b {
-        color: #D4AF37; }
-      .more-on-phi .container.matematicas .with-image p:first-of-type .c {
-        color: #E7C24A; }
-    .more-on-phi .container.matematicas .with-image p:nth-child(2) {
-      margin: 5rem;
-      display: flex;
-      flex-direction: column;
-      align-items: center; }
-      @media only screen and (max-width: 56.25em) {
-        .more-on-phi .container.matematicas .with-image p:nth-child(2) {
-          max-width: 55rem; } }
-      @media only screen and (max-width: 26.8em) {
-        .more-on-phi .container.matematicas .with-image p:nth-child(2) {
-          max-width: 41rem; } }
-      .more-on-phi .container.matematicas .with-image p:nth-child(2) .ecuation {
-        color: #402A44;
-        font-weight: 500; }
+    .more-on-phi .container.matematicas .with-image {
+      flex-wrap: wrap; }
+      .more-on-phi .container.matematicas .with-image picture:first-of-type img {
+        width: 50rem; }
+        @media only screen and (max-width: 56.25em) {
+          .more-on-phi .container.matematicas .with-image picture:first-of-type img {
+            width: 34.72rem; } }
+        @media only screen and (max-width: 26.8em) {
+          .more-on-phi .container.matematicas .with-image picture:first-of-type img {
+            width: 30rem; } }
+        @media only screen and (max-width: 21.87em) {
+          .more-on-phi .container.matematicas .with-image picture:first-of-type img {
+            width: 24.07rem; } }
+      .more-on-phi .container.matematicas .with-image picture:last-of-type img {
+        width: 40rem; }
+        @media only screen and (max-width: 56.25em) {
+          .more-on-phi .container.matematicas .with-image picture:last-of-type img {
+            width: 27.77rem; } }
+        @media only screen and (max-width: 37.5em) {
+          .more-on-phi .container.matematicas .with-image picture:last-of-type img {
+            width: 20.83rem; } }
+        @media only screen and (max-width: 21.87em) {
+          .more-on-phi .container.matematicas .with-image picture:last-of-type img {
+            width: 18.51rem; } }
+      .more-on-phi .container.matematicas .with-image p:first-of-type {
+        width: 80rem;
+        margin-left: 10rem;
+        align-self: flex-start; }
+        @media only screen and (max-width: 56.25em) {
+          .more-on-phi .container.matematicas .with-image p:first-of-type {
+            width: 35rem;
+            margin-left: 3rem;
+            text-align: left; } }
+        @media only screen and (max-width: 37.5em) {
+          .more-on-phi .container.matematicas .with-image p:first-of-type {
+            font-size: 2.4rem; } }
+        @media only screen and (max-width: 26.8em) {
+          .more-on-phi .container.matematicas .with-image p:first-of-type {
+            margin-left: 0; } }
+        .more-on-phi .container.matematicas .with-image p:first-of-type .a {
+          color: #9D7800; }
+        .more-on-phi .container.matematicas .with-image p:first-of-type .b {
+          color: #D4AF37; }
+        .more-on-phi .container.matematicas .with-image p:first-of-type .c {
+          color: #E7C24A; }
+      .more-on-phi .container.matematicas .with-image p:nth-child(2) {
+        margin: 5rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center; }
+        @media only screen and (max-width: 56.25em) {
+          .more-on-phi .container.matematicas .with-image p:nth-child(2) {
+            max-width: 55rem;
+            margin: 5rem 2rem; } }
+        .more-on-phi .container.matematicas .with-image p:nth-child(2) .ecuation {
+          color: #402A44;
+          font-weight: 500; }
     @media only screen and (max-width: 75em) {
       .more-on-phi .container.geometria .with-image:first-of-type picture img {
         width: 52.7rem; } }
@@ -1994,7 +1993,6 @@ header {
       @media only screen and (max-width: 56.25em) {
         .more-on-phi .container.geometria .with-image:first-of-type picture:nth-of-type(2) img {
           width: 31.94rem;
-          margin-left: 10rem;
           margin-bottom: -3rem; } }
       @media only screen and (max-width: 37.5em) {
         .more-on-phi .container.geometria .with-image:first-of-type picture:nth-of-type(2) img {
@@ -2002,9 +2000,6 @@ header {
       @media only screen and (max-width: 26.8em) {
         .more-on-phi .container.geometria .with-image:first-of-type picture:nth-of-type(2) img {
           margin-left: 0; } }
-    @media only screen and (max-width: 56.25em) {
-      .more-on-phi .container.geometria .with-image:first-of-type picture {
-        width: 90rem; } }
     @media only screen and (max-width: 26.8em) {
       .more-on-phi .container.geometria .with-image:first-of-type picture {
         width: 63rem; } }
@@ -2020,7 +2015,7 @@ header {
     @media only screen and (max-width: 37.5em) {
       .more-on-phi .container.geometria .with-image:nth-of-type(3) img {
         width: 30.83rem; } }
-    @media only screen and (max-width: 37.5em) {
+    @media only screen and (max-width: 26.8em) {
       .more-on-phi .container.geometria .with-image:nth-of-type(3) img {
         width: 25.83rem; } }
     @media only screen and (max-width: 75em) {
@@ -2032,6 +2027,11 @@ header {
     @media only screen and (max-width: 26.8em) {
       .more-on-phi .container.geometria .with-image:nth-of-type(4) img {
         width: 30.83rem; } }
+    .more-on-phi .container.geometria .with-image:nth-of-type(5) p {
+      max-width: 90rem; }
+      @media only screen and (max-width: 56.25em) {
+        .more-on-phi .container.geometria .with-image:nth-of-type(5) p {
+          max-width: 50rem; } }
     .more-on-phi .container.geometria .with-image:nth-of-type(5) img {
       margin-left: 10rem; }
       @media only screen and (max-width: 75em) {
@@ -2041,15 +2041,19 @@ header {
       @media only screen and (max-width: 56.25em) {
         .more-on-phi .container.geometria .with-image:nth-of-type(5) img {
           width: 23.83rem;
-          margin-left: 0; } }
+          margin-left: 5rem; } }
     @media only screen and (max-width: 37.5em) {
       .more-on-phi .container.geometria .with-image:nth-of-type(5) {
         flex-wrap: wrap;
         margin: auto; } }
-    .more-on-phi .container.geometria .with-image:nth-of-type(6) {
-      flex-wrap: wrap-reverse; }
-      .more-on-phi .container.geometria .with-image:nth-of-type(6) img {
-        width: 30rem; }
+    .more-on-phi .container.geometria .with-image:nth-of-type(6) img {
+      width: 30rem; }
+    @media only screen and (max-width: 56.25em) {
+      .more-on-phi .container.geometria .with-image:nth-of-type(6) p {
+        max-width: 45rem; } }
+    @media only screen and (max-width: 37.5em) {
+      .more-on-phi .container.geometria .with-image:nth-of-type(6) {
+        flex-wrap: wrap-reverse; } }
     @media only screen and (max-width: 56.25em) {
       .more-on-phi .container.geometria .with-image:nth-of-type(6) img,
       .more-on-phi .container.geometria .with-image:nth-of-type(7) img {
