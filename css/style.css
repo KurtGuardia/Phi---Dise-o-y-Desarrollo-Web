@@ -882,11 +882,12 @@ header {
       display: flex;
       align-items: center; }
       .entrepreneurship .with-image .photo-hover picture {
-        width: auto;
-        height: 20rem;
         position: absolute;
         opacity: 0.4;
         transition: all 0.5s ease-in; }
+        .entrepreneurship .with-image .photo-hover picture img {
+          width: auto;
+          height: 20rem; }
         .entrepreneurship .with-image .photo-hover picture.secondary {
           opacity: 0;
           z-index: 1;
@@ -899,6 +900,7 @@ header {
         visibility: hidden; }
       .entrepreneurship .with-image .photo-hover::before {
         content: "Pasa el mouse por encima";
+        position: absolute;
         display: block;
         width: max-content;
         height: auto;
@@ -996,11 +998,12 @@ header {
     margin: 3rem;
     position: relative; }
     .welcome .photo-hover picture {
-      width: auto;
-      height: 20rem;
       position: absolute;
       opacity: 0.4;
       transition: all 0.5s ease-in; }
+      .welcome .photo-hover picture img {
+        width: auto;
+        height: 20rem; }
       .welcome .photo-hover picture.secondary {
         opacity: 0;
         z-index: 1;
@@ -1013,6 +1016,7 @@ header {
       visibility: hidden; }
     .welcome .photo-hover::before {
       content: "Pasa el mouse por encima";
+      position: absolute;
       display: block;
       width: max-content;
       height: auto;
@@ -1027,10 +1031,7 @@ header {
         .welcome .photo-hover::before {
           font-size: 2.4rem; } }
     .welcome .photo-hover:first-child {
-      right: -15rem;
-      height: 20rem; }
-      .welcome .photo-hover:first-child img {
-        height: 20rem; }
+      right: -15rem; }
       @media only screen and (max-width: 56.25em) {
         .welcome .photo-hover:first-child {
           align-self: flex-start;
@@ -1051,18 +1052,18 @@ header {
   @media only screen and (max-width: 37.5em) and (max-width: 26.8em) {
     .welcome .photo-hover:first-child {
       right: -8rem; } }
-    .welcome .photo-hover:last-of-type img {
-      margin-left: -7rem; }
+    .welcome .photo-hover:last-of-type picture {
+      right: 12rem; }
       @media only screen and (max-width: 75em) {
-        .welcome .photo-hover:last-of-type img {
+        .welcome .photo-hover:last-of-type picture {
           height: 18rem;
           width: auto; } }
       @media only screen and (max-width: 37.5em) {
-        .welcome .photo-hover:last-of-type img {
+        .welcome .photo-hover:last-of-type picture {
           width: 15rem;
           height: auto; } }
       @media only screen and (max-width: 26.8em) {
-        .welcome .photo-hover:last-of-type img {
+        .welcome .photo-hover:last-of-type picture {
           width: 26rem;
           height: auto; } }
     @media only screen and (max-width: 56.25em) {
@@ -1073,6 +1074,8 @@ header {
       .welcome .photo-hover:last-of-type {
         top: -12rem;
         left: -9rem; } }
+    .welcome .photo-hover::before {
+      top: -3rem; }
     @media only screen and (max-width: 75em) {
       .welcome .photo-hover.photo-right::before {
         margin-left: -7rem; } }
@@ -1188,11 +1191,12 @@ header {
     display: flex;
     align-items: center; }
     .services__title .photo-hover picture {
-      width: auto;
-      height: 20rem;
       position: absolute;
       opacity: 0.4;
       transition: all 0.5s ease-in; }
+      .services__title .photo-hover picture img {
+        width: auto;
+        height: 20rem; }
       .services__title .photo-hover picture.secondary {
         opacity: 0;
         z-index: 1;
@@ -1205,6 +1209,7 @@ header {
       visibility: hidden; }
     .services__title .photo-hover::before {
       content: "Pasa el mouse por encima";
+      position: absolute;
       display: block;
       width: max-content;
       height: auto;
@@ -1221,41 +1226,43 @@ header {
     @media only screen and (max-width: 37.5em) {
       .services__title .photo-hover {
         height: 5rem; } }
-    .services__title .photo-hover picture img {
-      width: 30rem;
-      height: auto;
+    .services__title .photo-hover picture {
       top: -10rem;
-      right: 20rem; }
+      left: 13rem; }
+      .services__title .photo-hover picture img {
+        width: 30rem;
+        height: auto; }
       @media only screen and (max-width: 37.5em) {
-        .services__title .photo-hover picture img {
+        .services__title .photo-hover picture {
           width: 20rem;
           top: -18rem;
           right: -10rem; } }
       @media only screen and (max-width: 26.8em) {
-        .services__title .photo-hover picture img {
+        .services__title .photo-hover picture {
           width: 30rem;
           top: -20rem;
           right: -15rem; } }
       @media only screen and (max-width: 21.87em) {
-        .services__title .photo-hover picture img {
+        .services__title .photo-hover picture {
           width: 25rem;
           right: -8rem; } }
-    .services__title .photo-hover.photo-right img {
-      height: 35rem;
-      width: auto;
-      right: 5rem;
-      margin-top: -10rem; }
+    .services__title .photo-hover.photo-right picture {
+      top: -26rem;
+      left: 16rem; }
+      .services__title .photo-hover.photo-right picture img {
+        height: 35rem;
+        width: auto; }
       @media only screen and (max-width: 37.5em) {
-        .services__title .photo-hover.photo-right img {
+        .services__title .photo-hover.photo-right picture {
           height: 25rem;
           left: -5rem; } }
       @media only screen and (max-width: 26.8em) {
-        .services__title .photo-hover.photo-right img {
+        .services__title .photo-hover.photo-right picture {
           width: 22rem;
           height: auto;
           top: -28rem; } }
       @media only screen and (max-width: 21.87em) {
-        .services__title .photo-hover.photo-right img {
+        .services__title .photo-hover.photo-right picture {
           width: 18rem;
           top: -25rem;
           left: -7rem; } }
@@ -1263,7 +1270,8 @@ header {
       .services__title .photo-hover.photo-right {
         margin-left: -5rem; } }
     .services__title .photo-hover::before {
-      margin-top: -25rem; }
+      top: -12rem;
+      left: 17rem; }
       @media only screen and (max-width: 37.5em) {
         .services__title .photo-hover::before {
           margin-top: -45rem;
@@ -1273,8 +1281,7 @@ header {
           margin-top: -48rem;
           margin-left: 8rem; } }
     .services__title .photo-hover.photo-right::before {
-      margin-top: -45rem;
-      margin-left: 31rem; }
+      top: -21rem; }
       @media only screen and (max-width: 81.25em) {
         .services__title .photo-hover.photo-right::before {
           margin-left: 30rem; } }
@@ -1348,11 +1355,12 @@ header {
     display: flex;
     align-items: center; }
     .projects__title .photo-hover picture {
-      width: auto;
-      height: 20rem;
       position: absolute;
       opacity: 0.4;
       transition: all 0.5s ease-in; }
+      .projects__title .photo-hover picture img {
+        width: auto;
+        height: 20rem; }
       .projects__title .photo-hover picture.secondary {
         opacity: 0;
         z-index: 1;
@@ -1365,6 +1373,7 @@ header {
       visibility: hidden; }
     .projects__title .photo-hover::before {
       content: "Pasa el mouse por encima";
+      position: absolute;
       display: block;
       width: max-content;
       height: auto;
@@ -1381,44 +1390,44 @@ header {
     @media only screen and (max-width: 37.5em) {
       .projects__title .photo-hover {
         height: 10rem; } }
-    .projects__title .photo-hover img {
-      width: 30rem;
-      margin-left: -2rem; }
-      @media only screen and (max-width: 37.5em) {
-        .projects__title .photo-hover img {
-          width: 25rem;
-          height: auto;
-          top: -18rem;
-          right: -11rem; } }
-      @media only screen and (max-width: 26.8em) {
-        .projects__title .photo-hover img {
-          width: 31rem;
-          top: -23rem; } }
-      @media only screen and (max-width: 21.87em) {
-        .projects__title .photo-hover img {
-          width: 27rem;
-          right: -10rem; } }
-    .projects__title .photo-hover.photo-right img {
-      width: 20rem;
-      right: 0; }
+    .projects__title .photo-hover picture {
+      right: 18rem; }
+      .projects__title .photo-hover picture img {
+        width: 30rem; }
+        @media only screen and (max-width: 37.5em) {
+          .projects__title .photo-hover picture img {
+            width: 25rem;
+            height: auto;
+            top: -18rem;
+            right: -11rem; } }
+        @media only screen and (max-width: 26.8em) {
+          .projects__title .photo-hover picture img {
+            width: 31rem;
+            top: -23rem; } }
+        @media only screen and (max-width: 21.87em) {
+          .projects__title .photo-hover picture img {
+            width: 27rem;
+            right: -10rem; } }
+    .projects__title .photo-hover.photo-right picture img {
+      width: 20rem; }
       @media only screen and (max-width: 56.25em) {
-        .projects__title .photo-hover.photo-right img {
+        .projects__title .photo-hover.photo-right picture img {
           left: 0px; } }
       @media only screen and (max-width: 37.5em) {
-        .projects__title .photo-hover.photo-right img {
+        .projects__title .photo-hover.photo-right picture img {
           left: -5rem;
           width: 15rem; } }
       @media only screen and (max-width: 26.8em) {
-        .projects__title .photo-hover.photo-right img {
+        .projects__title .photo-hover.photo-right picture img {
           width: 20rem;
           left: -9rem; } }
       @media only screen and (max-width: 21.87em) {
-        .projects__title .photo-hover.photo-right img {
+        .projects__title .photo-hover.photo-right picture img {
           width: 17rem;
           left: -9rem; } }
     .projects__title .photo-hover::before {
-      margin-top: -18rem;
-      margin-left: 4rem; }
+      top: 10rem;
+      right: 22rem; }
       @media only screen and (max-width: 37.5em) {
         .projects__title .photo-hover::before {
           margin-top: -45rem;
@@ -1432,9 +1441,8 @@ header {
           margin-top: -54rem;
           margin-left: 0; } }
     .projects__title .photo-hover:last-of-type::before {
-      position: absolute;
-      right: 0;
-      margin-top: -12rem; }
+      top: 7rem;
+      right: 19rem; }
       @media only screen and (max-width: 56.25em) {
         .projects__title .photo-hover:last-of-type::before {
           left: 0; } }
@@ -1473,15 +1481,17 @@ header {
       width: 50%;
       margin: 3rem;
       position: relative;
+      width: 25%;
       height: 40rem;
       display: flex;
       align-items: center; }
       .price__title .photo-hover picture {
-        width: auto;
-        height: 20rem;
         position: absolute;
         opacity: 0.4;
         transition: all 0.5s ease-in; }
+        .price__title .photo-hover picture img {
+          width: auto;
+          height: 20rem; }
         .price__title .photo-hover picture.secondary {
           opacity: 0;
           z-index: 1;
@@ -1494,6 +1504,7 @@ header {
         visibility: hidden; }
       .price__title .photo-hover::before {
         content: "Pasa el mouse por encima";
+        position: absolute;
         display: block;
         width: max-content;
         height: auto;
@@ -1528,7 +1539,7 @@ header {
             width: 25rem;
             top: -8rem; } }
       .price__title .photo-hover:last-of-type picture {
-        right: 0; }
+        top: 13rem; }
         @media only screen and (max-width: 56.25em) {
           .price__title .photo-hover:last-of-type picture {
             right: -2rem; } }
@@ -1537,10 +1548,9 @@ header {
             width: 25rem;
             top: -6rem;
             right: 0; } }
-      .price__title .photo-hover::before {
-        margin-top: -15rem; }
       .price__title .photo-hover:first-of-type::before {
-        margin-left: 1rem; }
+        top: 9rem;
+        left: 7rem; }
         @media only screen and (max-width: 56.25em) {
           .price__title .photo-hover:first-of-type::before {
             margin-left: 2rem;
@@ -1555,10 +1565,8 @@ header {
             margin-top: -48rem;
             margin-left: 6rem; } }
       .price__title .photo-hover:last-of-type::before {
-        position: absolute;
-        right: 4rem;
-        top: 9rem;
-        margin-top: 0; }
+        right: 11rem;
+        top: 10.5rem; }
         @media only screen and (max-width: 56.25em) {
           .price__title .photo-hover:last-of-type::before {
             left: 3rem; } }
@@ -1610,11 +1618,12 @@ header {
       align-items: flex-end;
       width: 130%; }
       .precios .with-image .photo-hover picture {
-        width: auto;
-        height: 20rem;
         position: absolute;
         opacity: 0.4;
         transition: all 0.5s ease-in; }
+        .precios .with-image .photo-hover picture img {
+          width: auto;
+          height: 20rem; }
         .precios .with-image .photo-hover picture.secondary {
           opacity: 0;
           z-index: 1;
@@ -1627,6 +1636,7 @@ header {
         visibility: hidden; }
       .precios .with-image .photo-hover::before {
         content: "Pasa el mouse por encima";
+        position: absolute;
         display: block;
         width: max-content;
         height: auto;

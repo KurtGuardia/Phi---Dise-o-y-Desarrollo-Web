@@ -30,7 +30,7 @@
     border-radius: 50%;
     align-self: center;
 
-    @include respond(xxxs){
+    @include respond(xxxs) {
       max-width: 50rem;
     }
 
@@ -45,10 +45,9 @@
       color: #fff;
       font-weight: 100;
 
-
-    @include respond(xxxs){
-      font-size: $small;
-    }
+      @include respond(xxxs) {
+        font-size: $small;
+      }
     }
   }
 }
@@ -69,10 +68,6 @@
     &:first-child {
       //Vetrubio
       right: -15rem;
-      height: 20rem;
-      img{
-        height: 20rem;
-      }
 
       @include respond(xs) {
         align-self: flex-start;
@@ -103,8 +98,8 @@
 
     &:last-of-type {
       //Partenon
-      img {
-        margin-left: -7rem;
+      picture {
+        right: 12rem;
 
         @include respond(s) {
           height: 18rem;
@@ -130,7 +125,13 @@
       }
     }
 
-    &.photo-right::before { //For partenon
+    &::before{
+      //both
+      top: -3rem;
+    }
+
+    &.photo-right::before {
+      //For partenon
 
       @include respond(s) {
         margin-left: -7rem;
@@ -197,7 +198,7 @@
       }
     }
 
-    @include respond(xxxs){
+    @include respond(xxxs) {
       margin: 5rem 0 0;
     }
   }
@@ -297,12 +298,15 @@
       height: 5rem;
     }
 
-    picture img {
+    picture {
       //Mostly on Last Supper
-      width: 30rem;
-      height: auto;
       top: -10rem;
-      right: 20rem;
+      left: 13rem;
+
+      img {
+        width: 30rem;
+        height: auto;
+      }
 
       @include respond(xxs) {
         width: 20rem;
@@ -324,11 +328,15 @@
 
     &.photo-right {
       //Notre Damm
-      img {
-        height: 35rem;
-        width: auto;
-        right: 5rem;
-        margin-top: -10rem;
+      picture {
+        // right: 5rem;
+        top: -26rem;
+        left: 16rem;
+
+        img {
+          height: 35rem;
+          width: auto;
+        }
 
         @include respond(xxs) {
           height: 25rem;
@@ -355,7 +363,9 @@
 
     &::before {
       //for last supper
-      margin-top: -25rem;
+      top: -12rem;
+      left: 17rem;
+
       @include respond(xxs) {
         margin-top: -45rem;
         margin-left: 11rem;
@@ -367,13 +377,12 @@
     }
     &.photo-right::before {
       //for notre damm
-      margin-top: -45rem;
-      margin-left: 31rem;
-      
+      top: -21rem;
+
       @include respond(m) {
         margin-left: 30rem;
       }
-    
+
       @include respond(m) {
         margin-left: 18rem;
       }
@@ -381,17 +390,17 @@
       @include respond(xs) {
         margin-left: 12rem;
       }
-      
+
       @include respond(xxs) {
         margin-top: -54rem;
         margin-left: -2rem;
       }
-      
+
       @include respond(xxxs) {
         margin-top: -68rem;
         margin-left: 1rem;
       }
-      
+
       @include respond(xxxxs) {
         margin-top: -68rem;
         margin-left: -5rem;
@@ -425,7 +434,7 @@
     }
 
     &:last-of-type h3 {
-      //For Redes Sociales title only      
+      //For Redes Sociales title only
       font-size: 3rem;
     }
   }
@@ -476,68 +485,73 @@
       height: 10rem;
     }
 
-    img {
-      //Mostly Venus
-      width: 30rem;
-      margin-left: -2rem;
+    picture {
+      right: 18rem;
 
-      @include respond(xxs) {
-        width: 25rem;
-        height: auto;
-        top: -18rem;
-        right: -11rem;
-      }
+      img {
+        //Mostly Venus
+        width: 30rem;
 
-      @include respond(xxxs) {
-        width: 31rem;
-        top: -23rem;
-      }
+        @include respond(xxs) {
+          width: 25rem;
+          height: auto;
+          top: -18rem;
+          right: -11rem;
+        }
 
-      @include respond(xxxxs) {
-        width: 27rem;
-        right: -10rem;
+        @include respond(xxxs) {
+          width: 31rem;
+          top: -23rem;
+        }
+
+        @include respond(xxxxs) {
+          width: 27rem;
+          right: -10rem;
+        }
       }
     }
 
-    &.photo-right img {
-      //Monalisa
-      width: 20rem;
-      right: 0;
+    &.photo-right picture {
+      img {
+        //Monalisa
+        width: 20rem;
 
-      @include respond(xs) {
-        left: 0px;
-      }
+        @include respond(xs) {
+          left: 0px;
+        }
 
-      @include respond(xxs) {
-        left: -5rem;
-        width: 15rem;
-      }
+        @include respond(xxs) {
+          left: -5rem;
+          width: 15rem;
+        }
 
-      @include respond(xxxs) {
-        width: 20rem;left: -9rem;
-      }
+        @include respond(xxxs) {
+          width: 20rem;
+          left: -9rem;
+        }
 
-      @include respond(xxxxs) {
-        width: 17rem;
-        left: -9rem;
+        @include respond(xxxxs) {
+          width: 17rem;
+          left: -9rem;
+        }
       }
     }
 
     &::before {
       //mostly for Venus
-      margin-top: -18rem;
-      margin-left: 4rem;
-     
+      top: 10rem;
+      right: 22rem;
+
       @include respond(xxs) {
         margin-top: -45rem;
         margin-left: 11rem;
       }
-     
+
       @include respond(xxxs) {
         margin-top: -54rem;
         margin-left: 5rem;
       }
-     
+
       @include respond(xxxxs) {
         margin-top: -54rem;
         margin-left: 0;
@@ -546,9 +560,8 @@
 
     &:last-of-type::before {
       //For monalisa
-      position: absolute;
-      right: 0;
-      margin-top: -12rem;
+      top: 7rem;
+      right: 19rem;
 
       @include respond(xs) {
         left: 0;
@@ -637,6 +650,7 @@
 
     .photo-hover {
       @include hover;
+      width: 25%;
       @include hoverMessage;
       height: 40rem;
       display: flex;
@@ -671,9 +685,9 @@
 
       &:last-of-type picture {
         //Toyota
-        right: 0;        
+        top: 13rem;
 
-        @include respond(xs){
+        @include respond(xs) {
           right: -2rem;
         }
 
@@ -684,15 +698,12 @@
         }
       }
 
-      &::before {
-        margin-top: -15rem;
-      }
-
       &:first-of-type::before {
         //For Taj Mahal
-        margin-left: 1rem;
+        top: 9rem;
+        left: 7rem;
 
-        @include respond(xs){
+        @include respond(xs) {
           margin-left: 2rem;
           margin-top: -13rem;
         }
@@ -710,10 +721,8 @@
 
       &:last-of-type::before {
         //For Toyota
-        position: absolute;
-        right: 4rem;
-        top: 9rem;
-        margin-top: 0;
+        right: 11rem;
+        top: 10.5rem;
 
         @include respond(xs) {
           left: 3rem;
