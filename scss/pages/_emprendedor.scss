@@ -38,10 +38,26 @@
       display: flex;
       align-items: center;
 
-      img {
-        //Mostly Saturn
-        width: 20rem;
-        height: auto;
+      &.photo-right {
+        //Warner
+        picture {
+          left: 7rem;
+          img {
+            width: 18rem;
+          }
+          @include respond(xxs) {
+            left: 1.5rem;
+          }
+        }
+      }
+
+      picture {
+        //Saturn
+        left: -10rem;
+        img {
+          width: 30rem;
+          height: auto;
+        }
 
         @include respond(xxs) {
           left: -1.5rem;
@@ -52,26 +68,17 @@
         }
       }
 
-      &.photo-right img {
-        //Warner
-        width: 15rem;
-
-        @include respond(xxs) {
-          left: 1.5rem;
-        }
-      }
-
       &::before {
         //mostly for Saturn
         position: absolute;
         top: 4rem;
-        left: 1em;
+        left: -4rem;
       }
 
       &.photo-right::before {
         //For Warner
-        top: -1rem;
-        left: -0.5rem;
+        top: -4rem;
+        left: 6rem;
       }
 
       @include respond(xs) {
@@ -95,5 +102,4 @@
     color: $color-purple;
     text-decoration: underline;
   }
-
 }

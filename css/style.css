@@ -914,27 +914,31 @@ header {
         @media only screen and (max-width: 26.8em) {
           .entrepreneurship .with-image .photo-hover::before {
             font-size: 2.4rem; } }
-      .entrepreneurship .with-image .photo-hover img {
-        width: 20rem;
-        height: auto; }
+      .entrepreneurship .with-image .photo-hover.photo-right picture {
+        left: 7rem; }
+        .entrepreneurship .with-image .photo-hover.photo-right picture img {
+          width: 18rem; }
         @media only screen and (max-width: 37.5em) {
-          .entrepreneurship .with-image .photo-hover img {
+          .entrepreneurship .with-image .photo-hover.photo-right picture {
+            left: 1.5rem; } }
+      .entrepreneurship .with-image .photo-hover picture {
+        left: -10rem; }
+        .entrepreneurship .with-image .photo-hover picture img {
+          width: 30rem;
+          height: auto; }
+        @media only screen and (max-width: 37.5em) {
+          .entrepreneurship .with-image .photo-hover picture {
             left: -1.5rem; } }
         @media only screen and (max-width: 21.87em) {
-          .entrepreneurship .with-image .photo-hover img {
+          .entrepreneurship .with-image .photo-hover picture {
             left: -6rem; } }
-      .entrepreneurship .with-image .photo-hover.photo-right img {
-        width: 15rem; }
-        @media only screen and (max-width: 37.5em) {
-          .entrepreneurship .with-image .photo-hover.photo-right img {
-            left: 1.5rem; } }
       .entrepreneurship .with-image .photo-hover::before {
         position: absolute;
         top: 4rem;
-        left: 1em; }
+        left: -4rem; }
       .entrepreneurship .with-image .photo-hover.photo-right::before {
-        top: -1rem;
-        left: -0.5rem; }
+        top: -4rem;
+        left: 6rem; }
       @media only screen and (max-width: 56.25em) {
         .entrepreneurship .with-image .photo-hover:first-of-type {
           margin-right: 10rem; }
@@ -1655,18 +1659,17 @@ header {
           margin: 0 auto 5rem;
           justify-content: center;
           width: auto; } }
-      .precios .with-image .photo-hover img {
-        width: 38rem;
-        height: auto;
-        margin-left: 5rem; }
-        @media only screen and (max-width: 56.25em) {
-          .precios .with-image .photo-hover img {
-            width: 28rem;
-            margin-left: 0; } }
+      .precios .with-image .photo-hover picture {
+        right: 4rem; }
+        .precios .with-image .photo-hover picture img {
+          width: 35rem;
+          height: auto; }
+          @media only screen and (max-width: 56.25em) {
+            .precios .with-image .photo-hover picture img {
+              width: 28rem; } }
       .precios .with-image .photo-hover:last-of-type::before {
-        position: absolute;
-        margin-top: -18rem;
-        margin-left: 12rem; }
+        right: 14rem;
+        top: -4rem; }
         @media only screen and (max-width: 37.5em) {
           .precios .with-image .photo-hover:last-of-type::before {
             margin-top: -13rem;
@@ -1725,14 +1728,14 @@ header {
           .precios .sections .desgloce p {
             margin-left: 0;
             text-align: left; } }
-      .precios .sections .desgloce img {
+      .precios .sections .desgloce picture {
         grid-row: 1 / span 2;
         grid-column: 2 / 2; }
         @media only screen and (max-width: 56.25em) {
-          .precios .sections .desgloce img {
+          .precios .sections .desgloce picture img {
             width: 40rem; } }
         @media only screen and (max-width: 37.5em) {
-          .precios .sections .desgloce img {
+          .precios .sections .desgloce picture img {
             width: 30rem; } }
       .precios .sections .desgloce .tiny-text {
         grid-row: 2 / 2;

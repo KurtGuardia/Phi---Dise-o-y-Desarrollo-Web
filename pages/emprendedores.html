@@ -178,16 +178,24 @@
             </p>
           </div>
           <div class="photo">
-            <img
-              src="../img/Kurt-left.png"
-              class="kurt-left"
-              alt="Half photo of Kurt"
-            />
-            <img
-              src="../img/Kurt-right.png"
-              class="kurt-right"
-              alt="Half photo of Kurt"
-            />
+            <picture>
+              <source srcset="../img/Kurt-left.webp" type="image/webp" />
+              <source srcset="../img/Kurt-left.jpg" type="image/jpg" />
+              <img
+                src="../img/Kurt-left.jpg"
+                class="kurt-left"
+                alt="Half photo of Kurt"
+              />
+            </picture>
+            <picture>
+              <source srcset="../img/Kurt-right.webp" type="image/webp" />
+              <source srcset="../img/Kurt-right.jpg" type="image/jpg" />
+              <img
+                src="../img/Kurt-right.jpg"
+                class="kurt-right"
+                alt="Half photo of Kurt"
+              />
+            </picture>
           </div>
           <span class="modal-close">X</span>
         </div>

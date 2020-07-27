@@ -32,24 +32,25 @@
 
       @include respond(xxs) {
         margin: 0 auto 5rem;
-        justify-content: center;width: auto;        
+        justify-content: center;
+        width: auto;
       }
 
-      img {
-        width: 38rem;
-        height: auto;
-        margin-left: 5rem;
+      picture {
+        right: 4rem;
 
-        @include respond(xs) {
-          width: 28rem;
-          margin-left: 0;
+        img {
+          width: 35rem;
+          height: auto;
+
+          @include respond(xs) {
+            width: 28rem;
+          }
         }
       }
-
       &:last-of-type::before {
-        position: absolute;
-        margin-top: -18rem;
-        margin-left: 12rem;
+        right: 14rem;
+        top: -4rem;
 
         @include respond(xxs) {
           margin-top: -13rem;
@@ -63,14 +64,14 @@
   table {
     margin: 5rem auto 10rem;
 
-    @include respond(xxs){
+    @include respond(xxs) {
       margin: 5rem 0;
     }
 
     .esp {
       width: 25rem;
 
-      @include respond(xxxs){
+      @include respond(xxxs) {
         width: 22rem;
       }
 
@@ -92,7 +93,7 @@
 
     h2 {
       padding: 10rem;
-      @include respond(xxs){
+      @include respond(xxs) {
         padding: 10rem 5rem;
       }
     }
@@ -110,11 +111,11 @@
       margin: 10rem auto 10rem;
       width: 100rem;
 
-      @include respond(xxs){
+      @include respond(xxs) {
         width: 70rem;
       }
 
-      @include respond(xxxxs){
+      @include respond(xxxxs) {
         width: 60rem;
       }
 
@@ -135,16 +136,18 @@
         }
       }
 
-      img {
+      picture {
         grid-row: 1 / span 2;
         grid-column: 2 / 2;
+        
+        img {
+          @include respond(xs) {
+            width: 40rem;
+          }
 
-        @include respond(xs) {
-          width: 40rem;
-        }
-
-        @include respond(xxs) {
-          width: 30rem;
+          @include respond(xxs) {
+            width: 30rem;
+          }
         }
       }
 
