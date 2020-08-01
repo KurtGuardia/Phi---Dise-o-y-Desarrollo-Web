@@ -50,9 +50,9 @@ xl 1800px
   }
 
   @if $breakpoint == l {
-    @media only screen and (max-width: 90em) {
+    @media only screen and (max-width: 96.87em) {
       @content;
-    } //1440px
+    } //1550px
   }
 
   @if $breakpoint == xl {
