@@ -99,6 +99,10 @@ header {
         border-bottom: 2px solid $color-red;
       }
 
+      li:last-of-type{
+        margin-right: 5rem;
+      }
+
       @include respond(xs) {
         display: none;
       }

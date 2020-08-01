@@ -71,17 +71,20 @@
 
       @include respond(xs) {
         align-self: flex-start;
-        margin-right: -5rem;
+        right: -6rem;
+
+        img {
+          height: 17rem;
+        }
       }
 
       @include respond(xxs) {
         align-self: flex-start;
-        margin-right: -5rem;
         top: -14rem;
         right: -15rem;
 
         img {
-          width: 12rem;
+          width: 16rem;
           height: auto;
 
           @include respond(xxxs) {
@@ -89,25 +92,31 @@
             height: auto;
           }
         }
+      }
 
-        @include respond(xxxs) {
-          right: -8rem;
-        }
+      @include respond(xxxs) {
+        right: -5rem;
+      }
+
+      @include respond(xxxxs) {
+        right: 0rem;
       }
     }
 
     &:last-of-type {
       //Partenon
-      picture {
-        right: 12rem;
-
+      right: 8rem;
+      img {
         @include respond(s) {
           height: 18rem;
           width: auto;
         }
-        @include respond(xxs) {
-          width: 15rem;
+        @include respond(xs) {
+          width: 25rem;
           height: auto;
+        }
+
+        @include respond(xs) {
         }
 
         @include respond(xxxs) {
@@ -115,38 +124,35 @@
           height: auto;
         }
       }
+
       @include respond(xs) {
         align-self: flex-start;
-        margin-left: -5rem;
       }
       @include respond(xxs) {
         top: -12rem;
-        left: -9rem;
+        left: -28rem;
+      }
+      @include respond(xxxs) {
+        left: -20rem;
       }
     }
 
-    &::before{
+    &::before {
       //both
       top: -3rem;
+
+      @include respond(xs) {
+        //For Vetrubio only
+        left: 4rem;
+      }
     }
 
     &.photo-right::before {
       //For partenon
-
-      @include respond(s) {
-        margin-left: -7rem;
-      }
+      left: 6rem;
 
       @include respond(xs) {
-        margin-left: 3rem;
-      }
-
-      @include respond(xs) {
-        margin-left: -4rem;
-      }
-
-      @include respond(xxxs) {
-        margin-left: -1rem;
+        left: 8rem;
       }
     }
   }
@@ -301,57 +307,91 @@
     picture {
       //Mostly on Last Supper
       top: -10rem;
-      left: 13rem;
+      left: 7rem;
 
       img {
         width: 30rem;
         height: auto;
+
+        @include respond(xs) {
+          width: 25rem;
+        }
+
+        @include respond(xxs) {
+          width: 20rem;
+        }
+
+        @include respond(xxxs) {
+          width: 27rem;
+        }
+
+        @include respond(xxxxs) {
+          width: 25rem;
+        }
       }
 
       @include respond(xxs) {
-        width: 20rem;
-        top: -18rem;
-        right: -10rem;
+        top: -16rem;
+        left: 14rem;
       }
 
       @include respond(xxxs) {
-        width: 30rem;
-        top: -20rem;
-        right: -15rem;
+        top: -22rem;
+        left: 5rem;
       }
 
-      @include respond(xxxxs) {
-        width: 25rem;
-        right: -8rem;
+      @include respond(xxxs) {
       }
     }
 
     &.photo-right {
       //Notre Damm
       picture {
-        // right: 5rem;
         top: -26rem;
-        left: 16rem;
+        left: 27rem;
 
         img {
           height: 35rem;
           width: auto;
+
+          @include respond(xs) {
+            height: 30rem;
+          }
+
+          @include respond(xxs) {
+            height: 25rem;
+          }
+
+          @include respond(xxxs) {
+            width: 20rem;
+            height: auto;
+          }
+
+          @include respond(xxxxs) {
+            width: 18rem;
+          }
+        }
+
+        @include respond(s) {
+          left: 16rem;
+        }
+
+        @include respond(xs) {
+          left: 12rem;
         }
 
         @include respond(xxs) {
-          height: 25rem;
+          top: -29rem;
           left: -5rem;
         }
 
         @include respond(xxxs) {
-          width: 22rem;
-          height: auto;
-          top: -28rem;
+          top: -38rem;
+          left: -1rem;
         }
 
         @include respond(xxxxs) {
-          width: 18rem;
-          top: -25rem;
+          top: -34rem;
           left: -7rem;
         }
       }
@@ -363,47 +403,41 @@
 
     &::before {
       //for last supper
-      top: -12rem;
-      left: 17rem;
+      top: -13rem;
+      left: 13rem;
 
       @include respond(xxs) {
-        margin-top: -45rem;
-        margin-left: 11rem;
+        top: -19rem;
+        left: 19rem;
       }
       @include respond(xxxs) {
-        margin-top: -48rem;
-        margin-left: 8rem;
+        top: -26rem;
+        left: 12rem;
       }
     }
+
     &.photo-right::before {
       //for notre damm
       top: -21rem;
+      left: 28rem;
 
-      @include respond(m) {
-        margin-left: 30rem;
-      }
-
-      @include respond(m) {
-        margin-left: 18rem;
-      }
-
-      @include respond(xs) {
-        margin-left: 12rem;
+      @include respond(s) {
+        left: 16rem;
       }
 
       @include respond(xxs) {
-        margin-top: -54rem;
-        margin-left: -2rem;
+        top: -26rem;
+        left: -2rem;
       }
 
       @include respond(xxxs) {
-        margin-top: -68rem;
-        margin-left: 1rem;
+        top: -34rem;
+        left: 1rem;
       }
 
       @include respond(xxxxs) {
-        margin-top: -68rem;
-        margin-left: -5rem;
+        top: -32rem;
+        left: -5rem;
       }
     }
   }
@@ -495,45 +529,68 @@
         @include respond(xxs) {
           width: 25rem;
           height: auto;
-          top: -18rem;
-          right: -11rem;
         }
 
         @include respond(xxxs) {
           width: 31rem;
-          top: -23rem;
         }
 
         @include respond(xxxxs) {
           width: 27rem;
-          right: -10rem;
         }
+      }
+
+      @include respond(s) {
+        right: 11rem;
+      }
+
+      @include respond(xs) {
+        right: 1rem;
+      }
+
+      @include respond(xxs) {
+        top: -18rem;
+        right: -11rem;
+      }
+
+      @include respond(xxxs) {
+        top: -23rem;
+      }
+
+      @include respond(xxxxs) {
+        right: -16rem;
       }
     }
 
     &.photo-right picture {
+      right: 11rem;
       img {
         //Monalisa
         width: 20rem;
 
-        @include respond(xs) {
-          left: 0px;
-        }
-
         @include respond(xxs) {
-          left: -5rem;
           width: 15rem;
         }
 
         @include respond(xxxs) {
           width: 20rem;
-          left: -9rem;
         }
 
         @include respond(xxxxs) {
           width: 17rem;
-          left: -9rem;
         }
+      }
+
+      @include respond(xxs) {
+        left: -5rem;
+      }
+
+      @include respond(xxxs) {
+        left: -9rem;
+      }
+
+      @include respond(xxxxs) {
+        left: -9rem;
       }
     }
 
@@ -542,39 +599,45 @@
       top: 10rem;
       right: 22rem;
 
+      @include respond(s) {
+        right: 15rem;
+      }
+
+      @include respond(xs) {
+        right: 10rem;
+      }
+
       @include respond(xxs) {
-        margin-top: -45rem;
-        margin-left: 11rem;
+        top: -19rem;
+        right: -4rem;
       }
 
       @include respond(xxxs) {
-        margin-top: -54rem;
-        margin-left: 5rem;
+        top: -24rem;
       }
 
       @include respond(xxxxs) {
-        margin-top: -54rem;
-        margin-left: 0;
+        right: -10rem;
       }
     }
 
     &:last-of-type::before {
       //For monalisa
       top: 7rem;
-      right: 19rem;
+      right: 12rem;
 
       @include respond(xs) {
-        left: 0;
+        right: 17rem;
       }
       @include respond(xxs) {
-        left: -17rem;
-        margin-top: -25rem;
+        top: -21rem;
+        right: 14rem;
       }
       @include respond(xxxs) {
-        margin-top: -30rem;
+        top: -27rem;
       }
       @include respond(xxxxs) {
-        margin-left: 7rem;
+        right: 6rem;
       }
     }
   }
@@ -656,6 +719,7 @@
       display: flex;
       align-items: center;
 
+      //This and the next media queries are to get the title large and not one word in each line, as well as not making the small secction to big.
       @include respond(xxs) {
         width: 10%;
         height: 25rem;
@@ -664,22 +728,43 @@
       @include respond(xxxs) {
         height: 35rem;
         width: 3%;
-      }
+      }      
 
-      img {
-        //Mostly both
-        width: 24rem;
-        height: auto;
+      picture {
+        right: 6rem;
 
-        @include respond(xxs) {
-          top: -7rem;
-          right: -24rem;
-          width: 20rem;
+        img {
+          //Mostly both
+          width: 24rem;
+          height: auto;
+
+          @include respond(xxs) {
+            width: 20rem;
+          }
+
+          @include respond(xxxs) {
+            width: 25rem;
+          }
+          @include respond(xxxs) {
+            width: 22rem;
+          }
+        }
+
+        @include respond(s) {
+          right: 0;
+        }
+
+        @include respond(xs) {
+          right: -3rem;
         }
 
         @include respond(xxxs) {
-          width: 25rem;
-          top: -8rem;
+          top: -3rem;
+          right: -27rem;
+        }
+
+        @include respond(xxxxs){
+          right: -27rem;
         }
       }
 
@@ -687,35 +772,50 @@
         //Toyota
         top: 13rem;
 
+        img {
+          @include respond(xxxs) {
+            width: 25rem;
+          }
+          @include respond(xxxxs) {
+            width: 22rem;
+          }
+        }
+        
         @include respond(xs) {
-          right: -2rem;
+          top: 15rem;
+        }
+        
+        @include respond(xxs) {
+          top: -2rem;
+          right: 6rem;
         }
 
-        @include respond(xxxs) {
-          width: 25rem;
-          top: -6rem;
+        @include respond(xxxs){
+          right: 2rem;
+        }
+
+        @include respond(xxxxs){
           right: 0;
         }
       }
 
       &:first-of-type::before {
         //For Taj Mahal
-        top: 9rem;
+        top: 10.5rem;
         left: 7rem;
 
+        @include respond(s) {
+          left: 4rem;
+        }
         @include respond(xs) {
-          margin-left: 2rem;
-          margin-top: -13rem;
+          left: 5rem;
         }
-        @include respond(xxs) {
-          margin-top: -36rem;
-          margin-left: 15rem;
-          width: 70px;
+       @include respond(xxxs) {
+         top: -4.5rem;
+         left: 11rem;
         }
-
-        @include respond(xxxs) {
-          margin-top: -48rem;
-          margin-left: 6rem;
+        @include respond(xxxxs){
+          left: 10rem;
         }
       }
 
@@ -724,8 +824,13 @@
         right: 11rem;
         top: 10.5rem;
 
+        @include respond(s) {
+          left: 2rem;
+        }
+
         @include respond(xs) {
-          left: 3rem;
+          top: 11.5rem;
+          left: 4rem;
         }
 
         @include respond(xxs) {
@@ -734,12 +839,12 @@
         }
 
         @include respond(xxxs) {
-          left: -16rem;
-          top: -9rem;
+          left: -21 rem;
+          top: -6rem;
         }
 
         @include respond(xxxxs) {
-          left: -19rem;
+          left: -18rem;
         }
       }
     }

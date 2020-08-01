@@ -22,6 +22,20 @@ xl 1800px
     opacity: 0.5;
     transform: scale(1); } }
 
+@keyframes beat {
+  0% {
+    transform: scale(0.98); }
+  20% {
+    transform: scale(1); }
+  40% {
+    transform: scale(0.98); }
+  60% {
+    transform: scale(1); }
+  80% {
+    transform: scale(0.98); }
+  100% {
+    transform: scale(0.98); } }
+
 *,
 *::after,
 *::before {
@@ -774,6 +788,8 @@ header {
       header .row .main-nav li:active {
         background-color: #f5d87877;
         border-bottom: 2px solid #A0362B; }
+      header .row .main-nav li:last-of-type {
+        margin-right: 5rem; }
       @media only screen and (max-width: 56.25em) {
         header .row .main-nav {
           display: none; } }
@@ -1039,59 +1055,61 @@ header {
       @media only screen and (max-width: 56.25em) {
         .welcome .photo-hover:first-child {
           align-self: flex-start;
-          margin-right: -5rem; } }
+          right: -6rem; }
+          .welcome .photo-hover:first-child img {
+            height: 17rem; } }
       @media only screen and (max-width: 37.5em) {
         .welcome .photo-hover:first-child {
           align-self: flex-start;
-          margin-right: -5rem;
           top: -14rem;
           right: -15rem; }
           .welcome .photo-hover:first-child img {
-            width: 12rem;
+            width: 16rem;
             height: auto; } }
     @media only screen and (max-width: 37.5em) and (max-width: 26.8em) {
       .welcome .photo-hover:first-child img {
         width: 18rem;
         height: auto; } }
-  @media only screen and (max-width: 37.5em) and (max-width: 26.8em) {
-    .welcome .photo-hover:first-child {
-      right: -8rem; } }
-    .welcome .photo-hover:last-of-type picture {
-      right: 12rem; }
+      @media only screen and (max-width: 26.8em) {
+        .welcome .photo-hover:first-child {
+          right: -5rem; } }
+      @media only screen and (max-width: 21.87em) {
+        .welcome .photo-hover:first-child {
+          right: 0rem; } }
+    .welcome .photo-hover:last-of-type {
+      right: 8rem; }
       @media only screen and (max-width: 75em) {
-        .welcome .photo-hover:last-of-type picture {
+        .welcome .photo-hover:last-of-type img {
           height: 18rem;
           width: auto; } }
-      @media only screen and (max-width: 37.5em) {
-        .welcome .photo-hover:last-of-type picture {
-          width: 15rem;
+      @media only screen and (max-width: 56.25em) {
+        .welcome .photo-hover:last-of-type img {
+          width: 25rem;
           height: auto; } }
       @media only screen and (max-width: 26.8em) {
-        .welcome .photo-hover:last-of-type picture {
+        .welcome .photo-hover:last-of-type img {
           width: 26rem;
           height: auto; } }
-    @media only screen and (max-width: 56.25em) {
-      .welcome .photo-hover:last-of-type {
-        align-self: flex-start;
-        margin-left: -5rem; } }
-    @media only screen and (max-width: 37.5em) {
-      .welcome .photo-hover:last-of-type {
-        top: -12rem;
-        left: -9rem; } }
+      @media only screen and (max-width: 56.25em) {
+        .welcome .photo-hover:last-of-type {
+          align-self: flex-start; } }
+      @media only screen and (max-width: 37.5em) {
+        .welcome .photo-hover:last-of-type {
+          top: -12rem;
+          left: -28rem; } }
+      @media only screen and (max-width: 26.8em) {
+        .welcome .photo-hover:last-of-type {
+          left: -20rem; } }
     .welcome .photo-hover::before {
       top: -3rem; }
-    @media only screen and (max-width: 75em) {
-      .welcome .photo-hover.photo-right::before {
-        margin-left: -7rem; } }
-    @media only screen and (max-width: 56.25em) {
-      .welcome .photo-hover.photo-right::before {
-        margin-left: 3rem; } }
-    @media only screen and (max-width: 56.25em) {
-      .welcome .photo-hover.photo-right::before {
-        margin-left: -4rem; } }
-    @media only screen and (max-width: 26.8em) {
-      .welcome .photo-hover.photo-right::before {
-        margin-left: -1rem; } }
+      @media only screen and (max-width: 56.25em) {
+        .welcome .photo-hover::before {
+          left: 4rem; } }
+    .welcome .photo-hover.photo-right::before {
+      left: 6rem; }
+      @media only screen and (max-width: 56.25em) {
+        .welcome .photo-hover.photo-right::before {
+          left: 8rem; } }
   .welcome-text {
     margin: 5rem;
     display: flex;
@@ -1232,81 +1250,99 @@ header {
         height: 5rem; } }
     .services__title .photo-hover picture {
       top: -10rem;
-      left: 13rem; }
+      left: 7rem; }
       .services__title .photo-hover picture img {
         width: 30rem;
         height: auto; }
+        @media only screen and (max-width: 56.25em) {
+          .services__title .photo-hover picture img {
+            width: 25rem; } }
+        @media only screen and (max-width: 37.5em) {
+          .services__title .photo-hover picture img {
+            width: 20rem; } }
+        @media only screen and (max-width: 26.8em) {
+          .services__title .photo-hover picture img {
+            width: 27rem; } }
+        @media only screen and (max-width: 21.87em) {
+          .services__title .photo-hover picture img {
+            width: 25rem; } }
       @media only screen and (max-width: 37.5em) {
         .services__title .photo-hover picture {
-          width: 20rem;
-          top: -18rem;
-          right: -10rem; } }
+          top: -16rem;
+          left: 14rem; } }
       @media only screen and (max-width: 26.8em) {
         .services__title .photo-hover picture {
-          width: 30rem;
-          top: -20rem;
-          right: -15rem; } }
-      @media only screen and (max-width: 21.87em) {
-        .services__title .photo-hover picture {
-          width: 25rem;
-          right: -8rem; } }
+          top: -22rem;
+          left: 5rem; } }
     .services__title .photo-hover.photo-right picture {
       top: -26rem;
-      left: 16rem; }
+      left: 27rem; }
       .services__title .photo-hover.photo-right picture img {
         height: 35rem;
         width: auto; }
+        @media only screen and (max-width: 56.25em) {
+          .services__title .photo-hover.photo-right picture img {
+            height: 30rem; } }
+        @media only screen and (max-width: 37.5em) {
+          .services__title .photo-hover.photo-right picture img {
+            height: 25rem; } }
+        @media only screen and (max-width: 26.8em) {
+          .services__title .photo-hover.photo-right picture img {
+            width: 20rem;
+            height: auto; } }
+        @media only screen and (max-width: 21.87em) {
+          .services__title .photo-hover.photo-right picture img {
+            width: 18rem; } }
+      @media only screen and (max-width: 75em) {
+        .services__title .photo-hover.photo-right picture {
+          left: 16rem; } }
+      @media only screen and (max-width: 56.25em) {
+        .services__title .photo-hover.photo-right picture {
+          left: 12rem; } }
       @media only screen and (max-width: 37.5em) {
         .services__title .photo-hover.photo-right picture {
-          height: 25rem;
+          top: -29rem;
           left: -5rem; } }
       @media only screen and (max-width: 26.8em) {
         .services__title .photo-hover.photo-right picture {
-          width: 22rem;
-          height: auto;
-          top: -28rem; } }
+          top: -38rem;
+          left: -1rem; } }
       @media only screen and (max-width: 21.87em) {
         .services__title .photo-hover.photo-right picture {
-          width: 18rem;
-          top: -25rem;
+          top: -34rem;
           left: -7rem; } }
     @media only screen and (max-width: 56.25em) {
       .services__title .photo-hover.photo-right {
         margin-left: -5rem; } }
     .services__title .photo-hover::before {
-      top: -12rem;
-      left: 17rem; }
+      top: -13rem;
+      left: 13rem; }
       @media only screen and (max-width: 37.5em) {
         .services__title .photo-hover::before {
-          margin-top: -45rem;
-          margin-left: 11rem; } }
+          top: -19rem;
+          left: 19rem; } }
       @media only screen and (max-width: 26.8em) {
         .services__title .photo-hover::before {
-          margin-top: -48rem;
-          margin-left: 8rem; } }
+          top: -26rem;
+          left: 12rem; } }
     .services__title .photo-hover.photo-right::before {
-      top: -21rem; }
-      @media only screen and (max-width: 81.25em) {
+      top: -21rem;
+      left: 28rem; }
+      @media only screen and (max-width: 75em) {
         .services__title .photo-hover.photo-right::before {
-          margin-left: 30rem; } }
-      @media only screen and (max-width: 81.25em) {
-        .services__title .photo-hover.photo-right::before {
-          margin-left: 18rem; } }
-      @media only screen and (max-width: 56.25em) {
-        .services__title .photo-hover.photo-right::before {
-          margin-left: 12rem; } }
+          left: 16rem; } }
       @media only screen and (max-width: 37.5em) {
         .services__title .photo-hover.photo-right::before {
-          margin-top: -54rem;
-          margin-left: -2rem; } }
+          top: -26rem;
+          left: -2rem; } }
       @media only screen and (max-width: 26.8em) {
         .services__title .photo-hover.photo-right::before {
-          margin-top: -68rem;
-          margin-left: 1rem; } }
+          top: -34rem;
+          left: 1rem; } }
       @media only screen and (max-width: 21.87em) {
         .services__title .photo-hover.photo-right::before {
-          margin-top: -68rem;
-          margin-left: -5rem; } }
+          top: -32rem;
+          left: -5rem; } }
 
 .services-cards {
   width: 1100px;
@@ -1401,65 +1437,86 @@ header {
         @media only screen and (max-width: 37.5em) {
           .projects__title .photo-hover picture img {
             width: 25rem;
-            height: auto;
-            top: -18rem;
-            right: -11rem; } }
+            height: auto; } }
         @media only screen and (max-width: 26.8em) {
           .projects__title .photo-hover picture img {
-            width: 31rem;
-            top: -23rem; } }
+            width: 31rem; } }
         @media only screen and (max-width: 21.87em) {
           .projects__title .photo-hover picture img {
-            width: 27rem;
-            right: -10rem; } }
-    .projects__title .photo-hover.photo-right picture img {
-      width: 20rem; }
+            width: 27rem; } }
+      @media only screen and (max-width: 75em) {
+        .projects__title .photo-hover picture {
+          right: 11rem; } }
       @media only screen and (max-width: 56.25em) {
-        .projects__title .photo-hover.photo-right picture img {
-          left: 0px; } }
+        .projects__title .photo-hover picture {
+          right: 1rem; } }
       @media only screen and (max-width: 37.5em) {
-        .projects__title .photo-hover.photo-right picture img {
-          left: -5rem;
-          width: 15rem; } }
+        .projects__title .photo-hover picture {
+          top: -18rem;
+          right: -11rem; } }
       @media only screen and (max-width: 26.8em) {
-        .projects__title .photo-hover.photo-right picture img {
-          width: 20rem;
+        .projects__title .photo-hover picture {
+          top: -23rem; } }
+      @media only screen and (max-width: 21.87em) {
+        .projects__title .photo-hover picture {
+          right: -16rem; } }
+    .projects__title .photo-hover.photo-right picture {
+      right: 11rem; }
+      .projects__title .photo-hover.photo-right picture img {
+        width: 20rem; }
+        @media only screen and (max-width: 37.5em) {
+          .projects__title .photo-hover.photo-right picture img {
+            width: 15rem; } }
+        @media only screen and (max-width: 26.8em) {
+          .projects__title .photo-hover.photo-right picture img {
+            width: 20rem; } }
+        @media only screen and (max-width: 21.87em) {
+          .projects__title .photo-hover.photo-right picture img {
+            width: 17rem; } }
+      @media only screen and (max-width: 37.5em) {
+        .projects__title .photo-hover.photo-right picture {
+          left: -5rem; } }
+      @media only screen and (max-width: 26.8em) {
+        .projects__title .photo-hover.photo-right picture {
           left: -9rem; } }
       @media only screen and (max-width: 21.87em) {
-        .projects__title .photo-hover.photo-right picture img {
-          width: 17rem;
+        .projects__title .photo-hover.photo-right picture {
           left: -9rem; } }
     .projects__title .photo-hover::before {
       top: 10rem;
       right: 22rem; }
+      @media only screen and (max-width: 75em) {
+        .projects__title .photo-hover::before {
+          right: 15rem; } }
+      @media only screen and (max-width: 56.25em) {
+        .projects__title .photo-hover::before {
+          right: 10rem; } }
       @media only screen and (max-width: 37.5em) {
         .projects__title .photo-hover::before {
-          margin-top: -45rem;
-          margin-left: 11rem; } }
+          top: -19rem;
+          right: -4rem; } }
       @media only screen and (max-width: 26.8em) {
         .projects__title .photo-hover::before {
-          margin-top: -54rem;
-          margin-left: 5rem; } }
+          top: -24rem; } }
       @media only screen and (max-width: 21.87em) {
         .projects__title .photo-hover::before {
-          margin-top: -54rem;
-          margin-left: 0; } }
+          right: -10rem; } }
     .projects__title .photo-hover:last-of-type::before {
       top: 7rem;
-      right: 19rem; }
+      right: 12rem; }
       @media only screen and (max-width: 56.25em) {
         .projects__title .photo-hover:last-of-type::before {
-          left: 0; } }
+          right: 17rem; } }
       @media only screen and (max-width: 37.5em) {
         .projects__title .photo-hover:last-of-type::before {
-          left: -17rem;
-          margin-top: -25rem; } }
+          top: -21rem;
+          right: 14rem; } }
       @media only screen and (max-width: 26.8em) {
         .projects__title .photo-hover:last-of-type::before {
-          margin-top: -30rem; } }
+          top: -27rem; } }
       @media only screen and (max-width: 21.87em) {
         .projects__title .photo-hover:last-of-type::before {
-          margin-left: 7rem; } }
+          right: 6rem; } }
 
 .project__cards {
   display: grid;
@@ -1530,61 +1587,91 @@ header {
         .price__title .photo-hover {
           height: 35rem;
           width: 3%; } }
-      .price__title .photo-hover img {
-        width: 24rem;
-        height: auto; }
-        @media only screen and (max-width: 37.5em) {
-          .price__title .photo-hover img {
-            top: -7rem;
-            right: -24rem;
-            width: 20rem; } }
+      .price__title .photo-hover picture {
+        right: 6rem; }
+        .price__title .photo-hover picture img {
+          width: 24rem;
+          height: auto; }
+          @media only screen and (max-width: 37.5em) {
+            .price__title .photo-hover picture img {
+              width: 20rem; } }
+          @media only screen and (max-width: 26.8em) {
+            .price__title .photo-hover picture img {
+              width: 25rem; } }
+          @media only screen and (max-width: 26.8em) {
+            .price__title .photo-hover picture img {
+              width: 22rem; } }
+        @media only screen and (max-width: 75em) {
+          .price__title .photo-hover picture {
+            right: 0; } }
+        @media only screen and (max-width: 56.25em) {
+          .price__title .photo-hover picture {
+            right: -3rem; } }
         @media only screen and (max-width: 26.8em) {
-          .price__title .photo-hover img {
-            width: 25rem;
-            top: -8rem; } }
+          .price__title .photo-hover picture {
+            top: -3rem;
+            right: -27rem; } }
+        @media only screen and (max-width: 21.87em) {
+          .price__title .photo-hover picture {
+            right: -27rem; } }
       .price__title .photo-hover:last-of-type picture {
         top: 13rem; }
+        @media only screen and (max-width: 26.8em) {
+          .price__title .photo-hover:last-of-type picture img {
+            width: 25rem; } }
+        @media only screen and (max-width: 21.87em) {
+          .price__title .photo-hover:last-of-type picture img {
+            width: 22rem; } }
         @media only screen and (max-width: 56.25em) {
           .price__title .photo-hover:last-of-type picture {
-            right: -2rem; } }
+            top: 15rem; } }
+        @media only screen and (max-width: 37.5em) {
+          .price__title .photo-hover:last-of-type picture {
+            top: -2rem;
+            right: 6rem; } }
         @media only screen and (max-width: 26.8em) {
           .price__title .photo-hover:last-of-type picture {
-            width: 25rem;
-            top: -6rem;
+            right: 2rem; } }
+        @media only screen and (max-width: 21.87em) {
+          .price__title .photo-hover:last-of-type picture {
             right: 0; } }
       .price__title .photo-hover:first-of-type::before {
-        top: 9rem;
+        top: 10.5rem;
         left: 7rem; }
+        @media only screen and (max-width: 75em) {
+          .price__title .photo-hover:first-of-type::before {
+            left: 4rem; } }
         @media only screen and (max-width: 56.25em) {
           .price__title .photo-hover:first-of-type::before {
-            margin-left: 2rem;
-            margin-top: -13rem; } }
-        @media only screen and (max-width: 37.5em) {
-          .price__title .photo-hover:first-of-type::before {
-            margin-top: -36rem;
-            margin-left: 15rem;
-            width: 70px; } }
+            left: 5rem; } }
         @media only screen and (max-width: 26.8em) {
           .price__title .photo-hover:first-of-type::before {
-            margin-top: -48rem;
-            margin-left: 6rem; } }
+            top: -4.5rem;
+            left: 11rem; } }
+        @media only screen and (max-width: 21.87em) {
+          .price__title .photo-hover:first-of-type::before {
+            left: 10rem; } }
       .price__title .photo-hover:last-of-type::before {
         right: 11rem;
         top: 10.5rem; }
+        @media only screen and (max-width: 75em) {
+          .price__title .photo-hover:last-of-type::before {
+            left: 2rem; } }
         @media only screen and (max-width: 56.25em) {
           .price__title .photo-hover:last-of-type::before {
-            left: 3rem; } }
+            top: 11.5rem;
+            left: 4rem; } }
         @media only screen and (max-width: 37.5em) {
           .price__title .photo-hover:last-of-type::before {
             left: -17rem;
             top: -10rem; } }
         @media only screen and (max-width: 26.8em) {
           .price__title .photo-hover:last-of-type::before {
-            left: -16rem;
-            top: -9rem; } }
+            left: -21 rem;
+            top: -6rem; } }
         @media only screen and (max-width: 21.87em) {
           .price__title .photo-hover:last-of-type::before {
-            left: -19rem; } }
+            left: -18rem; } }
   .price a {
     margin: 0 auto 25rem; }
     @media only screen and (max-width: 37.5em) {
@@ -2322,7 +2409,7 @@ header {
           .more-on-phi .container.conclusion .with-image:nth-of-type(5) img {
             transform: rotate(0deg);
             width: 25.83rem; } }
-      @media only screen and (max-width: 26.8em) {
+      @media only screen and (max-width: 21.87em) {
         .more-on-phi .container.conclusion .with-image {
           width: 55rem; } }
       .more-on-phi .container.conclusion .end {
@@ -2359,17 +2446,3 @@ header {
       height: auto; }
     .more-on-phi .bye a {
       margin: 3rem; }
-
-@keyframes beat {
-  0% {
-    transform: scale(0.98); }
-  20% {
-    transform: scale(1); }
-  40% {
-    transform: scale(0.98); }
-  60% {
-    transform: scale(1); }
-  80% {
-    transform: scale(0.98); }
-  100% {
-    transform: scale(0.98); } }

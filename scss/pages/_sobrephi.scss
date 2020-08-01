@@ -958,7 +958,7 @@
           }
         }
 
-        @include respond(xxxs) {
+        @include respond(xxxxs) {
           width: 55rem;
         }
       }
@@ -1012,26 +1012,5 @@
     a {
       margin: 3rem;
     }
-  }
-}
-
-@keyframes beat {
-  0% {
-    transform: scale(0.98);
-  }
-  20% {
-    transform: scale(1);
-  }
-  40% {
-    transform: scale(0.98);
-  }
-  60% {
-    transform: scale(1);
-  }
-  80% {
-    transform: scale(0.98);
-  }
-  100% {
-    transform: scale(0.98);
   }
 }

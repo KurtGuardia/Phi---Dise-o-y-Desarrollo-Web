@@ -90,12 +90,12 @@ xl 1800px
       z-index: 1;
       transition: all 0.5s ease-in;
       &:hover + picture {
-        opacity: 1;
+        opacity: 1; //Of the main img
       }
     }
 
     &:hover {
-      opacity: 1;
+      opacity: 1; //of the golden ratio
     }
   }
 
