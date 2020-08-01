@@ -753,9 +753,8 @@ header {
     header .row .logo {
       min-width: 36vw;
       fill: #423411; }
-      @media only screen and (max-width: 81.25em) {
-        header .row .logo img {
-          width: 250px; } }
+      header .row .logo img {
+        width: 250px; }
       @media only screen and (max-width: 75em) {
         header .row .logo {
           min-width: auto; }
@@ -776,27 +775,28 @@ header {
         padding: 0.5rem 1rem;
         margin: 0 1rem;
         transition: all 0.5s; }
-      header .row .main-nav li a:link,
-      header .row .main-nav li a:visited {
-        color: #423411;
-        text-decoration: none;
-        font-size: 1.8rem;
-        border-bottom: 2px solid transparent;
-        -webkit-transition: border-bottom 0.4s;
-        transition: border-bottom 0.4s; }
-      header .row .main-nav li:hover,
-      header .row .main-nav li:active {
-        background-color: #f5d87877;
-        border-bottom: 2px solid #A0362B; }
-      header .row .main-nav li:last-of-type {
-        margin-right: 5rem; }
+        header .row .main-nav li a:link,
+        header .row .main-nav li a:visited {
+          color: #423411;
+          text-decoration: none;
+          font-size: 1.8rem;
+          border-bottom: 2px solid transparent;
+          -webkit-transition: border-bottom 0.4s;
+          transition: border-bottom 0.4s; }
+        header .row .main-nav li:hover, header .row .main-nav li:active {
+          background-color: #f5d87877;
+          border-bottom: 2px solid #A0362B; }
+        header .row .main-nav li:last-of-type {
+          margin-right: 5rem; }
+        @media only screen and (max-width: 90em) {
+          header .row .main-nav li:nth-of-type(5) {
+            min-width: 25rem; } }
       @media only screen and (max-width: 56.25em) {
         header .row .main-nav {
           display: none; } }
     @media only screen and (min-width: 112.5em) {
       header .row {
-        width: 100vw;
-        justify-content: space-between; } }
+        width: 100vw; } }
   header .hero-text {
     text-align: center;
     position: absolute;

@@ -19,7 +19,7 @@ header {
     background-image: img("espiral-sombra.webp");
     z-index: -2;
 
-    @include respond(xs){
+    @include respond(xs) {
       background-position: unset;
     }
   }
@@ -51,10 +51,8 @@ header {
       min-width: 36vw;
       fill: $color-black;
 
-      @include respond(m) {
-        & img {
-          width: 250px;
-        }
+      img {
+        width: 250px;
       }
 
       @include respond(s) {
@@ -83,24 +81,32 @@ header {
         padding: 0.5rem 1rem;
         margin: 0 1rem;
         transition: all 0.5s;
-      }
-      li a:link,
-      li a:visited {
-        color: $color-black;
-        text-decoration: none;
-        font-size: $tiny;
-        border-bottom: 2px solid transparent;
-        -webkit-transition: border-bottom 0.4s;
-        transition: border-bottom 0.4s;
-      }
-      li:hover,
-      li:active {
-        background-color: $color-primary-light-transparent;
-        border-bottom: 2px solid $color-red;
-      }
 
-      li:last-of-type{
-        margin-right: 5rem;
+        a:link,
+        a:visited {
+          color: $color-black;
+          text-decoration: none;
+          font-size: $tiny;
+          border-bottom: 2px solid transparent;
+          -webkit-transition: border-bottom 0.4s;
+          transition: border-bottom 0.4s;
+        }
+
+        &:hover,
+        &:active {
+          background-color: $color-primary-light-transparent;
+          border-bottom: 2px solid $color-red;
+        }
+
+        &:last-of-type {
+          margin-right: 5rem;
+        }
+
+        @include respond(l) {
+          &:nth-of-type(5) {
+            min-width: 25rem;
+          }
+        }
       }
 
       @include respond(xs) {
@@ -110,7 +116,6 @@ header {
 
     @include respond(xl) {
       width: 100vw;
-      justify-content: space-between;
     }
   }
 
@@ -128,18 +133,14 @@ header {
     h2 {
       background: $color-primary-transparent;
       padding: 0.5rem 3rem;
-
     }
-      @include respond(xxxs){
-        h1{
-          font-size: 9rem;
-        }
-        h2{
-          font-size: 5.5rem;
-        }
-        
+    @include respond(xxxs) {
+      h1 {
+        font-size: 9rem;
       }
+      h2 {
+        font-size: 5.5rem;
+      }
+    }
   }
 }
-
-
