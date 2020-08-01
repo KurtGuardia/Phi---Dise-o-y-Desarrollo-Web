@@ -790,7 +790,7 @@ header {
           margin-right: 5rem; }
         @media only screen and (max-width: 90em) {
           header .row .main-nav li:nth-of-type(5) {
-            min-width: 25rem; } }
+            min-width: 13rem; } }
       @media only screen and (max-width: 56.25em) {
         header .row .main-nav {
           display: none; } }

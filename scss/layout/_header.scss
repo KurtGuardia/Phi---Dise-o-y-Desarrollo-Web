@@ -104,7 +104,7 @@ header {
 
         @include respond(l) {
           &:nth-of-type(5) {
-            min-width: 25rem;
+            min-width: 13rem;
           }
         }
       }
