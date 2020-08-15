@@ -871,8 +871,7 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 10rem 5rem;
-  max-height: 84.8rem; }
+  margin: 10rem 5rem; }
   @media only screen and (max-width: 37.5em) {
     .entrepreneurship h1 {
       text-align: center; } }
@@ -934,34 +933,79 @@ header {
         left: 7rem; }
         .entrepreneurship .with-image .photo-hover.photo-right picture img {
           width: 18rem; }
+          @media only screen and (max-width: 37.5em) {
+            .entrepreneurship .with-image .photo-hover.photo-right picture img {
+              width: 13rem; } }
         @media only screen and (max-width: 37.5em) {
           .entrepreneurship .with-image .photo-hover.photo-right picture {
             left: 1.5rem; } }
+        @media only screen and (max-width: 26.8em) {
+          .entrepreneurship .with-image .photo-hover.photo-right picture {
+            left: 26rem; } }
+        @media only screen and (max-width: 21.87em) {
+          .entrepreneurship .with-image .photo-hover.photo-right picture {
+            left: 18rem; } }
       .entrepreneurship .with-image .photo-hover picture {
         left: -10rem; }
+        @media only screen and (max-width: 75em) {
+          .entrepreneurship .with-image .photo-hover picture {
+            left: -5rem; } }
+        @media only screen and (max-width: 56.25em) {
+          .entrepreneurship .with-image .photo-hover picture {
+            left: -12rem; } }
+        @media only screen and (max-width: 37.5em) {
+          .entrepreneurship .with-image .photo-hover picture {
+            left: 22rem; } }
+        @media only screen and (max-width: 26.8em) {
+          .entrepreneurship .with-image .photo-hover picture {
+            left: 20rem; } }
+        @media only screen and (max-width: 21.87em) {
+          .entrepreneurship .with-image .photo-hover picture {
+            left: 11rem; } }
         .entrepreneurship .with-image .photo-hover picture img {
           width: 30rem;
           height: auto; }
-        @media only screen and (max-width: 37.5em) {
-          .entrepreneurship .with-image .photo-hover picture {
-            left: -1.5rem; } }
-        @media only screen and (max-width: 21.87em) {
-          .entrepreneurship .with-image .photo-hover picture {
-            left: -6rem; } }
+          @media only screen and (max-width: 56.25em) {
+            .entrepreneurship .with-image .photo-hover picture img {
+              width: 26rem; } }
       .entrepreneurship .with-image .photo-hover::before {
         position: absolute;
-        top: 4rem;
+        top: 2rem;
         left: -4rem; }
+        @media only screen and (max-width: 75em) {
+          .entrepreneurship .with-image .photo-hover::before {
+            left: 1rem; } }
+        @media only screen and (max-width: 56.25em) {
+          .entrepreneurship .with-image .photo-hover::before {
+            left: -3rem; } }
+        @media only screen and (max-width: 37.5em) {
+          .entrepreneurship .with-image .photo-hover::before {
+            left: 29rem; } }
+        @media only screen and (max-width: 21.87em) {
+          .entrepreneurship .with-image .photo-hover::before {
+            left: 18rem; } }
       .entrepreneurship .with-image .photo-hover.photo-right::before {
         top: -4rem;
         left: 6rem; }
-      @media only screen and (max-width: 56.25em) {
-        .entrepreneurship .with-image .photo-hover:first-of-type {
-          margin-right: 10rem; }
-        .entrepreneurship .with-image .photo-hover::before {
-          left: 5rem; }
-        .entrepreneurship .with-image .photo-hover.photo-right::before {
-          left: 5rem; } }
+        @media only screen and (max-width: 56.25em) {
+          .entrepreneurship .with-image .photo-hover.photo-right::before {
+            left: 13rem; } }
+        @media only screen and (max-width: 37.5em) {
+          .entrepreneurship .with-image .photo-hover.photo-right::before {
+            left: 3rem;
+            top: -2rem; } }
+        @media only screen and (max-width: 26.8em) {
+          .entrepreneurship .with-image .photo-hover.photo-right::before {
+            left: 25rem; } }
+        @media only screen and (max-width: 21.87em) {
+          .entrepreneurship .with-image .photo-hover.photo-right::before {
+            left: 18rem; } }
+    @media only screen and (max-width: 37.5em) {
+      .entrepreneurship .with-image:nth-of-type(2) {
+        flex-wrap: wrap-reverse; } }
+    @media only screen and (max-width: 26.8em) {
+      .entrepreneurship .with-image:nth-of-type(1) {
+        flex-wrap: wrap; } }
   .entrepreneurship small {
     align-self: flex-start;
     margin-left: 10rem;
@@ -1637,7 +1681,10 @@ header {
             right: 0; } }
       .price__title .photo-hover:first-of-type::before {
         top: 10.5rem;
-        left: 7rem; }
+        left: 2rem; }
+        @media only screen and (max-width: 81.25em) {
+          .price__title .photo-hover:first-of-type::before {
+            left: 5rem; } }
         @media only screen and (max-width: 75em) {
           .price__title .photo-hover:first-of-type::before {
             left: 4rem; } }
@@ -1748,20 +1795,39 @@ header {
           width: auto; } }
       .precios .with-image .photo-hover picture {
         right: 4rem; }
+        @media only screen and (max-width: 75em) {
+          .precios .with-image .photo-hover picture {
+            right: 0; } }
+        @media only screen and (max-width: 56.25em) {
+          .precios .with-image .photo-hover picture {
+            right: -7rem; } }
+        @media only screen and (max-width: 37.5em) {
+          .precios .with-image .photo-hover picture {
+            right: -18rem; } }
         .precios .with-image .photo-hover picture img {
           width: 35rem;
           height: auto; }
           @media only screen and (max-width: 56.25em) {
             .precios .with-image .photo-hover picture img {
-              width: 28rem; } }
+              width: 25rem; } }
+          @media only screen and (max-width: 37.5em) {
+            .precios .with-image .photo-hover picture img {
+              width: 35rem; } }
       .precios .with-image .photo-hover:last-of-type::before {
         right: 14rem;
         top: -4rem; }
+        @media only screen and (max-width: 75em) {
+          .precios .with-image .photo-hover:last-of-type::before {
+            right: 10rem; } }
+        @media only screen and (max-width: 56.25em) {
+          .precios .with-image .photo-hover:last-of-type::before {
+            right: 3rem;
+            top: -2rem;
+            color: #9D7800; } }
         @media only screen and (max-width: 37.5em) {
           .precios .with-image .photo-hover:last-of-type::before {
-            margin-top: -13rem;
-            margin-left: -1rem;
-            color: #9D7800; } }
+            right: -5rem;
+            top: -5rem; } }
   .precios table {
     margin: 5rem auto 10rem; }
     @media only screen and (max-width: 37.5em) {

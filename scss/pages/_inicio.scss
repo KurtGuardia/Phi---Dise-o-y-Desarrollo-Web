@@ -802,10 +802,13 @@
       &:first-of-type::before {
         //For Taj Mahal
         top: 10.5rem;
-        left: 7rem;
+        left: 2rem;        
 
+        @include respond(m) {
+          left: 5rem;
+        }
         @include respond(s) {
-          left: 4rem;
+          left: 4rem;   //This and the next one do not look good on the specific sizes, but they look good on the devices closer to the sizes
         }
         @include respond(xs) {
           left: 5rem;

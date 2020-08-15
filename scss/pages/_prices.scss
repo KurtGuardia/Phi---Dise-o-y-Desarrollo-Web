@@ -39,23 +39,47 @@
       picture {
         right: 4rem;
 
+        @include respond(s) {
+          right: 0;
+        }
+
+        @include respond(xs) {
+          right: -7rem;
+        }
+
+        @include respond(xxs) {
+          right: -18rem;
+        }
+
         img {
           width: 35rem;
           height: auto;
-
+                   
           @include respond(xs) {
-            width: 28rem;
+            width: 25rem;
+          }
+                   
+          @include respond(xxs) {
+            width: 35rem;
           }
         }
       }
+
       &:last-of-type::before {
         right: 14rem;
         top: -4rem;
 
-        @include respond(xxs) {
-          margin-top: -13rem;
-          margin-left: -1rem;
+        @include respond(s){
+          right: 10rem;
+        }
+        @include respond(xs) {
+          right: 3rem;
+          top: -2rem;
           color: $color-primary-dark;
+        }
+        @include respond(xxs){
+          right: -5rem;
+          top: -5rem;
         }
       }
     }
