@@ -327,7 +327,8 @@ h3 {
       .project picture {
         filter: blur(0); } }
     .project picture img {
-      width: 100%; }
+      width: 100%;
+      border-radius: 30px; }
   .project p {
     margin: 0 1rem; }
   .project a {
