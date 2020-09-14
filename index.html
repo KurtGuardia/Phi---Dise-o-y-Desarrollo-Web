@@ -312,9 +312,7 @@
                 <span>-Jonathan Midenhall</span></em
               >
               <br />
-              <p>
-                Marketing Digital, para estar más cerca de tus clientes.
-              </p>
+              <p>Marketing Digital, para estar más cerca de tus clientes.</p>
             </div>
           </div>
           <div class="card">
@@ -389,10 +387,9 @@
               <source srcset="./img/monalisaau.webp" type="image/webp" />
               <source srcset="./img/monalisaau.png" type="image/png" />
               <img
-              src="img/monalisaau.png"
-              
-              alt="Monalisa with the golden ratio all over her face"
-            />
+                src="img/monalisaau.png"
+                alt="Monalisa with the golden ratio all over her face"
+              />
             </picture>
             <picture>
               <source srcset="./img/monalisa.webp" type="image/webp" />
@@ -565,14 +562,13 @@
       <section class="price">
         <div class="price__title">
           <div class="photo-hover">
-            <picture  class="secondary">
+            <picture class="secondary">
               <source srcset="./img/tajmahalau.webp" type="image/webp" />
               <source srcset="./img/tajmahalau.png" type="image/png" />
               <img
-              src="img/tajmahalau.png"
-            
-              alt="Taj Mahal with the golden ratio"
-            />
+                src="img/tajmahalau.png"
+                alt="Taj Mahal with the golden ratio"
+              />
             </picture>
             <picture>
               <source srcset="./img/tajmahal.webp" type="image/webp" />
@@ -589,10 +585,9 @@
               <source srcset="./img/toyotaau.webp" type="image/webp" />
               <source srcset="./img/toyotaau.png" type="image/png" />
               <img
-              src="img/toyotaau.png"
-              
-              alt="Toyota's logo with the golden ratio"
-            />
+                src="img/toyotaau.png"
+                alt="Toyota's logo with the golden ratio"
+              />
             </picture>
             <picture>
               <source srcset="./img/toyota.webp" type="image/webp" />
@@ -746,8 +741,8 @@
               También comparto el sentimiento único que conlleva ser
               independiente o autónomo, una mezcla de orgullo, alegría con
               estrés y nervios. Es por eso que con Phi - Diseño y Desarrollo
-              Web, se apoya a los emprendimientos que lo soliciten,
-              tanto como clientes o como proveedores terciarios de servicios
+              Web, se apoya a los emprendimientos que lo soliciten, tanto como
+              clientes o como proveedores terciarios de servicios
               complementarios. <br /><br />
               En nombre del equipo te invito a que sigas recorriendo la web y
               que sin ningún compromiso te contactes con nosotros para solicitar
@@ -790,6 +785,9 @@
       const modalBtn = document.querySelector(".modal-btn");
       const modalBg = document.querySelector(".modal-bg");
       const modalClose = document.querySelector(".modal-close");
+      const ham = document.querySelector(".navigation__checkbox");
+      const links = document.querySelectorAll(".navigation__link");
+      let y, matrix;
 
       //Functions
       const typing = () => {
@@ -803,7 +801,6 @@
       };
 
       // Event Listeners
-      let y, matrix;
 
       window.addEventListener("load", function () {
         //Bacuse Matrix img didn't appear at the beggining
@@ -828,6 +825,12 @@
         } else {
           document.getElementById("sec-nav").classList.remove("active");
         }
+      });
+
+      links.forEach((link) => {
+        link.addEventListener("click", () => {
+          ham.checked = false;
+        });
       });
 
       modalBtn.addEventListener("click", function () {
