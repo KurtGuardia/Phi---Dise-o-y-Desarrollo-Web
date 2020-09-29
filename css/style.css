@@ -559,7 +559,7 @@ table {
       cursor: pointer; }
 
 footer {
-  background-color: #D4AF37;
+  background: linear-gradient(149.39deg, #d4af37 13.59%, #af8505 98.69%);
   color: #f4f4f4;
   padding: 2rem; }
   footer .footer__content {
@@ -775,7 +775,8 @@ header {
         background-color: #d4af3777;
         padding: 0.5rem 1rem;
         margin: 0 1rem;
-        transition: all 0.5s; }
+        transition: all 0.5s;
+        width: max-content; }
         header .row .main-nav li a:link,
         header .row .main-nav li a:visited {
           color: #423411;
