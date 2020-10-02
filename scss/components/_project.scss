@@ -29,6 +29,10 @@
 
   & p {
     margin: 0 1rem;
+
+    &:first-of-type{
+      text-align: center;
+    }
   }
 
   & a {
