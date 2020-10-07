@@ -14,7 +14,11 @@
   height: 50rem;
   display: flex;
   justify-content: center;
-  
+
+  @include respond(xxxs) {
+    margin-bottom: 10rem;
+  }
+
   .circle {
     background-color: $color-purple;
     width: 100%;
@@ -61,103 +65,96 @@
     @include hover;
     @include hoverMessage;
 
-    &:first-child {
-      //Vetrubio
-      right: -15rem;
+    // &:first-child {
+    //   //Vetrubio
+    //   right: -15rem;
 
-      @include respond(xs) {
-        align-self: flex-start;
-        right: -6rem;
+    //   @include respond(xs) {
+    //     align-self: flex-start;
+    //     right: -6rem;
 
-        img {
-          height: 17rem;
-        }
-      }
+    //     img {
+    //       height: 17rem;
+    //     }
+    //   }
 
-      @include respond(xxs) {
-        align-self: flex-start;
-        top: -14rem;
-        right: -15rem;
+    //   @include respond(xxs) {
+    //     align-self: flex-start;
+    //     top: -14rem;
+    //     right: -15rem;
 
-        img {
-          width: 16rem;
-          height: auto;
+    //     img {
+    //       width: 16rem;
+    //       height: auto;
 
-          @include respond(xxxs) {
-            width: 18rem;
-            height: auto;
-          }
-        }
-      }
+    //       @include respond(xxxs) {
+    //         width: 18rem;
+    //         height: auto;
+    //       }
+    //     }
+    //   }
 
-      @include respond(xxxs) {
-        right: -5rem;
-        width: 100%;
-        height: 90px;
+    //   @include respond(xxxs) {
+    //     right: -5rem;
+    //   }
 
-        img{
-          width: 100%;
-          height: auto;
-        }
-      }
+    //   @include respond(xxxxs) {
+    //     right: 0rem;
+    //   }
+    // }
 
-      @include respond(xxxxs) {
-        right: 0rem;
-      }
-    }
+    // &:last-of-type {
+    //   //Partenon
+    //   right: 8rem;
+    //   img {
+    //     @include respond(s) {
+    //       height: 18rem;
+    //       width: auto;
+    //     }
+    //     @include respond(xs) {
+    //       width: 25rem;
+    //       height: auto;
+    //     }
 
-    &:last-of-type {
-      //Partenon
-      right: 8rem;
-      img {
-        @include respond(s) {
-          height: 18rem;
-          width: auto;
-        }
-        @include respond(xs) {
-          width: 25rem;
-          height: auto;
-        }
+    //     @include respond(xs) {
+    //     }
 
-        @include respond(xs) {
-        }
+    //     @include respond(xxxs) {
+    //       width: 26rem;
+    //       height: auto;
+    //     }
+    //   }
 
-        @include respond(xxxs) {
-          width: 26rem;
-          height: auto;
-        }
-      }
+    //   @include respond(xs) {
+    //     align-self: flex-start;
+    //   }
+    //   @include respond(xxs) {
+    //     top: -12rem;
+    //     left: -28rem;
+    //   }
+    //   @include respond(xxxs) {
+    //     left: -20rem;
+    //   }
+    // }
 
-      @include respond(xs) {
-        align-self: flex-start;
-      }
-      @include respond(xxs) {
-        top: -12rem;
-        left: -28rem;
-      }
-      @include respond(xxxs) {
-        left: -20rem;
-      }
-    }
+    // &::before {
+    //   //both
+    //   top: -3rem;
 
-    &::before {
-      //both
-      top: -3rem;
+    //   @include respond(xs) {
+    //     //For Vetrubio only
+    //     left: 4rem;
+    //   }
+    // }
 
-      @include respond(xs) {
-        //For Vetrubio only
-        left: 4rem;
-      }
-    }
+    // &.photo-right::before {
+    //   //For partenon
+    //   left: 6rem;
 
-    &.photo-right::before {
-      //For partenon
-      left: 6rem;
-
-      @include respond(xs) {
-        left: 8rem;
-      }
-    }
+    //   @include respond(xs) {
+    //     left: 8rem;
+    //   }
+    // }
   }
 
   &-text {
