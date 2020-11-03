@@ -1,9 +1,5 @@
 footer {
-  background: linear-gradient(
-        149.39deg,
-        #d4af37 13.59%,
-        #af8505 98.69%
-      );
+  background: linear-gradient(149.39deg, #d4af37 13.59%, #af8505 98.69%);
   color: $color-white;
   padding: 2rem;
 
@@ -99,6 +95,14 @@ footer {
             }
           }
 
+          & > p {
+            a {
+              text-decoration: none;
+              cursor: pointer;
+              color: $color-white;
+            }
+          }
+
           @include respond(xxxs) {
             &:first-of-type {
               margin-top: 0;
@@ -176,8 +180,8 @@ footer {
       transition: visibility 0s, opacity 0.5s;
 
       &.bg-active {
-          visibility: visible;
-          opacity: 1;
+        visibility: visible;
+        opacity: 1;
       }
 
       .modal {
@@ -192,7 +196,7 @@ footer {
         .text {
           margin: 5rem;
           width: 61.8%;
-          color: $color-black ;
+          color: $color-black;
 
           h3 {
             margin-bottom: 3rem;
