@@ -2,6 +2,10 @@
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="Web development entrepreneurship in Valladold, Spain by Kurt Guardia. Check my projects and send me a message through the contact form"
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;1,100;1,700&display=swap"
@@ -403,7 +407,7 @@
         </div>
 
         <div class="project__cards">
-          <div class="project project--1">
+          <div class="project">
             <picture>
               <source srcset="./img/ciner.webp" type="image/webp" />
               <source srcset="./img/ciner.jpg" type="image/jpg" />
@@ -419,7 +423,7 @@
             >
           </div>
 
-          <div class="project project--2">
+          <div class="project">
             <picture>
               <source srcset="./img/apus.webp" type="image/webp" />
               <source srcset="./img/apus.jpg" type="image/jpg" />
@@ -438,7 +442,7 @@
             >
           </div>
 
-          <div class="project project--2">
+          <div class="project">
             <picture>
               <source srcset="./img/hacienda.webp" type="image/webp" />
               <source srcset="./img/hacienda.jpg" type="image/jpg" />
@@ -457,15 +461,25 @@
             >
           </div>
 
-          <div class="project project--3">
+          <div class="project">
             <picture>
               <source srcset="./img/kurt-react-apps.webp" type="image/webp" />
               <source srcset="./img/kurt-react-apps.jpg" type="image/jpg" />
-              <img src="img/kurt-react-apps.jpg" alt="My React apps web repository" />
+              <img
+                src="img/kurt-react-apps.jpg"
+                alt="My React apps web repository"
+              />
             </picture>
-            <p> <img src="img/react.jpg" alt="React Icon" style="height: 30px; opacity: .8; margin-right: 5px;">ReactJS Apps</p>
+            <p>
+              <img
+                src="img/react.jpg"
+                alt="React Icon"
+                style="height: 30px; opacity: 0.8; margin-right: 5px"
+              />ReactJS Apps
+            </p>
             <p class="tiny-text">
-              Aquí está un repositorio de varias aplicaciones hechas en ReactJS (Redux, Firebase, Sass, framer-motion).
+              Aquí está un repositorio de varias aplicaciones hechas en ReactJS
+              (Redux, Firebase, Sass, framer-motion).
             </p>
             <a
               target="_blank"
@@ -475,7 +489,7 @@
             >
           </div>
 
-          <!-- <div class="project project--3">
+          <!-- <div class="project">
             <picture>
               <source srcset="./img/forkify.webp" type="image/webp" />
               <source srcset="./img/forkify.jpg" type="image/jpg" />
@@ -494,7 +508,7 @@
             >
           </div> -->
 
-          <div class="project project--4">
+          <div class="project">
             <picture>
               <source srcset="./img/acotec.webp" type="image/webp" />
               <source srcset="./img/acotec.jpg" type="image/jpg" />
@@ -513,7 +527,7 @@
             >
           </div>
 
-          <div class="project project--5">
+          <div class="project">
             <picture>
               <source srcset="./img/jobs.webp" type="image/webp" />
               <source srcset="./img/jobs.jpg" type="image/jpg" />
@@ -533,7 +547,7 @@
             >
           </div>
 
-          <div class="project project--6">
+          <div class="project">
             <picture>
               <source srcset="./img/nexter.webp" type="image/webp" />
               <source srcset="./img/nexter.jpg" type="image/jpg" />
@@ -553,7 +567,7 @@
             >
           </div>
 
-          <div class="project project--7">
+          <div class="project">
             <picture>
               <source srcset="./img/natours.webp" type="image/webp" />
               <source srcset="./img/natours.jpg" type="image/jpg" />
@@ -572,7 +586,7 @@
             >
           </div>
 
-          <!-- <div class="project project--8">
+          <!-- <div class="project">
             <picture>
               <source srcset="./img/trillo.webp" type="image/webp" />
               <source srcset="./img/trillo.jpg" type="image/jpg" />
@@ -741,7 +755,14 @@
             <svg>
               <use xlink:href="img/sprite.svg#icon-github"></use>
             </svg>
-            <p class="small-text"><a href="https://www.github.com/KurtGuardia" rel="noreferrer" target="_blank">github.com/KurtGuardia</a> </p>
+            <p class="small-text">
+              <a
+                href="https://www.github.com/KurtGuardia"
+                rel="noreferrer"
+                target="_blank"
+                >github.com/KurtGuardia</a
+              >
+            </p>
           </div>
 
           <div class="media">
@@ -817,19 +838,19 @@
       //Variables
       let i = 0;
       let fire = 0;
-      const phi_number = "1.6180339887498948482...";
-      let offsetContent = document.getElementById("phi_number").offsetTop;
-      const modalBtn = document.querySelector(".modal-btn");
-      const modalBg = document.querySelector(".modal-bg");
-      const modalClose = document.querySelector(".modal-close");
-      const ham = document.querySelector(".navigation__checkbox");
-      const links = document.querySelectorAll(".navigation__link");
+      const phi_number = '1.6180339887498948482...';
+      let offsetContent = document.getElementById('phi_number').offsetTop;
+      const modalBtn = document.querySelector('.modal-btn');
+      const modalBg = document.querySelector('.modal-bg');
+      const modalClose = document.querySelector('.modal-close');
+      const ham = document.querySelector('.navigation__checkbox');
+      const links = document.querySelectorAll('.navigation__link');
       let y, matrix;
 
       //Functions
       const typing = () => {
         if (i < phi_number.length) {
-          document.getElementById("phi_number").innerHTML += phi_number.charAt(
+          document.getElementById('phi_number').innerHTML += phi_number.charAt(
             i
           );
           i++;
@@ -839,18 +860,18 @@
 
       // Event Listeners
 
-      window.addEventListener("load", function () {
+      window.addEventListener('load', function () {
         //Bacuse Matrix img didn't appear at the beggining
         y = window.scrollY;
-        matrix = document.querySelector(".matrix");
-        matrix.style.top = -y + "px";
+        matrix = document.querySelector('.matrix');
+        matrix.style.top = -y + 'px';
       });
 
-      window.addEventListener("scroll", function () {
+      window.addEventListener('scroll', function () {
         y = window.scrollY;
-        matrix = document.querySelector(".matrix");
+        matrix = document.querySelector('.matrix');
 
-        matrix.style.top = -y + "px";
+        matrix.style.top = -y + 'px';
         if (y + 600 > offsetContent) {
           fire++;
         }
@@ -858,24 +879,24 @@
           typing();
         }
         if (y + 250 > offsetContent) {
-          document.getElementById("sec-nav").classList.add("active");
+          document.getElementById('sec-nav').classList.add('active');
         } else {
-          document.getElementById("sec-nav").classList.remove("active");
+          document.getElementById('sec-nav').classList.remove('active');
         }
       });
 
       links.forEach((link) => {
-        link.addEventListener("click", () => {
+        link.addEventListener('click', () => {
           ham.checked = false;
         });
       });
 
-      modalBtn.addEventListener("click", function () {
-        modalBg.classList.add("bg-active");
+      modalBtn.addEventListener('click', function () {
+        modalBg.classList.add('bg-active');
       });
 
-      modalClose.addEventListener("click", function () {
-        modalBg.classList.remove("bg-active");
+      modalClose.addEventListener('click', function () {
+        modalBg.classList.remove('bg-active');
       });
     </script>
   </body>

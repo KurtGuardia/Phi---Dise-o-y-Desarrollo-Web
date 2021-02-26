@@ -1,4 +1,4 @@
-@import "../abstracts/functions";
+@import '../abstracts/functions';
 
 // _____________________________ Welcome _____________________________
 
@@ -10,7 +10,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   backface-visibility: hidden;
-  background-image: img("cloud.webp");
+  background-image: img('cloud.webp');
   height: 50rem;
   display: flex;
   justify-content: center;
@@ -728,7 +728,7 @@
       @include respond(xxxs) {
         height: 35rem;
         width: 3%;
-      }      
+      }
 
       picture {
         right: 6rem;
@@ -763,7 +763,7 @@
           right: -27rem;
         }
 
-        @include respond(xxxxs){
+        @include respond(xxxxs) {
           right: -27rem;
         }
       }
@@ -780,21 +780,21 @@
             width: 22rem;
           }
         }
-        
+
         @include respond(xs) {
           top: 15rem;
         }
-        
+
         @include respond(xxs) {
           top: -2rem;
           right: 6rem;
         }
 
-        @include respond(xxxs){
+        @include respond(xxxs) {
           right: 2rem;
         }
 
-        @include respond(xxxxs){
+        @include respond(xxxxs) {
           right: 0;
         }
       }
@@ -802,22 +802,22 @@
       &:first-of-type::before {
         //For Taj Mahal
         top: 10.5rem;
-        left: 2rem;        
+        left: 2rem;
 
         @include respond(m) {
           left: 5rem;
         }
         @include respond(s) {
-          left: 4rem;   //This and the next one do not look good on the specific sizes, but they look good on the devices closer to the sizes
+          left: 4rem; //This and the next one do not look good on the specific sizes, but they look good on the devices closer to the sizes
         }
         @include respond(xs) {
           left: 5rem;
         }
-       @include respond(xxxs) {
-         top: -4.5rem;
-         left: 11rem;
+        @include respond(xxxs) {
+          top: -4.5rem;
+          left: 11rem;
         }
-        @include respond(xxxxs){
+        @include respond(xxxxs) {
           left: 10rem;
         }
       }
@@ -860,6 +860,7 @@
     }
   }
 }
+
 @include respond(xs) {
   h1 {
     font-size: $big;
